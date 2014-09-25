@@ -4,26 +4,56 @@ import (
 	"errors"
 	"fmt"
 	"github.com/boombuler/gold"
+	"time"
 )
+
+const NoTimeout time.Duration = 0
+const DefaultTimeout = 5 * time.Second
 
 type Context struct {
 	parentContext *Context
 	variables     map[string]Value
 	functions     [16]*Function
-	result        Value
-	err           error
+
+	result  Value
+	err     error
+	timeout *time.Timer
 }
 
-func NewContext() *Context {
+func NewContext(d time.Duration) *Context {
 	c := new(Context)
 	c.variables = make(map[string]Value)
+	if d != 0 {
+		c.timeout = time.NewTimer(d)
+	}
 	return c
 }
 
 func (c *Context) newChildContext() *Context {
-	cc := NewContext()
-	cc.parentContext = c
-	return cc
+	return &Context{
+		variables:     make(map[string]Value),
+		parentContext: c,
+	}
+}
+
+func (c *Context) forceExit() bool {
+	if c.err != nil || c.result != nil {
+		return true
+	}
+	if c.parentContext != nil {
+		return c.parentContext.forceExit()
+	} else if c.timeout != nil {
+		select {
+		case <-c.timeout.C:
+			c.err = errors.New("timeout")
+			c.result = nil
+			return true
+		default:
+			return false
+		}
+	} else {
+		return false
+	}
 }
 
 func (c *Context) getFunctionIdx(sym gold.SymbolId) int {

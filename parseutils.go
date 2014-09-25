@@ -8,6 +8,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"time"
 )
 
 type ExecFn func(t *gold.Token, c *Context) (Value, error)
@@ -141,17 +142,28 @@ func PrintAST(code string) {
 	logAST(res, 0)
 }
 
-func ExecuteString(code string) (Value, error) {
-	return ExecuteReader(bytes.NewBuffer([]byte(code)))
+func ExecuteString(code string, maxDuration time.Duration) (Value, error) {
+	return ExecuteReader(bytes.NewBuffer([]byte(code)), maxDuration)
 }
 
-func ExecuteReader(reader io.Reader) (Value, error) {
+func ExecuteReader(reader io.Reader, maxDuration time.Duration) (Value, error) {
 	res, err := NewParser().Parse(reader, true)
 	if err != nil {
 		return nil, err
 	}
 
-	return Exec(res, NewContext())
+	result := make(chan Value, 1)
+	resErr := make(chan error, 1)
+
+	go func() {
+		r, e := Exec(res, NewContext(maxDuration))
+		resErr <- e
+		result <- r
+		close(resErr)
+		close(result)
+	}()
+
+	return <-result, <-resErr
 }
 
 func NewParser() gold.Parser {

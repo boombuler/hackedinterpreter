@@ -7,7 +7,7 @@ import (
 func Test_LambdaSimple(t *testing.T) {
 	testStr := "var_a = function var_b -> var_b * 2; \n var_a(2)"
 
-	value, err := ExecuteString(testStr)
+	value, err := ExecuteString(testStr, DefaultTimeout)
 	if err != nil {
 		t.Error(err)
 	}
@@ -19,7 +19,7 @@ func Test_LambdaSimple(t *testing.T) {
 func Test_LambdaFromList(t *testing.T) {
 	testStr := "var_a = [function var_b -> var_b * 2]; var_a.push(function var_b -> var_b * 3); \n var_a[0](2) + var_a[1](1)"
 
-	value, err := ExecuteString(testStr)
+	value, err := ExecuteString(testStr, DefaultTimeout)
 	if err != nil {
 		t.Error(err)
 	}

@@ -19,7 +19,7 @@ func ExecForEach(t *gold.Token, c *Context) (Value, error) {
 		c.variables[varName] = val
 		res, err = Exec(t.Tokens[4], c)
 
-		if c.result != nil || c.err != nil {
+		if c.forceExit() {
 			return c.result, c.err
 		}
 
@@ -57,7 +57,7 @@ func ExecWhileLoop(t *gold.Token, c *Context) (Value, error) {
 		}
 		if isTrue {
 			res, err = Exec(t.Tokens[2], c)
-			if c.result != nil || c.err != nil {
+			if c.forceExit() {
 				return c.result, c.err
 			}
 
@@ -72,7 +72,7 @@ func ExecWhileLoop(t *gold.Token, c *Context) (Value, error) {
 }
 
 func ExecCodeBlock(t *gold.Token, c *Context) (Value, error) {
-	if c.result != nil || c.err != nil {
+	if c.forceExit() {
 		return c.result, c.err
 	}
 	return Exec(t.Tokens[1], c)
@@ -86,7 +86,7 @@ func ExecStatements(t *gold.Token, c *Context) (Value, error) {
 		if err != nil {
 			return v, err
 		}
-		if c.result != nil || c.err != nil {
+		if c.forceExit() {
 			return c.result, c.err
 		}
 		return Exec(t.Tokens[1], c)
