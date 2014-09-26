@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"errors"
 	"fmt"
 	"github.com/boombuler/gold"
@@ -47,10 +46,6 @@ func ConstList(t *gold.Token, c *Context) (Value, error) {
 		return nil, err
 	}
 	return &List{content: values}, nil
-}
-
-func newList() *List {
-	return &List{make([]Value, 0, 0)}
 }
 
 func (l *List) Push(v Value) {
@@ -105,21 +100,6 @@ func (l *List) Copy() *List {
 	return &List{
 		content: append([]Value{}, l.content...),
 	}
-}
-
-func (l *List) String() string {
-	buf := &bytes.Buffer{}
-	buf.WriteRune('[')
-	for i, val := range l.content {
-		if i != 0 {
-			buf.WriteString(", ")
-		}
-		buf.WriteString(fmt.Sprintf("%v", val))
-	}
-
-	buf.WriteRune(']')
-
-	return buf.String()
 }
 
 func (l *List) Sort(less listSorterCompare) error {

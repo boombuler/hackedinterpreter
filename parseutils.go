@@ -7,7 +7,7 @@ import (
 	"github.com/boombuler/gold"
 	"io"
 	"log"
-	"os"
+	"math/rand"
 	"time"
 )
 
@@ -92,6 +92,7 @@ func Exec(t *gold.Token, c *Context) (Value, error) {
 		Rule_ReturnstmntReturn:            Return,
 		Rule_LambdafndefFunctionMinusgt:   DefineLambda,
 		Rule_LambdafncallLparenRparen:     CallLambda,
+		Rule_FunctioncallLparenRparen:     CallBuildInFn,
 
 		Rule_CustfnnameF1:  GetFunction,
 		Rule_CustfnnameF2:  GetFunction,
@@ -135,7 +136,7 @@ func logAST(t *gold.Token, i int) {
 
 func PrintAST(code string) {
 	reader := bytes.NewBuffer([]byte(code))
-	res, err := NewParser().Parse(reader, true)
+	res, err := parser.Parse(reader, true)
 	if err != nil {
 		return
 	}
@@ -143,11 +144,11 @@ func PrintAST(code string) {
 }
 
 func ExecuteString(code string, maxDuration time.Duration) (Value, error) {
-	return ExecuteReader(bytes.NewBuffer([]byte(code)), maxDuration)
+	return ExecuteReader(bytes.NewBuffer([]byte(code)), NewContext(maxDuration))
 }
 
-func ExecuteReader(reader io.Reader, maxDuration time.Duration) (Value, error) {
-	res, err := NewParser().Parse(reader, true)
+func ExecuteReader(reader io.Reader, ctx *Context) (Value, error) {
+	res, err := parser.Parse(reader, true)
 	if err != nil {
 		return nil, err
 	}
@@ -156,7 +157,7 @@ func ExecuteReader(reader io.Reader, maxDuration time.Duration) (Value, error) {
 	resErr := make(chan error, 1)
 
 	go func() {
-		r, e := Exec(res, NewContext(maxDuration))
+		r, e := Exec(res, ctx)
 		resErr <- e
 		result <- r
 		close(resErr)
@@ -166,15 +167,16 @@ func ExecuteReader(reader io.Reader, maxDuration time.Duration) (Value, error) {
 	return <-result, <-resErr
 }
 
-func NewParser() gold.Parser {
-	f, err := os.Open("hacked.egt")
+var parser gold.Parser
+var StartTime time.Time
+
+func init() {
+	StartTime = time.Now()
+	rand.Seed(time.Now().UnixNano())
+	var err error
+	parser, err = gold.NewParser(bytes.NewBufferString(EGTFile))
+
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer f.Close()
-	parser, err := gold.NewParser(f)
-	if err != nil {
-		log.Fatal(err)
-	}
-	return parser
 }

@@ -20,6 +20,10 @@ type Context struct {
 	timeout *time.Timer
 }
 
+func (c *Context) SetInput(val Value) {
+	c.variables["input"] = val
+}
+
 func NewContext(d time.Duration) *Context {
 	c := new(Context)
 	c.variables = make(map[string]Value)

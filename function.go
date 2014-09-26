@@ -69,7 +69,7 @@ func GetFunctionCallParams(pdef *gold.Token, c *Context) ([]Value, error) {
 	params := []Value{}
 
 	for {
-		if pdef.Rule == Rule_FnparametersdefComma {
+		if pdef.Rule == Rule_FnparametersComma {
 			val, err := Exec(pdef.Tokens[2], c)
 			if err != nil {
 				return nil, err

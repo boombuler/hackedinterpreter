@@ -24,6 +24,6 @@ func Test_LambdaFromList(t *testing.T) {
 		t.Error(err)
 	}
 	if value != 7 {
-		t.Errorf("Lambda 1 Failed got %v expected %v", value, 7)
+		t.Errorf("Lambda 2 Failed got %v expected %v", value, 7)
 	}
 }

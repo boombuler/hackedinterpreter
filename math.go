@@ -86,6 +86,29 @@ func ExpressionLt(t *gold.Token, c *Context) (Value, error) {
 	return Value(vi1 < vi2), nil
 }
 
+func compare(v1, v2 Value) bool {
+	v1L, ok1 := v1.(*List)
+	v2L, ok2 := v2.(*List)
+	if ok1 != ok2 {
+		return false
+	}
+	if ok1 {
+		if len(v1L.content) == len(v2L.content) {
+			for i := 0; i < len(v1L.content); i++ {
+				if !compare(v1L.content[i], v2L.content[i]) {
+					return false
+				}
+			}
+			return true
+		}
+		return false
+	}
+	if getTypeName(v1) == getTypeName(v2) {
+		return v1 == v2
+	}
+	return false
+}
+
 func ExpressionEqual(t *gold.Token, c *Context) (Value, error) {
 	v1, err := Exec(t.Tokens[0], c)
 	if err != nil {
@@ -93,12 +116,10 @@ func ExpressionEqual(t *gold.Token, c *Context) (Value, error) {
 	}
 	v2, err := Exec(t.Tokens[2], c)
 	if err != nil {
+		return nil, err
+	}
 
-	}
-	if getTypeName(v1) == getTypeName(v2) {
-		return v1 == v2, nil
-	}
-	return false, nil
+	return compare(v1, v2), nil
 }
 
 func ExpressionNotEqual(t *gold.Token, c *Context) (Value, error) {
@@ -108,12 +129,10 @@ func ExpressionNotEqual(t *gold.Token, c *Context) (Value, error) {
 	}
 	v2, err := Exec(t.Tokens[2], c)
 	if err != nil {
+		return nil, err
+	}
 
-	}
-	if getTypeName(v1) == getTypeName(v2) {
-		return v1 != v2, nil
-	}
-	return true, nil
+	return !compare(v1, v2), nil
 }
 
 func ExpressionLogicalAND(t *gold.Token, c *Context) (Value, error) {

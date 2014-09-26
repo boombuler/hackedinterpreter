@@ -28,78 +28,98 @@ const (
     Sym_Eqeq              gold.SymbolId = 22 // '=='
     Sym_Gt                gold.SymbolId = 23 // '>'
     Sym_Minusgt           gold.SymbolId = 24 // '->'
-    Sym_Copy              gold.SymbolId = 25 // copy
-    Sym_Else              gold.SymbolId = 26 // else
-    Sym_F1                gold.SymbolId = 27 // 'f1'
-    Sym_F10               gold.SymbolId = 28 // 'f10'
-    Sym_F11               gold.SymbolId = 29 // 'f11'
-    Sym_F12               gold.SymbolId = 30 // 'f12'
-    Sym_F13               gold.SymbolId = 31 // 'f13'
-    Sym_F14               gold.SymbolId = 32 // 'f14'
-    Sym_F15               gold.SymbolId = 33 // 'f15'
-    Sym_F16               gold.SymbolId = 34 // 'f16'
-    Sym_F2                gold.SymbolId = 35 // 'f2'
-    Sym_F3                gold.SymbolId = 36 // 'f3'
-    Sym_F4                gold.SymbolId = 37 // 'f4'
-    Sym_F5                gold.SymbolId = 38 // 'f5'
-    Sym_F6                gold.SymbolId = 39 // 'f6'
-    Sym_F7                gold.SymbolId = 40 // 'f7'
-    Sym_F8                gold.SymbolId = 41 // 'f8'
-    Sym_F9                gold.SymbolId = 42 // 'f9'
-    Sym_False             gold.SymbolId = 43 // false
-    Sym_Fill              gold.SymbolId = 44 // fill
-    Sym_Foreach           gold.SymbolId = 45 // foreach
-    Sym_Function          gold.SymbolId = 46 // function
-    Sym_If                gold.SymbolId = 47 // if
-    Sym_In                gold.SymbolId = 48 // in
-    Sym_Input             gold.SymbolId = 49 // Input
-    Sym_Insert            gold.SymbolId = 50 // insert
-    Sym_Is_list           gold.SymbolId = 51 // 'is_list'
-    Sym_Length            gold.SymbolId = 52 // length
-    Sym_Map               gold.SymbolId = 53 // map
-    Sym_Number            gold.SymbolId = 54 // Number
-    Sym_Pop               gold.SymbolId = 55 // pop
-    Sym_Push              gold.SymbolId = 56 // push
-    Sym_Remove            gold.SymbolId = 57 // remove
-    Sym_Return            gold.SymbolId = 58 // return
-    Sym_Sort              gold.SymbolId = 59 // sort
-    Sym_Sort_with         gold.SymbolId = 60 // 'sort_with'
-    Sym_True              gold.SymbolId = 61 // true
-    Sym_Variable          gold.SymbolId = 62 // Variable
-    Sym_While             gold.SymbolId = 63 // while
-    Sym_Addexp            gold.SymbolId = 64 // <Add Exp>
-    Sym_Array             gold.SymbolId = 65 // <Array>
-    Sym_Arrayvalues       gold.SymbolId = 66 // <ArrayValues>
-    Sym_Assign            gold.SymbolId = 67 // <Assign>
-    Sym_Block             gold.SymbolId = 68 // <Block>
-    Sym_Bool              gold.SymbolId = 69 // <Bool>
-    Sym_Boolalgexpression gold.SymbolId = 70 // <BoolAlgExpression>
-    Sym_Codeblock         gold.SymbolId = 71 // <CodeBlock>
-    Sym_Compexpression    gold.SymbolId = 72 // <Comp Expression>
-    Sym_Custfncall        gold.SymbolId = 73 // <Cust Fn Call>
-    Sym_Custfndef         gold.SymbolId = 74 // <Cust Fn Def>
-    Sym_Custfnname        gold.SymbolId = 75 // <Cust Fn Name>
-    Sym_Elseblock         gold.SymbolId = 76 // <ElseBlock>
-    Sym_Expression        gold.SymbolId = 77 // <Expression>
-    Sym_Fnparameters      gold.SymbolId = 78 // <Fn Parameters>
-    Sym_Fnparametersdef   gold.SymbolId = 79 // <Fn Parameters Def>
-    Sym_Foreachloop       gold.SymbolId = 80 // <ForEachLoop>
-    Sym_Getindex          gold.SymbolId = 81 // <GetIndex>
-    Sym_Ifblock           gold.SymbolId = 82 // <IfBlock>
-    Sym_Lambdafncall      gold.SymbolId = 83 // <Lambda Fn Call>
-    Sym_Lambdafndef       gold.SymbolId = 84 // <Lambda Fn Def>
-    Sym_Lambdatarget      gold.SymbolId = 85 // <Lambda Target>
-    Sym_Methodcall        gold.SymbolId = 86 // <Method Call>
-    Sym_Methodname        gold.SymbolId = 87 // <Method Name>
-    Sym_Multexp           gold.SymbolId = 88 // <Mult Exp>
-    Sym_Program           gold.SymbolId = 89 // <Program>
-    Sym_Returnstmnt       gold.SymbolId = 90 // <ReturnStmnt>
-    Sym_Singlestatement   gold.SymbolId = 91 // <Single Statement>
-    Sym_Statement         gold.SymbolId = 92 // <Statement>
-    Sym_Statements        gold.SymbolId = 93 // <Statements>
-    Sym_Value             gold.SymbolId = 94 // <Value>
-    Sym_Variable2         gold.SymbolId = 95 // <Variable>
-    Sym_Whileloop         gold.SymbolId = 96 // <WhileLoop>
+    Sym_A_btn             gold.SymbolId = 25 // 'a_btn'
+    Sym_Abs               gold.SymbolId = 26 // abs
+    Sym_B_btn             gold.SymbolId = 27 // 'b_btn'
+    Sym_Copy              gold.SymbolId = 28 // copy
+    Sym_Down              gold.SymbolId = 29 // down
+    Sym_Draw              gold.SymbolId = 30 // draw
+    Sym_Draw_text         gold.SymbolId = 31 // 'draw_text'
+    Sym_Else              gold.SymbolId = 32 // else
+    Sym_F1                gold.SymbolId = 33 // 'f1'
+    Sym_F10               gold.SymbolId = 34 // 'f10'
+    Sym_F11               gold.SymbolId = 35 // 'f11'
+    Sym_F12               gold.SymbolId = 36 // 'f12'
+    Sym_F13               gold.SymbolId = 37 // 'f13'
+    Sym_F14               gold.SymbolId = 38 // 'f14'
+    Sym_F15               gold.SymbolId = 39 // 'f15'
+    Sym_F16               gold.SymbolId = 40 // 'f16'
+    Sym_F2                gold.SymbolId = 41 // 'f2'
+    Sym_F3                gold.SymbolId = 42 // 'f3'
+    Sym_F4                gold.SymbolId = 43 // 'f4'
+    Sym_F5                gold.SymbolId = 44 // 'f5'
+    Sym_F6                gold.SymbolId = 45 // 'f6'
+    Sym_F7                gold.SymbolId = 46 // 'f7'
+    Sym_F8                gold.SymbolId = 47 // 'f8'
+    Sym_F9                gold.SymbolId = 48 // 'f9'
+    Sym_False             gold.SymbolId = 49 // false
+    Sym_Fill              gold.SymbolId = 50 // fill
+    Sym_Foreach           gold.SymbolId = 51 // foreach
+    Sym_Function          gold.SymbolId = 52 // function
+    Sym_Height            gold.SymbolId = 53 // height
+    Sym_If                gold.SymbolId = 54 // if
+    Sym_In                gold.SymbolId = 55 // in
+    Sym_Input             gold.SymbolId = 56 // Input
+    Sym_Insert            gold.SymbolId = 57 // insert
+    Sym_Is_list           gold.SymbolId = 58 // 'is_list'
+    Sym_Left              gold.SymbolId = 59 // left
+    Sym_Length            gold.SymbolId = 60 // length
+    Sym_Map               gold.SymbolId = 61 // map
+    Sym_Max               gold.SymbolId = 62 // max
+    Sym_Min               gold.SymbolId = 63 // min
+    Sym_Mod               gold.SymbolId = 64 // mod
+    Sym_New_list          gold.SymbolId = 65 // 'new_list'
+    Sym_Number            gold.SymbolId = 66 // Number
+    Sym_Pop               gold.SymbolId = 67 // pop
+    Sym_Pow               gold.SymbolId = 68 // pow
+    Sym_Push              gold.SymbolId = 69 // push
+    Sym_Random            gold.SymbolId = 70 // random
+    Sym_Remove            gold.SymbolId = 71 // remove
+    Sym_Return            gold.SymbolId = 72 // return
+    Sym_Right             gold.SymbolId = 73 // right
+    Sym_Sort              gold.SymbolId = 74 // sort
+    Sym_Sort_with         gold.SymbolId = 75 // 'sort_with'
+    Sym_Time              gold.SymbolId = 76 // time
+    Sym_True              gold.SymbolId = 77 // true
+    Sym_Up                gold.SymbolId = 78 // up
+    Sym_Variable          gold.SymbolId = 79 // Variable
+    Sym_While             gold.SymbolId = 80 // while
+    Sym_Width             gold.SymbolId = 81 // width
+    Sym_Addexp            gold.SymbolId = 82 // <Add Exp>
+    Sym_Array             gold.SymbolId = 83 // <Array>
+    Sym_Arrayvalues       gold.SymbolId = 84 // <ArrayValues>
+    Sym_Assign            gold.SymbolId = 85 // <Assign>
+    Sym_Block             gold.SymbolId = 86 // <Block>
+    Sym_Bool              gold.SymbolId = 87 // <Bool>
+    Sym_Boolalgexpression gold.SymbolId = 88 // <BoolAlgExpression>
+    Sym_Codeblock         gold.SymbolId = 89 // <CodeBlock>
+    Sym_Compexpression    gold.SymbolId = 90 // <Comp Expression>
+    Sym_Custfncall        gold.SymbolId = 91 // <Cust Fn Call>
+    Sym_Custfndef         gold.SymbolId = 92 // <Cust Fn Def>
+    Sym_Custfnname        gold.SymbolId = 93 // <Cust Fn Name>
+    Sym_Elseblock         gold.SymbolId = 94 // <ElseBlock>
+    Sym_Expression        gold.SymbolId = 95 // <Expression>
+    Sym_Fnparameters      gold.SymbolId = 96 // <Fn Parameters>
+    Sym_Fnparametersdef   gold.SymbolId = 97 // <Fn Parameters Def>
+    Sym_Foreachloop       gold.SymbolId = 98 // <ForEachLoop>
+    Sym_Functioncall      gold.SymbolId = 99 // <Function Call>
+    Sym_Functionname      gold.SymbolId = 100 // <Function Name>
+    Sym_Getindex          gold.SymbolId = 101 // <GetIndex>
+    Sym_Ifblock           gold.SymbolId = 102 // <IfBlock>
+    Sym_Lambdafncall      gold.SymbolId = 103 // <Lambda Fn Call>
+    Sym_Lambdafndef       gold.SymbolId = 104 // <Lambda Fn Def>
+    Sym_Lambdatarget      gold.SymbolId = 105 // <Lambda Target>
+    Sym_Methodcall        gold.SymbolId = 106 // <Method Call>
+    Sym_Methodname        gold.SymbolId = 107 // <Method Name>
+    Sym_Multexp           gold.SymbolId = 108 // <Mult Exp>
+    Sym_Program           gold.SymbolId = 109 // <Program>
+    Sym_Returnstmnt       gold.SymbolId = 110 // <ReturnStmnt>
+    Sym_Singlestatement   gold.SymbolId = 111 // <Single Statement>
+    Sym_Statement         gold.SymbolId = 112 // <Statement>
+    Sym_Statements        gold.SymbolId = 113 // <Statements>
+    Sym_Value             gold.SymbolId = 114 // <Value>
+    Sym_Variable2         gold.SymbolId = 115 // <Variable>
+    Sym_Whileloop         gold.SymbolId = 116 // <WhileLoop>
 )
 
 const (
@@ -181,20 +201,40 @@ const (
     Rule_MethodnameMap                gold.RuleId = 75 // <Method Name> ::= map
     Rule_MethodnameCopy               gold.RuleId = 76 // <Method Name> ::= copy
     Rule_MethodnameFill               gold.RuleId = 77 // <Method Name> ::= fill
-    Rule_MethodcallDotLparenRparen    gold.RuleId = 78 // <Method Call> ::= <Value> '.' <Method Name> '(' <ArrayValues> ')'
-    Rule_MethodcallDot                gold.RuleId = 79 // <Method Call> ::= <Value> '.' <Method Name>
-    Rule_LambdafndefFunctionMinusgt   gold.RuleId = 80 // <Lambda Fn Def> ::= function <Fn Parameters Def> '->' <Statement>
-    Rule_LambdafncallLparenRparen     gold.RuleId = 81 // <Lambda Fn Call> ::= <Lambda Target> '(' <Fn Parameters> ')'
-    Rule_Lambdatarget                 gold.RuleId = 82 // <Lambda Target> ::= <Variable>
-    Rule_Lambdatarget2                gold.RuleId = 83 // <Lambda Target> ::= <GetIndex>
-    Rule_Lambdatarget3                gold.RuleId = 84 // <Lambda Target> ::= <Method Call>
-    Rule_Lambdatarget4                gold.RuleId = 85 // <Lambda Target> ::= <Cust Fn Call>
-    Rule_Lambdatarget5                gold.RuleId = 86 // <Lambda Target> ::= <Lambda Fn Call>
-    Rule_LambdatargetLparenRparen     gold.RuleId = 87 // <Lambda Target> ::= '(' <Expression> ')'
-    Rule_ValueNumber                  gold.RuleId = 88 // <Value> ::= Number
-    Rule_Value                        gold.RuleId = 89 // <Value> ::= <Lambda Target>
-    Rule_Value2                       gold.RuleId = 90 // <Value> ::= <Bool>
-    Rule_Value3                       gold.RuleId = 91 // <Value> ::= <Array>
-    Rule_Value4                       gold.RuleId = 92 // <Value> ::= <Cust Fn Name>
-    Rule_Value5                       gold.RuleId = 93 // <Value> ::= <Lambda Fn Def>
+    Rule_FunctionnameTime             gold.RuleId = 78 // <Function Name> ::= time
+    Rule_FunctionnameRandom           gold.RuleId = 79 // <Function Name> ::= random
+    Rule_FunctionnameB_btn            gold.RuleId = 80 // <Function Name> ::= 'b_btn'
+    Rule_FunctionnameA_btn            gold.RuleId = 81 // <Function Name> ::= 'a_btn'
+    Rule_FunctionnameDown             gold.RuleId = 82 // <Function Name> ::= down
+    Rule_FunctionnameUp               gold.RuleId = 83 // <Function Name> ::= up
+    Rule_FunctionnameRight            gold.RuleId = 84 // <Function Name> ::= right
+    Rule_FunctionnameLeft             gold.RuleId = 85 // <Function Name> ::= left
+    Rule_FunctionnameHeight           gold.RuleId = 86 // <Function Name> ::= height
+    Rule_FunctionnameWidth            gold.RuleId = 87 // <Function Name> ::= width
+    Rule_FunctionnameDraw_text        gold.RuleId = 88 // <Function Name> ::= 'draw_text'
+    Rule_FunctionnameDraw             gold.RuleId = 89 // <Function Name> ::= draw
+    Rule_FunctionnameNew_list         gold.RuleId = 90 // <Function Name> ::= 'new_list'
+    Rule_FunctionnamePow              gold.RuleId = 91 // <Function Name> ::= pow
+    Rule_FunctionnameMax              gold.RuleId = 92 // <Function Name> ::= max
+    Rule_FunctionnameMin              gold.RuleId = 93 // <Function Name> ::= min
+    Rule_FunctionnameMod              gold.RuleId = 94 // <Function Name> ::= mod
+    Rule_FunctionnameAbs              gold.RuleId = 95 // <Function Name> ::= abs
+    Rule_FunctioncallLparenRparen     gold.RuleId = 96 // <Function Call> ::= <Function Name> '(' <ArrayValues> ')'
+    Rule_MethodcallDotLparenRparen    gold.RuleId = 97 // <Method Call> ::= <Value> '.' <Method Name> '(' <ArrayValues> ')'
+    Rule_MethodcallDot                gold.RuleId = 98 // <Method Call> ::= <Value> '.' <Method Name>
+    Rule_LambdafndefFunctionMinusgt   gold.RuleId = 99 // <Lambda Fn Def> ::= function <Fn Parameters Def> '->' <Statement>
+    Rule_LambdafncallLparenRparen     gold.RuleId = 100 // <Lambda Fn Call> ::= <Lambda Target> '(' <Fn Parameters> ')'
+    Rule_Lambdatarget                 gold.RuleId = 101 // <Lambda Target> ::= <Variable>
+    Rule_Lambdatarget2                gold.RuleId = 102 // <Lambda Target> ::= <GetIndex>
+    Rule_Lambdatarget3                gold.RuleId = 103 // <Lambda Target> ::= <Method Call>
+    Rule_Lambdatarget4                gold.RuleId = 104 // <Lambda Target> ::= <Cust Fn Call>
+    Rule_Lambdatarget5                gold.RuleId = 105 // <Lambda Target> ::= <Lambda Fn Call>
+    Rule_LambdatargetLparenRparen     gold.RuleId = 106 // <Lambda Target> ::= '(' <Expression> ')'
+    Rule_ValueNumber                  gold.RuleId = 107 // <Value> ::= Number
+    Rule_Value                        gold.RuleId = 108 // <Value> ::= <Lambda Target>
+    Rule_Value2                       gold.RuleId = 109 // <Value> ::= <Function Call>
+    Rule_Value3                       gold.RuleId = 110 // <Value> ::= <Bool>
+    Rule_Value4                       gold.RuleId = 111 // <Value> ::= <Array>
+    Rule_Value5                       gold.RuleId = 112 // <Value> ::= <Cust Fn Name>
+    Rule_Value6                       gold.RuleId = 113 // <Value> ::= <Lambda Fn Def>
 )

@@ -13,115 +13,135 @@
 ! -------------------------------------------------
 ! Terminals
 ! -------------------------------------------------
-Number = {Digit}+       
+Number = {Digit}+
 Variable = 'var_'{ValidVarLetter}
 ! -------------------------------------------------
 ! Rules
 ! -------------------------------------------------
 
-! The grammar starts below 
-<Program> ::= <Statements> 
+! The grammar starts below
+<Program> ::= <Statements>
 
-<CodeBlock> ::= '{'<Statements>'}'
-             
-<IfBlock> ::= if <Expression> <CodeBlock> <ElseBlock>
-<ElseBlock> ::= else <CodeBlock>   
-             |  
+<CodeBlock>          ::= '{'<Statements>'}'
 
-<WhileLoop> ::= while <Expression> <CodeBlock>
-<ForEachLoop> ::= foreach Variable in <Expression> <CodeBlock>
-<Block> ::= <IfBlock>
-          | <WhileLoop>
-          | <ForEachLoop>
+<IfBlock>            ::= if <Expression> <CodeBlock> <ElseBlock>
+<ElseBlock>          ::= else <CodeBlock>
+                      |
 
-<Single Statement> ::= <Statement>';'
-                    | <Block>
-                    | <Cust Fn Def>
+<WhileLoop>          ::= while <Expression> <CodeBlock>
+<ForEachLoop>        ::= foreach Variable in <Expression> <CodeBlock>
+<Block>              ::= <IfBlock>
+                      |  <WhileLoop>
+                      |  <ForEachLoop>
 
-<Statements> ::= <Single Statement><Statements>
-              | <Single Statement>
-              | <Statement>
-              
+<Single Statement>   ::= <Statement>';'
+                      | <Block>
+                      | <Cust Fn Def>
 
+<Statements>         ::= <Single Statement><Statements>
+                      | <Single Statement>
+                      | <Statement>
 
-<Statement> ::= <Expression>
-              | <ReturnStmnt>
+<Statement>          ::= <Expression>
+                      |  <ReturnStmnt>
 
-<ReturnStmnt> ::= 'return' <Expression>
-<Variable> ::= Variable 
-            | Input
-<Assign> ::= <Variable> '=' <Expression>
+<ReturnStmnt>        ::= 'return' <Expression>
+<Variable>           ::= Variable
+                      |  Input
+<Assign>             ::= <Variable> '=' <Expression>
 
-<Expression> ::= <BoolAlgExpression>
-               |  <Assign>
+<Expression>         ::= <BoolAlgExpression>
+                      |  <Assign>
 
 <BoolAlgExpression>  ::= <BoolAlgExpression> '&&' <Comp Expression>
-               |  <BoolAlgExpression> '||' <Comp Expression>
-               |  <Comp Expression>
+                      |  <BoolAlgExpression> '||' <Comp Expression>
+                      |  <Comp Expression>
 
 
-<Comp Expression>  ::= <Comp Expression> '>'  <Add Exp> 
-                    |  <Comp Expression> '<'  <Add Exp> 
-                    |  <Comp Expression> '==' <Add Exp>
-                    |  <Comp Expression> '!=' <Add Exp>
-                    |  <Add Exp> 
+<Comp Expression>    ::= <Comp Expression> '>'  <Add Exp>
+                      |  <Comp Expression> '<'  <Add Exp>
+                      |  <Comp Expression> '==' <Add Exp>
+                      |  <Comp Expression> '!=' <Add Exp>
+                      |  <Add Exp>
 
-<Add Exp>     ::= <Add Exp> '+' <Mult Exp>
-               |  <Add Exp> '-' <Mult Exp>
-               |  <Mult Exp> 
+<Add Exp>            ::= <Add Exp> '+' <Mult Exp>
+                      |  <Add Exp> '-' <Mult Exp>
+                      |  <Mult Exp>
 
-<Mult Exp>    ::= <Mult Exp> '*' <Value> 
-               |  <Mult Exp> '/' <Value> 
-               |  <Value> 
+<Mult Exp>           ::= <Mult Exp> '*' <Value>
+                      |  <Mult Exp> '/' <Value>
+                      |  <Value>
 
-               
-<Bool>    ::= true | false
-<GetIndex> ::= <Value>'['<Expression>']'           
-<ArrayValues> ::= <ArrayValues>','<Expression>
-               | <Expression>
-               |
-               
-<Array> ::= '['<ArrayValues>']'
-         
-<Cust Fn Name> ::= 'f1' | 'f2' | 'f3' | 'f4' | 'f5' | 'f6' | 'f7' | 'f8' | 'f9' | 'f10' | 'f11' | 'f12' | 'f13' | 'f14' | 'f15' | 'f16'
+<Bool>               ::= true | false
+<GetIndex>           ::= <Value>'['<Expression>']'
+<ArrayValues>        ::= <ArrayValues>','<Expression>
+                      | <Expression>
+                      |
 
-<Fn Parameters Def> ::= <Fn Parameters Def>',' <Variable>
-                      | <Variable>
-                     
-<Cust Fn Def> ::= 'function' <Cust Fn Name> ':' <Fn Parameters Def> <CodeBlock>
-<Fn Parameters> ::= <Fn Parameters>','<Expression>
-                  |  <Expression>
-<Cust Fn Call> ::= <Cust Fn Name>'('<Fn Parameters>')'
-                  
-<Method Name> ::= 'is_list'
-              | 'length'
-              | 'push'
-              | 'pop'
-              | 'insert'
-              | 'remove'
-              | 'sort'
-              | 'sort_with'
-              | 'map'
-              | 'copy'
-              | 'fill'
+<Array>              ::= '['<ArrayValues>']'
 
-<Method Call> ::= <Value> '.' <Method Name> '(' <ArrayValues> ')'
-               | <Value> '.' <Method Name>
-  
-<Lambda Fn Def> ::= 'function' <Fn Parameters Def> '->' <Statement>
-<Lambda Fn Call> ::= <Lambda Target>'('<Fn Parameters>')'
-             
-<Lambda Target> ::= <Variable>
-                 | <GetIndex>
-                 | <Method Call>
-                 | <Cust Fn Call>
-                 | <Lambda Fn Call>
-                 |  '(' <Expression> ')'
-                 
-<Value>       ::= Number
-               | <Lambda Target>
-               | <Bool>
-               | <Array>
-               | <Cust Fn Name>
-               | <Lambda Fn Def>
-               
+<Cust Fn Name>       ::= 'f1' | 'f2' | 'f3' | 'f4'
+                      |  'f5' | 'f6' | 'f7' | 'f8'
+                      | 'f9' | 'f10' | 'f11' | 'f12'
+                      | 'f13' | 'f14' | 'f15' | 'f16'
+
+<Fn Parameters Def>  ::= <Fn Parameters Def>',' <Variable>
+                      |  <Variable>
+
+<Cust Fn Def>        ::= 'function' <Cust Fn Name> ':' <Fn Parameters Def> <CodeBlock>
+<Fn Parameters>      ::= <Fn Parameters>','<Expression>
+                      |  <Expression>
+<Cust Fn Call>       ::= <Cust Fn Name>'('<Fn Parameters>')'
+
+<Method Name>        ::= 'is_list'
+                      |  'length'
+                      |  'push'
+                      |  'pop'
+                      |  'insert'
+                      |  'remove'
+                      |  'sort'
+                      |  'sort_with'
+                      |  'map'
+                      |  'copy'
+                      |  'fill'
+
+<Function Name>      ::= 'time'
+                      |  'random'
+                      |  'b_btn'
+                      |  'a_btn'
+                      |  'down'
+                      |  'up'
+                      |  'right'
+                      |  'left'
+                      |  'height'
+                      |  'width'
+                      |  'draw_text'
+                      |  'draw'
+                      |  'new_list'
+                      |  'pow'
+                      |  'max'
+                      |  'min'
+                      |  'mod'
+                      |  'abs'
+
+<Function Call>      ::= <Function Name> '('<ArrayValues>')'
+<Method Call>        ::= <Value> '.' <Method Name> '(' <ArrayValues> ')'
+                      |  <Value> '.' <Method Name>
+
+<Lambda Fn Def>      ::= 'function' <Fn Parameters Def> '->' <Statement>
+<Lambda Fn Call>     ::= <Lambda Target>'('<Fn Parameters>')'
+
+<Lambda Target>      ::= <Variable>
+                      | <GetIndex>
+                      | <Method Call>
+                      | <Cust Fn Call>
+                      | <Lambda Fn Call>
+                      |  '(' <Expression> ')'
+
+<Value>              ::= Number
+                      |  <Lambda Target>
+                      |  <Function Call>
+                      |  <Bool>
+                      |  <Array>
+                      |  <Cust Fn Name>
+                      |  <Lambda Fn Def>

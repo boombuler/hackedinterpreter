@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"errors"
 	"github.com/boombuler/gold"
 	"strconv"
@@ -29,17 +30,80 @@ func ConstBoolValue(t *gold.Token, c *Context) (Value, error) {
 	return nil, errors.New("unknown bool constant")
 }
 
-func getTypeName(v Value) string {
+type ValueType string
+
+const (
+	INT     ValueType = "Integer"
+	BOOL    ValueType = "Boolean"
+	LIST    ValueType = "List"
+	FUNC    ValueType = "Function"
+	UNKNOWN ValueType = "unknown"
+)
+
+func getTypeName(v Value) ValueType {
 	switch v.(type) {
 	case int:
-		return "Integer"
+		return INT
 	case bool:
-		return "Boolean"
+		return BOOL
 	case *List:
-		return "List"
+		return LIST
 	case *Function:
-		return "Function"
+		return FUNC
 	default:
-		return "undefined"
+		return UNKNOWN
 	}
+}
+
+func ToString(v Value) string {
+	var ToStringNested func(v Value, parentLists []*List) string
+	ToStringNested = func(v Value, parentLists []*List) string {
+		switch v.(type) {
+		case int:
+			return strconv.Itoa(v.(int))
+		case bool:
+			if v.(bool) {
+				return "true"
+			} else {
+				return "false"
+			}
+		case *List:
+			{
+				// check if list is in parentList
+				l := v.(*List)
+				for i, pl := range parentLists {
+					if l == pl {
+						if i < len(parentLists)-1 {
+							return "(parent Collection)"
+						} else {
+							return "(this Collection)"
+						}
+					}
+				}
+				curPL := make([]*List, len(parentLists), len(parentLists)+1)
+				copy(curPL, parentLists)
+				curPL = append(curPL, l)
+
+				buf := &bytes.Buffer{}
+				buf.WriteRune('[')
+
+				for i, val := range l.content {
+					if i != 0 {
+						buf.WriteString(", ")
+					}
+
+					buf.WriteString(ToStringNested(val, curPL))
+				}
+
+				buf.WriteRune(']')
+				return buf.String()
+			}
+		case *Function:
+			return string(FUNC)
+		default:
+			return ""
+		}
+	}
+
+	return ToStringNested(v, []*List{})
 }
