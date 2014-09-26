@@ -14,7 +14,7 @@ func ExecForEach(t *gold.Token, c *Context) (Value, error) {
 	if err != nil {
 		return nil, err
 	}
-	var res Value = 0
+	var res Value = nil
 	for _, val := range lst.content {
 		c.variables[varName] = val
 		res, err = Exec(t.Tokens[4], c)
