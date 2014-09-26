@@ -18,6 +18,7 @@ type Context struct {
 	result  Value
 	err     error
 	timeout *time.Timer
+	ui      UIInterface
 }
 
 func (c *Context) SetInput(val Value) {
@@ -31,6 +32,19 @@ func NewContext(d time.Duration) *Context {
 		c.timeout = time.NewTimer(d)
 	}
 	return c
+}
+
+func (c *Context) UI() UIInterface {
+	for c.parentContext != nil {
+		if c.ui != nil {
+			return c.ui
+		}
+		c = c.parentContext
+	}
+	if c.ui == nil {
+		c.ui = new(UIStub)
+	}
+	return c.ui
 }
 
 func (c *Context) newChildContext() *Context {

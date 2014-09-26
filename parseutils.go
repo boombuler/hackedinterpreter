@@ -122,49 +122,16 @@ func Exec(t *gold.Token, c *Context) (Value, error) {
 	}
 }
 
-func logAST(t *gold.Token, i int) {
-	for x := 0; x < i; x++ {
-		fmt.Print(" ")
-	}
-	fmt.Println(t.Text)
-	for _, token := range t.Tokens {
-		if !token.IsTerminal {
-			logAST(token, i+2)
-		}
-	}
-}
-
-func PrintAST(code string) {
-	reader := bytes.NewBuffer([]byte(code))
-	res, err := parser.Parse(reader, true)
-	if err != nil {
-		return
-	}
-	logAST(res, 0)
-}
-
 func ExecuteString(code string, maxDuration time.Duration) (Value, error) {
 	return ExecuteReader(bytes.NewBuffer([]byte(code)), NewContext(maxDuration))
 }
 
 func ExecuteReader(reader io.Reader, ctx *Context) (Value, error) {
-	res, err := parser.Parse(reader, true)
+	pc, err := Parse(reader)
 	if err != nil {
 		return nil, err
 	}
-
-	result := make(chan Value, 1)
-	resErr := make(chan error, 1)
-
-	go func() {
-		r, e := Exec(res, ctx)
-		resErr <- e
-		result <- r
-		close(resErr)
-		close(result)
-	}()
-
-	return <-result, <-resErr
+	return pc.Run(ctx)
 }
 
 var parser gold.Parser

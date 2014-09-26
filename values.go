@@ -33,11 +33,12 @@ func ConstBoolValue(t *gold.Token, c *Context) (Value, error) {
 type ValueType string
 
 const (
-	INT     ValueType = "Integer"
-	BOOL    ValueType = "Boolean"
-	LIST    ValueType = "List"
-	FUNC    ValueType = "Function"
-	UNKNOWN ValueType = "unknown"
+	INT       ValueType = "Integer"
+	BOOL      ValueType = "Boolean"
+	LIST      ValueType = "List"
+	FUNC      ValueType = "Function"
+	ANY       ValueType = "Anything"
+	DRAWINGSF ValueType = "drawing surface"
 )
 
 func getTypeName(v Value) ValueType {
@@ -51,7 +52,7 @@ func getTypeName(v Value) ValueType {
 	case *Function:
 		return FUNC
 	default:
-		return UNKNOWN
+		return ANY
 	}
 }
 
@@ -59,6 +60,8 @@ func ToString(v Value) string {
 	var ToStringNested func(v Value, parentLists []*List) string
 	ToStringNested = func(v Value, parentLists []*List) string {
 		switch v.(type) {
+		case ValueType:
+			return string(v.(ValueType)) // drawing surface etc.
 		case int:
 			return strconv.Itoa(v.(int))
 		case bool:

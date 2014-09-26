@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-type BuildInFn func(params []Value) (Value, error)
+type BuildInFn func(params []Value, c *Context) (Value, error)
 
 type BuildInFnSig struct {
 	ParamTypes []ValueType
@@ -17,29 +17,58 @@ type BuildInFnSig struct {
 }
 
 var BuildInFunctions map[gold.RuleId]BuildInFnSig = map[gold.RuleId]BuildInFnSig{
-	Rule_FunctionnameAbs:      {[]ValueType{INT}, Abs},
-	Rule_FunctionnameMod:      {[]ValueType{INT, INT}, Mod},
-	Rule_FunctionnameMin:      {[]ValueType{INT, INT}, Min},
-	Rule_FunctionnameMax:      {[]ValueType{INT, INT}, Max},
-	Rule_FunctionnameRandom:   {[]ValueType{INT}, Random},
-	Rule_FunctionnameTime:     {[]ValueType{}, Time},
-	Rule_FunctionnamePow:      {[]ValueType{INT, INT}, Pow},
-	Rule_FunctionnameNew_list: {[]ValueType{INT}, FnNewList},
-	/*
-	   Rule_FunctionnameB_btn
-	   Rule_FunctionnameA_btn
-	   Rule_FunctionnameDown
-	   Rule_FunctionnameUp
-	   Rule_FunctionnameRight
-	   Rule_FunctionnameLeft
-	   Rule_FunctionnameHeight
-	   Rule_FunctionnameWidth
-	   Rule_FunctionnameDraw_text
-	   Rule_FunctionnameDraw
-	*/
+	Rule_FunctionnameAbs:       {[]ValueType{INT}, Abs},
+	Rule_FunctionnameMod:       {[]ValueType{INT, INT}, Mod},
+	Rule_FunctionnameMin:       {[]ValueType{INT, INT}, Min},
+	Rule_FunctionnameMax:       {[]ValueType{INT, INT}, Max},
+	Rule_FunctionnameRandom:    {[]ValueType{INT}, Random},
+	Rule_FunctionnameTime:      {[]ValueType{}, Time},
+	Rule_FunctionnamePow:       {[]ValueType{INT, INT}, Pow},
+	Rule_FunctionnameNew_list:  {[]ValueType{INT}, FnNewList},
+	Rule_FunctionnameB_btn:     {[]ValueType{}, BtnB},
+	Rule_FunctionnameA_btn:     {[]ValueType{}, BtnA},
+	Rule_FunctionnameDown:      {[]ValueType{}, BtnDown},
+	Rule_FunctionnameUp:        {[]ValueType{}, BtnUp},
+	Rule_FunctionnameLeft:      {[]ValueType{}, BtnLeft},
+	Rule_FunctionnameRight:     {[]ValueType{}, BtnRight},
+	Rule_FunctionnameWidth:     {[]ValueType{}, Width},
+	Rule_FunctionnameHeight:    {[]ValueType{}, Height},
+	Rule_FunctionnameDraw_text: {[]ValueType{INT, INT, ANY}, DrawText},
+	Rule_FunctionnameDraw:      {[]ValueType{INT, INT}, Draw},
 }
 
-func FnNewList(params []Value) (Value, error) {
+func Draw(params []Value, c *Context) (Value, error) {
+	return DRAWINGSF, c.UI().Draw(params[0].(int), params[1].(int))
+}
+func DrawText(params []Value, c *Context) (Value, error) {
+	return DRAWINGSF, c.UI().DrawText(params[0].(int), params[1].(int), ToString(params[2]))
+}
+func Height(params []Value, c *Context) (Value, error) {
+	return c.UI().Height()
+}
+func Width(params []Value, c *Context) (Value, error) {
+	return c.UI().Width()
+}
+func BtnDown(params []Value, c *Context) (Value, error) {
+	return c.UI().Down()
+}
+func BtnUp(params []Value, c *Context) (Value, error) {
+	return c.UI().Up()
+}
+func BtnLeft(params []Value, c *Context) (Value, error) {
+	return c.UI().Left()
+}
+func BtnRight(params []Value, c *Context) (Value, error) {
+	return c.UI().Right()
+}
+
+func BtnA(params []Value, c *Context) (Value, error) {
+	return c.UI().BtnA()
+}
+func BtnB(params []Value, c *Context) (Value, error) {
+	return c.UI().BtnB()
+}
+func FnNewList(params []Value, c *Context) (Value, error) {
 	length := params[0].(int)
 	if length < 0 {
 		return nil, errors.New("list size must be >= 0")
@@ -54,18 +83,18 @@ func FnNewList(params []Value) (Value, error) {
 	return l, nil
 }
 
-func Pow(params []Value) (Value, error) {
+func Pow(params []Value, c *Context) (Value, error) {
 	a := params[0].(int)
 	b := params[1].(int)
 	return int(math.Pow(float64(a), float64(b))), nil
 }
 
-func Time(params []Value) (Value, error) {
+func Time(params []Value, c *Context) (Value, error) {
 	d := time.Now().Sub(StartTime)
 	return int(int(d.Seconds() * 1000)), nil
 }
 
-func Random(params []Value) (Value, error) {
+func Random(params []Value, c *Context) (Value, error) {
 	n := params[0].(int)
 	if n <= 0 {
 		return 0, errors.New("random parameter must be > 0")
@@ -73,13 +102,13 @@ func Random(params []Value) (Value, error) {
 
 	return int(rand.Int63n(int64(n))), nil
 }
-func Mod(params []Value) (Value, error) {
+func Mod(params []Value, c *Context) (Value, error) {
 	v1 := params[0].(int)
 	v2 := params[1].(int)
 	return v1 % v2, nil
 }
 
-func Min(params []Value) (Value, error) {
+func Min(params []Value, c *Context) (Value, error) {
 	v1 := params[0].(int)
 	v2 := params[1].(int)
 	if v1 < v2 {
@@ -88,7 +117,7 @@ func Min(params []Value) (Value, error) {
 	return v2, nil
 }
 
-func Max(params []Value) (Value, error) {
+func Max(params []Value, c *Context) (Value, error) {
 	v1 := params[0].(int)
 	v2 := params[1].(int)
 	if v1 < v2 {
@@ -97,7 +126,7 @@ func Max(params []Value) (Value, error) {
 	return v2, nil
 }
 
-func Abs(params []Value) (Value, error) {
+func Abs(params []Value, c *Context) (Value, error) {
 	val := params[0].(int)
 	if val < 0 {
 		return -val, nil
@@ -123,10 +152,10 @@ func CallBuildInFn(t *gold.Token, c *Context) (Value, error) {
 	for i := 0; i < len(params); i++ {
 		pt := getTypeName(params[i])
 		wt := sig.ParamTypes[i]
-		if pt != wt {
+		if pt != wt && wt != ANY {
 			return nil, fmt.Errorf("wrong parameter type. got %v but expected %v", pt, wt)
 		}
 	}
 
-	return sig.Func(params)
+	return sig.Func(params, c)
 }

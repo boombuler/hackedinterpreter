@@ -10,6 +10,7 @@ import (
 
 var timeOut = flag.Duration("timeout", DefaultTimeout, "defines the maximum runtime")
 var input = flag.String("input", "", "defines what should be used as Input value.")
+var game = flag.Bool("game", false, "run the code in freestyle mode. Input and timeout will be ignored!")
 
 func usageEx() {
 	prName := path.Base(os.Args[0])
@@ -20,6 +21,16 @@ func usageEx() {
 	flag.PrintDefaults()
 }
 
+func loadCodeFromFile(fileName string) (*ParsedCode, error) {
+	fCode, err := os.Open(fileName)
+	if err != nil {
+		return nil, err
+	} else {
+		defer fCode.Close()
+		return Parse(fCode)
+	}
+}
+
 func main() {
 	flag.Usage = usageEx
 
@@ -28,29 +39,33 @@ func main() {
 		flag.Usage()
 		return
 	}
-	codeFile := flag.Arg(0)
-	fCode, err := os.Open(codeFile)
+	code, err := loadCodeFromFile(flag.Arg(0))
+
 	if err != nil {
 		flag.Usage()
 
 		fmt.Println()
 		fmt.Println(err)
+		return
 	}
-	defer fCode.Close()
 
-	ctx := NewContext(*timeOut)
+	if *game {
+		RunGame(code)
+	} else {
+		ctx := NewContext(*timeOut)
 
-	if *input != "" {
-		inpVal, err := ExecuteString(*input, 100*time.Millisecond)
-		if err != nil {
-			fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
-			return
+		if *input != "" {
+			inpVal, err := ExecuteString(*input, 100*time.Millisecond)
+			if err != nil {
+				fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
+				return
+			}
+			ctx.SetInput(inpVal)
 		}
-		ctx.SetInput(inpVal)
+		res, err := code.Run(ctx)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, err)
+		}
+		fmt.Fprintln(os.Stdout, ToString(res))
 	}
-	res, err := ExecuteReader(fCode, ctx)
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-	}
-	fmt.Fprintln(os.Stdout, ToString(res))
 }
