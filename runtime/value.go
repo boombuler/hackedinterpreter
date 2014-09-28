@@ -1,0 +1,179 @@
+package runtime
+
+import (
+	"bytes"
+	"fmt"
+	"strconv"
+)
+
+type Callable interface {
+	Call(c *Context) (Value, error)
+}
+type Value interface{}
+type ValueType string
+
+const (
+	INT       ValueType = "Integer"
+	BOOL      ValueType = "Boolean"
+	LIST      ValueType = "List"
+	FUNC      ValueType = "Function"
+	ANY       ValueType = "Anything"
+	DRAWINGSF ValueType = "drawing surface"
+)
+
+func getType(v Value) ValueType {
+	switch v.(type) {
+	case Int:
+		return INT
+	case Bool:
+		return BOOL
+	case *List:
+		return LIST
+	case *Function:
+		return FUNC
+	default:
+		return ANY
+	}
+}
+
+func callList(c Callable, ctx *Context) (*List, error) {
+	val, err := c.Call(ctx)
+	if err != nil {
+		return nil, err
+	}
+	list, ok := val.(*List)
+	if !ok {
+		return nil, fmt.Errorf("List expected got %v", val)
+	}
+	return list, nil
+}
+
+func callInt(c Callable, ctx *Context) (Int, error) {
+	val, err := c.Call(ctx)
+	if err != nil {
+		return 0, err
+	}
+	iv, ok := val.(Int)
+	if !ok {
+		return 0, fmt.Errorf("Integer expected got %v", val)
+	}
+	return iv, nil
+}
+
+func callBool(c Callable, ctx *Context) (Bool, error) {
+	val, err := c.Call(ctx)
+	if err != nil {
+		return false, err
+	}
+	bv, ok := val.(Bool)
+	if !ok {
+		return false, fmt.Errorf("Boolean expected got %v", val)
+	}
+	return bv, nil
+}
+
+func AddToValues(valSlice, value Callable) Callable {
+	return callableFunc(func(c *Context) (Value, error) {
+		sliceV, err := valSlice.Call(c)
+		if err != nil {
+			return nil, err
+		}
+		slice := sliceV.([]Value)
+
+		val, err := value.Call(c)
+		if err != nil {
+			return nil, err
+		}
+
+		return append(slice, val), nil
+	})
+}
+
+func NewValues(value Callable) Callable {
+	return callableFunc(func(c *Context) (Value, error) {
+		val, err := value.Call(c)
+		if err != nil {
+			return nil, err
+		}
+
+		return []Value{val}, nil
+	})
+}
+
+func compare(v1, v2 Value) bool {
+	v1L, ok1 := v1.(*List)
+	v2L, ok2 := v2.(*List)
+	if ok1 != ok2 {
+		return false
+	}
+	if ok1 {
+		if len(v1L.content) == len(v2L.content) {
+			for i := 0; i < len(v1L.content); i++ {
+				if !compare(v1L.content[i], v2L.content[i]) {
+					return false
+				}
+			}
+			return true
+		}
+		return false
+	}
+	if getType(v1) == getType(v2) {
+		return v1 == v2
+	}
+	return false
+}
+
+func ToString(v Value) string {
+	var ToStringNested func(v Value, parentLists []*List) string
+	ToStringNested = func(v Value, parentLists []*List) string {
+		switch v.(type) {
+		case ValueType:
+			return string(v.(ValueType)) // drawing surface etc.
+		case int:
+			return strconv.Itoa(v.(int))
+		case bool:
+			if v.(bool) {
+				return "true"
+			} else {
+				return "false"
+			}
+		case *List:
+			{
+				// check if list is in parentList
+				l := v.(*List)
+				for i, pl := range parentLists {
+					if l == pl {
+						if i < len(parentLists)-1 {
+							return "(parent Collection)"
+						} else {
+							return "(this Collection)"
+						}
+					}
+				}
+				curPL := make([]*List, len(parentLists), len(parentLists)+1)
+				copy(curPL, parentLists)
+				curPL = append(curPL, l)
+
+				buf := &bytes.Buffer{}
+				buf.WriteRune('[')
+
+				for i, val := range l.content {
+					if i != 0 {
+						buf.WriteString(", ")
+					}
+
+					buf.WriteString(ToStringNested(val, curPL))
+				}
+
+				buf.WriteRune(']')
+				return buf.String()
+			}
+		case *Function:
+			return string(FUNC)
+		default:
+			return ""
+		}
+	}
+
+	return ToStringNested(v, []*List{})
+}
