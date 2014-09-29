@@ -82,7 +82,11 @@ func gameLoop(code runtime.Callable, closeChan <-chan struct{}, input <-chan ter
 				}
 			default:
 				termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
-				code.Call(ctx)
+				_, err := code.Call(ctx)
+				if err != nil {
+					termbox.Close()
+					panic(err.Error())
+				}
 				termbox.Flush()
 				ui.up = false
 				ui.down = false
