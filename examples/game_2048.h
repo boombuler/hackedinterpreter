@@ -21,7 +21,7 @@ function f1: var_a, var_b {
     }
 
 
-    var_c = 0;
+    var_c = 1;
     while var_c < 19 {
         draw(var_c, 1);
         draw(var_c, 14);
@@ -65,10 +65,10 @@ function f2: var_b {
 }
 
 // Handle Input
-function f3: var_a, var_b {
+function f3: var_a, var_b, var_i {
     var_m = false; // Any Moved.
 
-    if left() {
+    if var_i[0] { // Left
         var_d = 0;
         while var_d < 4 {
             var_c = 1;
@@ -98,7 +98,7 @@ function f3: var_a, var_b {
         }
         return var_m;
     }
-    if up() {
+    if var_i[1] { // Up
         var_d = 0;
         while var_d < 4 {
             var_c = 1;
@@ -128,7 +128,7 @@ function f3: var_a, var_b {
         }
         return var_m;
     }
-    if right() {
+    if var_i[2] { // Right
         var_d = 0;
         while var_d < 4 {
             var_c = 3;
@@ -158,7 +158,7 @@ function f3: var_a, var_b {
         }
         return var_m;
     }
-    if down() {
+    if var_i[3] { // Down
         var_d = 0;
         while var_d < 4 {
             var_c = 3;
@@ -317,7 +317,8 @@ if var_b == 0 {
 if var_a[2] == 0 {
     f1(var_a, var_b);
     if (time() - var_a[0]) > 200 { // Last input at least 200ms ago?
-        if f3(var_a, var_b) { // Something moved
+        var_i = [left(), up(), right(), down()];
+        if f3(var_a, var_b, var_i) { // Something moved
             var_a[0] = time();
             f2(var_b);        // Add random block
             f4(var_a, var_b); // check for game over
