@@ -143,6 +143,7 @@ var startTime time.Time
 
 func init() {
 	startTime = time.Now()
+	rand.Seed(time.Now().UnixNano())
 }
 
 func getCustFnIdx(name string) int {
