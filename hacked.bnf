@@ -1,3 +1,7 @@
+// Unofficial Comment Syntax:
+!lineComment     : '/' '/' {.} ('\n'|'\r') ;
+!blockComment    : '/' '*' {. | '*'} '*' '/' ;
+
 !whitespace      : ' ' | '\t' | '\n' | '\r' ;
 _id_chars        : 'a' - 'z'  | '_';
 int              : {'0'-'9'} ;
@@ -5,11 +9,13 @@ var              : 'v''a''r''_'('a' - 'o') ;
 fn_name          : 'a' - 'z' {_id_chars};
 cust_fn_name     : 'f' ('1' - '9')['0'-'6'];
 
+
+
+
+
 <<
 import _rt "../runtime"
-import "../token"
 >>
-// RETURN / Method_Call
 
 Program          : Statements;
 
@@ -21,7 +27,7 @@ Bool             : "true"                                               <<_rt.Bo
                  | "false"                                              <<_rt.Bool(false), nil>>
                  ;
 
-Callable_Object  : Variable                                             <<_rt.MakeGetVariable($0.(*token.Token).Lit), nil>>
+Callable_Object  : Variable                                             <<_rt.NewGetVariable(str($0)), nil>>
                  | "(" Expression ")"                                   <<$1, nil>>
                  | Get_Index                                            <<$0, nil>>
                  | Fn_Call                                              <<$0, nil>>
@@ -30,38 +36,38 @@ Callable_Object  : Variable                                             <<_rt.Ma
 
 Object           : Callable_Object                                      <<$0, nil>>
                  | Bool                                                 <<$0, nil>>
-                 | int                                                  <<_rt.NewConstInt($0.(*token.Token).Lit)>>
+                 | int                                                  <<_rt.NewConstInt(str($0))>>
                  | ListDef                                              <<$0, nil>>
                  | Method_Call                                          <<$0, nil>>
                  ;
 
-Mult_Expr        : Mult_Expr "*" Object                                 <<_rt.MakeMul(c($0), c($2)), nil>>
-                 | Mult_Expr "/" Object                                 <<_rt.MakeDiv(c($0), c($2)), nil>>
+Mult_Expr        : Mult_Expr "*" Object                                 <<_rt.NewMul(c($0), c($2)), nil>>
+                 | Mult_Expr "/" Object                                 <<_rt.NewDiv(c($0), c($2)), nil>>
                  | Object                                               <<$0, nil>>
                  ;
 
-Add_Expr         : Add_Expr "+" Mult_Expr                               <<_rt.MakeAdd(c($0), c($2)), nil>>
-                 | Add_Expr "-" Mult_Expr                               <<_rt.MakeSub(c($0), c($2)), nil>>
+Add_Expr         : Add_Expr "+" Mult_Expr                               <<_rt.NewAdd(c($0), c($2)), nil>>
+                 | Add_Expr "-" Mult_Expr                               <<_rt.NewSub(c($0), c($2)), nil>>
                  | Mult_Expr                                            <<$0, nil>>
                  ;
 
-Comp_Expr        : Comp_Expr ">" Add_Expr                               <<_rt.MakeGt(c($0), c($2)), nil>>
-                 | Comp_Expr "<" Add_Expr                               <<_rt.MakeLt(c($0), c($2)), nil>>
-                 | Comp_Expr "==" Add_Expr                              <<_rt.MakeEqual(c($0), c($2)), nil>>
-                 | Comp_Expr "!=" Add_Expr                              <<_rt.MakeNotEqual(c($0), c($2)), nil>>
+Comp_Expr        : Comp_Expr ">" Add_Expr                               <<_rt.NewGt(c($0), c($2)), nil>>
+                 | Comp_Expr "<" Add_Expr                               <<_rt.NewLt(c($0), c($2)), nil>>
+                 | Comp_Expr "==" Add_Expr                              <<_rt.NewEqual(c($0), c($2)), nil>>
+                 | Comp_Expr "!=" Add_Expr                              <<_rt.NewNotEqual(c($0), c($2)), nil>>
                  | Add_Expr                                             <<$0, nil>>
                  ;
 
-Bool_Expr        : Bool_Expr "&&" Comp_Expr                             <<_rt.MakeAND(c($0), c($2)), nil>>
-                 | Bool_Expr "||" Comp_Expr                             <<_rt.MakeOR(c($0), c($2)), nil>>
+Bool_Expr        : Bool_Expr "&&" Comp_Expr                             <<_rt.NewAND(c($0), c($2)), nil>>
+                 | Bool_Expr "||" Comp_Expr                             <<_rt.NewOR(c($0), c($2)), nil>>
                  | Comp_Expr                                            <<$0, nil>>
                  ;
 
-Get_Index        : Object "[" Expression "]"                            <<_rt.MakeGetListItem(c($0), c($2)), nil>>
+Get_Index        : Object "[" Expression "]"                            <<_rt.NewGetListItem(c($0), c($2)), nil>>
                  ;
 
-Assign           : Variable "=" Expression                              <<_rt.MakeSetVariable($0.(*token.Token).Lit, c($2)), nil>>
-                 | Object "[" Expression "]" "=" Expression             <<_rt.MakeSetListItem(c($0), c($2), c($5)), nil>>
+Assign           : Variable "=" Expression                              <<_rt.NewSetVariable(str($0), c($2)), nil>>
+                 | Object "[" Expression "]" "=" Expression             <<_rt.NewSetListItem(c($0), c($2), c($5)), nil>>
                  ;
 
 Expression       : Bool_Expr                                            <<$0, nil>>
@@ -69,42 +75,43 @@ Expression       : Bool_Expr                                            <<$0, ni
                  | Lambda_Def                                           <<$0, nil>>
                  ;
 
-Values           : Values "," Expression                                <<_rt.AddToValues(c($0), c($2)), nil>>
+Values           : Values "," Expression                                <<_rt.NewAddToValues(c($0), c($2)), nil>>
                  | Expression                                           <<_rt.NewValues(c($0)), nil>>
                  ;
 
-ListDef          : "[]"                                                 <<_rt.MakeEmptyList(), nil>>
-                 | "[" Values "]"                                       <<_rt.MakeListValues(c($1)), nil>>
+ListDef          : "[" "]"                                              <<_rt.NewEmptyList(), nil>>
+                 | "[" Values "]"                                       <<_rt.NewListValues(c($1)), nil>>
                  ;
 
 Fn_Name          : fn_name                                              <<$0, nil>>
                  | cust_fn_name                                         <<$0, nil>>
                  ;
 
-Fn_Call          : Fn_Name "()"                                         <<_rt.CallFunction($0.(*token.Token).Lit, nil)>>
-                 | Fn_Name "(" Values ")"                               <<_rt.CallFunction($0.(*token.Token).Lit, c($2))>>
+Fn_Call          : Fn_Name "(" ")"                                      <<_rt.NewCallFunction(str($0), nil)>>
+                 | Fn_Name "(" Values ")"                               <<_rt.NewCallFunction(str($0), c($2))>>
                  ;
 
-Lambda_Call      : Callable_Object "(" Values ")"                       <<_rt.MakeCallLambda(c($0), c($2)), nil>>
+Lambda_Call      : Callable_Object "(" Values ")"                       <<_rt.NewCallLambda(c($0), c($2)), nil>>
                  ;
 
-Method_Call      : Object "." fn_name
-                 | Object "." Fn_Call
+Method_Call      : Object "." fn_name                                   <<_rt.NewMethodCall(c($0), str($2), nil)>>
+                 | Object "." fn_name "(" ")"                           <<_rt.NewMethodCall(c($0), str($2), nil)>>
+                 | Object "." fn_name "(" Values ")"                    <<_rt.NewMethodCall(c($0), str($2), c($4))>>
                  ;
 
 CodeBlock        : "{" Statements "}"                                   <<$1, nil>>
                  ;
 
 
-Func_Param_Def   : Func_Param_Def "," Variable                          <<_rt.AddToParamDef($0.([]string), $2.(*token.Token).Lit), nil>>
-                 | Variable                                             <<_rt.NewParamDef($0.(*token.Token).Lit), nil>>
+Func_Param_Def   : Func_Param_Def "," Variable                          <<_rt.NewAddToParamDef($0.([]string), str($2)), nil>>
+                 | Variable                                             <<_rt.NewParamDef(str($0)), nil>>
                  ;
 
-Cust_Fn_def      : "function" cust_fn_name ":" Func_Param_Def CodeBlock <<_rt.MakeCustFuncDev($1.(*token.Token).Lit, $3.([]string), c($4))>>
+Cust_Fn_def      : "function" cust_fn_name ":" Func_Param_Def CodeBlock <<_rt.NewCustFuncDev(str($1), $3.([]string), c($4))>>
                  ;
 
 Statement        : Expression                                           <<$0, nil>>
-                 | "return" Expression
+                 | "return" Expression                                  <<_rt.NewReturn(c($1)), nil>>
                  ;
 
 Single_Statement : Statement ";"                                        <<$0, nil>>
@@ -112,19 +119,19 @@ Single_Statement : Statement ";"                                        <<$0, ni
                  | Cust_Fn_def                                          <<$0, nil>>
                  ;
 
-Statements       : Single_Statement Statements                          <<_rt.MakeStatements(c($0), c($1)), nil>>
+Statements       : Single_Statement Statements                          <<_rt.NewStatements(c($0), c($1)), nil>>
                  | Single_Statement                                     <<$0, nil>>
                  | Statement                                            <<$0, nil>>
                  ;
 
-IfBlock          : "if" Expression CodeBlock "else" CodeBlock           <<_rt.MakeIfThenElse(c($1), c($2), c($4)), nil>>
-                 | "if" Expression CodeBlock                            <<_rt.MakeIfThenElse(c($1), c($2), nil), nil>>
+IfBlock          : "if" Expression CodeBlock "else" CodeBlock           <<_rt.NewIfThenElse(c($1), c($2), c($4)), nil>>
+                 | "if" Expression CodeBlock                            <<_rt.NewIfThenElse(c($1), c($2), nil), nil>>
                  ;
 
-WhileLoop        : "while" Expression CodeBlock                         <<_rt.MakeWhileLoop(c($1), c($2)), nil>>
+WhileLoop        : "while" Expression CodeBlock                         <<_rt.NewWhileLoop(c($1), c($2)), nil>>
                  ;
 
-ForEachLoop      : "foreach" Variable "in" Expression CodeBlock         <<_rt.MakeForEach($1.(*token.Token).Lit, c($3), c($4)), nil>>
+ForEachLoop      : "foreach" Variable "in" Expression CodeBlock         <<_rt.NewForEach(str($1), c($3), c($4)), nil>>
                  ;
 
 Block            : IfBlock                                              <<$0, nil>>
@@ -132,5 +139,5 @@ Block            : IfBlock                                              <<$0, ni
                  | ForEachLoop                                          <<$0, nil>>
                  ;
 
-Lambda_Def       : "function" Func_Param_Def "->" Statement             <<_rt.MakeLambda($1.([]string), c($3)), nil>>
+Lambda_Def       : "function" Func_Param_Def "->" Statement             <<_rt.NewLambdaDef($1.([]string), c($3)), nil>>
                  ;

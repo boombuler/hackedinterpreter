@@ -36,21 +36,19 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(31),		/* function */
+			shift(30),		/* function */
 			nil,		/* : */
-			shift(33),		/* return */
+			shift(32),		/* return */
 			nil,		/* ; */
-			shift(37),		/* if */
+			shift(36),		/* if */
 			nil,		/* else */
-			shift(39),		/* while */
-			shift(41),		/* foreach */
+			shift(38),		/* while */
+			shift(40),		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -83,10 +81,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -130,10 +126,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -175,12 +169,10 @@ var actionTab = actionTable{
 			reduce(6),		/* ||, reduce: Callable_Object */
 			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			shift(42),		/* = */
+			shift(41),		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -224,10 +216,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(2),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -271,10 +261,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(3),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -318,10 +306,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(12),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -365,10 +351,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -412,10 +396,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(5),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -442,7 +424,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(43),		/* ( */
+			shift(42),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(11),		/* *, reduce: Object */
@@ -459,10 +441,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -485,13 +465,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -502,18 +482,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -531,7 +509,7 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(51),		/* $, reduce: Statement */
+			reduce(52),		/* $, reduce: Statement */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -553,17 +531,15 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(51),		/* ;, reduce: Statement */
+			reduce(52),		/* ;, reduce: Statement */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -600,10 +576,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -647,10 +621,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -694,10 +666,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -737,15 +707,13 @@ var actionTab = actionTable{
 			reduce(18),		/* !=, reduce: Mult_Expr */
 			reduce(18),		/* &&, reduce: Mult_Expr */
 			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(70),		/* [ */
+			shift(68),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(71),		/* . */
+			shift(69),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -788,10 +756,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(13),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -835,10 +801,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(14),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -882,10 +846,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(15),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -915,8 +877,8 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(72),		/* * */
-			shift(73),		/* / */
+			shift(70),		/* * */
+			shift(71),		/* / */
 			reduce(21),		/* +, reduce: Add_Expr */
 			reduce(21),		/* -, reduce: Add_Expr */
 			reduce(21),		/* >, reduce: Add_Expr */
@@ -929,10 +891,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -964,8 +924,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(74),		/* + */
-			shift(75),		/* - */
+			shift(72),		/* + */
+			shift(73),		/* - */
 			reduce(26),		/* >, reduce: Comp_Expr */
 			reduce(26),		/* <, reduce: Comp_Expr */
 			reduce(26),		/* ==, reduce: Comp_Expr */
@@ -976,10 +936,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1013,20 +971,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(76),		/* > */
-			shift(77),		/* < */
-			shift(78),		/* == */
-			shift(79),		/* != */
+			shift(74),		/* > */
+			shift(75),		/* < */
+			shift(76),		/* == */
+			shift(77),		/* != */
 			reduce(29),		/* &&, reduce: Bool_Expr */
 			reduce(29),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1064,16 +1020,14 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(80),		/* && */
-			shift(81),		/* || */
+			shift(78),		/* && */
+			shift(79),		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1096,13 +1050,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -1113,18 +1067,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
+			shift(100),		/* [ */
+			shift(101),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -1164,10 +1116,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1211,10 +1161,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1236,39 +1184,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(38),		/* $, reduce: ListDef */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(107),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(38),		/* ;, reduce: ListDef */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -1288,7 +1234,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(109),		/* ( */
+			reduce(40),		/* (, reduce: Fn_Name */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
@@ -1305,10 +1251,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(110),		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1335,7 +1279,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			reduce(41),		/* (, reduce: Fn_Name */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
@@ -1352,10 +1296,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1377,12 +1319,57 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
+			reduce(56),		/* $, reduce: Single_Statement */
+			reduce(56),		/* var, reduce: Single_Statement */
+			reduce(56),		/* input, reduce: Single_Statement */
+			reduce(56),		/* true, reduce: Single_Statement */
+			reduce(56),		/* false, reduce: Single_Statement */
+			reduce(56),		/* (, reduce: Single_Statement */
+			nil,		/* ) */
+			reduce(56),		/* int, reduce: Single_Statement */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(56),		/* [, reduce: Single_Statement */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(56),		/* fn_name, reduce: Single_Statement */
+			reduce(56),		/* cust_fn_name, reduce: Single_Statement */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(56),		/* function, reduce: Single_Statement */
+			nil,		/* : */
+			reduce(56),		/* return, reduce: Single_Statement */
+			nil,		/* ; */
+			reduce(56),		/* if, reduce: Single_Statement */
+			nil,		/* else */
+			reduce(56),		/* while, reduce: Single_Statement */
+			reduce(56),		/* foreach, reduce: Single_Statement */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S30
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(41),		/* (, reduce: Fn_Name */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
@@ -1399,10 +1386,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			reduce(41),		/* (), reduce: Fn_Name */
+			shift(111),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1420,7 +1405,142 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S30
+	actionRow{ // S31
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(59),		/* $, reduce: Statements */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			shift(113),		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S32
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(4),		/* var */
+			shift(5),		/* input */
+			shift(7),		/* true */
+			shift(8),		/* false */
+			shift(10),		/* ( */
+			nil,		/* ) */
+			shift(16),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(23),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(115),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S33
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(58),		/* $, reduce: Statements */
+			shift(4),		/* var */
+			shift(5),		/* input */
+			shift(7),		/* true */
+			shift(8),		/* false */
+			shift(10),		/* ( */
+			nil,		/* ) */
+			shift(16),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(23),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(30),		/* function */
+			nil,		/* : */
+			shift(32),		/* return */
+			nil,		/* ; */
+			shift(36),		/* if */
+			nil,		/* else */
+			shift(38),		/* while */
+			shift(40),		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S34
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1446,10 +1566,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(55),		/* [], reduce: Single_Statement */
 			reduce(55),		/* fn_name, reduce: Single_Statement */
 			reduce(55),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1467,336 +1585,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S31
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			shift(114),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S32
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(58),		/* $, reduce: Statements */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			shift(116),		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S33
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(4),		/* var */
-			shift(5),		/* input */
-			shift(7),		/* true */
-			shift(8),		/* false */
-			shift(10),		/* ( */
-			nil,		/* ) */
-			shift(16),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(23),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(118),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S34
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(57),		/* $, reduce: Statements */
-			shift(4),		/* var */
-			shift(5),		/* input */
-			shift(7),		/* true */
-			shift(8),		/* false */
-			shift(10),		/* ( */
-			nil,		/* ) */
-			shift(16),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(23),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(31),		/* function */
-			nil,		/* : */
-			shift(33),		/* return */
-			nil,		/* ; */
-			shift(37),		/* if */
-			nil,		/* else */
-			shift(39),		/* while */
-			shift(41),		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
 	actionRow{ // S35
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(54),		/* $, reduce: Single_Statement */
-			reduce(54),		/* var, reduce: Single_Statement */
-			reduce(54),		/* input, reduce: Single_Statement */
-			reduce(54),		/* true, reduce: Single_Statement */
-			reduce(54),		/* false, reduce: Single_Statement */
-			reduce(54),		/* (, reduce: Single_Statement */
-			nil,		/* ) */
-			reduce(54),		/* int, reduce: Single_Statement */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(54),		/* [, reduce: Single_Statement */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(54),		/* [], reduce: Single_Statement */
-			reduce(54),		/* fn_name, reduce: Single_Statement */
-			reduce(54),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			reduce(54),		/* function, reduce: Single_Statement */
-			nil,		/* : */
-			reduce(54),		/* return, reduce: Single_Statement */
-			nil,		/* ; */
-			reduce(54),		/* if, reduce: Single_Statement */
-			nil,		/* else */
-			reduce(54),		/* while, reduce: Single_Statement */
-			reduce(54),		/* foreach, reduce: Single_Statement */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S36
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(63),		/* $, reduce: Block */
-			reduce(63),		/* var, reduce: Block */
-			reduce(63),		/* input, reduce: Block */
-			reduce(63),		/* true, reduce: Block */
-			reduce(63),		/* false, reduce: Block */
-			reduce(63),		/* (, reduce: Block */
-			nil,		/* ) */
-			reduce(63),		/* int, reduce: Block */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(63),		/* [, reduce: Block */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(63),		/* [], reduce: Block */
-			reduce(63),		/* fn_name, reduce: Block */
-			reduce(63),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			reduce(63),		/* function, reduce: Block */
-			nil,		/* : */
-			reduce(63),		/* return, reduce: Block */
-			nil,		/* ; */
-			reduce(63),		/* if, reduce: Block */
-			nil,		/* else */
-			reduce(63),		/* while, reduce: Block */
-			reduce(63),		/* foreach, reduce: Block */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S37
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(145),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S38
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1822,10 +1611,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(64),		/* [], reduce: Block */
 			reduce(64),		/* fn_name, reduce: Block */
 			reduce(64),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1843,18 +1630,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S39
+	actionRow{ // S36
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -1865,18 +1652,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			shift(141),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -1890,7 +1675,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S40
+	actionRow{ // S37
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1916,10 +1701,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(65),		/* [], reduce: Block */
 			reduce(65),		/* fn_name, reduce: Block */
 			reduce(65),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1937,13 +1720,103 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S41
+	actionRow{ // S38
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(148),		/* var */
-			shift(149),		/* input */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S39
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(66),		/* $, reduce: Block */
+			reduce(66),		/* var, reduce: Block */
+			reduce(66),		/* input, reduce: Block */
+			reduce(66),		/* true, reduce: Block */
+			reduce(66),		/* false, reduce: Block */
+			reduce(66),		/* (, reduce: Block */
+			nil,		/* ) */
+			reduce(66),		/* int, reduce: Block */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(66),		/* [, reduce: Block */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(66),		/* fn_name, reduce: Block */
+			reduce(66),		/* cust_fn_name, reduce: Block */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(66),		/* function, reduce: Block */
+			nil,		/* : */
+			reduce(66),		/* return, reduce: Block */
+			nil,		/* ; */
+			reduce(66),		/* if, reduce: Block */
+			nil,		/* else */
+			reduce(66),		/* while, reduce: Block */
+			reduce(66),		/* foreach, reduce: Block */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S40
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(144),		/* var */
+			shift(145),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -1963,10 +1836,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -1984,7 +1855,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S42
+	actionRow{ // S41
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2010,14 +1881,57 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(118),		/* function */
+			shift(115),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S42
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -2032,53 +1946,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S43
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S44
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2102,12 +1969,10 @@ var actionTab = actionTable{
 			reduce(6),		/* ||, reduce: Callable_Object */
 			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			shift(178),		/* = */
+			shift(173),		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -2125,7 +1990,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S45
+	actionRow{ // S44
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2151,10 +2016,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(2),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -2172,7 +2035,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S46
+	actionRow{ // S45
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2198,11 +2061,54 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(3),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S46
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(12),		/* ), reduce: Object */
+			nil,		/* int */
+			reduce(12),		/* *, reduce: Object */
+			reduce(12),		/* /, reduce: Object */
+			reduce(12),		/* +, reduce: Object */
+			reduce(12),		/* -, reduce: Object */
+			reduce(12),		/* >, reduce: Object */
+			reduce(12),		/* <, reduce: Object */
+			reduce(12),		/* ==, reduce: Object */
+			reduce(12),		/* !=, reduce: Object */
+			reduce(12),		/* &&, reduce: Object */
+			reduce(12),		/* ||, reduce: Object */
+			reduce(12),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(12),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2229,27 +2135,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(12),		/* ), reduce: Object */
+			reduce(4),		/* ), reduce: Bool */
 			nil,		/* int */
-			reduce(12),		/* *, reduce: Object */
-			reduce(12),		/* /, reduce: Object */
-			reduce(12),		/* +, reduce: Object */
-			reduce(12),		/* -, reduce: Object */
-			reduce(12),		/* >, reduce: Object */
-			reduce(12),		/* <, reduce: Object */
-			reduce(12),		/* ==, reduce: Object */
-			reduce(12),		/* !=, reduce: Object */
-			reduce(12),		/* &&, reduce: Object */
-			reduce(12),		/* ||, reduce: Object */
-			reduce(12),		/* [, reduce: Object */
+			reduce(4),		/* *, reduce: Bool */
+			reduce(4),		/* /, reduce: Bool */
+			reduce(4),		/* +, reduce: Bool */
+			reduce(4),		/* -, reduce: Bool */
+			reduce(4),		/* >, reduce: Bool */
+			reduce(4),		/* <, reduce: Bool */
+			reduce(4),		/* ==, reduce: Bool */
+			reduce(4),		/* !=, reduce: Bool */
+			reduce(4),		/* &&, reduce: Bool */
+			reduce(4),		/* ||, reduce: Bool */
+			reduce(4),		/* [, reduce: Bool */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(12),		/* ., reduce: Object */
+			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2276,27 +2180,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(4),		/* ), reduce: Bool */
+			reduce(5),		/* ), reduce: Bool */
 			nil,		/* int */
-			reduce(4),		/* *, reduce: Bool */
-			reduce(4),		/* /, reduce: Bool */
-			reduce(4),		/* +, reduce: Bool */
-			reduce(4),		/* -, reduce: Bool */
-			reduce(4),		/* >, reduce: Bool */
-			reduce(4),		/* <, reduce: Bool */
-			reduce(4),		/* ==, reduce: Bool */
-			reduce(4),		/* !=, reduce: Bool */
-			reduce(4),		/* &&, reduce: Bool */
-			reduce(4),		/* ||, reduce: Bool */
-			reduce(4),		/* [, reduce: Bool */
+			reduce(5),		/* *, reduce: Bool */
+			reduce(5),		/* /, reduce: Bool */
+			reduce(5),		/* +, reduce: Bool */
+			reduce(5),		/* -, reduce: Bool */
+			reduce(5),		/* >, reduce: Bool */
+			reduce(5),		/* <, reduce: Bool */
+			reduce(5),		/* ==, reduce: Bool */
+			reduce(5),		/* !=, reduce: Bool */
+			reduce(5),		/* &&, reduce: Bool */
+			reduce(5),		/* ||, reduce: Bool */
+			reduce(5),		/* [, reduce: Bool */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(4),		/* ., reduce: Bool */
+			reduce(5),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2322,28 +2224,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(5),		/* ), reduce: Bool */
+			shift(174),		/* ( */
+			reduce(11),		/* ), reduce: Object */
 			nil,		/* int */
-			reduce(5),		/* *, reduce: Bool */
-			reduce(5),		/* /, reduce: Bool */
-			reduce(5),		/* +, reduce: Bool */
-			reduce(5),		/* -, reduce: Bool */
-			reduce(5),		/* >, reduce: Bool */
-			reduce(5),		/* <, reduce: Bool */
-			reduce(5),		/* ==, reduce: Bool */
-			reduce(5),		/* !=, reduce: Bool */
-			reduce(5),		/* &&, reduce: Bool */
-			reduce(5),		/* ||, reduce: Bool */
-			reduce(5),		/* [, reduce: Bool */
+			reduce(11),		/* *, reduce: Object */
+			reduce(11),		/* /, reduce: Object */
+			reduce(11),		/* +, reduce: Object */
+			reduce(11),		/* -, reduce: Object */
+			reduce(11),		/* >, reduce: Object */
+			reduce(11),		/* <, reduce: Object */
+			reduce(11),		/* ==, reduce: Object */
+			reduce(11),		/* !=, reduce: Object */
+			reduce(11),		/* &&, reduce: Object */
+			reduce(11),		/* ||, reduce: Object */
+			reduce(11),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(5),		/* ., reduce: Bool */
+			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2365,35 +2265,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(179),		/* ( */
-			reduce(11),		/* ), reduce: Object */
-			nil,		/* int */
-			reduce(11),		/* *, reduce: Object */
-			reduce(11),		/* /, reduce: Object */
-			reduce(11),		/* +, reduce: Object */
-			reduce(11),		/* -, reduce: Object */
-			reduce(11),		/* >, reduce: Object */
-			reduce(11),		/* <, reduce: Object */
-			reduce(11),		/* ==, reduce: Object */
-			reduce(11),		/* !=, reduce: Object */
-			reduce(11),		/* &&, reduce: Object */
-			reduce(11),		/* ||, reduce: Object */
-			reduce(11),		/* [, reduce: Object */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(11),		/* ., reduce: Object */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -2412,59 +2310,12 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(69),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S52
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(181),		/* ) */
+			shift(176),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -2480,10 +2331,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -2501,7 +2350,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S53
+	actionRow{ // S52
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2527,10 +2376,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -2548,7 +2395,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S54
+	actionRow{ // S53
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2574,10 +2421,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -2595,7 +2440,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S55
+	actionRow{ // S54
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2621,11 +2466,54 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S55
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(18),		/* ), reduce: Mult_Expr */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(177),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(178),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2652,27 +2540,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(18),		/* ), reduce: Mult_Expr */
+			reduce(13),		/* ), reduce: Object */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(182),		/* [ */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(183),		/* . */
+			reduce(13),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2699,27 +2585,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(13),		/* ), reduce: Object */
+			reduce(14),		/* ), reduce: Object */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
+			reduce(14),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2746,27 +2630,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(14),		/* ), reduce: Object */
+			reduce(15),		/* ), reduce: Object */
 			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
+			reduce(15),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2793,27 +2675,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(15),		/* ), reduce: Object */
+			reduce(21),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
+			shift(179),		/* * */
+			shift(180),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -2840,26 +2720,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(21),		/* ), reduce: Add_Expr */
+			reduce(26),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			shift(184),		/* * */
-			shift(185),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			shift(181),		/* + */
+			shift(182),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -2887,26 +2765,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(26),		/* ), reduce: Comp_Expr */
+			reduce(29),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(186),		/* + */
-			shift(187),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			shift(183),		/* > */
+			shift(184),		/* < */
+			shift(185),		/* == */
+			shift(186),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -2934,26 +2810,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(29),		/* ), reduce: Bool_Expr */
+			reduce(33),		/* ), reduce: Expression */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(188),		/* > */
-			shift(189),		/* < */
-			shift(190),		/* == */
-			shift(191),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(187),		/* && */
+			shift(188),		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -2976,13 +2850,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(33),		/* ), reduce: Expression */
-			nil,		/* int */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -2991,20 +2865,18 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(192),		/* && */
-			shift(193),		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(189),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -3019,53 +2891,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S64
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(108),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S65
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3091,10 +2916,53 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S65
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(35),		/* ), reduce: Expression */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3121,8 +2989,8 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(35),		/* ), reduce: Expression */
+			shift(191),		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -3138,10 +3006,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3164,32 +3030,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(38),		/* ), reduce: ListDef */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -3211,13 +3075,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(195),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -3228,18 +3092,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(196),		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -3258,8 +3120,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
+			nil,		/* var */
+			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -3279,10 +3141,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
+			shift(218),		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3305,13 +3165,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(220),		/* var */
+			shift(221),		/* input */
+			shift(7),		/* true */
+			shift(8),		/* false */
+			shift(10),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(16),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -3322,18 +3182,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(23),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -3352,13 +3210,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(220),		/* var */
+			shift(221),		/* input */
+			shift(7),		/* true */
+			shift(8),		/* false */
+			shift(10),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(16),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -3369,14 +3227,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(23),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			shift(226),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3399,8 +3255,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3420,10 +3276,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3446,8 +3300,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3467,10 +3321,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3493,8 +3345,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3514,10 +3366,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3540,8 +3390,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3561,10 +3411,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3587,8 +3435,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3608,10 +3456,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3634,8 +3480,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3655,10 +3501,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3681,8 +3525,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3702,10 +3546,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3728,8 +3570,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
+			shift(220),		/* var */
+			shift(221),		/* input */
 			shift(7),		/* true */
 			shift(8),		/* false */
 			shift(10),		/* ( */
@@ -3749,10 +3591,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -3771,100 +3611,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S80
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
-			shift(7),		/* true */
-			shift(8),		/* false */
-			shift(10),		/* ( */
-			nil,		/* ) */
-			shift(16),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(23),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S81
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(228),		/* var */
-			shift(229),		/* input */
-			shift(7),		/* true */
-			shift(8),		/* false */
-			shift(10),		/* ( */
-			nil,		/* ) */
-			shift(16),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(23),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S82
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3888,12 +3634,10 @@ var actionTab = actionTable{
 			reduce(6),		/* ||, reduce: Callable_Object */
 			reduce(6),		/* [, reduce: Callable_Object */
 			reduce(6),		/* ], reduce: Callable_Object */
-			shift(241),		/* = */
+			shift(233),		/* = */
 			reduce(6),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -3911,7 +3655,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S83
+	actionRow{ // S81
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3937,10 +3681,8 @@ var actionTab = actionTable{
 			reduce(2),		/* ], reduce: Variable */
 			reduce(2),		/* =, reduce: Variable */
 			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -3958,7 +3700,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S84
+	actionRow{ // S82
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3984,11 +3726,99 @@ var actionTab = actionTable{
 			reduce(3),		/* ], reduce: Variable */
 			reduce(3),		/* =, reduce: Variable */
 			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S83
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(12),		/* *, reduce: Object */
+			reduce(12),		/* /, reduce: Object */
+			reduce(12),		/* +, reduce: Object */
+			reduce(12),		/* -, reduce: Object */
+			reduce(12),		/* >, reduce: Object */
+			reduce(12),		/* <, reduce: Object */
+			reduce(12),		/* ==, reduce: Object */
+			reduce(12),		/* !=, reduce: Object */
+			reduce(12),		/* &&, reduce: Object */
+			reduce(12),		/* ||, reduce: Object */
+			reduce(12),		/* [, reduce: Object */
+			reduce(12),		/* ], reduce: Object */
+			nil,		/* = */
+			reduce(12),		/* ,, reduce: Object */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(12),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S84
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(4),		/* *, reduce: Bool */
+			reduce(4),		/* /, reduce: Bool */
+			reduce(4),		/* +, reduce: Bool */
+			reduce(4),		/* -, reduce: Bool */
+			reduce(4),		/* >, reduce: Bool */
+			reduce(4),		/* <, reduce: Bool */
+			reduce(4),		/* ==, reduce: Bool */
+			reduce(4),		/* !=, reduce: Bool */
+			reduce(4),		/* &&, reduce: Bool */
+			reduce(4),		/* ||, reduce: Bool */
+			reduce(4),		/* [, reduce: Bool */
+			reduce(4),		/* ], reduce: Bool */
+			nil,		/* = */
+			reduce(4),		/* ,, reduce: Bool */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4017,25 +3847,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(12),		/* *, reduce: Object */
-			reduce(12),		/* /, reduce: Object */
-			reduce(12),		/* +, reduce: Object */
-			reduce(12),		/* -, reduce: Object */
-			reduce(12),		/* >, reduce: Object */
-			reduce(12),		/* <, reduce: Object */
-			reduce(12),		/* ==, reduce: Object */
-			reduce(12),		/* !=, reduce: Object */
-			reduce(12),		/* &&, reduce: Object */
-			reduce(12),		/* ||, reduce: Object */
-			reduce(12),		/* [, reduce: Object */
-			reduce(12),		/* ], reduce: Object */
+			reduce(5),		/* *, reduce: Bool */
+			reduce(5),		/* /, reduce: Bool */
+			reduce(5),		/* +, reduce: Bool */
+			reduce(5),		/* -, reduce: Bool */
+			reduce(5),		/* >, reduce: Bool */
+			reduce(5),		/* <, reduce: Bool */
+			reduce(5),		/* ==, reduce: Bool */
+			reduce(5),		/* !=, reduce: Bool */
+			reduce(5),		/* &&, reduce: Bool */
+			reduce(5),		/* ||, reduce: Bool */
+			reduce(5),		/* [, reduce: Bool */
+			reduce(5),		/* ], reduce: Bool */
 			nil,		/* = */
-			reduce(12),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(5),		/* ,, reduce: Bool */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(12),		/* ., reduce: Object */
+			reduce(5),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4061,28 +3889,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(234),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(4),		/* *, reduce: Bool */
-			reduce(4),		/* /, reduce: Bool */
-			reduce(4),		/* +, reduce: Bool */
-			reduce(4),		/* -, reduce: Bool */
-			reduce(4),		/* >, reduce: Bool */
-			reduce(4),		/* <, reduce: Bool */
-			reduce(4),		/* ==, reduce: Bool */
-			reduce(4),		/* !=, reduce: Bool */
-			reduce(4),		/* &&, reduce: Bool */
-			reduce(4),		/* ||, reduce: Bool */
-			reduce(4),		/* [, reduce: Bool */
-			reduce(4),		/* ], reduce: Bool */
+			reduce(11),		/* *, reduce: Object */
+			reduce(11),		/* /, reduce: Object */
+			reduce(11),		/* +, reduce: Object */
+			reduce(11),		/* -, reduce: Object */
+			reduce(11),		/* >, reduce: Object */
+			reduce(11),		/* <, reduce: Object */
+			reduce(11),		/* ==, reduce: Object */
+			reduce(11),		/* !=, reduce: Object */
+			reduce(11),		/* &&, reduce: Object */
+			reduce(11),		/* ||, reduce: Object */
+			reduce(11),		/* [, reduce: Object */
+			reduce(11),		/* ], reduce: Object */
 			nil,		/* = */
-			reduce(4),		/* ,, reduce: Bool */
-			nil,		/* [] */
+			reduce(11),		/* ,, reduce: Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(4),		/* ., reduce: Bool */
+			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4104,35 +3930,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(5),		/* *, reduce: Bool */
-			reduce(5),		/* /, reduce: Bool */
-			reduce(5),		/* +, reduce: Bool */
-			reduce(5),		/* -, reduce: Bool */
-			reduce(5),		/* >, reduce: Bool */
-			reduce(5),		/* <, reduce: Bool */
-			reduce(5),		/* ==, reduce: Bool */
-			reduce(5),		/* !=, reduce: Bool */
-			reduce(5),		/* &&, reduce: Bool */
-			reduce(5),		/* ||, reduce: Bool */
-			reduce(5),		/* [, reduce: Bool */
-			reduce(5),		/* ], reduce: Bool */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(5),		/* ,, reduce: Bool */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(5),		/* ., reduce: Bool */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -4147,100 +3971,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S88
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(242),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(11),		/* *, reduce: Object */
-			reduce(11),		/* /, reduce: Object */
-			reduce(11),		/* +, reduce: Object */
-			reduce(11),		/* -, reduce: Object */
-			reduce(11),		/* >, reduce: Object */
-			reduce(11),		/* <, reduce: Object */
-			reduce(11),		/* ==, reduce: Object */
-			reduce(11),		/* !=, reduce: Object */
-			reduce(11),		/* &&, reduce: Object */
-			reduce(11),		/* ||, reduce: Object */
-			reduce(11),		/* [, reduce: Object */
-			reduce(11),		/* ], reduce: Object */
-			nil,		/* = */
-			reduce(11),		/* ,, reduce: Object */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(11),		/* ., reduce: Object */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S89
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(69),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S90
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4266,10 +3996,8 @@ var actionTab = actionTable{
 			reduce(37),		/* ], reduce: Values */
 			nil,		/* = */
 			reduce(37),		/* ,, reduce: Values */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4287,7 +4015,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S91
+	actionRow{ // S89
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4313,10 +4041,8 @@ var actionTab = actionTable{
 			reduce(8),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			reduce(8),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -4334,7 +4060,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S92
+	actionRow{ // S90
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4360,10 +4086,8 @@ var actionTab = actionTable{
 			reduce(9),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			reduce(9),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -4381,7 +4105,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S93
+	actionRow{ // S91
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4407,11 +4131,99 @@ var actionTab = actionTable{
 			reduce(10),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			reduce(10),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S92
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(236),		/* [ */
+			reduce(18),		/* ], reduce: Mult_Expr */
+			nil,		/* = */
+			reduce(18),		/* ,, reduce: Mult_Expr */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(237),		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S93
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
+			reduce(13),		/* ], reduce: Object */
+			nil,		/* = */
+			reduce(13),		/* ,, reduce: Object */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(13),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4440,25 +4252,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(244),		/* [ */
-			reduce(18),		/* ], reduce: Mult_Expr */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
+			reduce(14),		/* ], reduce: Object */
 			nil,		/* = */
-			reduce(18),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			reduce(14),		/* ,, reduce: Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(245),		/* . */
+			reduce(14),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4487,25 +4297,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
-			reduce(13),		/* ], reduce: Object */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
+			reduce(15),		/* ], reduce: Object */
 			nil,		/* = */
-			reduce(13),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(15),		/* ,, reduce: Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
+			reduce(15),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4534,25 +4342,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
-			reduce(14),		/* ], reduce: Object */
+			shift(238),		/* * */
+			shift(239),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
+			reduce(21),		/* ], reduce: Add_Expr */
 			nil,		/* = */
-			reduce(14),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(21),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4581,25 +4387,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
-			reduce(15),		/* ], reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(240),		/* + */
+			shift(241),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(26),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			reduce(15),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(26),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -4628,24 +4432,22 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(246),		/* * */
-			shift(247),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(242),		/* > */
+			shift(243),		/* < */
+			shift(244),		/* == */
+			shift(245),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
-			reduce(21),		/* ], reduce: Add_Expr */
+			reduce(29),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
-			reduce(21),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
+			reduce(29),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4677,22 +4479,20 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(248),		/* + */
-			shift(249),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(246),		/* && */
+			shift(247),		/* || */
 			nil,		/* [ */
-			reduce(26),		/* ], reduce: Comp_Expr */
+			reduce(33),		/* ], reduce: Expression */
 			nil,		/* = */
-			reduce(26),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			reduce(33),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4715,35 +4515,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(250),		/* > */
-			shift(251),		/* < */
-			shift(252),		/* == */
-			shift(253),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
-			reduce(29),		/* ], reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(248),		/* ] */
 			nil,		/* = */
-			reduce(29),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -4761,6 +4559,51 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
+			reduce(38),		/* $, reduce: ListDef */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			reduce(38),		/* ;, reduce: ListDef */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S102
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
@@ -4777,67 +4620,18 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(254),		/* && */
-			shift(255),		/* || */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(33),		/* ], reduce: Expression */
+			reduce(34),		/* ], reduce: Expression */
 			nil,		/* = */
-			reduce(33),		/* ,, reduce: Expression */
-			nil,		/* [] */
+			reduce(34),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S102
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(108),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -4874,13 +4668,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			reduce(34),		/* ], reduce: Expression */
+			reduce(35),		/* ], reduce: Expression */
 			nil,		/* = */
-			reduce(34),		/* ,, reduce: Expression */
-			nil,		/* [] */
+			reduce(35),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4921,13 +4713,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			reduce(35),		/* ], reduce: Expression */
+			shift(250),		/* ] */
 			nil,		/* = */
-			reduce(35),		/* ,, reduce: Expression */
-			nil,		/* [] */
+			shift(251),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4954,7 +4744,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(252),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
@@ -4968,13 +4758,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(257),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -4997,32 +4785,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
-			reduce(38),		/* ], reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(38),		/* ,, reduce: ListDef */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -5044,13 +4830,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(259),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(254),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -5061,18 +4847,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(260),		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -5091,8 +4875,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
+			nil,		/* var */
+			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -5111,11 +4895,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(50),		/* ,, reduce: Func_Param_Def */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -5128,7 +4910,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			reduce(50),		/* ->, reduce: Func_Param_Def */
 			
 		},
 
@@ -5138,13 +4920,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -5155,18 +4937,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			reduce(2),		/* ,, reduce: Variable */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -5175,7 +4955,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			reduce(2),		/* ->, reduce: Variable */
 			
 		},
 
@@ -5184,45 +4964,43 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(42),		/* $, reduce: Fn_Call */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(3),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(42),		/* ;, reduce: Fn_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			reduce(3),		/* ->, reduce: Variable */
 			
 		},
 
@@ -5252,16 +5030,14 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(49),		/* ,, reduce: Func_Param_Def */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
-			nil,		/* : */
+			shift(256),		/* : */
 			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
@@ -5269,7 +5045,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			reduce(49),		/* ->, reduce: Func_Param_Def */
+			nil,		/* -> */
 			
 		},
 
@@ -5299,11 +5075,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			shift(257),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -5316,7 +5090,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			reduce(2),		/* ->, reduce: Variable */
+			shift(258),		/* -> */
 			
 		},
 
@@ -5325,14 +5099,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(54),		/* $, reduce: Single_Statement */
+			reduce(54),		/* var, reduce: Single_Statement */
+			reduce(54),		/* input, reduce: Single_Statement */
+			reduce(54),		/* true, reduce: Single_Statement */
+			reduce(54),		/* false, reduce: Single_Statement */
+			reduce(54),		/* (, reduce: Single_Statement */
 			nil,		/* ) */
-			nil,		/* int */
+			reduce(54),		/* int, reduce: Single_Statement */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -5343,27 +5117,25 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			reduce(54),		/* [, reduce: Single_Statement */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			reduce(54),		/* fn_name, reduce: Single_Statement */
+			reduce(54),		/* cust_fn_name, reduce: Single_Statement */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			reduce(54),		/* function, reduce: Single_Statement */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(54),		/* return, reduce: Single_Statement */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(54),		/* if, reduce: Single_Statement */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(54),		/* while, reduce: Single_Statement */
+			reduce(54),		/* foreach, reduce: Single_Statement */
 			nil,		/* in */
-			reduce(3),		/* ->, reduce: Variable */
+			nil,		/* -> */
 			
 		},
 
@@ -5372,7 +5144,7 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(53),		/* $, reduce: Statement */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -5394,17 +5166,15 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
-			shift(263),		/* : */
+			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(53),		/* ;, reduce: Statement */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -5420,8 +5190,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -5440,11 +5210,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -5457,7 +5225,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			shift(265),		/* -> */
+			nil,		/* -> */
 			
 		},
 
@@ -5466,14 +5234,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(53),		/* $, reduce: Single_Statement */
-			reduce(53),		/* var, reduce: Single_Statement */
-			reduce(53),		/* input, reduce: Single_Statement */
-			reduce(53),		/* true, reduce: Single_Statement */
-			reduce(53),		/* false, reduce: Single_Statement */
-			reduce(53),		/* (, reduce: Single_Statement */
+			reduce(57),		/* $, reduce: Statements */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(53),		/* int, reduce: Single_Statement */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -5484,25 +5252,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(53),		/* [, reduce: Single_Statement */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(53),		/* [], reduce: Single_Statement */
-			reduce(53),		/* fn_name, reduce: Single_Statement */
-			reduce(53),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(53),		/* function, reduce: Single_Statement */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(53),		/* return, reduce: Single_Statement */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(53),		/* if, reduce: Single_Statement */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(53),		/* while, reduce: Single_Statement */
-			reduce(53),		/* foreach, reduce: Single_Statement */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -5510,147 +5276,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S117
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(52),		/* $, reduce: Statement */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(52),		/* ;, reduce: Statement */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S118
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S119
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(56),		/* $, reduce: Statements */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S120
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5674,12 +5299,10 @@ var actionTab = actionTable{
 			reduce(6),		/* ||, reduce: Callable_Object */
 			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			shift(266),		/* = */
+			shift(259),		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			reduce(6),		/* {, reduce: Callable_Object */
 			nil,		/* } */
@@ -5697,7 +5320,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S121
+	actionRow{ // S118
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5723,10 +5346,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(2),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			reduce(2),		/* {, reduce: Variable */
 			nil,		/* } */
@@ -5744,7 +5365,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S122
+	actionRow{ // S119
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5770,10 +5391,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(3),		/* =, reduce: Variable */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
 			reduce(3),		/* {, reduce: Variable */
 			nil,		/* } */
@@ -5791,7 +5410,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S123
+	actionRow{ // S120
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5817,10 +5436,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(12),		/* ., reduce: Object */
 			reduce(12),		/* {, reduce: Object */
 			nil,		/* } */
@@ -5838,7 +5455,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S124
+	actionRow{ // S121
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5864,10 +5481,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(4),		/* ., reduce: Bool */
 			reduce(4),		/* {, reduce: Bool */
 			nil,		/* } */
@@ -5885,7 +5500,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S125
+	actionRow{ // S122
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5911,10 +5526,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(5),		/* ., reduce: Bool */
 			reduce(5),		/* {, reduce: Bool */
 			nil,		/* } */
@@ -5932,7 +5545,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S126
+	actionRow{ // S123
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5941,7 +5554,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(267),		/* ( */
+			shift(260),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(11),		/* *, reduce: Object */
@@ -5958,10 +5571,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(11),		/* ., reduce: Object */
 			reduce(11),		/* {, reduce: Object */
 			nil,		/* } */
@@ -5979,18 +5590,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S127
+	actionRow{ // S124
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -6001,18 +5612,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -6026,7 +5635,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S128
+	actionRow{ // S125
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6052,12 +5661,10 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			shift(270),		/* { */
+			shift(263),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6073,7 +5680,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S129
+	actionRow{ // S126
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6099,10 +5706,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			reduce(8),		/* {, reduce: Callable_Object */
 			nil,		/* } */
@@ -6120,7 +5725,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S130
+	actionRow{ // S127
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6146,10 +5751,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			reduce(9),		/* {, reduce: Callable_Object */
 			nil,		/* } */
@@ -6167,7 +5770,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S131
+	actionRow{ // S128
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6193,12 +5796,145 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
 			reduce(10),		/* {, reduce: Callable_Object */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S129
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(264),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(265),		/* . */
+			reduce(18),		/* {, reduce: Mult_Expr */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S130
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(13),		/* ., reduce: Object */
+			reduce(13),		/* {, reduce: Object */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S131
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(14),		/* ., reduce: Object */
+			reduce(14),		/* {, reduce: Object */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6226,26 +5962,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(271),		/* [ */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(272),		/* . */
-			reduce(18),		/* {, reduce: Mult_Expr */
+			reduce(15),		/* ., reduce: Object */
+			reduce(15),		/* {, reduce: Object */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6273,26 +6007,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
+			shift(266),		/* * */
+			shift(267),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
-			reduce(13),		/* {, reduce: Object */
+			nil,		/* . */
+			reduce(21),		/* {, reduce: Add_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6320,26 +6052,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(268),		/* + */
+			shift(269),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
-			reduce(14),		/* {, reduce: Object */
+			nil,		/* . */
+			reduce(26),		/* {, reduce: Comp_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6367,26 +6097,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(270),		/* > */
+			shift(271),		/* < */
+			shift(272),		/* == */
+			shift(273),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
-			reduce(15),		/* {, reduce: Object */
+			nil,		/* . */
+			reduce(29),		/* {, reduce: Bool_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6414,26 +6142,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(273),		/* * */
-			shift(274),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(274),		/* && */
+			shift(275),		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(21),		/* {, reduce: Add_Expr */
+			reduce(33),		/* {, reduce: Expression */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6454,35 +6180,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(275),		/* + */
-			shift(276),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
-			nil,		/* ] */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(276),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
-			reduce(26),		/* {, reduce: Comp_Expr */
+			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -6512,22 +6236,20 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(277),		/* > */
-			shift(278),		/* < */
-			shift(279),		/* == */
-			shift(280),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(29),		/* {, reduce: Bool_Expr */
+			reduce(34),		/* {, reduce: Expression */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6563,18 +6285,16 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(281),		/* && */
-			shift(282),		/* || */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(33),		/* {, reduce: Expression */
+			reduce(35),		/* {, reduce: Expression */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6595,13 +6315,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			shift(278),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -6612,18 +6332,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -6642,8 +6360,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -6663,12 +6381,10 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(34),		/* {, reduce: Expression */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6710,12 +6426,10 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(35),		/* {, reduce: Expression */
+			shift(281),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6743,26 +6457,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
-			reduce(38),		/* {, reduce: ListDef */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -6772,7 +6484,7 @@ var actionTab = actionTable{
 			nil,		/* else */
 			nil,		/* while */
 			nil,		/* foreach */
-			nil,		/* in */
+			shift(282),		/* in */
 			nil,		/* -> */
 			
 		},
@@ -6787,53 +6499,6 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(284),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(285),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S145
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
@@ -6851,151 +6516,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S146
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			shift(288),		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S147
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			shift(289),		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S148
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -7013,7 +6535,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S149
+	actionRow{ // S145
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7039,10 +6561,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -7060,7 +6580,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S150
+	actionRow{ // S146
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7086,10 +6606,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -7107,7 +6625,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S151
+	actionRow{ // S147
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7131,12 +6649,10 @@ var actionTab = actionTable{
 			reduce(6),		/* ||, reduce: Callable_Object */
 			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			shift(290),		/* = */
+			shift(283),		/* = */
 			reduce(6),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -7154,7 +6670,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S152
+	actionRow{ // S148
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7180,10 +6696,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(2),		/* =, reduce: Variable */
 			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -7201,7 +6715,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S153
+	actionRow{ // S149
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7227,10 +6741,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			reduce(3),		/* =, reduce: Variable */
 			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -7248,7 +6760,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S154
+	actionRow{ // S150
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7274,10 +6786,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(12),		/* ,, reduce: Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(12),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -7295,7 +6805,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S155
+	actionRow{ // S151
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7321,10 +6831,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(4),		/* ,, reduce: Bool */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -7342,7 +6850,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S156
+	actionRow{ // S152
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7368,10 +6876,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(5),		/* ,, reduce: Bool */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(5),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -7389,7 +6895,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S157
+	actionRow{ // S153
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7398,7 +6904,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(291),		/* ( */
+			shift(284),		/* ( */
 			reduce(11),		/* ), reduce: Object */
 			nil,		/* int */
 			reduce(11),		/* *, reduce: Object */
@@ -7415,10 +6921,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(11),		/* ,, reduce: Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -7436,18 +6940,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S158
+	actionRow{ // S154
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -7458,18 +6962,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -7483,7 +6985,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S159
+	actionRow{ // S155
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7509,10 +7011,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(37),		/* ,, reduce: Values */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -7530,7 +7030,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S160
+	actionRow{ // S156
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7556,10 +7056,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(8),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -7577,7 +7075,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S161
+	actionRow{ // S157
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7603,10 +7101,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(9),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -7624,7 +7120,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S162
+	actionRow{ // S158
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -7650,11 +7146,189 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			reduce(10),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S159
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(18),		/* ), reduce: Mult_Expr */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(286),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(18),		/* ,, reduce: Mult_Expr */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(287),		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S160
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(13),		/* ), reduce: Object */
+			nil,		/* int */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(13),		/* ,, reduce: Object */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(13),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S161
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(14),		/* ), reduce: Object */
+			nil,		/* int */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(14),		/* ,, reduce: Object */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(14),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S162
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(15),		/* ), reduce: Object */
+			nil,		/* int */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(15),		/* ,, reduce: Object */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(15),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -7681,27 +7355,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(18),		/* ), reduce: Mult_Expr */
+			reduce(21),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(293),		/* [ */
+			shift(288),		/* * */
+			shift(289),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(18),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			reduce(21),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(294),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -7728,27 +7400,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(13),		/* ), reduce: Object */
+			reduce(26),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(290),		/* + */
+			shift(291),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(13),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(26),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -7775,27 +7445,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(14),		/* ), reduce: Object */
+			reduce(29),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(292),		/* > */
+			shift(293),		/* < */
+			shift(294),		/* == */
+			shift(295),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(14),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(29),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -7822,27 +7490,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(15),		/* ), reduce: Object */
+			reduce(33),		/* ), reduce: Expression */
 			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(296),		/* && */
+			shift(297),		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(15),		/* ,, reduce: Object */
-			nil,		/* [] */
+			reduce(33),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -7864,35 +7530,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(21),		/* ), reduce: Add_Expr */
-			nil,		/* int */
-			shift(295),		/* * */
-			shift(296),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
-			nil,		/* ] */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(298),		/* ] */
 			nil,		/* = */
-			reduce(21),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -7916,26 +7580,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(26),		/* ), reduce: Comp_Expr */
+			reduce(34),		/* ), reduce: Expression */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(297),		/* + */
-			shift(298),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(26),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			reduce(34),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -7963,26 +7625,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(29),		/* ), reduce: Bool_Expr */
+			reduce(35),		/* ), reduce: Expression */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(299),		/* > */
-			shift(300),		/* < */
-			shift(301),		/* == */
-			shift(302),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(29),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
+			reduce(35),		/* ,, reduce: Expression */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8010,7 +7670,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(33),		/* ), reduce: Expression */
+			shift(300),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -8020,16 +7680,14 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(303),		/* && */
-			shift(304),		/* || */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(33),		/* ,, reduce: Expression */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8052,13 +7710,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			shift(302),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8069,18 +7727,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -8099,12 +7755,12 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(34),		/* ), reduce: Expression */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -8119,11 +7775,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(34),		/* ,, reduce: Expression */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8146,13 +7800,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(35),		/* ), reduce: Expression */
-			nil,		/* int */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8163,18 +7817,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(35),		/* ,, reduce: Expression */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -8189,6 +7841,51 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S174
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S175
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -8213,59 +7910,10 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S175
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(38),		/* ), reduce: ListDef */
-			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
-			nil,		/* ] */
-			nil,		/* = */
-			reduce(38),		/* ,, reduce: ListDef */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -8283,241 +7931,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S176
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(308),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(309),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S177
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S178
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(69),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S179
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S180
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(313),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S181
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -8543,10 +7956,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(7),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -8564,18 +7975,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S182
+	actionRow{ // S177
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8586,18 +7997,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -8611,7 +8020,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S183
+	actionRow{ // S178
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -8637,10 +8046,233 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			shift(317),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(308),		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S179
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S180
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S181
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S182
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S183
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8663,13 +8295,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8680,14 +8312,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8710,13 +8340,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8727,14 +8357,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8757,13 +8385,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8774,14 +8402,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8804,13 +8430,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8821,14 +8447,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8851,13 +8475,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(310),		/* var */
+			shift(311),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8868,14 +8492,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8898,32 +8520,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(38),		/* ), reduce: ListDef */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -8945,13 +8565,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -8962,14 +8582,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(323),		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(251),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -8992,13 +8610,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(324),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -9009,18 +8627,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -9039,13 +8655,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -9056,14 +8672,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(257),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -9076,7 +8690,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			shift(326),		/* -> */
 			
 		},
 
@@ -9086,32 +8700,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(319),		/* var */
-			shift(320),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(6),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
+			nil,		/* int */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
+			reduce(6),		/* ], reduce: Callable_Object */
+			shift(327),		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9137,28 +8749,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(2),		/* (, reduce: Variable */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(332),		/* ] */
-			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
+			reduce(2),		/* ], reduce: Variable */
+			reduce(2),		/* =, reduce: Variable */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9180,35 +8790,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(3),		/* (, reduce: Variable */
 			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
+			nil,		/* int */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
+			reduce(3),		/* ], reduce: Variable */
+			reduce(3),		/* =, reduce: Variable */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -9231,28 +8839,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
-			reduce(42),		/* ), reduce: Fn_Call */
+			nil,		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			reduce(12),		/* *, reduce: Object */
+			reduce(12),		/* /, reduce: Object */
+			reduce(12),		/* +, reduce: Object */
+			reduce(12),		/* -, reduce: Object */
+			reduce(12),		/* >, reduce: Object */
+			reduce(12),		/* <, reduce: Object */
+			reduce(12),		/* ==, reduce: Object */
+			reduce(12),		/* !=, reduce: Object */
+			reduce(12),		/* &&, reduce: Object */
+			reduce(12),		/* ||, reduce: Object */
+			reduce(12),		/* [, reduce: Object */
+			reduce(12),		/* ], reduce: Object */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(12),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9281,241 +8887,6 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			shift(334),		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S198
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
-			reduce(6),		/* ], reduce: Callable_Object */
-			shift(335),		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S199
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
-			reduce(2),		/* ], reduce: Variable */
-			reduce(2),		/* =, reduce: Variable */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S200
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
-			reduce(3),		/* ], reduce: Variable */
-			reduce(3),		/* =, reduce: Variable */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S201
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(12),		/* *, reduce: Object */
-			reduce(12),		/* /, reduce: Object */
-			reduce(12),		/* +, reduce: Object */
-			reduce(12),		/* -, reduce: Object */
-			reduce(12),		/* >, reduce: Object */
-			reduce(12),		/* <, reduce: Object */
-			reduce(12),		/* ==, reduce: Object */
-			reduce(12),		/* !=, reduce: Object */
-			reduce(12),		/* &&, reduce: Object */
-			reduce(12),		/* ||, reduce: Object */
-			reduce(12),		/* [, reduce: Object */
-			reduce(12),		/* ], reduce: Object */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(12),		/* ., reduce: Object */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S202
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
 			reduce(4),		/* *, reduce: Bool */
 			reduce(4),		/* /, reduce: Bool */
 			reduce(4),		/* +, reduce: Bool */
@@ -9530,10 +8901,8 @@ var actionTab = actionTable{
 			reduce(4),		/* ], reduce: Bool */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -9551,7 +8920,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S203
+	actionRow{ // S198
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9577,10 +8946,8 @@ var actionTab = actionTable{
 			reduce(5),		/* ], reduce: Bool */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(5),		/* ., reduce: Bool */
 			nil,		/* { */
 			nil,		/* } */
@@ -9598,7 +8965,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S204
+	actionRow{ // S199
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9607,7 +8974,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(336),		/* ( */
+			shift(328),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(11),		/* *, reduce: Object */
@@ -9624,10 +8991,8 @@ var actionTab = actionTable{
 			reduce(11),		/* ], reduce: Object */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -9645,18 +9010,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S205
+	actionRow{ // S200
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -9667,18 +9032,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(64),		/* [ */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -9692,7 +9055,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S206
+	actionRow{ // S201
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9715,13 +9078,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(338),		/* ] */
+			shift(330),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -9739,7 +9100,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S207
+	actionRow{ // S202
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9765,10 +9126,8 @@ var actionTab = actionTable{
 			reduce(8),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -9786,7 +9145,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S208
+	actionRow{ // S203
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9812,10 +9171,8 @@ var actionTab = actionTable{
 			reduce(9),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -9833,7 +9190,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S209
+	actionRow{ // S204
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -9859,11 +9216,234 @@ var actionTab = actionTable{
 			reduce(10),		/* ], reduce: Callable_Object */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(10),		/* ., reduce: Callable_Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S205
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(331),		/* [ */
+			reduce(18),		/* ], reduce: Mult_Expr */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(332),		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S206
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
+			reduce(13),		/* ], reduce: Object */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(13),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S207
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
+			reduce(14),		/* ], reduce: Object */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(14),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S208
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
+			reduce(15),		/* ], reduce: Object */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(15),		/* ., reduce: Object */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S209
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			shift(333),		/* * */
+			shift(334),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
+			reduce(21),		/* ], reduce: Add_Expr */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9892,25 +9472,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(339),		/* [ */
-			reduce(18),		/* ], reduce: Mult_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			shift(335),		/* + */
+			shift(336),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(26),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(340),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9939,25 +9517,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
-			reduce(13),		/* ], reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(337),		/* > */
+			shift(338),		/* < */
+			shift(339),		/* == */
+			shift(340),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
+			reduce(29),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -9986,25 +9562,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
-			reduce(14),		/* ], reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(341),		/* && */
+			shift(342),		/* || */
+			nil,		/* [ */
+			reduce(33),		/* ], reduce: Expression */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -10026,35 +9600,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
-			reduce(15),		/* ], reduce: Object */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(343),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -10080,24 +9652,22 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(341),		/* * */
-			shift(342),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(21),		/* ], reduce: Add_Expr */
+			reduce(34),		/* ], reduce: Expression */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -10129,22 +9699,20 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(343),		/* + */
-			shift(344),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(26),		/* ], reduce: Comp_Expr */
+			reduce(35),		/* ], reduce: Expression */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -10171,27 +9739,25 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(345),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(345),		/* > */
-			shift(346),		/* < */
-			shift(347),		/* == */
-			shift(348),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(29),		/* ], reduce: Bool_Expr */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -10214,8 +9780,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -10229,16 +9795,14 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* == */
 			nil,		/* != */
-			shift(349),		/* && */
-			shift(350),		/* || */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(33),		/* ], reduce: Expression */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -10260,388 +9824,12 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(108),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S219
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(34),		/* ], reduce: Expression */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S220
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(35),		/* ], reduce: Expression */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S221
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
-			reduce(38),		/* ], reduce: ListDef */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S222
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(352),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(353),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S223
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S224
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(46),		/* $, reduce: Method_Call */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(46),		/* ;, reduce: Method_Call */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S225
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(355),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(356),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S226
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
 			reduce(45),		/* $, reduce: Method_Call */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			shift(347),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(45),		/* *, reduce: Method_Call */
@@ -10658,10 +9846,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
 			reduce(45),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
@@ -10679,7 +9865,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S227
+	actionRow{ // S219
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10705,10 +9891,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
@@ -10726,7 +9910,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S228
+	actionRow{ // S220
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10752,10 +9936,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -10773,7 +9955,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S229
+	actionRow{ // S221
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10799,10 +9981,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
@@ -10820,7 +10000,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S230
+	actionRow{ // S222
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10842,15 +10022,13 @@ var actionTab = actionTable{
 			reduce(16),		/* !=, reduce: Mult_Expr */
 			reduce(16),		/* &&, reduce: Mult_Expr */
 			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(357),		/* [ */
+			shift(348),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(71),		/* . */
+			shift(69),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -10867,7 +10045,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S231
+	actionRow{ // S223
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10889,15 +10067,13 @@ var actionTab = actionTable{
 			reduce(17),		/* !=, reduce: Mult_Expr */
 			reduce(17),		/* &&, reduce: Mult_Expr */
 			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(357),		/* [ */
+			shift(348),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(71),		/* . */
+			shift(69),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -10914,7 +10090,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S232
+	actionRow{ // S224
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10936,15 +10112,13 @@ var actionTab = actionTable{
 			reduce(18),		/* !=, reduce: Mult_Expr */
 			reduce(18),		/* &&, reduce: Mult_Expr */
 			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(357),		/* [ */
+			shift(348),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(71),		/* . */
+			shift(69),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -10961,7 +10135,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S233
+	actionRow{ // S225
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -10973,8 +10147,8 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(72),		/* * */
-			shift(73),		/* / */
+			shift(70),		/* * */
+			shift(71),		/* / */
 			reduce(19),		/* +, reduce: Add_Expr */
 			reduce(19),		/* -, reduce: Add_Expr */
 			reduce(19),		/* >, reduce: Add_Expr */
@@ -10987,10 +10161,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11008,7 +10180,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S234
+	actionRow{ // S226
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11020,8 +10192,8 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(72),		/* * */
-			shift(73),		/* / */
+			shift(70),		/* * */
+			shift(71),		/* / */
 			reduce(20),		/* +, reduce: Add_Expr */
 			reduce(20),		/* -, reduce: Add_Expr */
 			reduce(20),		/* >, reduce: Add_Expr */
@@ -11034,10 +10206,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11055,7 +10225,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S235
+	actionRow{ // S227
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11069,8 +10239,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(74),		/* + */
-			shift(75),		/* - */
+			shift(72),		/* + */
+			shift(73),		/* - */
 			reduce(22),		/* >, reduce: Comp_Expr */
 			reduce(22),		/* <, reduce: Comp_Expr */
 			reduce(22),		/* ==, reduce: Comp_Expr */
@@ -11081,10 +10251,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11102,7 +10270,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S236
+	actionRow{ // S228
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11116,8 +10284,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(74),		/* + */
-			shift(75),		/* - */
+			shift(72),		/* + */
+			shift(73),		/* - */
 			reduce(23),		/* >, reduce: Comp_Expr */
 			reduce(23),		/* <, reduce: Comp_Expr */
 			reduce(23),		/* ==, reduce: Comp_Expr */
@@ -11128,10 +10296,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11149,7 +10315,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S237
+	actionRow{ // S229
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11163,8 +10329,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(74),		/* + */
-			shift(75),		/* - */
+			shift(72),		/* + */
+			shift(73),		/* - */
 			reduce(24),		/* >, reduce: Comp_Expr */
 			reduce(24),		/* <, reduce: Comp_Expr */
 			reduce(24),		/* ==, reduce: Comp_Expr */
@@ -11175,10 +10341,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11196,7 +10360,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S238
+	actionRow{ // S230
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11210,8 +10374,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(74),		/* + */
-			shift(75),		/* - */
+			shift(72),		/* + */
+			shift(73),		/* - */
 			reduce(25),		/* >, reduce: Comp_Expr */
 			reduce(25),		/* <, reduce: Comp_Expr */
 			reduce(25),		/* ==, reduce: Comp_Expr */
@@ -11222,10 +10386,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11243,7 +10405,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S239
+	actionRow{ // S231
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11259,20 +10421,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(76),		/* > */
-			shift(77),		/* < */
-			shift(78),		/* == */
-			shift(79),		/* != */
+			shift(74),		/* > */
+			shift(75),		/* < */
+			shift(76),		/* == */
+			shift(77),		/* != */
 			reduce(27),		/* &&, reduce: Bool_Expr */
 			reduce(27),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11290,7 +10450,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S240
+	actionRow{ // S232
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -11306,20 +10466,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(76),		/* > */
-			shift(77),		/* < */
-			shift(78),		/* == */
-			shift(79),		/* != */
+			shift(74),		/* > */
+			shift(75),		/* < */
+			shift(76),		/* == */
+			shift(77),		/* != */
 			reduce(28),		/* &&, reduce: Bool_Expr */
 			reduce(28),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11337,18 +10495,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S241
+	actionRow{ // S233
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11359,18 +10517,376 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			shift(106),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S234
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S235
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(351),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S236
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(217),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S237
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(353),		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S238
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S239
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S240
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S241
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -11389,13 +10905,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11406,18 +10922,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -11436,13 +10950,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(360),		/* ) */
-			nil,		/* int */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
+			nil,		/* ) */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11453,14 +10967,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11483,13 +10995,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11500,18 +11012,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -11530,13 +11040,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11547,14 +11057,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			shift(364),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11577,13 +11085,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11594,14 +11102,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11624,13 +11130,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(355),		/* var */
+			shift(356),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -11641,14 +11147,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -11671,32 +11175,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
+			reduce(38),		/* ], reduce: ListDef */
 			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(38),		/* ,, reduce: ListDef */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -11714,335 +11216,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S249
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S250
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S251
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S252
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S253
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S254
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S255
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(366),		/* var */
-			shift(367),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S256
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -12065,13 +11238,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(379),		/* ] */
+			shift(368),		/* ] */
 			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			shift(251),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12089,7 +11260,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S257
+	actionRow{ // S250
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -12115,10 +11286,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
@@ -12136,18 +11305,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S258
+	actionRow{ // S251
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12158,18 +11327,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -12183,18 +11350,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S259
+	actionRow{ // S252
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(370),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12205,18 +11372,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -12230,11 +11395,56 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S260
+	actionRow{ // S253
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(257),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			shift(372),		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S254
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(42),		/* $, reduce: Fn_Call */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -12253,20 +11463,18 @@ var actionTab = actionTable{
 			reduce(42),		/* &&, reduce: Fn_Call */
 			reduce(42),		/* ||, reduce: Fn_Call */
 			reduce(42),		/* [, reduce: Fn_Call */
-			reduce(42),		/* ], reduce: Fn_Call */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(42),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(42),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(42),		/* ;, reduce: Fn_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -12277,7 +11485,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S261
+	actionRow{ // S255
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -12287,7 +11495,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(373),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -12302,58 +11510,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			shift(382),		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S262
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(383),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12371,13 +11530,13 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S263
+	actionRow{ // S256
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(385),		/* var */
-			shift(386),		/* input */
+			shift(375),		/* var */
+			shift(376),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -12397,10 +11556,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12418,13 +11575,13 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S264
+	actionRow{ // S257
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -12444,10 +11601,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12465,7 +11620,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S265
+	actionRow{ // S258
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -12491,16 +11646,329 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(118),		/* function */
+			shift(115),		/* function */
 			nil,		/* : */
-			shift(33),		/* return */
+			shift(32),		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S259
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S260
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S261
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(382),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S262
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(61),		/* $, reduce: IfBlock */
+			reduce(61),		/* var, reduce: IfBlock */
+			reduce(61),		/* input, reduce: IfBlock */
+			reduce(61),		/* true, reduce: IfBlock */
+			reduce(61),		/* false, reduce: IfBlock */
+			reduce(61),		/* (, reduce: IfBlock */
+			nil,		/* ) */
+			reduce(61),		/* int, reduce: IfBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(61),		/* [, reduce: IfBlock */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(61),		/* fn_name, reduce: IfBlock */
+			reduce(61),		/* cust_fn_name, reduce: IfBlock */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(61),		/* function, reduce: IfBlock */
+			nil,		/* : */
+			reduce(61),		/* return, reduce: IfBlock */
+			nil,		/* ; */
+			reduce(61),		/* if, reduce: IfBlock */
+			shift(383),		/* else */
+			reduce(61),		/* while, reduce: IfBlock */
+			reduce(61),		/* foreach, reduce: IfBlock */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S263
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(410),		/* function */
+			nil,		/* : */
+			shift(412),		/* return */
+			nil,		/* ; */
+			shift(416),		/* if */
+			nil,		/* else */
+			shift(418),		/* while */
+			shift(420),		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S264
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(217),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S265
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(422),		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -12517,13 +11985,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12534,18 +12002,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -12564,13 +12030,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12581,18 +12047,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -12611,13 +12075,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(392),		/* ) */
-			nil,		/* int */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12628,14 +12092,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12657,14 +12119,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(60),		/* $, reduce: IfBlock */
-			reduce(60),		/* var, reduce: IfBlock */
-			reduce(60),		/* input, reduce: IfBlock */
-			reduce(60),		/* true, reduce: IfBlock */
-			reduce(60),		/* false, reduce: IfBlock */
-			reduce(60),		/* (, reduce: IfBlock */
+			nil,		/* $ */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			reduce(60),		/* int, reduce: IfBlock */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12675,25 +12137,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(60),		/* [, reduce: IfBlock */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(60),		/* [], reduce: IfBlock */
-			reduce(60),		/* fn_name, reduce: IfBlock */
-			reduce(60),		/* cust_fn_name, reduce: IfBlock */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(60),		/* function, reduce: IfBlock */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(60),		/* return, reduce: IfBlock */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(60),		/* if, reduce: IfBlock */
-			shift(393),		/* else */
-			reduce(60),		/* while, reduce: IfBlock */
-			reduce(60),		/* foreach, reduce: IfBlock */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -12705,13 +12165,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12722,25 +12182,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(421),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
-			shift(427),		/* if */
+			nil,		/* if */
 			nil,		/* else */
-			shift(429),		/* while */
-			shift(431),		/* foreach */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -12752,13 +12210,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12769,18 +12227,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -12799,13 +12255,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12816,14 +12272,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			shift(435),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12846,13 +12300,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12863,14 +12317,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12893,13 +12345,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12910,14 +12362,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12940,13 +12390,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(424),		/* var */
+			shift(425),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(130),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -12957,14 +12407,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -12987,33 +12435,31 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
+			reduce(38),		/* {, reduce: ListDef */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -13034,13 +12480,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13051,14 +12497,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(437),		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(251),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -13081,13 +12525,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(438),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13098,18 +12542,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13124,194 +12566,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S279
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S280
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S281
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S282
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(437),		/* var */
-			shift(438),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S283
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -13334,17 +12588,195 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(450),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			shift(257),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			shift(440),		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S280
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(62),		/* $, reduce: WhileLoop */
+			reduce(62),		/* var, reduce: WhileLoop */
+			reduce(62),		/* input, reduce: WhileLoop */
+			reduce(62),		/* true, reduce: WhileLoop */
+			reduce(62),		/* false, reduce: WhileLoop */
+			reduce(62),		/* (, reduce: WhileLoop */
+			nil,		/* ) */
+			reduce(62),		/* int, reduce: WhileLoop */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(62),		/* [, reduce: WhileLoop */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(62),		/* fn_name, reduce: WhileLoop */
+			reduce(62),		/* cust_fn_name, reduce: WhileLoop */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(62),		/* function, reduce: WhileLoop */
+			nil,		/* : */
+			reduce(62),		/* return, reduce: WhileLoop */
+			nil,		/* ; */
+			reduce(62),		/* if, reduce: WhileLoop */
+			nil,		/* else */
+			reduce(62),		/* while, reduce: WhileLoop */
+			reduce(62),		/* foreach, reduce: WhileLoop */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S281
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(410),		/* function */
+			nil,		/* : */
+			shift(412),		/* return */
+			nil,		/* ; */
+			shift(416),		/* if */
+			nil,		/* else */
+			shift(418),		/* while */
+			shift(420),		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S282
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S283
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13363,13 +12795,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13380,18 +12812,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13414,29 +12844,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
-			nil,		/* ) */
+			nil,		/* ( */
+			shift(445),		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
-			reduce(42),		/* {, reduce: Fn_Call */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -13457,6 +12885,51 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(217),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S287
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -13477,11 +12950,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
+			nil,		/* , */
+			shift(447),		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -13494,53 +12965,6 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			shift(452),		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S287
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(61),		/* $, reduce: WhileLoop */
-			reduce(61),		/* var, reduce: WhileLoop */
-			reduce(61),		/* input, reduce: WhileLoop */
-			reduce(61),		/* true, reduce: WhileLoop */
-			reduce(61),		/* false, reduce: WhileLoop */
-			reduce(61),		/* (, reduce: WhileLoop */
-			nil,		/* ) */
-			reduce(61),		/* int, reduce: WhileLoop */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(61),		/* [, reduce: WhileLoop */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(61),		/* [], reduce: WhileLoop */
-			reduce(61),		/* fn_name, reduce: WhileLoop */
-			reduce(61),		/* cust_fn_name, reduce: WhileLoop */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			reduce(61),		/* function, reduce: WhileLoop */
-			nil,		/* : */
-			reduce(61),		/* return, reduce: WhileLoop */
-			nil,		/* ; */
-			reduce(61),		/* if, reduce: WhileLoop */
-			nil,		/* else */
-			reduce(61),		/* while, reduce: WhileLoop */
-			reduce(61),		/* foreach, reduce: WhileLoop */
-			nil,		/* in */
 			nil,		/* -> */
 			
 		},
@@ -13551,13 +12975,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13568,25 +12992,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(421),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
-			shift(427),		/* if */
+			nil,		/* if */
 			nil,		/* else */
-			shift(429),		/* while */
-			shift(431),		/* foreach */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -13598,13 +13020,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13615,18 +13037,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13645,13 +13065,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13662,18 +13082,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13692,13 +13110,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13709,18 +13127,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13739,13 +13155,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(457),		/* ) */
-			nil,		/* int */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13756,14 +13172,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -13786,13 +13200,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -13803,18 +13217,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -13829,6 +13241,411 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S294
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S295
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S296
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S297
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(449),		/* var */
+			shift(450),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S298
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(38),		/* ), reduce: ListDef */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(38),		/* ,, reduce: ListDef */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S299
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			shift(462),		/* ] */
+			nil,		/* = */
+			shift(251),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S300
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(44),		/* $, reduce: Lambda_Call */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(44),		/* (, reduce: Lambda_Call */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(44),		/* ., reduce: Lambda_Call */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			reduce(44),		/* ;, reduce: Lambda_Call */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S301
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S302
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(464),		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S303
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -13853,11 +13670,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			shift(461),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(257),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -13870,430 +13685,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S295
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S296
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S297
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S298
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S299
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S300
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S301
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S302
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S303
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
+			shift(466),		/* -> */
 			
 		},
 
@@ -14303,13 +13695,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(463),		/* var */
-			shift(464),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(31),		/* ), reduce: Assign */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -14320,14 +13712,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -14355,7 +13745,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(467),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -14368,13 +13758,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(476),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -14396,39 +13784,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: Lambda_Call */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
-			nil,		/* ) */
+			reduce(7),		/* (, reduce: Callable_Object */
+			reduce(7),		/* ), reduce: Callable_Object */
 			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
+			reduce(7),		/* *, reduce: Callable_Object */
+			reduce(7),		/* /, reduce: Callable_Object */
+			reduce(7),		/* +, reduce: Callable_Object */
+			reduce(7),		/* -, reduce: Callable_Object */
+			reduce(7),		/* >, reduce: Callable_Object */
+			reduce(7),		/* <, reduce: Callable_Object */
+			reduce(7),		/* ==, reduce: Callable_Object */
+			reduce(7),		/* !=, reduce: Callable_Object */
+			reduce(7),		/* &&, reduce: Callable_Object */
+			reduce(7),		/* ||, reduce: Callable_Object */
+			reduce(7),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
+			reduce(7),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(44),		/* ;, reduce: Lambda_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -14444,13 +13830,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -14461,18 +13847,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(468),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -14491,35 +13875,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			shift(469),		/* ( */
+			reduce(45),		/* ), reduce: Method_Call */
+			nil,		/* int */
+			reduce(45),		/* *, reduce: Method_Call */
+			reduce(45),		/* /, reduce: Method_Call */
+			reduce(45),		/* +, reduce: Method_Call */
+			reduce(45),		/* -, reduce: Method_Call */
+			reduce(45),		/* >, reduce: Method_Call */
+			reduce(45),		/* <, reduce: Method_Call */
+			reduce(45),		/* ==, reduce: Method_Call */
+			reduce(45),		/* !=, reduce: Method_Call */
+			reduce(45),		/* &&, reduce: Method_Call */
+			reduce(45),		/* ||, reduce: Method_Call */
+			reduce(45),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(45),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -14542,28 +13924,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
-			reduce(42),		/* ), reduce: Fn_Call */
+			reduce(6),		/* (, reduce: Callable_Object */
+			reduce(6),		/* ), reduce: Callable_Object */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(42),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14589,28 +13969,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			reduce(2),		/* (, reduce: Variable */
+			reduce(2),		/* ), reduce: Variable */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14622,7 +14000,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			shift(479),		/* -> */
+			nil,		/* -> */
 			
 		},
 
@@ -14636,28 +14014,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(31),		/* ), reduce: Assign */
+			reduce(3),		/* (, reduce: Variable */
+			reduce(3),		/* ), reduce: Variable */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14684,27 +14060,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(480),		/* ) */
+			reduce(16),		/* ), reduce: Mult_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(16),		/* *, reduce: Mult_Expr */
+			reduce(16),		/* /, reduce: Mult_Expr */
+			reduce(16),		/* +, reduce: Mult_Expr */
+			reduce(16),		/* -, reduce: Mult_Expr */
+			reduce(16),		/* >, reduce: Mult_Expr */
+			reduce(16),		/* <, reduce: Mult_Expr */
+			reduce(16),		/* ==, reduce: Mult_Expr */
+			reduce(16),		/* !=, reduce: Mult_Expr */
+			reduce(16),		/* &&, reduce: Mult_Expr */
+			reduce(16),		/* ||, reduce: Mult_Expr */
+			shift(470),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(178),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14730,28 +14104,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(7),		/* (, reduce: Callable_Object */
-			reduce(7),		/* ), reduce: Callable_Object */
+			nil,		/* ( */
+			reduce(17),		/* ), reduce: Mult_Expr */
 			nil,		/* int */
-			reduce(7),		/* *, reduce: Callable_Object */
-			reduce(7),		/* /, reduce: Callable_Object */
-			reduce(7),		/* +, reduce: Callable_Object */
-			reduce(7),		/* -, reduce: Callable_Object */
-			reduce(7),		/* >, reduce: Callable_Object */
-			reduce(7),		/* <, reduce: Callable_Object */
-			reduce(7),		/* ==, reduce: Callable_Object */
-			reduce(7),		/* !=, reduce: Callable_Object */
-			reduce(7),		/* &&, reduce: Callable_Object */
-			reduce(7),		/* ||, reduce: Callable_Object */
-			reduce(7),		/* [, reduce: Callable_Object */
+			reduce(17),		/* *, reduce: Mult_Expr */
+			reduce(17),		/* /, reduce: Mult_Expr */
+			reduce(17),		/* +, reduce: Mult_Expr */
+			reduce(17),		/* -, reduce: Mult_Expr */
+			reduce(17),		/* >, reduce: Mult_Expr */
+			reduce(17),		/* <, reduce: Mult_Expr */
+			reduce(17),		/* ==, reduce: Mult_Expr */
+			reduce(17),		/* !=, reduce: Mult_Expr */
+			reduce(17),		/* &&, reduce: Mult_Expr */
+			reduce(17),		/* ||, reduce: Mult_Expr */
+			shift(470),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(7),		/* ., reduce: Callable_Object */
+			shift(178),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14778,27 +14150,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(18),		/* ), reduce: Mult_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(481),		/* ] */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(470),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(178),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14825,27 +14195,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(46),		/* ), reduce: Method_Call */
+			reduce(19),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
+			shift(179),		/* * */
+			shift(180),		/* / */
+			reduce(19),		/* +, reduce: Add_Expr */
+			reduce(19),		/* -, reduce: Add_Expr */
+			reduce(19),		/* >, reduce: Add_Expr */
+			reduce(19),		/* <, reduce: Add_Expr */
+			reduce(19),		/* ==, reduce: Add_Expr */
+			reduce(19),		/* !=, reduce: Add_Expr */
+			reduce(19),		/* &&, reduce: Add_Expr */
+			reduce(19),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14871,27 +14239,25 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(482),		/* ( */
-			nil,		/* ) */
+			nil,		/* ( */
+			reduce(20),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(179),		/* * */
+			shift(180),		/* / */
+			reduce(20),		/* +, reduce: Add_Expr */
+			reduce(20),		/* -, reduce: Add_Expr */
+			reduce(20),		/* >, reduce: Add_Expr */
+			reduce(20),		/* <, reduce: Add_Expr */
+			reduce(20),		/* ==, reduce: Add_Expr */
+			reduce(20),		/* !=, reduce: Add_Expr */
+			reduce(20),		/* &&, reduce: Add_Expr */
+			reduce(20),		/* ||, reduce: Add_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(483),		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -14918,28 +14284,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
-			reduce(45),		/* ), reduce: Method_Call */
+			nil,		/* ( */
+			reduce(22),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(45),		/* *, reduce: Method_Call */
-			reduce(45),		/* /, reduce: Method_Call */
-			reduce(45),		/* +, reduce: Method_Call */
-			reduce(45),		/* -, reduce: Method_Call */
-			reduce(45),		/* >, reduce: Method_Call */
-			reduce(45),		/* <, reduce: Method_Call */
-			reduce(45),		/* ==, reduce: Method_Call */
-			reduce(45),		/* !=, reduce: Method_Call */
-			reduce(45),		/* &&, reduce: Method_Call */
-			reduce(45),		/* ||, reduce: Method_Call */
-			reduce(45),		/* [, reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			shift(181),		/* + */
+			shift(182),		/* - */
+			reduce(22),		/* >, reduce: Comp_Expr */
+			reduce(22),		/* <, reduce: Comp_Expr */
+			reduce(22),		/* ==, reduce: Comp_Expr */
+			reduce(22),		/* !=, reduce: Comp_Expr */
+			reduce(22),		/* &&, reduce: Comp_Expr */
+			reduce(22),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
-			reduce(45),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -14965,28 +14329,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
-			reduce(6),		/* ), reduce: Callable_Object */
+			nil,		/* ( */
+			reduce(23),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(181),		/* + */
+			shift(182),		/* - */
+			reduce(23),		/* >, reduce: Comp_Expr */
+			reduce(23),		/* <, reduce: Comp_Expr */
+			reduce(23),		/* ==, reduce: Comp_Expr */
+			reduce(23),		/* !=, reduce: Comp_Expr */
+			reduce(23),		/* &&, reduce: Comp_Expr */
+			reduce(23),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15012,28 +14374,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
-			reduce(2),		/* ), reduce: Variable */
+			nil,		/* ( */
+			reduce(24),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
+			nil,		/* * */
+			nil,		/* / */
+			shift(181),		/* + */
+			shift(182),		/* - */
+			reduce(24),		/* >, reduce: Comp_Expr */
+			reduce(24),		/* <, reduce: Comp_Expr */
+			reduce(24),		/* ==, reduce: Comp_Expr */
+			reduce(24),		/* !=, reduce: Comp_Expr */
+			reduce(24),		/* &&, reduce: Comp_Expr */
+			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15059,28 +14419,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
-			reduce(3),		/* ), reduce: Variable */
+			nil,		/* ( */
+			reduce(25),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
+			nil,		/* * */
+			nil,		/* / */
+			shift(181),		/* + */
+			shift(182),		/* - */
+			reduce(25),		/* >, reduce: Comp_Expr */
+			reduce(25),		/* <, reduce: Comp_Expr */
+			reduce(25),		/* ==, reduce: Comp_Expr */
+			reduce(25),		/* !=, reduce: Comp_Expr */
+			reduce(25),		/* &&, reduce: Comp_Expr */
+			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15107,27 +14465,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(16),		/* ), reduce: Mult_Expr */
+			reduce(27),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
-			reduce(16),		/* *, reduce: Mult_Expr */
-			reduce(16),		/* /, reduce: Mult_Expr */
-			reduce(16),		/* +, reduce: Mult_Expr */
-			reduce(16),		/* -, reduce: Mult_Expr */
-			reduce(16),		/* >, reduce: Mult_Expr */
-			reduce(16),		/* <, reduce: Mult_Expr */
-			reduce(16),		/* ==, reduce: Mult_Expr */
-			reduce(16),		/* !=, reduce: Mult_Expr */
-			reduce(16),		/* &&, reduce: Mult_Expr */
-			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(484),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(183),		/* > */
+			shift(184),		/* < */
+			shift(185),		/* == */
+			shift(186),		/* != */
+			reduce(27),		/* &&, reduce: Bool_Expr */
+			reduce(27),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(183),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15154,27 +14510,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(17),		/* ), reduce: Mult_Expr */
+			reduce(28),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
-			reduce(17),		/* *, reduce: Mult_Expr */
-			reduce(17),		/* /, reduce: Mult_Expr */
-			reduce(17),		/* +, reduce: Mult_Expr */
-			reduce(17),		/* -, reduce: Mult_Expr */
-			reduce(17),		/* >, reduce: Mult_Expr */
-			reduce(17),		/* <, reduce: Mult_Expr */
-			reduce(17),		/* ==, reduce: Mult_Expr */
-			reduce(17),		/* !=, reduce: Mult_Expr */
-			reduce(17),		/* &&, reduce: Mult_Expr */
-			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(484),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(183),		/* > */
+			shift(184),		/* < */
+			shift(185),		/* == */
+			shift(186),		/* != */
+			reduce(28),		/* &&, reduce: Bool_Expr */
+			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(183),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15201,27 +14555,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(18),		/* ), reduce: Mult_Expr */
+			reduce(39),		/* ), reduce: ListDef */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(484),		/* [ */
+			reduce(39),		/* *, reduce: ListDef */
+			reduce(39),		/* /, reduce: ListDef */
+			reduce(39),		/* +, reduce: ListDef */
+			reduce(39),		/* -, reduce: ListDef */
+			reduce(39),		/* >, reduce: ListDef */
+			reduce(39),		/* <, reduce: ListDef */
+			reduce(39),		/* ==, reduce: ListDef */
+			reduce(39),		/* !=, reduce: ListDef */
+			reduce(39),		/* &&, reduce: ListDef */
+			reduce(39),		/* ||, reduce: ListDef */
+			reduce(39),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(183),		/* . */
+			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15247,28 +14599,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(19),		/* ), reduce: Add_Expr */
+			reduce(42),		/* (, reduce: Fn_Call */
+			reduce(42),		/* ), reduce: Fn_Call */
 			nil,		/* int */
-			shift(184),		/* * */
-			shift(185),		/* / */
-			reduce(19),		/* +, reduce: Add_Expr */
-			reduce(19),		/* -, reduce: Add_Expr */
-			reduce(19),		/* >, reduce: Add_Expr */
-			reduce(19),		/* <, reduce: Add_Expr */
-			reduce(19),		/* ==, reduce: Add_Expr */
-			reduce(19),		/* !=, reduce: Add_Expr */
-			reduce(19),		/* &&, reduce: Add_Expr */
-			reduce(19),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(42),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -15295,26 +14645,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(20),		/* ), reduce: Add_Expr */
+			shift(471),		/* ) */
 			nil,		/* int */
-			shift(184),		/* * */
-			shift(185),		/* / */
-			reduce(20),		/* +, reduce: Add_Expr */
-			reduce(20),		/* -, reduce: Add_Expr */
-			reduce(20),		/* >, reduce: Add_Expr */
-			reduce(20),		/* <, reduce: Add_Expr */
-			reduce(20),		/* ==, reduce: Add_Expr */
-			reduce(20),		/* !=, reduce: Add_Expr */
-			reduce(20),		/* &&, reduce: Add_Expr */
-			reduce(20),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -15337,37 +14685,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(22),		/* ), reduce: Comp_Expr */
-			nil,		/* int */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(186),		/* + */
-			shift(187),		/* - */
-			reduce(22),		/* >, reduce: Comp_Expr */
-			reduce(22),		/* <, reduce: Comp_Expr */
-			reduce(22),		/* ==, reduce: Comp_Expr */
-			reduce(22),		/* !=, reduce: Comp_Expr */
-			reduce(22),		/* &&, reduce: Comp_Expr */
-			reduce(22),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
-			nil,		/* return */
+			shift(474),		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -15384,35 +14730,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(23),		/* ), reduce: Comp_Expr */
-			nil,		/* int */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(186),		/* + */
-			shift(187),		/* - */
-			reduce(23),		/* >, reduce: Comp_Expr */
-			reduce(23),		/* <, reduce: Comp_Expr */
-			reduce(23),		/* ==, reduce: Comp_Expr */
-			reduce(23),		/* !=, reduce: Comp_Expr */
-			reduce(23),		/* &&, reduce: Comp_Expr */
-			reduce(23),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -15431,35 +14775,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(24),		/* ), reduce: Comp_Expr */
-			nil,		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(186),		/* + */
-			shift(187),		/* - */
-			reduce(24),		/* >, reduce: Comp_Expr */
-			reduce(24),		/* <, reduce: Comp_Expr */
-			reduce(24),		/* ==, reduce: Comp_Expr */
-			reduce(24),		/* !=, reduce: Comp_Expr */
-			reduce(24),		/* &&, reduce: Comp_Expr */
-			reduce(24),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -15483,26 +14825,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(25),		/* ), reduce: Comp_Expr */
+			shift(477),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(186),		/* + */
-			shift(187),		/* - */
-			reduce(25),		/* >, reduce: Comp_Expr */
-			reduce(25),		/* <, reduce: Comp_Expr */
-			reduce(25),		/* ==, reduce: Comp_Expr */
-			reduce(25),		/* !=, reduce: Comp_Expr */
-			reduce(25),		/* &&, reduce: Comp_Expr */
-			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -15521,382 +14861,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S330
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(27),		/* ), reduce: Bool_Expr */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			shift(188),		/* > */
-			shift(189),		/* < */
-			shift(190),		/* == */
-			shift(191),		/* != */
-			reduce(27),		/* &&, reduce: Bool_Expr */
-			reduce(27),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S331
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(28),		/* ), reduce: Bool_Expr */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			shift(188),		/* > */
-			shift(189),		/* < */
-			shift(190),		/* == */
-			shift(191),		/* != */
-			reduce(28),		/* &&, reduce: Bool_Expr */
-			reduce(28),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S332
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(39),		/* ), reduce: ListDef */
-			nil,		/* int */
-			reduce(39),		/* *, reduce: ListDef */
-			reduce(39),		/* /, reduce: ListDef */
-			reduce(39),		/* +, reduce: ListDef */
-			reduce(39),		/* -, reduce: ListDef */
-			reduce(39),		/* >, reduce: ListDef */
-			reduce(39),		/* <, reduce: ListDef */
-			reduce(39),		/* ==, reduce: ListDef */
-			reduce(39),		/* !=, reduce: ListDef */
-			reduce(39),		/* &&, reduce: ListDef */
-			reduce(39),		/* ||, reduce: ListDef */
-			reduce(39),		/* [, reduce: ListDef */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(39),		/* ., reduce: ListDef */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S333
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(485),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S334
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
-			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(69),		/* function */
-			nil,		/* : */
-			shift(488),		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S335
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(223),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S336
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S337
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(491),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S338
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -15920,12 +14884,10 @@ var actionTab = actionTable{
 			reduce(30),		/* ||, reduce: Get_Index */
 			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
-			shift(492),		/* = */
+			shift(478),		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
@@ -15943,18 +14905,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S339
+	actionRow{ // S331
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -15965,18 +14927,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -15990,7 +14950,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S340
+	actionRow{ // S332
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -16016,10 +14976,368 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			shift(496),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(480),		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S333
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S334
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S335
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S336
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S337
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S338
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S339
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S340
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16042,13 +15360,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16059,14 +15377,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16089,13 +15405,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(482),		/* var */
+			shift(483),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16106,14 +15422,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16136,32 +15450,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
+			reduce(38),		/* ], reduce: ListDef */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16183,13 +15495,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16200,14 +15512,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(495),		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(251),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16230,13 +15540,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(496),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16247,18 +15557,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16277,13 +15585,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16294,14 +15602,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(257),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16314,7 +15620,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			shift(498),		/* -> */
 			
 		},
 
@@ -16324,13 +15630,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(499),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16341,18 +15647,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16371,13 +15675,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16388,18 +15692,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16418,13 +15720,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16435,14 +15737,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			reduce(31),		/* ], reduce: Assign */
 			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			reduce(31),		/* ,, reduce: Assign */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16465,13 +15765,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(498),		/* var */
-			shift(499),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(502),		/* ) */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16482,14 +15782,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -16516,28 +15814,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(7),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(511),		/* ] */
+			reduce(7),		/* *, reduce: Callable_Object */
+			reduce(7),		/* /, reduce: Callable_Object */
+			reduce(7),		/* +, reduce: Callable_Object */
+			reduce(7),		/* -, reduce: Callable_Object */
+			reduce(7),		/* >, reduce: Callable_Object */
+			reduce(7),		/* <, reduce: Callable_Object */
+			reduce(7),		/* ==, reduce: Callable_Object */
+			reduce(7),		/* !=, reduce: Callable_Object */
+			reduce(7),		/* &&, reduce: Callable_Object */
+			reduce(7),		/* ||, reduce: Callable_Object */
+			reduce(7),		/* [, reduce: Callable_Object */
+			reduce(7),		/* ], reduce: Callable_Object */
 			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
+			reduce(7),		/* ,, reduce: Callable_Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(7),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16559,13 +15855,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -16576,18 +15872,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(503),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16610,28 +15904,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
+			shift(504),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			reduce(42),		/* ], reduce: Fn_Call */
+			reduce(45),		/* *, reduce: Method_Call */
+			reduce(45),		/* /, reduce: Method_Call */
+			reduce(45),		/* +, reduce: Method_Call */
+			reduce(45),		/* -, reduce: Method_Call */
+			reduce(45),		/* >, reduce: Method_Call */
+			reduce(45),		/* <, reduce: Method_Call */
+			reduce(45),		/* ==, reduce: Method_Call */
+			reduce(45),		/* !=, reduce: Method_Call */
+			reduce(45),		/* &&, reduce: Method_Call */
+			reduce(45),		/* ||, reduce: Method_Call */
+			reduce(45),		/* [, reduce: Method_Call */
+			reduce(45),		/* ], reduce: Method_Call */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(45),		/* ,, reduce: Method_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(45),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16657,28 +15949,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(6),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
+			reduce(6),		/* ], reduce: Callable_Object */
 			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
+			reduce(6),		/* ,, reduce: Callable_Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16690,7 +15980,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			shift(513),		/* -> */
+			nil,		/* -> */
 			
 		},
 
@@ -16700,35 +15990,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(2),		/* (, reduce: Variable */
 			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
+			reduce(2),		/* ], reduce: Variable */
 			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(2),		/* ,, reduce: Variable */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16746,39 +16034,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(42),		/* $, reduce: Fn_Call */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(3),		/* (, reduce: Variable */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
+			reduce(3),		/* ], reduce: Variable */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(3),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(42),		/* ;, reduce: Fn_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -16794,35 +16080,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(16),		/* *, reduce: Mult_Expr */
+			reduce(16),		/* /, reduce: Mult_Expr */
+			reduce(16),		/* +, reduce: Mult_Expr */
+			reduce(16),		/* -, reduce: Mult_Expr */
+			reduce(16),		/* >, reduce: Mult_Expr */
+			reduce(16),		/* <, reduce: Mult_Expr */
+			reduce(16),		/* ==, reduce: Mult_Expr */
+			reduce(16),		/* !=, reduce: Mult_Expr */
+			reduce(16),		/* &&, reduce: Mult_Expr */
+			reduce(16),		/* ||, reduce: Mult_Expr */
+			shift(505),		/* [ */
+			reduce(16),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(16),		/* ,, reduce: Mult_Expr */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(237),		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -16848,25 +16132,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(31),		/* ], reduce: Assign */
+			reduce(17),		/* *, reduce: Mult_Expr */
+			reduce(17),		/* /, reduce: Mult_Expr */
+			reduce(17),		/* +, reduce: Mult_Expr */
+			reduce(17),		/* -, reduce: Mult_Expr */
+			reduce(17),		/* >, reduce: Mult_Expr */
+			reduce(17),		/* <, reduce: Mult_Expr */
+			reduce(17),		/* ==, reduce: Mult_Expr */
+			reduce(17),		/* !=, reduce: Mult_Expr */
+			reduce(17),		/* &&, reduce: Mult_Expr */
+			reduce(17),		/* ||, reduce: Mult_Expr */
+			shift(505),		/* [ */
+			reduce(17),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
-			reduce(31),		/* ,, reduce: Assign */
-			nil,		/* [] */
+			reduce(17),		/* ,, reduce: Mult_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(237),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16893,27 +16175,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(516),		/* ) */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(505),		/* [ */
+			reduce(18),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			reduce(18),		/* ,, reduce: Mult_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(237),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16939,28 +16219,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(7),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(7),		/* *, reduce: Callable_Object */
-			reduce(7),		/* /, reduce: Callable_Object */
-			reduce(7),		/* +, reduce: Callable_Object */
-			reduce(7),		/* -, reduce: Callable_Object */
-			reduce(7),		/* >, reduce: Callable_Object */
-			reduce(7),		/* <, reduce: Callable_Object */
-			reduce(7),		/* ==, reduce: Callable_Object */
-			reduce(7),		/* !=, reduce: Callable_Object */
-			reduce(7),		/* &&, reduce: Callable_Object */
-			reduce(7),		/* ||, reduce: Callable_Object */
-			reduce(7),		/* [, reduce: Callable_Object */
-			reduce(7),		/* ], reduce: Callable_Object */
+			shift(238),		/* * */
+			shift(239),		/* / */
+			reduce(19),		/* +, reduce: Add_Expr */
+			reduce(19),		/* -, reduce: Add_Expr */
+			reduce(19),		/* >, reduce: Add_Expr */
+			reduce(19),		/* <, reduce: Add_Expr */
+			reduce(19),		/* ==, reduce: Add_Expr */
+			reduce(19),		/* !=, reduce: Add_Expr */
+			reduce(19),		/* &&, reduce: Add_Expr */
+			reduce(19),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
+			reduce(19),		/* ], reduce: Add_Expr */
 			nil,		/* = */
-			reduce(7),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
+			reduce(19),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(7),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -16989,24 +16267,22 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(238),		/* * */
+			shift(239),		/* / */
+			reduce(20),		/* +, reduce: Add_Expr */
+			reduce(20),		/* -, reduce: Add_Expr */
+			reduce(20),		/* >, reduce: Add_Expr */
+			reduce(20),		/* <, reduce: Add_Expr */
+			reduce(20),		/* ==, reduce: Add_Expr */
+			reduce(20),		/* !=, reduce: Add_Expr */
+			reduce(20),		/* &&, reduce: Add_Expr */
+			reduce(20),		/* ||, reduce: Add_Expr */
 			nil,		/* [ */
-			shift(517),		/* ] */
+			reduce(20),		/* ], reduce: Add_Expr */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(20),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -17036,25 +16312,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
-			reduce(46),		/* ], reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			shift(240),		/* + */
+			shift(241),		/* - */
+			reduce(22),		/* >, reduce: Comp_Expr */
+			reduce(22),		/* <, reduce: Comp_Expr */
+			reduce(22),		/* ==, reduce: Comp_Expr */
+			reduce(22),		/* !=, reduce: Comp_Expr */
+			reduce(22),		/* &&, reduce: Comp_Expr */
+			reduce(22),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(22),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			reduce(46),		/* ,, reduce: Method_Call */
-			nil,		/* [] */
+			reduce(22),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17080,27 +16354,25 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(518),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(240),		/* + */
+			shift(241),		/* - */
+			reduce(23),		/* >, reduce: Comp_Expr */
+			reduce(23),		/* <, reduce: Comp_Expr */
+			reduce(23),		/* ==, reduce: Comp_Expr */
+			reduce(23),		/* !=, reduce: Comp_Expr */
+			reduce(23),		/* &&, reduce: Comp_Expr */
+			reduce(23),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(23),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(23),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(519),		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -17127,28 +16399,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(45),		/* *, reduce: Method_Call */
-			reduce(45),		/* /, reduce: Method_Call */
-			reduce(45),		/* +, reduce: Method_Call */
-			reduce(45),		/* -, reduce: Method_Call */
-			reduce(45),		/* >, reduce: Method_Call */
-			reduce(45),		/* <, reduce: Method_Call */
-			reduce(45),		/* ==, reduce: Method_Call */
-			reduce(45),		/* !=, reduce: Method_Call */
-			reduce(45),		/* &&, reduce: Method_Call */
-			reduce(45),		/* ||, reduce: Method_Call */
-			reduce(45),		/* [, reduce: Method_Call */
-			reduce(45),		/* ], reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			shift(240),		/* + */
+			shift(241),		/* - */
+			reduce(24),		/* >, reduce: Comp_Expr */
+			reduce(24),		/* <, reduce: Comp_Expr */
+			reduce(24),		/* ==, reduce: Comp_Expr */
+			reduce(24),		/* !=, reduce: Comp_Expr */
+			reduce(24),		/* &&, reduce: Comp_Expr */
+			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(24),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			reduce(45),		/* ,, reduce: Method_Call */
-			nil,		/* [] */
+			reduce(24),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
-			reduce(45),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17174,28 +16444,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
-			reduce(6),		/* ], reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(240),		/* + */
+			shift(241),		/* - */
+			reduce(25),		/* >, reduce: Comp_Expr */
+			reduce(25),		/* <, reduce: Comp_Expr */
+			reduce(25),		/* ==, reduce: Comp_Expr */
+			reduce(25),		/* !=, reduce: Comp_Expr */
+			reduce(25),		/* &&, reduce: Comp_Expr */
+			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(25),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			reduce(6),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
+			reduce(25),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17221,28 +16489,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
-			reduce(2),		/* ], reduce: Variable */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(242),		/* > */
+			shift(243),		/* < */
+			shift(244),		/* == */
+			shift(245),		/* != */
+			reduce(27),		/* &&, reduce: Bool_Expr */
+			reduce(27),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
+			reduce(27),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
-			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			reduce(27),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17268,28 +16534,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
-			reduce(3),		/* ], reduce: Variable */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(242),		/* > */
+			shift(243),		/* < */
+			shift(244),		/* == */
+			shift(245),		/* != */
+			reduce(28),		/* &&, reduce: Bool_Expr */
+			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
+			reduce(28),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
-			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			reduce(28),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17318,25 +16582,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(16),		/* *, reduce: Mult_Expr */
-			reduce(16),		/* /, reduce: Mult_Expr */
-			reduce(16),		/* +, reduce: Mult_Expr */
-			reduce(16),		/* -, reduce: Mult_Expr */
-			reduce(16),		/* >, reduce: Mult_Expr */
-			reduce(16),		/* <, reduce: Mult_Expr */
-			reduce(16),		/* ==, reduce: Mult_Expr */
-			reduce(16),		/* !=, reduce: Mult_Expr */
-			reduce(16),		/* &&, reduce: Mult_Expr */
-			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(520),		/* [ */
-			reduce(16),		/* ], reduce: Mult_Expr */
+			reduce(39),		/* *, reduce: ListDef */
+			reduce(39),		/* /, reduce: ListDef */
+			reduce(39),		/* +, reduce: ListDef */
+			reduce(39),		/* -, reduce: ListDef */
+			reduce(39),		/* >, reduce: ListDef */
+			reduce(39),		/* <, reduce: ListDef */
+			reduce(39),		/* ==, reduce: ListDef */
+			reduce(39),		/* !=, reduce: ListDef */
+			reduce(39),		/* &&, reduce: ListDef */
+			reduce(39),		/* ||, reduce: ListDef */
+			reduce(39),		/* [, reduce: ListDef */
+			reduce(39),		/* ], reduce: ListDef */
 			nil,		/* = */
-			reduce(16),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			reduce(39),		/* ,, reduce: ListDef */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(245),		/* . */
+			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17365,25 +16627,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(17),		/* *, reduce: Mult_Expr */
-			reduce(17),		/* /, reduce: Mult_Expr */
-			reduce(17),		/* +, reduce: Mult_Expr */
-			reduce(17),		/* -, reduce: Mult_Expr */
-			reduce(17),		/* >, reduce: Mult_Expr */
-			reduce(17),		/* <, reduce: Mult_Expr */
-			reduce(17),		/* ==, reduce: Mult_Expr */
-			reduce(17),		/* !=, reduce: Mult_Expr */
-			reduce(17),		/* &&, reduce: Mult_Expr */
-			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(520),		/* [ */
-			reduce(17),		/* ], reduce: Mult_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			reduce(36),		/* ], reduce: Values */
 			nil,		/* = */
-			reduce(17),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			reduce(36),		/* ,, reduce: Values */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(245),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17409,28 +16669,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(42),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(520),		/* [ */
-			reduce(18),		/* ], reduce: Mult_Expr */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
+			reduce(42),		/* ], reduce: Fn_Call */
 			nil,		/* = */
-			reduce(18),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			reduce(42),		/* ,, reduce: Fn_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(245),		/* . */
+			reduce(42),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -17457,26 +16715,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(506),		/* ) */
 			nil,		/* int */
-			shift(246),		/* * */
-			shift(247),		/* / */
-			reduce(19),		/* +, reduce: Add_Expr */
-			reduce(19),		/* -, reduce: Add_Expr */
-			reduce(19),		/* >, reduce: Add_Expr */
-			reduce(19),		/* <, reduce: Add_Expr */
-			reduce(19),		/* ==, reduce: Add_Expr */
-			reduce(19),		/* !=, reduce: Add_Expr */
-			reduce(19),		/* &&, reduce: Add_Expr */
-			reduce(19),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(19),		/* ], reduce: Add_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(19),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -17499,37 +16755,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			shift(246),		/* * */
-			shift(247),		/* / */
-			reduce(20),		/* +, reduce: Add_Expr */
-			reduce(20),		/* -, reduce: Add_Expr */
-			reduce(20),		/* >, reduce: Add_Expr */
-			reduce(20),		/* <, reduce: Add_Expr */
-			reduce(20),		/* ==, reduce: Add_Expr */
-			reduce(20),		/* !=, reduce: Add_Expr */
-			reduce(20),		/* &&, reduce: Add_Expr */
-			reduce(20),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
-			reduce(20),		/* ], reduce: Add_Expr */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(20),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
-			nil,		/* return */
+			shift(509),		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -17545,39 +16799,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(43),		/* $, reduce: Fn_Call */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(43),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			shift(248),		/* + */
-			shift(249),		/* - */
-			reduce(22),		/* >, reduce: Comp_Expr */
-			reduce(22),		/* <, reduce: Comp_Expr */
-			reduce(22),		/* ==, reduce: Comp_Expr */
-			reduce(22),		/* !=, reduce: Comp_Expr */
-			reduce(22),		/* &&, reduce: Comp_Expr */
-			reduce(22),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
-			reduce(22),		/* ], reduce: Comp_Expr */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(22),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(43),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(43),		/* ;, reduce: Fn_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -17602,24 +16854,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(248),		/* + */
-			shift(249),		/* - */
-			reduce(23),		/* >, reduce: Comp_Expr */
-			reduce(23),		/* <, reduce: Comp_Expr */
-			reduce(23),		/* ==, reduce: Comp_Expr */
-			reduce(23),		/* !=, reduce: Comp_Expr */
-			reduce(23),		/* &&, reduce: Comp_Expr */
-			reduce(23),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(23),		/* ], reduce: Comp_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(23),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			reduce(50),		/* ,, reduce: Func_Param_Def */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(50),		/* {, reduce: Func_Param_Def */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -17649,24 +16899,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(248),		/* + */
-			shift(249),		/* - */
-			reduce(24),		/* >, reduce: Comp_Expr */
-			reduce(24),		/* <, reduce: Comp_Expr */
-			reduce(24),		/* ==, reduce: Comp_Expr */
-			reduce(24),		/* !=, reduce: Comp_Expr */
-			reduce(24),		/* &&, reduce: Comp_Expr */
-			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(24),		/* ], reduce: Comp_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(24),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			reduce(2),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(2),		/* {, reduce: Variable */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -17696,24 +16944,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(248),		/* + */
-			shift(249),		/* - */
-			reduce(25),		/* >, reduce: Comp_Expr */
-			reduce(25),		/* <, reduce: Comp_Expr */
-			reduce(25),		/* ==, reduce: Comp_Expr */
-			reduce(25),		/* !=, reduce: Comp_Expr */
-			reduce(25),		/* &&, reduce: Comp_Expr */
-			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(25),		/* ], reduce: Comp_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(25),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			reduce(3),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(3),		/* {, reduce: Variable */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -17745,22 +16991,20 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(250),		/* > */
-			shift(251),		/* < */
-			shift(252),		/* == */
-			shift(253),		/* != */
-			reduce(27),		/* &&, reduce: Bool_Expr */
-			reduce(27),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(27),		/* ], reduce: Bool_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(27),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
+			shift(510),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			shift(281),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -17792,20 +17036,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(250),		/* > */
-			shift(251),		/* < */
-			shift(252),		/* == */
-			shift(253),		/* != */
-			reduce(28),		/* &&, reduce: Bool_Expr */
-			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(28),		/* ], reduce: Bool_Expr */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(28),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
+			reduce(49),		/* ,, reduce: Func_Param_Def */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -17818,7 +17060,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			reduce(49),		/* ->, reduce: Func_Param_Def */
 			
 		},
 
@@ -17827,7 +17069,7 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(67),		/* $, reduce: Lambda_Def */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -17835,31 +17077,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(39),		/* *, reduce: ListDef */
-			reduce(39),		/* /, reduce: ListDef */
-			reduce(39),		/* +, reduce: ListDef */
-			reduce(39),		/* -, reduce: ListDef */
-			reduce(39),		/* >, reduce: ListDef */
-			reduce(39),		/* <, reduce: ListDef */
-			reduce(39),		/* ==, reduce: ListDef */
-			reduce(39),		/* !=, reduce: ListDef */
-			reduce(39),		/* &&, reduce: ListDef */
-			reduce(39),		/* ||, reduce: ListDef */
-			reduce(39),		/* [, reduce: ListDef */
-			reduce(39),		/* ], reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(39),		/* ,, reduce: ListDef */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(39),		/* ., reduce: ListDef */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(67),		/* ;, reduce: Lambda_Def */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -17893,15 +17133,13 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			reduce(36),		/* ], reduce: Values */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(36),		/* ,, reduce: Values */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(31),		/* {, reduce: Assign */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -17927,7 +17165,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(521),		/* ) */
+			shift(512),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -17942,11 +17180,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -17969,37 +17205,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(7),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
+			nil,		/* int */
+			reduce(7),		/* *, reduce: Callable_Object */
+			reduce(7),		/* /, reduce: Callable_Object */
+			reduce(7),		/* +, reduce: Callable_Object */
+			reduce(7),		/* -, reduce: Callable_Object */
+			reduce(7),		/* >, reduce: Callable_Object */
+			reduce(7),		/* <, reduce: Callable_Object */
+			reduce(7),		/* ==, reduce: Callable_Object */
+			reduce(7),		/* !=, reduce: Callable_Object */
+			reduce(7),		/* &&, reduce: Callable_Object */
+			reduce(7),		/* ||, reduce: Callable_Object */
+			reduce(7),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(7),		/* ., reduce: Callable_Object */
+			reduce(7),		/* {, reduce: Callable_Object */
 			nil,		/* } */
-			shift(108),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(524),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -18015,39 +17249,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(43),		/* $, reduce: Fn_Call */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
+			nil,		/* . */
+			shift(281),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(43),		/* ;, reduce: Fn_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18083,14 +17315,12 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(49),		/* ,, reduce: Func_Param_Def */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(49),		/* {, reduce: Func_Param_Def */
-			nil,		/* } */
+			nil,		/* { */
+			shift(514),		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -18114,34 +17344,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(6),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			nil,		/* = */
-			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			shift(515),		/* = */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(2),		/* {, reduce: Variable */
-			nil,		/* } */
+			reduce(6),		/* ., reduce: Callable_Object */
+			nil,		/* { */
+			reduce(6),		/* }, reduce: Callable_Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(6),		/* ;, reduce: Callable_Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18161,34 +17389,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(2),		/* (, reduce: Variable */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
 			nil,		/* ] */
-			nil,		/* = */
-			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			reduce(2),		/* =, reduce: Variable */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(3),		/* {, reduce: Variable */
-			nil,		/* } */
+			reduce(2),		/* ., reduce: Variable */
+			nil,		/* { */
+			reduce(2),		/* }, reduce: Variable */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(2),		/* ;, reduce: Variable */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18208,34 +17434,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(3),		/* (, reduce: Variable */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
 			nil,		/* ] */
-			nil,		/* = */
-			shift(525),		/* , */
-			nil,		/* [] */
+			reduce(3),		/* =, reduce: Variable */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			shift(288),		/* { */
-			nil,		/* } */
+			reduce(3),		/* ., reduce: Variable */
+			nil,		/* { */
+			reduce(3),		/* }, reduce: Variable */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(3),		/* ;, reduce: Variable */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18258,37 +17482,35 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(12),		/* *, reduce: Object */
+			reduce(12),		/* /, reduce: Object */
+			reduce(12),		/* +, reduce: Object */
+			reduce(12),		/* -, reduce: Object */
+			reduce(12),		/* >, reduce: Object */
+			reduce(12),		/* <, reduce: Object */
+			reduce(12),		/* ==, reduce: Object */
+			reduce(12),		/* !=, reduce: Object */
+			reduce(12),		/* &&, reduce: Object */
+			reduce(12),		/* ||, reduce: Object */
+			reduce(12),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(48),		/* ,, reduce: Func_Param_Def */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(12),		/* ., reduce: Object */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(12),		/* }, reduce: Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(12),		/* ;, reduce: Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			reduce(48),		/* ->, reduce: Func_Param_Def */
+			nil,		/* -> */
 			
 		},
 
@@ -18297,7 +17519,7 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(66),		/* $, reduce: Lambda_Def */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -18305,31 +17527,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(4),		/* *, reduce: Bool */
+			reduce(4),		/* /, reduce: Bool */
+			reduce(4),		/* +, reduce: Bool */
+			reduce(4),		/* -, reduce: Bool */
+			reduce(4),		/* >, reduce: Bool */
+			reduce(4),		/* <, reduce: Bool */
+			reduce(4),		/* ==, reduce: Bool */
+			reduce(4),		/* !=, reduce: Bool */
+			reduce(4),		/* &&, reduce: Bool */
+			reduce(4),		/* ||, reduce: Bool */
+			reduce(4),		/* [, reduce: Bool */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(4),		/* ., reduce: Bool */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(4),		/* }, reduce: Bool */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(66),		/* ;, reduce: Lambda_Def */
+			reduce(4),		/* ;, reduce: Bool */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18352,31 +17572,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(5),		/* *, reduce: Bool */
+			reduce(5),		/* /, reduce: Bool */
+			reduce(5),		/* +, reduce: Bool */
+			reduce(5),		/* -, reduce: Bool */
+			reduce(5),		/* >, reduce: Bool */
+			reduce(5),		/* <, reduce: Bool */
+			reduce(5),		/* ==, reduce: Bool */
+			reduce(5),		/* !=, reduce: Bool */
+			reduce(5),		/* &&, reduce: Bool */
+			reduce(5),		/* ||, reduce: Bool */
+			reduce(5),		/* [, reduce: Bool */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(31),		/* {, reduce: Assign */
-			nil,		/* } */
+			reduce(5),		/* ., reduce: Bool */
+			nil,		/* { */
+			reduce(5),		/* }, reduce: Bool */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(5),		/* ;, reduce: Bool */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18396,34 +17614,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			shift(527),		/* ) */
+			shift(516),		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(11),		/* *, reduce: Object */
+			reduce(11),		/* /, reduce: Object */
+			reduce(11),		/* +, reduce: Object */
+			reduce(11),		/* -, reduce: Object */
+			reduce(11),		/* >, reduce: Object */
+			reduce(11),		/* <, reduce: Object */
+			reduce(11),		/* ==, reduce: Object */
+			reduce(11),		/* !=, reduce: Object */
+			reduce(11),		/* &&, reduce: Object */
+			reduce(11),		/* ||, reduce: Object */
+			reduce(11),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(11),		/* ., reduce: Object */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(11),		/* }, reduce: Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(11),		/* ;, reduce: Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18439,35 +17655,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(7),		/* (, reduce: Callable_Object */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(7),		/* *, reduce: Callable_Object */
-			reduce(7),		/* /, reduce: Callable_Object */
-			reduce(7),		/* +, reduce: Callable_Object */
-			reduce(7),		/* -, reduce: Callable_Object */
-			reduce(7),		/* >, reduce: Callable_Object */
-			reduce(7),		/* <, reduce: Callable_Object */
-			reduce(7),		/* ==, reduce: Callable_Object */
-			reduce(7),		/* !=, reduce: Callable_Object */
-			reduce(7),		/* &&, reduce: Callable_Object */
-			reduce(7),		/* ||, reduce: Callable_Object */
-			reduce(7),		/* [, reduce: Callable_Object */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(7),		/* ., reduce: Callable_Object */
-			reduce(7),		/* {, reduce: Callable_Object */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -18507,17 +17721,15 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			shift(288),		/* { */
-			nil,		/* } */
+			nil,		/* { */
+			reduce(52),		/* }, reduce: Statement */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(52),		/* ;, reduce: Statement */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18537,34 +17749,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(8),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(8),		/* *, reduce: Callable_Object */
+			reduce(8),		/* /, reduce: Callable_Object */
+			reduce(8),		/* +, reduce: Callable_Object */
+			reduce(8),		/* -, reduce: Callable_Object */
+			reduce(8),		/* >, reduce: Callable_Object */
+			reduce(8),		/* <, reduce: Callable_Object */
+			reduce(8),		/* ==, reduce: Callable_Object */
+			reduce(8),		/* !=, reduce: Callable_Object */
+			reduce(8),		/* &&, reduce: Callable_Object */
+			reduce(8),		/* ||, reduce: Callable_Object */
+			reduce(8),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(8),		/* ., reduce: Callable_Object */
 			nil,		/* { */
-			shift(529),		/* } */
+			reduce(8),		/* }, reduce: Callable_Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(8),		/* ;, reduce: Callable_Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18584,34 +17794,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
+			reduce(9),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
+			reduce(9),		/* *, reduce: Callable_Object */
+			reduce(9),		/* /, reduce: Callable_Object */
+			reduce(9),		/* +, reduce: Callable_Object */
+			reduce(9),		/* -, reduce: Callable_Object */
+			reduce(9),		/* >, reduce: Callable_Object */
+			reduce(9),		/* <, reduce: Callable_Object */
+			reduce(9),		/* ==, reduce: Callable_Object */
+			reduce(9),		/* !=, reduce: Callable_Object */
+			reduce(9),		/* &&, reduce: Callable_Object */
+			reduce(9),		/* ||, reduce: Callable_Object */
+			reduce(9),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			shift(530),		/* = */
+			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
+			reduce(9),		/* ., reduce: Callable_Object */
 			nil,		/* { */
-			reduce(6),		/* }, reduce: Callable_Object */
+			reduce(9),		/* }, reduce: Callable_Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(6),		/* ;, reduce: Callable_Object */
+			reduce(9),		/* ;, reduce: Callable_Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18631,34 +17839,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
+			reduce(10),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
+			reduce(10),		/* *, reduce: Callable_Object */
+			reduce(10),		/* /, reduce: Callable_Object */
+			reduce(10),		/* +, reduce: Callable_Object */
+			reduce(10),		/* -, reduce: Callable_Object */
+			reduce(10),		/* >, reduce: Callable_Object */
+			reduce(10),		/* <, reduce: Callable_Object */
+			reduce(10),		/* ==, reduce: Callable_Object */
+			reduce(10),		/* !=, reduce: Callable_Object */
+			reduce(10),		/* &&, reduce: Callable_Object */
+			reduce(10),		/* ||, reduce: Callable_Object */
+			reduce(10),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
-			reduce(2),		/* =, reduce: Variable */
+			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
+			reduce(10),		/* ., reduce: Callable_Object */
 			nil,		/* { */
-			reduce(2),		/* }, reduce: Variable */
+			reduce(10),		/* }, reduce: Callable_Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(2),		/* ;, reduce: Variable */
+			reduce(10),		/* ;, reduce: Callable_Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18678,34 +17884,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(518),		/* [ */
 			nil,		/* ] */
-			reduce(3),		/* =, reduce: Variable */
+			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
+			shift(519),		/* . */
 			nil,		/* { */
-			reduce(3),		/* }, reduce: Variable */
+			reduce(18),		/* }, reduce: Mult_Expr */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(3),		/* ;, reduce: Variable */
+			reduce(18),		/* ;, reduce: Mult_Expr */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18728,31 +17932,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(12),		/* *, reduce: Object */
-			reduce(12),		/* /, reduce: Object */
-			reduce(12),		/* +, reduce: Object */
-			reduce(12),		/* -, reduce: Object */
-			reduce(12),		/* >, reduce: Object */
-			reduce(12),		/* <, reduce: Object */
-			reduce(12),		/* ==, reduce: Object */
-			reduce(12),		/* !=, reduce: Object */
-			reduce(12),		/* &&, reduce: Object */
-			reduce(12),		/* ||, reduce: Object */
-			reduce(12),		/* [, reduce: Object */
+			reduce(13),		/* *, reduce: Object */
+			reduce(13),		/* /, reduce: Object */
+			reduce(13),		/* +, reduce: Object */
+			reduce(13),		/* -, reduce: Object */
+			reduce(13),		/* >, reduce: Object */
+			reduce(13),		/* <, reduce: Object */
+			reduce(13),		/* ==, reduce: Object */
+			reduce(13),		/* !=, reduce: Object */
+			reduce(13),		/* &&, reduce: Object */
+			reduce(13),		/* ||, reduce: Object */
+			reduce(13),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(12),		/* ., reduce: Object */
+			reduce(13),		/* ., reduce: Object */
 			nil,		/* { */
-			reduce(12),		/* }, reduce: Object */
+			reduce(13),		/* }, reduce: Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(12),		/* ;, reduce: Object */
+			reduce(13),		/* ;, reduce: Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18775,31 +17977,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(4),		/* *, reduce: Bool */
-			reduce(4),		/* /, reduce: Bool */
-			reduce(4),		/* +, reduce: Bool */
-			reduce(4),		/* -, reduce: Bool */
-			reduce(4),		/* >, reduce: Bool */
-			reduce(4),		/* <, reduce: Bool */
-			reduce(4),		/* ==, reduce: Bool */
-			reduce(4),		/* !=, reduce: Bool */
-			reduce(4),		/* &&, reduce: Bool */
-			reduce(4),		/* ||, reduce: Bool */
-			reduce(4),		/* [, reduce: Bool */
+			reduce(14),		/* *, reduce: Object */
+			reduce(14),		/* /, reduce: Object */
+			reduce(14),		/* +, reduce: Object */
+			reduce(14),		/* -, reduce: Object */
+			reduce(14),		/* >, reduce: Object */
+			reduce(14),		/* <, reduce: Object */
+			reduce(14),		/* ==, reduce: Object */
+			reduce(14),		/* !=, reduce: Object */
+			reduce(14),		/* &&, reduce: Object */
+			reduce(14),		/* ||, reduce: Object */
+			reduce(14),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(4),		/* ., reduce: Bool */
+			reduce(14),		/* ., reduce: Object */
 			nil,		/* { */
-			reduce(4),		/* }, reduce: Bool */
+			reduce(14),		/* }, reduce: Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(4),		/* ;, reduce: Bool */
+			reduce(14),		/* ;, reduce: Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18822,31 +18022,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(5),		/* *, reduce: Bool */
-			reduce(5),		/* /, reduce: Bool */
-			reduce(5),		/* +, reduce: Bool */
-			reduce(5),		/* -, reduce: Bool */
-			reduce(5),		/* >, reduce: Bool */
-			reduce(5),		/* <, reduce: Bool */
-			reduce(5),		/* ==, reduce: Bool */
-			reduce(5),		/* !=, reduce: Bool */
-			reduce(5),		/* &&, reduce: Bool */
-			reduce(5),		/* ||, reduce: Bool */
-			reduce(5),		/* [, reduce: Bool */
+			reduce(15),		/* *, reduce: Object */
+			reduce(15),		/* /, reduce: Object */
+			reduce(15),		/* +, reduce: Object */
+			reduce(15),		/* -, reduce: Object */
+			reduce(15),		/* >, reduce: Object */
+			reduce(15),		/* <, reduce: Object */
+			reduce(15),		/* ==, reduce: Object */
+			reduce(15),		/* !=, reduce: Object */
+			reduce(15),		/* &&, reduce: Object */
+			reduce(15),		/* ||, reduce: Object */
+			reduce(15),		/* [, reduce: Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(5),		/* ., reduce: Bool */
+			reduce(15),		/* ., reduce: Object */
 			nil,		/* { */
-			reduce(5),		/* }, reduce: Bool */
+			reduce(15),		/* }, reduce: Object */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(5),		/* ;, reduce: Bool */
+			reduce(15),		/* ;, reduce: Object */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18866,34 +18064,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(531),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(11),		/* *, reduce: Object */
-			reduce(11),		/* /, reduce: Object */
-			reduce(11),		/* +, reduce: Object */
-			reduce(11),		/* -, reduce: Object */
-			reduce(11),		/* >, reduce: Object */
-			reduce(11),		/* <, reduce: Object */
-			reduce(11),		/* ==, reduce: Object */
-			reduce(11),		/* !=, reduce: Object */
-			reduce(11),		/* &&, reduce: Object */
-			reduce(11),		/* ||, reduce: Object */
-			reduce(11),		/* [, reduce: Object */
+			shift(520),		/* * */
+			shift(521),		/* / */
+			reduce(21),		/* +, reduce: Add_Expr */
+			reduce(21),		/* -, reduce: Add_Expr */
+			reduce(21),		/* >, reduce: Add_Expr */
+			reduce(21),		/* <, reduce: Add_Expr */
+			reduce(21),		/* ==, reduce: Add_Expr */
+			reduce(21),		/* !=, reduce: Add_Expr */
+			reduce(21),		/* &&, reduce: Add_Expr */
+			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(11),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(11),		/* }, reduce: Object */
+			reduce(21),		/* }, reduce: Add_Expr */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(11),		/* ;, reduce: Object */
+			reduce(21),		/* ;, reduce: Add_Expr */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18909,38 +18105,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
+			shift(522),		/* + */
+			shift(523),		/* - */
+			reduce(26),		/* >, reduce: Comp_Expr */
+			reduce(26),		/* <, reduce: Comp_Expr */
+			reduce(26),		/* ==, reduce: Comp_Expr */
+			reduce(26),		/* !=, reduce: Comp_Expr */
+			reduce(26),		/* &&, reduce: Comp_Expr */
+			reduce(26),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
-			shift(69),		/* function */
+			reduce(26),		/* }, reduce: Comp_Expr */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(26),		/* ;, reduce: Comp_Expr */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -18967,27 +18161,25 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(524),		/* > */
+			shift(525),		/* < */
+			shift(526),		/* == */
+			shift(527),		/* != */
+			reduce(29),		/* &&, reduce: Bool_Expr */
+			reduce(29),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			reduce(51),		/* }, reduce: Statement */
+			reduce(29),		/* }, reduce: Bool_Expr */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(51),		/* ;, reduce: Statement */
+			reduce(29),		/* ;, reduce: Bool_Expr */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19007,34 +18199,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(8),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(8),		/* *, reduce: Callable_Object */
-			reduce(8),		/* /, reduce: Callable_Object */
-			reduce(8),		/* +, reduce: Callable_Object */
-			reduce(8),		/* -, reduce: Callable_Object */
-			reduce(8),		/* >, reduce: Callable_Object */
-			reduce(8),		/* <, reduce: Callable_Object */
-			reduce(8),		/* ==, reduce: Callable_Object */
-			reduce(8),		/* !=, reduce: Callable_Object */
-			reduce(8),		/* &&, reduce: Callable_Object */
-			reduce(8),		/* ||, reduce: Callable_Object */
-			reduce(8),		/* [, reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			shift(528),		/* && */
+			shift(529),		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(8),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(8),		/* }, reduce: Callable_Object */
+			reduce(33),		/* }, reduce: Expression */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(8),		/* ;, reduce: Callable_Object */
+			reduce(33),		/* ;, reduce: Expression */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19050,38 +18240,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(9),		/* (, reduce: Callable_Object */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(9),		/* *, reduce: Callable_Object */
-			reduce(9),		/* /, reduce: Callable_Object */
-			reduce(9),		/* +, reduce: Callable_Object */
-			reduce(9),		/* -, reduce: Callable_Object */
-			reduce(9),		/* >, reduce: Callable_Object */
-			reduce(9),		/* <, reduce: Callable_Object */
-			reduce(9),		/* ==, reduce: Callable_Object */
-			reduce(9),		/* !=, reduce: Callable_Object */
-			reduce(9),		/* &&, reduce: Callable_Object */
-			reduce(9),		/* ||, reduce: Callable_Object */
-			reduce(9),		/* [, reduce: Callable_Object */
-			nil,		/* ] */
+			shift(93),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			shift(530),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(9),		/* ., reduce: Callable_Object */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(9),		/* }, reduce: Callable_Object */
-			nil,		/* function */
+			nil,		/* } */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(9),		/* ;, reduce: Callable_Object */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19101,34 +18289,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(10),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(10),		/* *, reduce: Callable_Object */
-			reduce(10),		/* /, reduce: Callable_Object */
-			reduce(10),		/* +, reduce: Callable_Object */
-			reduce(10),		/* -, reduce: Callable_Object */
-			reduce(10),		/* >, reduce: Callable_Object */
-			reduce(10),		/* <, reduce: Callable_Object */
-			reduce(10),		/* ==, reduce: Callable_Object */
-			reduce(10),		/* !=, reduce: Callable_Object */
-			reduce(10),		/* &&, reduce: Callable_Object */
-			reduce(10),		/* ||, reduce: Callable_Object */
-			reduce(10),		/* [, reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(10),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(10),		/* }, reduce: Callable_Object */
+			reduce(34),		/* }, reduce: Expression */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(10),		/* ;, reduce: Callable_Object */
+			reduce(34),		/* ;, reduce: Expression */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19151,31 +18337,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(533),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(534),		/* . */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(18),		/* }, reduce: Mult_Expr */
+			reduce(35),		/* }, reduce: Expression */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(18),		/* ;, reduce: Mult_Expr */
+			reduce(35),		/* ;, reduce: Expression */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19195,34 +18379,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(532),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(13),		/* *, reduce: Object */
-			reduce(13),		/* /, reduce: Object */
-			reduce(13),		/* +, reduce: Object */
-			reduce(13),		/* -, reduce: Object */
-			reduce(13),		/* >, reduce: Object */
-			reduce(13),		/* <, reduce: Object */
-			reduce(13),		/* ==, reduce: Object */
-			reduce(13),		/* !=, reduce: Object */
-			reduce(13),		/* &&, reduce: Object */
-			reduce(13),		/* ||, reduce: Object */
-			reduce(13),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(13),		/* ., reduce: Object */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(13),		/* }, reduce: Object */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(13),		/* ;, reduce: Object */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19238,42 +18420,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(56),		/* var, reduce: Single_Statement */
+			reduce(56),		/* input, reduce: Single_Statement */
+			reduce(56),		/* true, reduce: Single_Statement */
+			reduce(56),		/* false, reduce: Single_Statement */
+			reduce(56),		/* (, reduce: Single_Statement */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(14),		/* *, reduce: Object */
-			reduce(14),		/* /, reduce: Object */
-			reduce(14),		/* +, reduce: Object */
-			reduce(14),		/* -, reduce: Object */
-			reduce(14),		/* >, reduce: Object */
-			reduce(14),		/* <, reduce: Object */
-			reduce(14),		/* ==, reduce: Object */
-			reduce(14),		/* !=, reduce: Object */
-			reduce(14),		/* &&, reduce: Object */
-			reduce(14),		/* ||, reduce: Object */
-			reduce(14),		/* [, reduce: Object */
+			reduce(56),		/* int, reduce: Single_Statement */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(56),		/* [, reduce: Single_Statement */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(14),		/* ., reduce: Object */
+			reduce(56),		/* fn_name, reduce: Single_Statement */
+			reduce(56),		/* cust_fn_name, reduce: Single_Statement */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(14),		/* }, reduce: Object */
-			nil,		/* function */
+			reduce(56),		/* }, reduce: Single_Statement */
+			reduce(56),		/* function, reduce: Single_Statement */
 			nil,		/* : */
-			nil,		/* return */
-			reduce(14),		/* ;, reduce: Object */
-			nil,		/* if */
+			reduce(56),		/* return, reduce: Single_Statement */
+			nil,		/* ; */
+			reduce(56),		/* if, reduce: Single_Statement */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(56),		/* while, reduce: Single_Statement */
+			reduce(56),		/* foreach, reduce: Single_Statement */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -19285,38 +18465,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(109),		/* var */
+			shift(110),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(15),		/* *, reduce: Object */
-			reduce(15),		/* /, reduce: Object */
-			reduce(15),		/* +, reduce: Object */
-			reduce(15),		/* -, reduce: Object */
-			reduce(15),		/* >, reduce: Object */
-			reduce(15),		/* <, reduce: Object */
-			reduce(15),		/* ==, reduce: Object */
-			reduce(15),		/* !=, reduce: Object */
-			reduce(15),		/* &&, reduce: Object */
-			reduce(15),		/* ||, reduce: Object */
-			reduce(15),		/* [, reduce: Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(15),		/* ., reduce: Object */
+			shift(533),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(15),		/* }, reduce: Object */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(15),		/* ;, reduce: Object */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19339,31 +18517,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(535),		/* * */
-			shift(536),		/* / */
-			reduce(21),		/* +, reduce: Add_Expr */
-			reduce(21),		/* -, reduce: Add_Expr */
-			reduce(21),		/* >, reduce: Add_Expr */
-			reduce(21),		/* <, reduce: Add_Expr */
-			reduce(21),		/* ==, reduce: Add_Expr */
-			reduce(21),		/* !=, reduce: Add_Expr */
-			reduce(21),		/* &&, reduce: Add_Expr */
-			reduce(21),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			reduce(21),		/* }, reduce: Add_Expr */
+			reduce(59),		/* }, reduce: Statements */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(21),		/* ;, reduce: Add_Expr */
+			shift(535),		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19379,38 +18555,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(537),		/* + */
-			shift(538),		/* - */
-			reduce(26),		/* >, reduce: Comp_Expr */
-			reduce(26),		/* <, reduce: Comp_Expr */
-			reduce(26),		/* ==, reduce: Comp_Expr */
-			reduce(26),		/* !=, reduce: Comp_Expr */
-			reduce(26),		/* &&, reduce: Comp_Expr */
-			reduce(26),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
-			reduce(26),		/* }, reduce: Comp_Expr */
-			nil,		/* function */
+			nil,		/* } */
+			shift(537),		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(26),		/* ;, reduce: Comp_Expr */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19426,42 +18600,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(539),		/* > */
-			shift(540),		/* < */
-			shift(541),		/* == */
-			shift(542),		/* != */
-			reduce(29),		/* &&, reduce: Bool_Expr */
-			reduce(29),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
-			reduce(29),		/* }, reduce: Bool_Expr */
-			nil,		/* function */
+			reduce(58),		/* }, reduce: Statements */
+			shift(410),		/* function */
 			nil,		/* : */
-			nil,		/* return */
-			reduce(29),		/* ;, reduce: Bool_Expr */
-			nil,		/* if */
+			shift(412),		/* return */
+			nil,		/* ; */
+			shift(416),		/* if */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			shift(418),		/* while */
+			shift(420),		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -19469,288 +18641,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S414
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			shift(543),		/* && */
-			shift(544),		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(33),		/* }, reduce: Expression */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(33),		/* ;, reduce: Expression */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S415
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(108),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S416
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(34),		/* }, reduce: Expression */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(34),		/* ;, reduce: Expression */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S417
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(35),		/* }, reduce: Expression */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(35),		/* ;, reduce: Expression */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S418
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(38),		/* *, reduce: ListDef */
-			reduce(38),		/* /, reduce: ListDef */
-			reduce(38),		/* +, reduce: ListDef */
-			reduce(38),		/* -, reduce: ListDef */
-			reduce(38),		/* >, reduce: ListDef */
-			reduce(38),		/* <, reduce: ListDef */
-			reduce(38),		/* ==, reduce: ListDef */
-			reduce(38),		/* !=, reduce: ListDef */
-			reduce(38),		/* &&, reduce: ListDef */
-			reduce(38),		/* ||, reduce: ListDef */
-			reduce(38),		/* [, reduce: ListDef */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(38),		/* ., reduce: ListDef */
-			nil,		/* { */
-			reduce(38),		/* }, reduce: ListDef */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(38),		/* ;, reduce: ListDef */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S419
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(546),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(547),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S420
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -19776,10 +18666,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(55),		/* [], reduce: Single_Statement */
 			reduce(55),		/* fn_name, reduce: Single_Statement */
 			reduce(55),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(55),		/* }, reduce: Single_Statement */
@@ -19797,13 +18685,238 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S421
+	actionRow{ // S415
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
+			reduce(64),		/* var, reduce: Block */
+			reduce(64),		/* input, reduce: Block */
+			reduce(64),		/* true, reduce: Block */
+			reduce(64),		/* false, reduce: Block */
+			reduce(64),		/* (, reduce: Block */
+			nil,		/* ) */
+			reduce(64),		/* int, reduce: Block */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(64),		/* [, reduce: Block */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(64),		/* fn_name, reduce: Block */
+			reduce(64),		/* cust_fn_name, reduce: Block */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(64),		/* }, reduce: Block */
+			reduce(64),		/* function, reduce: Block */
+			nil,		/* : */
+			reduce(64),		/* return, reduce: Block */
+			nil,		/* ; */
+			reduce(64),		/* if, reduce: Block */
+			nil,		/* else */
+			reduce(64),		/* while, reduce: Block */
+			reduce(64),		/* foreach, reduce: Block */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S416
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S417
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			reduce(65),		/* var, reduce: Block */
+			reduce(65),		/* input, reduce: Block */
+			reduce(65),		/* true, reduce: Block */
+			reduce(65),		/* false, reduce: Block */
+			reduce(65),		/* (, reduce: Block */
+			nil,		/* ) */
+			reduce(65),		/* int, reduce: Block */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(65),		/* [, reduce: Block */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(65),		/* fn_name, reduce: Block */
+			reduce(65),		/* cust_fn_name, reduce: Block */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(65),		/* }, reduce: Block */
+			reduce(65),		/* function, reduce: Block */
+			nil,		/* : */
+			reduce(65),		/* return, reduce: Block */
+			nil,		/* ; */
+			reduce(65),		/* if, reduce: Block */
+			nil,		/* else */
+			reduce(65),		/* while, reduce: Block */
+			reduce(65),		/* foreach, reduce: Block */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S418
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S419
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			reduce(66),		/* var, reduce: Block */
+			reduce(66),		/* input, reduce: Block */
+			reduce(66),		/* true, reduce: Block */
+			reduce(66),		/* false, reduce: Block */
+			reduce(66),		/* (, reduce: Block */
+			nil,		/* ) */
+			reduce(66),		/* int, reduce: Block */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(66),		/* [, reduce: Block */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(66),		/* fn_name, reduce: Block */
+			reduce(66),		/* cust_fn_name, reduce: Block */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(66),		/* }, reduce: Block */
+			reduce(66),		/* function, reduce: Block */
+			nil,		/* : */
+			reduce(66),		/* return, reduce: Block */
+			nil,		/* ; */
+			reduce(66),		/* if, reduce: Block */
+			nil,		/* else */
+			reduce(66),		/* while, reduce: Block */
+			reduce(66),		/* foreach, reduce: Block */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S420
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(144),		/* var */
+			shift(145),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -19823,10 +18936,53 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
-			shift(548),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S421
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			shift(542),		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -19853,34 +19009,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			shift(543),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(45),		/* *, reduce: Method_Call */
+			reduce(45),		/* /, reduce: Method_Call */
+			reduce(45),		/* +, reduce: Method_Call */
+			reduce(45),		/* -, reduce: Method_Call */
+			reduce(45),		/* >, reduce: Method_Call */
+			reduce(45),		/* <, reduce: Method_Call */
+			reduce(45),		/* ==, reduce: Method_Call */
+			reduce(45),		/* !=, reduce: Method_Call */
+			reduce(45),		/* &&, reduce: Method_Call */
+			reduce(45),		/* ||, reduce: Method_Call */
+			reduce(45),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(58),		/* }, reduce: Statements */
+			reduce(45),		/* ., reduce: Method_Call */
+			reduce(45),		/* {, reduce: Method_Call */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			shift(550),		/* ; */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -19896,35 +19050,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(6),		/* (, reduce: Callable_Object */
 			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* int */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(6),		/* ., reduce: Callable_Object */
+			reduce(6),		/* {, reduce: Callable_Object */
 			nil,		/* } */
-			shift(552),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -19943,42 +19095,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(2),		/* (, reduce: Variable */
 			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* int */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(57),		/* }, reduce: Statements */
-			shift(421),		/* function */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(2),		/* ., reduce: Variable */
+			reduce(2),		/* {, reduce: Variable */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
-			shift(427),		/* if */
+			nil,		/* if */
 			nil,		/* else */
-			shift(429),		/* while */
-			shift(431),		/* foreach */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -19990,42 +19140,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(54),		/* var, reduce: Single_Statement */
-			reduce(54),		/* input, reduce: Single_Statement */
-			reduce(54),		/* true, reduce: Single_Statement */
-			reduce(54),		/* false, reduce: Single_Statement */
-			reduce(54),		/* (, reduce: Single_Statement */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(3),		/* (, reduce: Variable */
 			nil,		/* ) */
-			reduce(54),		/* int, reduce: Single_Statement */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(54),		/* [, reduce: Single_Statement */
+			nil,		/* int */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(54),		/* [], reduce: Single_Statement */
-			reduce(54),		/* fn_name, reduce: Single_Statement */
-			reduce(54),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(54),		/* }, reduce: Single_Statement */
-			reduce(54),		/* function, reduce: Single_Statement */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(3),		/* ., reduce: Variable */
+			reduce(3),		/* {, reduce: Variable */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(54),		/* return, reduce: Single_Statement */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(54),		/* if, reduce: Single_Statement */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(54),		/* while, reduce: Single_Statement */
-			reduce(54),		/* foreach, reduce: Single_Statement */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -20037,42 +19185,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(63),		/* var, reduce: Block */
-			reduce(63),		/* input, reduce: Block */
-			reduce(63),		/* true, reduce: Block */
-			reduce(63),		/* false, reduce: Block */
-			reduce(63),		/* (, reduce: Block */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(63),		/* int, reduce: Block */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(63),		/* [, reduce: Block */
+			nil,		/* int */
+			reduce(16),		/* *, reduce: Mult_Expr */
+			reduce(16),		/* /, reduce: Mult_Expr */
+			reduce(16),		/* +, reduce: Mult_Expr */
+			reduce(16),		/* -, reduce: Mult_Expr */
+			reduce(16),		/* >, reduce: Mult_Expr */
+			reduce(16),		/* <, reduce: Mult_Expr */
+			reduce(16),		/* ==, reduce: Mult_Expr */
+			reduce(16),		/* !=, reduce: Mult_Expr */
+			reduce(16),		/* &&, reduce: Mult_Expr */
+			reduce(16),		/* ||, reduce: Mult_Expr */
+			shift(544),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(63),		/* [], reduce: Block */
-			reduce(63),		/* fn_name, reduce: Block */
-			reduce(63),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(63),		/* }, reduce: Block */
-			reduce(63),		/* function, reduce: Block */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(265),		/* . */
+			reduce(16),		/* {, reduce: Mult_Expr */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(63),		/* return, reduce: Block */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(63),		/* if, reduce: Block */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(63),		/* while, reduce: Block */
-			reduce(63),		/* foreach, reduce: Block */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -20084,35 +19230,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
+			nil,		/* int */
+			reduce(17),		/* *, reduce: Mult_Expr */
+			reduce(17),		/* /, reduce: Mult_Expr */
+			reduce(17),		/* +, reduce: Mult_Expr */
+			reduce(17),		/* -, reduce: Mult_Expr */
+			reduce(17),		/* >, reduce: Mult_Expr */
+			reduce(17),		/* <, reduce: Mult_Expr */
+			reduce(17),		/* ==, reduce: Mult_Expr */
+			reduce(17),		/* !=, reduce: Mult_Expr */
+			reduce(17),		/* &&, reduce: Mult_Expr */
+			reduce(17),		/* ||, reduce: Mult_Expr */
+			shift(544),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(265),		/* . */
+			reduce(17),		/* {, reduce: Mult_Expr */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -20131,42 +19275,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(64),		/* var, reduce: Block */
-			reduce(64),		/* input, reduce: Block */
-			reduce(64),		/* true, reduce: Block */
-			reduce(64),		/* false, reduce: Block */
-			reduce(64),		/* (, reduce: Block */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(64),		/* int, reduce: Block */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(64),		/* [, reduce: Block */
+			nil,		/* int */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(544),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(64),		/* [], reduce: Block */
-			reduce(64),		/* fn_name, reduce: Block */
-			reduce(64),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(64),		/* }, reduce: Block */
-			reduce(64),		/* function, reduce: Block */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(265),		/* . */
+			reduce(18),		/* {, reduce: Mult_Expr */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(64),		/* return, reduce: Block */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(64),		/* if, reduce: Block */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(64),		/* while, reduce: Block */
-			reduce(64),		/* foreach, reduce: Block */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -20178,35 +19320,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
+			nil,		/* int */
+			shift(266),		/* * */
+			shift(267),		/* / */
+			reduce(19),		/* +, reduce: Add_Expr */
+			reduce(19),		/* -, reduce: Add_Expr */
+			reduce(19),		/* >, reduce: Add_Expr */
+			reduce(19),		/* <, reduce: Add_Expr */
+			reduce(19),		/* ==, reduce: Add_Expr */
+			reduce(19),		/* !=, reduce: Add_Expr */
+			reduce(19),		/* &&, reduce: Add_Expr */
+			reduce(19),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(19),		/* {, reduce: Add_Expr */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -20225,42 +19365,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(65),		/* var, reduce: Block */
-			reduce(65),		/* input, reduce: Block */
-			reduce(65),		/* true, reduce: Block */
-			reduce(65),		/* false, reduce: Block */
-			reduce(65),		/* (, reduce: Block */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(65),		/* int, reduce: Block */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(65),		/* [, reduce: Block */
+			nil,		/* int */
+			shift(266),		/* * */
+			shift(267),		/* / */
+			reduce(20),		/* +, reduce: Add_Expr */
+			reduce(20),		/* -, reduce: Add_Expr */
+			reduce(20),		/* >, reduce: Add_Expr */
+			reduce(20),		/* <, reduce: Add_Expr */
+			reduce(20),		/* ==, reduce: Add_Expr */
+			reduce(20),		/* !=, reduce: Add_Expr */
+			reduce(20),		/* &&, reduce: Add_Expr */
+			reduce(20),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(65),		/* [], reduce: Block */
-			reduce(65),		/* fn_name, reduce: Block */
-			reduce(65),		/* cust_fn_name, reduce: Block */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
-			nil,		/* { */
-			reduce(65),		/* }, reduce: Block */
-			reduce(65),		/* function, reduce: Block */
+			reduce(20),		/* {, reduce: Add_Expr */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(65),		/* return, reduce: Block */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(65),		/* if, reduce: Block */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(65),		/* while, reduce: Block */
-			reduce(65),		/* foreach, reduce: Block */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -20272,8 +19410,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(148),		/* var */
-			shift(149),		/* input */
+			nil,		/* var */
+			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -20281,24 +19419,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(268),		/* + */
+			shift(269),		/* - */
+			reduce(22),		/* >, reduce: Comp_Expr */
+			reduce(22),		/* <, reduce: Comp_Expr */
+			reduce(22),		/* ==, reduce: Comp_Expr */
+			reduce(22),		/* !=, reduce: Comp_Expr */
+			reduce(22),		/* &&, reduce: Comp_Expr */
+			reduce(22),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(22),		/* {, reduce: Comp_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20328,24 +19464,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(268),		/* + */
+			shift(269),		/* - */
+			reduce(23),		/* >, reduce: Comp_Expr */
+			reduce(23),		/* <, reduce: Comp_Expr */
+			reduce(23),		/* ==, reduce: Comp_Expr */
+			reduce(23),		/* !=, reduce: Comp_Expr */
+			reduce(23),		/* &&, reduce: Comp_Expr */
+			reduce(23),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
-			shift(557),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(23),		/* {, reduce: Comp_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20373,26 +19507,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			shift(268),		/* + */
+			shift(269),		/* - */
+			reduce(24),		/* >, reduce: Comp_Expr */
+			reduce(24),		/* <, reduce: Comp_Expr */
+			reduce(24),		/* ==, reduce: Comp_Expr */
+			reduce(24),		/* !=, reduce: Comp_Expr */
+			reduce(24),		/* &&, reduce: Comp_Expr */
+			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
-			reduce(46),		/* {, reduce: Method_Call */
+			nil,		/* . */
+			reduce(24),		/* {, reduce: Comp_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20417,29 +19549,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(558),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(268),		/* + */
+			shift(269),		/* - */
+			reduce(25),		/* >, reduce: Comp_Expr */
+			reduce(25),		/* <, reduce: Comp_Expr */
+			reduce(25),		/* ==, reduce: Comp_Expr */
+			reduce(25),		/* !=, reduce: Comp_Expr */
+			reduce(25),		/* &&, reduce: Comp_Expr */
+			reduce(25),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(559),		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(25),		/* {, reduce: Comp_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20464,29 +19594,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(45),		/* *, reduce: Method_Call */
-			reduce(45),		/* /, reduce: Method_Call */
-			reduce(45),		/* +, reduce: Method_Call */
-			reduce(45),		/* -, reduce: Method_Call */
-			reduce(45),		/* >, reduce: Method_Call */
-			reduce(45),		/* <, reduce: Method_Call */
-			reduce(45),		/* ==, reduce: Method_Call */
-			reduce(45),		/* !=, reduce: Method_Call */
-			reduce(45),		/* &&, reduce: Method_Call */
-			reduce(45),		/* ||, reduce: Method_Call */
-			reduce(45),		/* [, reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(270),		/* > */
+			shift(271),		/* < */
+			shift(272),		/* == */
+			shift(273),		/* != */
+			reduce(27),		/* &&, reduce: Bool_Expr */
+			reduce(27),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
-			reduce(45),		/* ., reduce: Method_Call */
-			reduce(45),		/* {, reduce: Method_Call */
+			nil,		/* . */
+			reduce(27),		/* {, reduce: Bool_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20511,29 +19639,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(270),		/* > */
+			shift(271),		/* < */
+			shift(272),		/* == */
+			shift(273),		/* != */
+			reduce(28),		/* &&, reduce: Bool_Expr */
+			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
-			reduce(6),		/* {, reduce: Callable_Object */
+			nil,		/* . */
+			reduce(28),		/* {, reduce: Bool_Expr */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20558,29 +19684,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
+			reduce(39),		/* *, reduce: ListDef */
+			reduce(39),		/* /, reduce: ListDef */
+			reduce(39),		/* +, reduce: ListDef */
+			reduce(39),		/* -, reduce: ListDef */
+			reduce(39),		/* >, reduce: ListDef */
+			reduce(39),		/* <, reduce: ListDef */
+			reduce(39),		/* ==, reduce: ListDef */
+			reduce(39),		/* !=, reduce: ListDef */
+			reduce(39),		/* &&, reduce: ListDef */
+			reduce(39),		/* ||, reduce: ListDef */
+			reduce(39),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
-			reduce(2),		/* {, reduce: Variable */
+			reduce(39),		/* ., reduce: ListDef */
+			reduce(39),		/* {, reduce: ListDef */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20605,29 +19729,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
+			reduce(42),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
-			reduce(3),		/* {, reduce: Variable */
+			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(42),		/* {, reduce: Fn_Call */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20653,28 +19775,26 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(545),		/* ) */
 			nil,		/* int */
-			reduce(16),		/* *, reduce: Mult_Expr */
-			reduce(16),		/* /, reduce: Mult_Expr */
-			reduce(16),		/* +, reduce: Mult_Expr */
-			reduce(16),		/* -, reduce: Mult_Expr */
-			reduce(16),		/* >, reduce: Mult_Expr */
-			reduce(16),		/* <, reduce: Mult_Expr */
-			reduce(16),		/* ==, reduce: Mult_Expr */
-			reduce(16),		/* !=, reduce: Mult_Expr */
-			reduce(16),		/* &&, reduce: Mult_Expr */
-			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(560),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(272),		/* . */
-			reduce(16),		/* {, reduce: Mult_Expr */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20695,37 +19815,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(17),		/* *, reduce: Mult_Expr */
-			reduce(17),		/* /, reduce: Mult_Expr */
-			reduce(17),		/* +, reduce: Mult_Expr */
-			reduce(17),		/* -, reduce: Mult_Expr */
-			reduce(17),		/* >, reduce: Mult_Expr */
-			reduce(17),		/* <, reduce: Mult_Expr */
-			reduce(17),		/* ==, reduce: Mult_Expr */
-			reduce(17),		/* !=, reduce: Mult_Expr */
-			reduce(17),		/* &&, reduce: Mult_Expr */
-			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(560),		/* [ */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(272),		/* . */
-			reduce(17),		/* {, reduce: Mult_Expr */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(141),		/* function */
 			nil,		/* : */
-			nil,		/* return */
+			shift(548),		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -20749,27 +19867,25 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(560),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(272),		/* . */
-			reduce(18),		/* {, reduce: Mult_Expr */
-			nil,		/* } */
+			nil,		/* . */
+			nil,		/* { */
+			shift(549),		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -20796,26 +19912,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(273),		/* * */
-			shift(274),		/* / */
-			reduce(19),		/* +, reduce: Add_Expr */
-			reduce(19),		/* -, reduce: Add_Expr */
-			reduce(19),		/* >, reduce: Add_Expr */
-			reduce(19),		/* <, reduce: Add_Expr */
-			reduce(19),		/* ==, reduce: Add_Expr */
-			reduce(19),		/* !=, reduce: Add_Expr */
-			reduce(19),		/* &&, reduce: Add_Expr */
-			reduce(19),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(19),		/* {, reduce: Add_Expr */
+			shift(281),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20841,28 +19955,26 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(31),		/* ), reduce: Assign */
 			nil,		/* int */
-			shift(273),		/* * */
-			shift(274),		/* / */
-			reduce(20),		/* +, reduce: Add_Expr */
-			reduce(20),		/* -, reduce: Add_Expr */
-			reduce(20),		/* >, reduce: Add_Expr */
-			reduce(20),		/* <, reduce: Add_Expr */
-			reduce(20),		/* ==, reduce: Add_Expr */
-			reduce(20),		/* !=, reduce: Add_Expr */
-			reduce(20),		/* &&, reduce: Add_Expr */
-			reduce(20),		/* ||, reduce: Add_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(31),		/* ,, reduce: Assign */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(20),		/* {, reduce: Add_Expr */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20888,28 +20000,26 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(551),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(275),		/* + */
-			shift(276),		/* - */
-			reduce(22),		/* >, reduce: Comp_Expr */
-			reduce(22),		/* <, reduce: Comp_Expr */
-			reduce(22),		/* ==, reduce: Comp_Expr */
-			reduce(22),		/* !=, reduce: Comp_Expr */
-			reduce(22),		/* &&, reduce: Comp_Expr */
-			reduce(22),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(22),		/* {, reduce: Comp_Expr */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20934,29 +20044,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			reduce(7),		/* (, reduce: Callable_Object */
+			reduce(7),		/* ), reduce: Callable_Object */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			shift(275),		/* + */
-			shift(276),		/* - */
-			reduce(23),		/* >, reduce: Comp_Expr */
-			reduce(23),		/* <, reduce: Comp_Expr */
-			reduce(23),		/* ==, reduce: Comp_Expr */
-			reduce(23),		/* !=, reduce: Comp_Expr */
-			reduce(23),		/* &&, reduce: Comp_Expr */
-			reduce(23),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			reduce(7),		/* *, reduce: Callable_Object */
+			reduce(7),		/* /, reduce: Callable_Object */
+			reduce(7),		/* +, reduce: Callable_Object */
+			reduce(7),		/* -, reduce: Callable_Object */
+			reduce(7),		/* >, reduce: Callable_Object */
+			reduce(7),		/* <, reduce: Callable_Object */
+			reduce(7),		/* ==, reduce: Callable_Object */
+			reduce(7),		/* !=, reduce: Callable_Object */
+			reduce(7),		/* &&, reduce: Callable_Object */
+			reduce(7),		/* ||, reduce: Callable_Object */
+			reduce(7),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(7),		/* ,, reduce: Callable_Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(23),		/* {, reduce: Comp_Expr */
+			reduce(7),		/* ., reduce: Callable_Object */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -20986,24 +20094,22 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(275),		/* + */
-			shift(276),		/* - */
-			reduce(24),		/* >, reduce: Comp_Expr */
-			reduce(24),		/* <, reduce: Comp_Expr */
-			reduce(24),		/* ==, reduce: Comp_Expr */
-			reduce(24),		/* !=, reduce: Comp_Expr */
-			reduce(24),		/* &&, reduce: Comp_Expr */
-			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			shift(552),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(24),		/* {, reduce: Comp_Expr */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21028,29 +20134,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			shift(553),		/* ( */
+			reduce(45),		/* ), reduce: Method_Call */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			shift(275),		/* + */
-			shift(276),		/* - */
-			reduce(25),		/* >, reduce: Comp_Expr */
-			reduce(25),		/* <, reduce: Comp_Expr */
-			reduce(25),		/* ==, reduce: Comp_Expr */
-			reduce(25),		/* !=, reduce: Comp_Expr */
-			reduce(25),		/* &&, reduce: Comp_Expr */
-			reduce(25),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			reduce(45),		/* *, reduce: Method_Call */
+			reduce(45),		/* /, reduce: Method_Call */
+			reduce(45),		/* +, reduce: Method_Call */
+			reduce(45),		/* -, reduce: Method_Call */
+			reduce(45),		/* >, reduce: Method_Call */
+			reduce(45),		/* <, reduce: Method_Call */
+			reduce(45),		/* ==, reduce: Method_Call */
+			reduce(45),		/* !=, reduce: Method_Call */
+			reduce(45),		/* &&, reduce: Method_Call */
+			reduce(45),		/* ||, reduce: Method_Call */
+			reduce(45),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(45),		/* ,, reduce: Method_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(25),		/* {, reduce: Comp_Expr */
+			reduce(45),		/* ., reduce: Method_Call */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21075,29 +20179,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			reduce(6),		/* (, reduce: Callable_Object */
+			reduce(6),		/* ), reduce: Callable_Object */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			shift(277),		/* > */
-			shift(278),		/* < */
-			shift(279),		/* == */
-			shift(280),		/* != */
-			reduce(27),		/* &&, reduce: Bool_Expr */
-			reduce(27),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(6),		/* ,, reduce: Callable_Object */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(27),		/* {, reduce: Bool_Expr */
+			reduce(6),		/* ., reduce: Callable_Object */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21122,29 +20224,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			reduce(2),		/* (, reduce: Variable */
+			reduce(2),		/* ), reduce: Variable */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			shift(277),		/* > */
-			shift(278),		/* < */
-			shift(279),		/* == */
-			shift(280),		/* != */
-			reduce(28),		/* &&, reduce: Bool_Expr */
-			reduce(28),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(2),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(28),		/* {, reduce: Bool_Expr */
+			reduce(2),		/* ., reduce: Variable */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21169,29 +20269,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
+			reduce(3),		/* (, reduce: Variable */
+			reduce(3),		/* ), reduce: Variable */
 			nil,		/* int */
-			reduce(39),		/* *, reduce: ListDef */
-			reduce(39),		/* /, reduce: ListDef */
-			reduce(39),		/* +, reduce: ListDef */
-			reduce(39),		/* -, reduce: ListDef */
-			reduce(39),		/* >, reduce: ListDef */
-			reduce(39),		/* <, reduce: ListDef */
-			reduce(39),		/* ==, reduce: ListDef */
-			reduce(39),		/* !=, reduce: ListDef */
-			reduce(39),		/* &&, reduce: ListDef */
-			reduce(39),		/* ||, reduce: ListDef */
-			reduce(39),		/* [, reduce: ListDef */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(3),		/* ,, reduce: Variable */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(39),		/* ., reduce: ListDef */
-			reduce(39),		/* {, reduce: ListDef */
+			reduce(3),		/* ., reduce: Variable */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21217,27 +20315,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(561),		/* ) */
+			reduce(16),		/* ), reduce: Mult_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(16),		/* *, reduce: Mult_Expr */
+			reduce(16),		/* /, reduce: Mult_Expr */
+			reduce(16),		/* +, reduce: Mult_Expr */
+			reduce(16),		/* -, reduce: Mult_Expr */
+			reduce(16),		/* >, reduce: Mult_Expr */
+			reduce(16),		/* <, reduce: Mult_Expr */
+			reduce(16),		/* ==, reduce: Mult_Expr */
+			reduce(16),		/* !=, reduce: Mult_Expr */
+			reduce(16),		/* &&, reduce: Mult_Expr */
+			reduce(16),		/* ||, reduce: Mult_Expr */
+			shift(554),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			reduce(16),		/* ,, reduce: Mult_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(287),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21259,37 +20355,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
-			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(17),		/* ), reduce: Mult_Expr */
+			nil,		/* int */
+			reduce(17),		/* *, reduce: Mult_Expr */
+			reduce(17),		/* /, reduce: Mult_Expr */
+			reduce(17),		/* +, reduce: Mult_Expr */
+			reduce(17),		/* -, reduce: Mult_Expr */
+			reduce(17),		/* >, reduce: Mult_Expr */
+			reduce(17),		/* <, reduce: Mult_Expr */
+			reduce(17),		/* ==, reduce: Mult_Expr */
+			reduce(17),		/* !=, reduce: Mult_Expr */
+			reduce(17),		/* &&, reduce: Mult_Expr */
+			reduce(17),		/* ||, reduce: Mult_Expr */
+			shift(554),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(17),		/* ,, reduce: Mult_Expr */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(287),		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(564),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -21311,29 +20405,27 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(18),		/* ), reduce: Mult_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(554),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(18),		/* ,, reduce: Mult_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(287),		/* . */
 			nil,		/* { */
-			shift(565),		/* } */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -21358,28 +20450,26 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(19),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(288),		/* * */
+			shift(289),		/* / */
+			reduce(19),		/* +, reduce: Add_Expr */
+			reduce(19),		/* -, reduce: Add_Expr */
+			reduce(19),		/* >, reduce: Add_Expr */
+			reduce(19),		/* <, reduce: Add_Expr */
+			reduce(19),		/* ==, reduce: Add_Expr */
+			reduce(19),		/* !=, reduce: Add_Expr */
+			reduce(19),		/* &&, reduce: Add_Expr */
+			reduce(19),		/* ||, reduce: Add_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(19),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			shift(288),		/* { */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -21405,26 +20495,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(31),		/* ), reduce: Assign */
+			reduce(20),		/* ), reduce: Add_Expr */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(288),		/* * */
+			shift(289),		/* / */
+			reduce(20),		/* +, reduce: Add_Expr */
+			reduce(20),		/* -, reduce: Add_Expr */
+			reduce(20),		/* >, reduce: Add_Expr */
+			reduce(20),		/* <, reduce: Add_Expr */
+			reduce(20),		/* ==, reduce: Add_Expr */
+			reduce(20),		/* !=, reduce: Add_Expr */
+			reduce(20),		/* &&, reduce: Add_Expr */
+			reduce(20),		/* ||, reduce: Add_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(31),		/* ,, reduce: Assign */
-			nil,		/* [] */
+			reduce(20),		/* ,, reduce: Add_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -21452,26 +20540,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(567),		/* ) */
+			reduce(22),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(290),		/* + */
+			shift(291),		/* - */
+			reduce(22),		/* >, reduce: Comp_Expr */
+			reduce(22),		/* <, reduce: Comp_Expr */
+			reduce(22),		/* ==, reduce: Comp_Expr */
+			reduce(22),		/* !=, reduce: Comp_Expr */
+			reduce(22),		/* &&, reduce: Comp_Expr */
+			reduce(22),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			reduce(22),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -21498,28 +20584,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(7),		/* (, reduce: Callable_Object */
-			reduce(7),		/* ), reduce: Callable_Object */
+			nil,		/* ( */
+			reduce(23),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(7),		/* *, reduce: Callable_Object */
-			reduce(7),		/* /, reduce: Callable_Object */
-			reduce(7),		/* +, reduce: Callable_Object */
-			reduce(7),		/* -, reduce: Callable_Object */
-			reduce(7),		/* >, reduce: Callable_Object */
-			reduce(7),		/* <, reduce: Callable_Object */
-			reduce(7),		/* ==, reduce: Callable_Object */
-			reduce(7),		/* !=, reduce: Callable_Object */
-			reduce(7),		/* &&, reduce: Callable_Object */
-			reduce(7),		/* ||, reduce: Callable_Object */
-			reduce(7),		/* [, reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(290),		/* + */
+			shift(291),		/* - */
+			reduce(23),		/* >, reduce: Comp_Expr */
+			reduce(23),		/* <, reduce: Comp_Expr */
+			reduce(23),		/* ==, reduce: Comp_Expr */
+			reduce(23),		/* !=, reduce: Comp_Expr */
+			reduce(23),		/* &&, reduce: Comp_Expr */
+			reduce(23),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(7),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
+			reduce(23),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(7),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21546,26 +20630,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(24),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(290),		/* + */
+			shift(291),		/* - */
+			reduce(24),		/* >, reduce: Comp_Expr */
+			reduce(24),		/* <, reduce: Comp_Expr */
+			reduce(24),		/* ==, reduce: Comp_Expr */
+			reduce(24),		/* !=, reduce: Comp_Expr */
+			reduce(24),		/* &&, reduce: Comp_Expr */
+			reduce(24),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
-			shift(568),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(24),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -21593,27 +20675,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(46),		/* ), reduce: Method_Call */
+			reduce(25),		/* ), reduce: Comp_Expr */
 			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			shift(290),		/* + */
+			shift(291),		/* - */
+			reduce(25),		/* >, reduce: Comp_Expr */
+			reduce(25),		/* <, reduce: Comp_Expr */
+			reduce(25),		/* ==, reduce: Comp_Expr */
+			reduce(25),		/* !=, reduce: Comp_Expr */
+			reduce(25),		/* &&, reduce: Comp_Expr */
+			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(46),		/* ,, reduce: Method_Call */
-			nil,		/* [] */
+			reduce(25),		/* ,, reduce: Comp_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21639,27 +20719,25 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(569),		/* ( */
-			nil,		/* ) */
+			nil,		/* ( */
+			reduce(27),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(292),		/* > */
+			shift(293),		/* < */
+			shift(294),		/* == */
+			shift(295),		/* != */
+			reduce(27),		/* &&, reduce: Bool_Expr */
+			reduce(27),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(27),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(570),		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -21686,28 +20764,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
-			reduce(45),		/* ), reduce: Method_Call */
+			nil,		/* ( */
+			reduce(28),		/* ), reduce: Bool_Expr */
 			nil,		/* int */
-			reduce(45),		/* *, reduce: Method_Call */
-			reduce(45),		/* /, reduce: Method_Call */
-			reduce(45),		/* +, reduce: Method_Call */
-			reduce(45),		/* -, reduce: Method_Call */
-			reduce(45),		/* >, reduce: Method_Call */
-			reduce(45),		/* <, reduce: Method_Call */
-			reduce(45),		/* ==, reduce: Method_Call */
-			reduce(45),		/* !=, reduce: Method_Call */
-			reduce(45),		/* &&, reduce: Method_Call */
-			reduce(45),		/* ||, reduce: Method_Call */
-			reduce(45),		/* [, reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(292),		/* > */
+			shift(293),		/* < */
+			shift(294),		/* == */
+			shift(295),		/* != */
+			reduce(28),		/* &&, reduce: Bool_Expr */
+			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(45),		/* ,, reduce: Method_Call */
-			nil,		/* [] */
+			reduce(28),		/* ,, reduce: Bool_Expr */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
-			reduce(45),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21733,28 +20809,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
-			reduce(6),		/* ), reduce: Callable_Object */
+			nil,		/* ( */
+			reduce(39),		/* ), reduce: ListDef */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
+			reduce(39),		/* *, reduce: ListDef */
+			reduce(39),		/* /, reduce: ListDef */
+			reduce(39),		/* +, reduce: ListDef */
+			reduce(39),		/* -, reduce: ListDef */
+			reduce(39),		/* >, reduce: ListDef */
+			reduce(39),		/* <, reduce: ListDef */
+			reduce(39),		/* ==, reduce: ListDef */
+			reduce(39),		/* !=, reduce: ListDef */
+			reduce(39),		/* &&, reduce: ListDef */
+			reduce(39),		/* ||, reduce: ListDef */
+			reduce(39),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(6),		/* ,, reduce: Callable_Object */
-			nil,		/* [] */
+			reduce(39),		/* ,, reduce: ListDef */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
+			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21780,28 +20854,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
-			reduce(2),		/* ), reduce: Variable */
+			nil,		/* ( */
+			reduce(36),		/* ), reduce: Values */
 			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(2),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			reduce(36),		/* ,, reduce: Values */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21827,28 +20899,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
-			reduce(3),		/* ), reduce: Variable */
+			reduce(42),		/* (, reduce: Fn_Call */
+			reduce(42),		/* ), reduce: Fn_Call */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(3),		/* ,, reduce: Variable */
-			nil,		/* [] */
+			reduce(42),		/* ,, reduce: Fn_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
+			reduce(42),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21875,27 +20945,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(16),		/* ), reduce: Mult_Expr */
+			shift(555),		/* ) */
 			nil,		/* int */
-			reduce(16),		/* *, reduce: Mult_Expr */
-			reduce(16),		/* /, reduce: Mult_Expr */
-			reduce(16),		/* +, reduce: Mult_Expr */
-			reduce(16),		/* -, reduce: Mult_Expr */
-			reduce(16),		/* >, reduce: Mult_Expr */
-			reduce(16),		/* <, reduce: Mult_Expr */
-			reduce(16),		/* ==, reduce: Mult_Expr */
-			reduce(16),		/* !=, reduce: Mult_Expr */
-			reduce(16),		/* &&, reduce: Mult_Expr */
-			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(571),		/* [ */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(16),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(294),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -21917,37 +20985,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(17),		/* ), reduce: Mult_Expr */
-			nil,		/* int */
-			reduce(17),		/* *, reduce: Mult_Expr */
-			reduce(17),		/* /, reduce: Mult_Expr */
-			reduce(17),		/* +, reduce: Mult_Expr */
-			reduce(17),		/* -, reduce: Mult_Expr */
-			reduce(17),		/* >, reduce: Mult_Expr */
-			reduce(17),		/* <, reduce: Mult_Expr */
-			reduce(17),		/* ==, reduce: Mult_Expr */
-			reduce(17),		/* !=, reduce: Mult_Expr */
-			reduce(17),		/* &&, reduce: Mult_Expr */
-			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(571),		/* [ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(17),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(294),		/* . */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
-			nil,		/* return */
+			shift(558),		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -21968,28 +21034,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(18),		/* ), reduce: Mult_Expr */
+			reduce(44),		/* (, reduce: Lambda_Call */
+			reduce(44),		/* ), reduce: Lambda_Call */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(571),		/* [ */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(18),		/* ,, reduce: Mult_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(294),		/* . */
+			reduce(44),		/* ., reduce: Lambda_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22015,28 +21079,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(19),		/* ), reduce: Add_Expr */
+			reduce(30),		/* (, reduce: Get_Index */
+			reduce(30),		/* ), reduce: Get_Index */
 			nil,		/* int */
-			shift(295),		/* * */
-			shift(296),		/* / */
-			reduce(19),		/* +, reduce: Add_Expr */
-			reduce(19),		/* -, reduce: Add_Expr */
-			reduce(19),		/* >, reduce: Add_Expr */
-			reduce(19),		/* <, reduce: Add_Expr */
-			reduce(19),		/* ==, reduce: Add_Expr */
-			reduce(19),		/* !=, reduce: Add_Expr */
-			reduce(19),		/* &&, reduce: Add_Expr */
-			reduce(19),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
-			nil,		/* = */
-			reduce(19),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
+			shift(559),		/* = */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22058,35 +21120,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(20),		/* ), reduce: Add_Expr */
-			nil,		/* int */
-			shift(295),		/* * */
-			shift(296),		/* / */
-			reduce(20),		/* +, reduce: Add_Expr */
-			reduce(20),		/* -, reduce: Add_Expr */
-			reduce(20),		/* >, reduce: Add_Expr */
-			reduce(20),		/* <, reduce: Add_Expr */
-			reduce(20),		/* ==, reduce: Add_Expr */
-			reduce(20),		/* !=, reduce: Add_Expr */
-			reduce(20),		/* &&, reduce: Add_Expr */
-			reduce(20),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(560),		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(20),		/* ,, reduce: Add_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22105,35 +21165,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(22),		/* ), reduce: Comp_Expr */
-			nil,		/* int */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(297),		/* + */
-			shift(298),		/* - */
-			reduce(22),		/* >, reduce: Comp_Expr */
-			reduce(22),		/* <, reduce: Comp_Expr */
-			reduce(22),		/* ==, reduce: Comp_Expr */
-			reduce(22),		/* !=, reduce: Comp_Expr */
-			reduce(22),		/* &&, reduce: Comp_Expr */
-			reduce(22),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(22),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22156,28 +21214,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(23),		/* ), reduce: Comp_Expr */
+			reduce(43),		/* (, reduce: Fn_Call */
+			reduce(43),		/* ), reduce: Fn_Call */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			shift(297),		/* + */
-			shift(298),		/* - */
-			reduce(23),		/* >, reduce: Comp_Expr */
-			reduce(23),		/* <, reduce: Comp_Expr */
-			reduce(23),		/* ==, reduce: Comp_Expr */
-			reduce(23),		/* !=, reduce: Comp_Expr */
-			reduce(23),		/* &&, reduce: Comp_Expr */
-			reduce(23),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(23),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(43),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22204,26 +21260,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(24),		/* ), reduce: Comp_Expr */
+			reduce(52),		/* ), reduce: Statement */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(297),		/* + */
-			shift(298),		/* - */
-			reduce(24),		/* >, reduce: Comp_Expr */
-			reduce(24),		/* <, reduce: Comp_Expr */
-			reduce(24),		/* ==, reduce: Comp_Expr */
-			reduce(24),		/* !=, reduce: Comp_Expr */
-			reduce(24),		/* &&, reduce: Comp_Expr */
-			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(24),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -22251,26 +21305,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(25),		/* ), reduce: Comp_Expr */
+			reduce(67),		/* ), reduce: Lambda_Def */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(297),		/* + */
-			shift(298),		/* - */
-			reduce(25),		/* >, reduce: Comp_Expr */
-			reduce(25),		/* <, reduce: Comp_Expr */
-			reduce(25),		/* ==, reduce: Comp_Expr */
-			reduce(25),		/* !=, reduce: Comp_Expr */
-			reduce(25),		/* &&, reduce: Comp_Expr */
-			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(25),		/* ,, reduce: Comp_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -22293,35 +21345,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(27),		/* ), reduce: Bool_Expr */
-			nil,		/* int */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(299),		/* > */
-			shift(300),		/* < */
-			shift(301),		/* == */
-			shift(302),		/* != */
-			reduce(27),		/* &&, reduce: Bool_Expr */
-			reduce(27),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(27),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(67),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22345,26 +21395,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(28),		/* ), reduce: Bool_Expr */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(299),		/* > */
-			shift(300),		/* < */
-			shift(301),		/* == */
-			shift(302),		/* != */
-			reduce(28),		/* &&, reduce: Bool_Expr */
-			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(31),		/* ], reduce: Assign */
 			nil,		/* = */
-			reduce(28),		/* ,, reduce: Bool_Expr */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -22392,27 +21440,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(39),		/* ), reduce: ListDef */
+			shift(564),		/* ) */
 			nil,		/* int */
-			reduce(39),		/* *, reduce: ListDef */
-			reduce(39),		/* /, reduce: ListDef */
-			reduce(39),		/* +, reduce: ListDef */
-			reduce(39),		/* -, reduce: ListDef */
-			reduce(39),		/* >, reduce: ListDef */
-			reduce(39),		/* <, reduce: ListDef */
-			reduce(39),		/* ==, reduce: ListDef */
-			reduce(39),		/* !=, reduce: ListDef */
-			reduce(39),		/* &&, reduce: ListDef */
-			reduce(39),		/* ||, reduce: ListDef */
-			reduce(39),		/* [, reduce: ListDef */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(39),		/* ,, reduce: ListDef */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(39),		/* ., reduce: ListDef */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22438,28 +21484,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(36),		/* ), reduce: Values */
+			reduce(7),		/* (, reduce: Callable_Object */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(7),		/* *, reduce: Callable_Object */
+			reduce(7),		/* /, reduce: Callable_Object */
+			reduce(7),		/* +, reduce: Callable_Object */
+			reduce(7),		/* -, reduce: Callable_Object */
+			reduce(7),		/* >, reduce: Callable_Object */
+			reduce(7),		/* <, reduce: Callable_Object */
+			reduce(7),		/* ==, reduce: Callable_Object */
+			reduce(7),		/* !=, reduce: Callable_Object */
+			reduce(7),		/* &&, reduce: Callable_Object */
+			reduce(7),		/* ||, reduce: Callable_Object */
+			reduce(7),		/* [, reduce: Callable_Object */
+			reduce(7),		/* ], reduce: Callable_Object */
 			nil,		/* = */
-			reduce(36),		/* ,, reduce: Values */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(7),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22481,13 +21525,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(572),		/* ) */
-			nil,		/* int */
+			shift(4),		/* var */
+			shift(5),		/* input */
+			shift(7),		/* true */
+			shift(8),		/* false */
+			shift(10),		/* ( */
+			nil,		/* ) */
+			shift(16),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -22498,18 +21542,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(23),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(115),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22528,13 +21570,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -22545,20 +21587,18 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(566),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(575),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -22579,28 +21619,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
-			reduce(44),		/* ), reduce: Lambda_Call */
+			shift(567),		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
-			nil,		/* ] */
+			reduce(45),		/* *, reduce: Method_Call */
+			reduce(45),		/* /, reduce: Method_Call */
+			reduce(45),		/* +, reduce: Method_Call */
+			reduce(45),		/* -, reduce: Method_Call */
+			reduce(45),		/* >, reduce: Method_Call */
+			reduce(45),		/* <, reduce: Method_Call */
+			reduce(45),		/* ==, reduce: Method_Call */
+			reduce(45),		/* !=, reduce: Method_Call */
+			reduce(45),		/* &&, reduce: Method_Call */
+			reduce(45),		/* ||, reduce: Method_Call */
+			reduce(45),		/* [, reduce: Method_Call */
+			reduce(45),		/* ], reduce: Method_Call */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
+			reduce(45),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22626,28 +21664,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			reduce(30),		/* ), reduce: Get_Index */
+			reduce(6),		/* (, reduce: Callable_Object */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			nil,		/* ] */
-			shift(576),		/* = */
+			reduce(6),		/* *, reduce: Callable_Object */
+			reduce(6),		/* /, reduce: Callable_Object */
+			reduce(6),		/* +, reduce: Callable_Object */
+			reduce(6),		/* -, reduce: Callable_Object */
+			reduce(6),		/* >, reduce: Callable_Object */
+			reduce(6),		/* <, reduce: Callable_Object */
+			reduce(6),		/* ==, reduce: Callable_Object */
+			reduce(6),		/* !=, reduce: Callable_Object */
+			reduce(6),		/* &&, reduce: Callable_Object */
+			reduce(6),		/* ||, reduce: Callable_Object */
+			reduce(6),		/* [, reduce: Callable_Object */
+			reduce(6),		/* ], reduce: Callable_Object */
+			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22669,35 +21705,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(2),		/* (, reduce: Variable */
 			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(2),		/* *, reduce: Variable */
+			reduce(2),		/* /, reduce: Variable */
+			reduce(2),		/* +, reduce: Variable */
+			reduce(2),		/* -, reduce: Variable */
+			reduce(2),		/* >, reduce: Variable */
+			reduce(2),		/* <, reduce: Variable */
+			reduce(2),		/* ==, reduce: Variable */
+			reduce(2),		/* !=, reduce: Variable */
+			reduce(2),		/* &&, reduce: Variable */
+			reduce(2),		/* ||, reduce: Variable */
+			reduce(2),		/* [, reduce: Variable */
+			reduce(2),		/* ], reduce: Variable */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22720,28 +21754,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(42),		/* ), reduce: Fn_Call */
+			reduce(3),		/* (, reduce: Variable */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			reduce(3),		/* *, reduce: Variable */
+			reduce(3),		/* /, reduce: Variable */
+			reduce(3),		/* +, reduce: Variable */
+			reduce(3),		/* -, reduce: Variable */
+			reduce(3),		/* >, reduce: Variable */
+			reduce(3),		/* <, reduce: Variable */
+			reduce(3),		/* ==, reduce: Variable */
+			reduce(3),		/* !=, reduce: Variable */
+			reduce(3),		/* &&, reduce: Variable */
+			reduce(3),		/* ||, reduce: Variable */
+			reduce(3),		/* [, reduce: Variable */
+			reduce(3),		/* ], reduce: Variable */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22763,35 +21795,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(16),		/* *, reduce: Mult_Expr */
+			reduce(16),		/* /, reduce: Mult_Expr */
+			reduce(16),		/* +, reduce: Mult_Expr */
+			reduce(16),		/* -, reduce: Mult_Expr */
+			reduce(16),		/* >, reduce: Mult_Expr */
+			reduce(16),		/* <, reduce: Mult_Expr */
+			reduce(16),		/* ==, reduce: Mult_Expr */
+			reduce(16),		/* !=, reduce: Mult_Expr */
+			reduce(16),		/* &&, reduce: Mult_Expr */
+			reduce(16),		/* ||, reduce: Mult_Expr */
+			shift(568),		/* [ */
+			reduce(16),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			shift(332),		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -22814,28 +21844,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
-			reduce(43),		/* ), reduce: Fn_Call */
+			nil,		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			reduce(17),		/* *, reduce: Mult_Expr */
+			reduce(17),		/* /, reduce: Mult_Expr */
+			reduce(17),		/* +, reduce: Mult_Expr */
+			reduce(17),		/* -, reduce: Mult_Expr */
+			reduce(17),		/* >, reduce: Mult_Expr */
+			reduce(17),		/* <, reduce: Mult_Expr */
+			reduce(17),		/* ==, reduce: Mult_Expr */
+			reduce(17),		/* !=, reduce: Mult_Expr */
+			reduce(17),		/* &&, reduce: Mult_Expr */
+			reduce(17),		/* ||, reduce: Mult_Expr */
+			shift(568),		/* [ */
+			reduce(17),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
+			shift(332),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22862,27 +21890,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(51),		/* ), reduce: Statement */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(18),		/* *, reduce: Mult_Expr */
+			reduce(18),		/* /, reduce: Mult_Expr */
+			reduce(18),		/* +, reduce: Mult_Expr */
+			reduce(18),		/* -, reduce: Mult_Expr */
+			reduce(18),		/* >, reduce: Mult_Expr */
+			reduce(18),		/* <, reduce: Mult_Expr */
+			reduce(18),		/* ==, reduce: Mult_Expr */
+			reduce(18),		/* !=, reduce: Mult_Expr */
+			reduce(18),		/* &&, reduce: Mult_Expr */
+			reduce(18),		/* ||, reduce: Mult_Expr */
+			shift(568),		/* [ */
+			reduce(18),		/* ], reduce: Mult_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			shift(332),		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -22909,26 +21935,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(66),		/* ), reduce: Lambda_Def */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(333),		/* * */
+			shift(334),		/* / */
+			reduce(19),		/* +, reduce: Add_Expr */
+			reduce(19),		/* -, reduce: Add_Expr */
+			reduce(19),		/* >, reduce: Add_Expr */
+			reduce(19),		/* <, reduce: Add_Expr */
+			reduce(19),		/* ==, reduce: Add_Expr */
+			reduce(19),		/* !=, reduce: Add_Expr */
+			reduce(19),		/* &&, reduce: Add_Expr */
+			reduce(19),		/* ||, reduce: Add_Expr */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(19),		/* ], reduce: Add_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -22951,35 +21975,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			shift(333),		/* * */
+			shift(334),		/* / */
+			reduce(20),		/* +, reduce: Add_Expr */
+			reduce(20),		/* -, reduce: Add_Expr */
+			reduce(20),		/* >, reduce: Add_Expr */
+			reduce(20),		/* <, reduce: Add_Expr */
+			reduce(20),		/* ==, reduce: Add_Expr */
+			reduce(20),		/* !=, reduce: Add_Expr */
+			reduce(20),		/* &&, reduce: Add_Expr */
+			reduce(20),		/* ||, reduce: Add_Expr */
+			nil,		/* [ */
+			reduce(20),		/* ], reduce: Add_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -23007,22 +22029,20 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(335),		/* + */
+			shift(336),		/* - */
+			reduce(22),		/* >, reduce: Comp_Expr */
+			reduce(22),		/* <, reduce: Comp_Expr */
+			reduce(22),		/* ==, reduce: Comp_Expr */
+			reduce(22),		/* !=, reduce: Comp_Expr */
+			reduce(22),		/* &&, reduce: Comp_Expr */
+			reduce(22),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
-			reduce(31),		/* ], reduce: Assign */
+			reduce(22),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -23050,26 +22070,24 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(580),		/* ) */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(335),		/* + */
+			shift(336),		/* - */
+			reduce(23),		/* >, reduce: Comp_Expr */
+			reduce(23),		/* <, reduce: Comp_Expr */
+			reduce(23),		/* ==, reduce: Comp_Expr */
+			reduce(23),		/* !=, reduce: Comp_Expr */
+			reduce(23),		/* &&, reduce: Comp_Expr */
+			reduce(23),		/* ||, reduce: Comp_Expr */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(23),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -23096,28 +22114,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(7),		/* (, reduce: Callable_Object */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(7),		/* *, reduce: Callable_Object */
-			reduce(7),		/* /, reduce: Callable_Object */
-			reduce(7),		/* +, reduce: Callable_Object */
-			reduce(7),		/* -, reduce: Callable_Object */
-			reduce(7),		/* >, reduce: Callable_Object */
-			reduce(7),		/* <, reduce: Callable_Object */
-			reduce(7),		/* ==, reduce: Callable_Object */
-			reduce(7),		/* !=, reduce: Callable_Object */
-			reduce(7),		/* &&, reduce: Callable_Object */
-			reduce(7),		/* ||, reduce: Callable_Object */
-			reduce(7),		/* [, reduce: Callable_Object */
-			reduce(7),		/* ], reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			shift(335),		/* + */
+			shift(336),		/* - */
+			reduce(24),		/* >, reduce: Comp_Expr */
+			reduce(24),		/* <, reduce: Comp_Expr */
+			reduce(24),		/* ==, reduce: Comp_Expr */
+			reduce(24),		/* !=, reduce: Comp_Expr */
+			reduce(24),		/* &&, reduce: Comp_Expr */
+			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(24),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(7),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23139,35 +22155,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(4),		/* var */
-			shift(5),		/* input */
-			shift(7),		/* true */
-			shift(8),		/* false */
-			shift(10),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(16),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(23),		/* [ */
-			nil,		/* ] */
+			shift(335),		/* + */
+			shift(336),		/* - */
+			reduce(25),		/* >, reduce: Comp_Expr */
+			reduce(25),		/* <, reduce: Comp_Expr */
+			reduce(25),		/* ==, reduce: Comp_Expr */
+			reduce(25),		/* !=, reduce: Comp_Expr */
+			reduce(25),		/* &&, reduce: Comp_Expr */
+			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* [ */
+			reduce(25),		/* ], reduce: Comp_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			shift(26),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(118),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -23197,20 +22211,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
+			shift(337),		/* > */
+			shift(338),		/* < */
+			shift(339),		/* == */
+			shift(340),		/* != */
+			reduce(27),		/* &&, reduce: Bool_Expr */
+			reduce(27),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
-			shift(582),		/* ] */
+			reduce(27),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -23240,25 +22252,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
-			reduce(46),		/* ], reduce: Method_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			shift(337),		/* > */
+			shift(338),		/* < */
+			shift(339),		/* == */
+			shift(340),		/* != */
+			reduce(28),		/* &&, reduce: Bool_Expr */
+			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* [ */
+			reduce(28),		/* ], reduce: Bool_Expr */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23284,28 +22294,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			shift(583),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(39),		/* *, reduce: ListDef */
+			reduce(39),		/* /, reduce: ListDef */
+			reduce(39),		/* +, reduce: ListDef */
+			reduce(39),		/* -, reduce: ListDef */
+			reduce(39),		/* >, reduce: ListDef */
+			reduce(39),		/* <, reduce: ListDef */
+			reduce(39),		/* ==, reduce: ListDef */
+			reduce(39),		/* !=, reduce: ListDef */
+			reduce(39),		/* &&, reduce: ListDef */
+			reduce(39),		/* ||, reduce: ListDef */
+			reduce(39),		/* [, reduce: ListDef */
+			reduce(39),		/* ], reduce: ListDef */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			shift(584),		/* () */
-			nil,		/* . */
+			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23331,28 +22339,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			reduce(42),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(45),		/* *, reduce: Method_Call */
-			reduce(45),		/* /, reduce: Method_Call */
-			reduce(45),		/* +, reduce: Method_Call */
-			reduce(45),		/* -, reduce: Method_Call */
-			reduce(45),		/* >, reduce: Method_Call */
-			reduce(45),		/* <, reduce: Method_Call */
-			reduce(45),		/* ==, reduce: Method_Call */
-			reduce(45),		/* !=, reduce: Method_Call */
-			reduce(45),		/* &&, reduce: Method_Call */
-			reduce(45),		/* ||, reduce: Method_Call */
-			reduce(45),		/* [, reduce: Method_Call */
-			reduce(45),		/* ], reduce: Method_Call */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
+			reduce(42),		/* ], reduce: Fn_Call */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
-			reduce(45),		/* ., reduce: Method_Call */
+			reduce(42),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23378,28 +22384,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(6),		/* (, reduce: Callable_Object */
-			nil,		/* ) */
+			nil,		/* ( */
+			shift(569),		/* ) */
 			nil,		/* int */
-			reduce(6),		/* *, reduce: Callable_Object */
-			reduce(6),		/* /, reduce: Callable_Object */
-			reduce(6),		/* +, reduce: Callable_Object */
-			reduce(6),		/* -, reduce: Callable_Object */
-			reduce(6),		/* >, reduce: Callable_Object */
-			reduce(6),		/* <, reduce: Callable_Object */
-			reduce(6),		/* ==, reduce: Callable_Object */
-			reduce(6),		/* !=, reduce: Callable_Object */
-			reduce(6),		/* &&, reduce: Callable_Object */
-			reduce(6),		/* ||, reduce: Callable_Object */
-			reduce(6),		/* [, reduce: Callable_Object */
-			reduce(6),		/* ], reduce: Callable_Object */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(6),		/* ., reduce: Callable_Object */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23421,37 +22425,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(2),		/* (, reduce: Variable */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(2),		/* *, reduce: Variable */
-			reduce(2),		/* /, reduce: Variable */
-			reduce(2),		/* +, reduce: Variable */
-			reduce(2),		/* -, reduce: Variable */
-			reduce(2),		/* >, reduce: Variable */
-			reduce(2),		/* <, reduce: Variable */
-			reduce(2),		/* ==, reduce: Variable */
-			reduce(2),		/* !=, reduce: Variable */
-			reduce(2),		/* &&, reduce: Variable */
-			reduce(2),		/* ||, reduce: Variable */
-			reduce(2),		/* [, reduce: Variable */
-			reduce(2),		/* ], reduce: Variable */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(2),		/* ., reduce: Variable */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
-			nil,		/* return */
+			shift(572),		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -23467,39 +22469,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(46),		/* $, reduce: Method_Call */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(3),		/* (, reduce: Variable */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(3),		/* *, reduce: Variable */
-			reduce(3),		/* /, reduce: Variable */
-			reduce(3),		/* +, reduce: Variable */
-			reduce(3),		/* -, reduce: Variable */
-			reduce(3),		/* >, reduce: Variable */
-			reduce(3),		/* <, reduce: Variable */
-			reduce(3),		/* ==, reduce: Variable */
-			reduce(3),		/* !=, reduce: Variable */
-			reduce(3),		/* &&, reduce: Variable */
-			reduce(3),		/* ||, reduce: Variable */
-			reduce(3),		/* [, reduce: Variable */
-			reduce(3),		/* ], reduce: Variable */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(3),		/* ., reduce: Variable */
+			reduce(46),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(46),		/* ;, reduce: Method_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -23520,27 +22520,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(573),		/* ) */
 			nil,		/* int */
-			reduce(16),		/* *, reduce: Mult_Expr */
-			reduce(16),		/* /, reduce: Mult_Expr */
-			reduce(16),		/* +, reduce: Mult_Expr */
-			reduce(16),		/* -, reduce: Mult_Expr */
-			reduce(16),		/* >, reduce: Mult_Expr */
-			reduce(16),		/* <, reduce: Mult_Expr */
-			reduce(16),		/* ==, reduce: Mult_Expr */
-			reduce(16),		/* !=, reduce: Mult_Expr */
-			reduce(16),		/* &&, reduce: Mult_Expr */
-			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(585),		/* [ */
-			reduce(16),		/* ], reduce: Mult_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(340),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23569,25 +22567,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(17),		/* *, reduce: Mult_Expr */
-			reduce(17),		/* /, reduce: Mult_Expr */
-			reduce(17),		/* +, reduce: Mult_Expr */
-			reduce(17),		/* -, reduce: Mult_Expr */
-			reduce(17),		/* >, reduce: Mult_Expr */
-			reduce(17),		/* <, reduce: Mult_Expr */
-			reduce(17),		/* ==, reduce: Mult_Expr */
-			reduce(17),		/* !=, reduce: Mult_Expr */
-			reduce(17),		/* &&, reduce: Mult_Expr */
-			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(585),		/* [ */
-			reduce(17),		/* ], reduce: Mult_Expr */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			shift(574),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(340),		/* . */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23613,28 +22609,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(44),		/* (, reduce: Lambda_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(18),		/* *, reduce: Mult_Expr */
-			reduce(18),		/* /, reduce: Mult_Expr */
-			reduce(18),		/* +, reduce: Mult_Expr */
-			reduce(18),		/* -, reduce: Mult_Expr */
-			reduce(18),		/* >, reduce: Mult_Expr */
-			reduce(18),		/* <, reduce: Mult_Expr */
-			reduce(18),		/* ==, reduce: Mult_Expr */
-			reduce(18),		/* !=, reduce: Mult_Expr */
-			reduce(18),		/* &&, reduce: Mult_Expr */
-			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(585),		/* [ */
-			reduce(18),		/* ], reduce: Mult_Expr */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
+			reduce(44),		/* ], reduce: Lambda_Call */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(44),		/* ,, reduce: Lambda_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(340),		/* . */
+			reduce(44),		/* ., reduce: Lambda_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23660,28 +22654,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(30),		/* (, reduce: Get_Index */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(341),		/* * */
-			shift(342),		/* / */
-			reduce(19),		/* +, reduce: Add_Expr */
-			reduce(19),		/* -, reduce: Add_Expr */
-			reduce(19),		/* >, reduce: Add_Expr */
-			reduce(19),		/* <, reduce: Add_Expr */
-			reduce(19),		/* ==, reduce: Add_Expr */
-			reduce(19),		/* !=, reduce: Add_Expr */
-			reduce(19),		/* &&, reduce: Add_Expr */
-			reduce(19),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
-			reduce(19),		/* ], reduce: Add_Expr */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
+			reduce(30),		/* ], reduce: Get_Index */
+			shift(575),		/* = */
+			reduce(30),		/* ,, reduce: Get_Index */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23703,35 +22695,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			shift(341),		/* * */
-			shift(342),		/* / */
-			reduce(20),		/* +, reduce: Add_Expr */
-			reduce(20),		/* -, reduce: Add_Expr */
-			reduce(20),		/* >, reduce: Add_Expr */
-			reduce(20),		/* <, reduce: Add_Expr */
-			reduce(20),		/* ==, reduce: Add_Expr */
-			reduce(20),		/* !=, reduce: Add_Expr */
-			reduce(20),		/* &&, reduce: Add_Expr */
-			reduce(20),		/* ||, reduce: Add_Expr */
-			nil,		/* [ */
-			reduce(20),		/* ], reduce: Add_Expr */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(576),		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -23750,35 +22740,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(343),		/* + */
-			shift(344),		/* - */
-			reduce(22),		/* >, reduce: Comp_Expr */
-			reduce(22),		/* <, reduce: Comp_Expr */
-			reduce(22),		/* ==, reduce: Comp_Expr */
-			reduce(22),		/* !=, reduce: Comp_Expr */
-			reduce(22),		/* &&, reduce: Comp_Expr */
-			reduce(22),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
-			reduce(22),		/* ], reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -23801,28 +22789,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(43),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			shift(343),		/* + */
-			shift(344),		/* - */
-			reduce(23),		/* >, reduce: Comp_Expr */
-			reduce(23),		/* <, reduce: Comp_Expr */
-			reduce(23),		/* ==, reduce: Comp_Expr */
-			reduce(23),		/* !=, reduce: Comp_Expr */
-			reduce(23),		/* &&, reduce: Comp_Expr */
-			reduce(23),		/* ||, reduce: Comp_Expr */
-			nil,		/* [ */
-			reduce(23),		/* ], reduce: Comp_Expr */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
+			reduce(43),		/* ], reduce: Fn_Call */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(43),		/* ,, reduce: Fn_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(43),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -23853,22 +22839,20 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(343),		/* + */
-			shift(344),		/* - */
-			reduce(24),		/* >, reduce: Comp_Expr */
-			reduce(24),		/* <, reduce: Comp_Expr */
-			reduce(24),		/* ==, reduce: Comp_Expr */
-			reduce(24),		/* !=, reduce: Comp_Expr */
-			reduce(24),		/* &&, reduce: Comp_Expr */
-			reduce(24),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(24),		/* ], reduce: Comp_Expr */
+			reduce(52),		/* ], reduce: Statement */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(52),		/* ,, reduce: Statement */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -23900,22 +22884,20 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(343),		/* + */
-			shift(344),		/* - */
-			reduce(25),		/* >, reduce: Comp_Expr */
-			reduce(25),		/* <, reduce: Comp_Expr */
-			reduce(25),		/* ==, reduce: Comp_Expr */
-			reduce(25),		/* !=, reduce: Comp_Expr */
-			reduce(25),		/* &&, reduce: Comp_Expr */
-			reduce(25),		/* ||, reduce: Comp_Expr */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(25),		/* ], reduce: Comp_Expr */
+			reduce(67),		/* ], reduce: Lambda_Def */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(67),		/* ,, reduce: Lambda_Def */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -23938,35 +22920,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(345),		/* > */
-			shift(346),		/* < */
-			shift(347),		/* == */
-			shift(348),		/* != */
-			reduce(27),		/* &&, reduce: Bool_Expr */
-			reduce(27),		/* ||, reduce: Bool_Expr */
-			nil,		/* [ */
-			reduce(27),		/* ], reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(100),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -23985,8 +22965,8 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
+			shift(375),		/* var */
+			shift(376),		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
@@ -23996,20 +22976,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(345),		/* > */
-			shift(346),		/* < */
-			shift(347),		/* == */
-			shift(348),		/* != */
-			reduce(28),		/* &&, reduce: Bool_Expr */
-			reduce(28),		/* ||, reduce: Bool_Expr */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
 			nil,		/* [ */
-			reduce(28),		/* ], reduce: Bool_Expr */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -24031,43 +23009,41 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(51),		/* $, reduce: Cust_Fn_def */
+			reduce(51),		/* var, reduce: Cust_Fn_def */
+			reduce(51),		/* input, reduce: Cust_Fn_def */
+			reduce(51),		/* true, reduce: Cust_Fn_def */
+			reduce(51),		/* false, reduce: Cust_Fn_def */
+			reduce(51),		/* (, reduce: Cust_Fn_def */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(39),		/* *, reduce: ListDef */
-			reduce(39),		/* /, reduce: ListDef */
-			reduce(39),		/* +, reduce: ListDef */
-			reduce(39),		/* -, reduce: ListDef */
-			reduce(39),		/* >, reduce: ListDef */
-			reduce(39),		/* <, reduce: ListDef */
-			reduce(39),		/* ==, reduce: ListDef */
-			reduce(39),		/* !=, reduce: ListDef */
-			reduce(39),		/* &&, reduce: ListDef */
-			reduce(39),		/* ||, reduce: ListDef */
-			reduce(39),		/* [, reduce: ListDef */
-			reduce(39),		/* ], reduce: ListDef */
+			reduce(51),		/* int, reduce: Cust_Fn_def */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(51),		/* [, reduce: Cust_Fn_def */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(39),		/* ., reduce: ListDef */
+			reduce(51),		/* fn_name, reduce: Cust_Fn_def */
+			reduce(51),		/* cust_fn_name, reduce: Cust_Fn_def */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			reduce(51),		/* function, reduce: Cust_Fn_def */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(51),		/* return, reduce: Cust_Fn_def */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(51),		/* if, reduce: Cust_Fn_def */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(51),		/* while, reduce: Cust_Fn_def */
+			reduce(51),		/* foreach, reduce: Cust_Fn_def */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -24075,194 +23051,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S512
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(586),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S513
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(223),		/* function */
-			nil,		/* : */
-			shift(589),		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S514
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(590),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S515
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(591),		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S516
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -24285,17 +23073,195 @@ var actionTab = actionTable{
 			reduce(44),		/* &&, reduce: Lambda_Call */
 			reduce(44),		/* ||, reduce: Lambda_Call */
 			reduce(44),		/* [, reduce: Lambda_Call */
-			reduce(44),		/* ], reduce: Lambda_Call */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(44),		/* ,, reduce: Lambda_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(44),		/* ., reduce: Lambda_Call */
-			nil,		/* { */
+			reduce(44),		/* {, reduce: Lambda_Call */
 			nil,		/* } */
 			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S513
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(60),		/* $, reduce: IfBlock */
+			reduce(60),		/* var, reduce: IfBlock */
+			reduce(60),		/* input, reduce: IfBlock */
+			reduce(60),		/* true, reduce: IfBlock */
+			reduce(60),		/* false, reduce: IfBlock */
+			reduce(60),		/* (, reduce: IfBlock */
+			nil,		/* ) */
+			reduce(60),		/* int, reduce: IfBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(60),		/* [, reduce: IfBlock */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(60),		/* fn_name, reduce: IfBlock */
+			reduce(60),		/* cust_fn_name, reduce: IfBlock */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(60),		/* function, reduce: IfBlock */
+			nil,		/* : */
+			reduce(60),		/* return, reduce: IfBlock */
+			nil,		/* ; */
+			reduce(60),		/* if, reduce: IfBlock */
+			nil,		/* else */
+			reduce(60),		/* while, reduce: IfBlock */
+			reduce(60),		/* foreach, reduce: IfBlock */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S514
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(48),		/* $, reduce: CodeBlock */
+			reduce(48),		/* var, reduce: CodeBlock */
+			reduce(48),		/* input, reduce: CodeBlock */
+			reduce(48),		/* true, reduce: CodeBlock */
+			reduce(48),		/* false, reduce: CodeBlock */
+			reduce(48),		/* (, reduce: CodeBlock */
+			nil,		/* ) */
+			reduce(48),		/* int, reduce: CodeBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(48),		/* [, reduce: CodeBlock */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(48),		/* fn_name, reduce: CodeBlock */
+			reduce(48),		/* cust_fn_name, reduce: CodeBlock */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(48),		/* function, reduce: CodeBlock */
+			nil,		/* : */
+			reduce(48),		/* return, reduce: CodeBlock */
+			nil,		/* ; */
+			reduce(48),		/* if, reduce: CodeBlock */
+			reduce(48),		/* else, reduce: CodeBlock */
+			reduce(48),		/* while, reduce: CodeBlock */
+			reduce(48),		/* foreach, reduce: CodeBlock */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S515
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(537),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S516
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -24318,28 +23284,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			nil,		/* ) */
+			nil,		/* ( */
+			shift(583),		/* ) */
 			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			reduce(30),		/* ], reduce: Get_Index */
-			shift(592),		/* = */
-			reduce(30),		/* ,, reduce: Get_Index */
-			nil,		/* [] */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -24361,13 +23325,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24378,18 +23342,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -24415,25 +23377,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			reduce(42),		/* ], reduce: Fn_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(42),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
-			nil,		/* fn_name */
+			nil,		/* , */
+			shift(585),		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -24455,13 +23415,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24472,18 +23432,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -24502,32 +23460,30 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			reduce(43),		/* ], reduce: Fn_Call */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(43),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -24549,13 +23505,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24566,14 +23522,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
-			reduce(51),		/* ], reduce: Statement */
+			shift(405),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(51),		/* ,, reduce: Statement */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -24596,13 +23550,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24613,14 +23567,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
-			reduce(66),		/* ], reduce: Lambda_Def */
+			shift(405),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(66),		/* ,, reduce: Lambda_Def */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -24643,13 +23595,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			shift(95),		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24660,18 +23612,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(102),		/* [ */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(108),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -24690,13 +23640,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(385),		/* var */
-			shift(386),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24707,14 +23657,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -24736,14 +23684,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(50),		/* $, reduce: Cust_Fn_def */
-			reduce(50),		/* var, reduce: Cust_Fn_def */
-			reduce(50),		/* input, reduce: Cust_Fn_def */
-			reduce(50),		/* true, reduce: Cust_Fn_def */
-			reduce(50),		/* false, reduce: Cust_Fn_def */
-			reduce(50),		/* (, reduce: Cust_Fn_def */
+			nil,		/* $ */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			reduce(50),		/* int, reduce: Cust_Fn_def */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24754,25 +23702,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(50),		/* [, reduce: Cust_Fn_def */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(50),		/* [], reduce: Cust_Fn_def */
-			reduce(50),		/* fn_name, reduce: Cust_Fn_def */
-			reduce(50),		/* cust_fn_name, reduce: Cust_Fn_def */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(50),		/* function, reduce: Cust_Fn_def */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(50),		/* return, reduce: Cust_Fn_def */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(50),		/* if, reduce: Cust_Fn_def */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(50),		/* while, reduce: Cust_Fn_def */
-			reduce(50),		/* foreach, reduce: Cust_Fn_def */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -24784,33 +23730,31 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
-			reduce(44),		/* {, reduce: Lambda_Call */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -24830,14 +23774,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(59),		/* $, reduce: IfBlock */
-			reduce(59),		/* var, reduce: IfBlock */
-			reduce(59),		/* input, reduce: IfBlock */
-			reduce(59),		/* true, reduce: IfBlock */
-			reduce(59),		/* false, reduce: IfBlock */
-			reduce(59),		/* (, reduce: IfBlock */
+			nil,		/* $ */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			reduce(59),		/* int, reduce: IfBlock */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24848,25 +23792,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(59),		/* [, reduce: IfBlock */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(59),		/* [], reduce: IfBlock */
-			reduce(59),		/* fn_name, reduce: IfBlock */
-			reduce(59),		/* cust_fn_name, reduce: IfBlock */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(59),		/* function, reduce: IfBlock */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(59),		/* return, reduce: IfBlock */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(59),		/* if, reduce: IfBlock */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(59),		/* while, reduce: IfBlock */
-			reduce(59),		/* foreach, reduce: IfBlock */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -24877,14 +23819,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(47),		/* $, reduce: CodeBlock */
-			reduce(47),		/* var, reduce: CodeBlock */
-			reduce(47),		/* input, reduce: CodeBlock */
-			reduce(47),		/* true, reduce: CodeBlock */
-			reduce(47),		/* false, reduce: CodeBlock */
-			reduce(47),		/* (, reduce: CodeBlock */
+			nil,		/* $ */
+			shift(587),		/* var */
+			shift(588),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			reduce(47),		/* int, reduce: CodeBlock */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24895,25 +23837,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(47),		/* [, reduce: CodeBlock */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(47),		/* [], reduce: CodeBlock */
-			reduce(47),		/* fn_name, reduce: CodeBlock */
-			reduce(47),		/* cust_fn_name, reduce: CodeBlock */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(47),		/* function, reduce: CodeBlock */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(47),		/* return, reduce: CodeBlock */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(47),		/* if, reduce: CodeBlock */
-			reduce(47),		/* else, reduce: CodeBlock */
-			reduce(47),		/* while, reduce: CodeBlock */
-			reduce(47),		/* foreach, reduce: CodeBlock */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -24925,38 +23865,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* int */
+			reduce(38),		/* *, reduce: ListDef */
+			reduce(38),		/* /, reduce: ListDef */
+			reduce(38),		/* +, reduce: ListDef */
+			reduce(38),		/* -, reduce: ListDef */
+			reduce(38),		/* >, reduce: ListDef */
+			reduce(38),		/* <, reduce: ListDef */
+			reduce(38),		/* ==, reduce: ListDef */
+			reduce(38),		/* !=, reduce: ListDef */
+			reduce(38),		/* &&, reduce: ListDef */
+			reduce(38),		/* ||, reduce: ListDef */
+			reduce(38),		/* [, reduce: ListDef */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(38),		/* ., reduce: ListDef */
 			nil,		/* { */
-			nil,		/* } */
-			shift(552),		/* function */
+			reduce(38),		/* }, reduce: ListDef */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(38),		/* ;, reduce: ListDef */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -24972,13 +23910,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -24989,18 +23927,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(600),		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(251),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -25019,13 +23955,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(599),		/* ) */
-			nil,		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(601),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25036,18 +23972,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -25066,13 +24000,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25083,19 +24017,17 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
-			nil,		/* : */
+			nil,		/* function */
+			shift(603),		/* : */
 			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
@@ -25133,11 +24065,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			shift(603),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(257),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -25150,7 +24080,7 @@ var actionTab = actionTable{
 			nil,		/* while */
 			nil,		/* foreach */
 			nil,		/* in */
-			nil,		/* -> */
+			shift(604),		/* -> */
 			
 		},
 
@@ -25160,13 +24090,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			reduce(54),		/* var, reduce: Single_Statement */
+			reduce(54),		/* input, reduce: Single_Statement */
+			reduce(54),		/* true, reduce: Single_Statement */
+			reduce(54),		/* false, reduce: Single_Statement */
+			reduce(54),		/* (, reduce: Single_Statement */
 			nil,		/* ) */
-			shift(408),		/* int */
+			reduce(54),		/* int, reduce: Single_Statement */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25177,25 +24107,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			reduce(54),		/* [, reduce: Single_Statement */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			reduce(54),		/* fn_name, reduce: Single_Statement */
+			reduce(54),		/* cust_fn_name, reduce: Single_Statement */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
+			reduce(54),		/* }, reduce: Single_Statement */
+			reduce(54),		/* function, reduce: Single_Statement */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(54),		/* return, reduce: Single_Statement */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(54),		/* if, reduce: Single_Statement */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(54),		/* while, reduce: Single_Statement */
+			reduce(54),		/* foreach, reduce: Single_Statement */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -25207,13 +24135,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25224,21 +24152,19 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(53),		/* }, reduce: Statement */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(53),		/* ;, reduce: Statement */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -25254,13 +24180,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			shift(109),		/* var */
+			shift(110),		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25271,14 +24197,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -25301,13 +24225,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25318,17 +24242,15 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(57),		/* }, reduce: Statements */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -25348,13 +24270,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25365,16 +24287,14 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
-			nil,		/* { */
+			shift(606),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -25395,13 +24315,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25412,16 +24332,14 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
-			nil,		/* { */
+			shift(608),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -25442,13 +24360,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -25459,14 +24377,12 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -25478,718 +24394,13 @@ var actionTab = actionTable{
 			nil,		/* else */
 			nil,		/* while */
 			nil,		/* foreach */
-			nil,		/* in */
+			shift(609),		/* in */
 			nil,		/* -> */
 			
 		},
 
 	},
 	actionRow{ // S542
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S543
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S544
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(605),		/* var */
-			shift(606),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S545
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(618),		/* ] */
-			nil,		/* = */
-			shift(258),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S546
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S547
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(42),		/* (, reduce: Fn_Call */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			reduce(42),		/* }, reduce: Fn_Call */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(42),		/* ;, reduce: Fn_Call */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S548
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			shift(620),		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S549
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(264),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			shift(621),		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S550
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(53),		/* var, reduce: Single_Statement */
-			reduce(53),		/* input, reduce: Single_Statement */
-			reduce(53),		/* true, reduce: Single_Statement */
-			reduce(53),		/* false, reduce: Single_Statement */
-			reduce(53),		/* (, reduce: Single_Statement */
-			nil,		/* ) */
-			reduce(53),		/* int, reduce: Single_Statement */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(53),		/* [, reduce: Single_Statement */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(53),		/* [], reduce: Single_Statement */
-			reduce(53),		/* fn_name, reduce: Single_Statement */
-			reduce(53),		/* cust_fn_name, reduce: Single_Statement */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(53),		/* }, reduce: Single_Statement */
-			reduce(53),		/* function, reduce: Single_Statement */
-			nil,		/* : */
-			reduce(53),		/* return, reduce: Single_Statement */
-			nil,		/* ; */
-			reduce(53),		/* if, reduce: Single_Statement */
-			nil,		/* else */
-			reduce(53),		/* while, reduce: Single_Statement */
-			reduce(53),		/* foreach, reduce: Single_Statement */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S551
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(52),		/* }, reduce: Statement */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(52),		/* ;, reduce: Statement */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S552
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(112),		/* var */
-			shift(113),		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S553
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(56),		/* }, reduce: Statements */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S554
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			shift(623),		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S555
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			shift(625),		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S556
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			shift(626),		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S557
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -26213,12 +24424,10 @@ var actionTab = actionTable{
 			reduce(30),		/* ||, reduce: Get_Index */
 			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
-			shift(627),		/* = */
+			shift(610),		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(30),		/* ., reduce: Get_Index */
 			reduce(30),		/* {, reduce: Get_Index */
 			nil,		/* } */
@@ -26236,18 +24445,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S558
+	actionRow{ // S543
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(611),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -26258,18 +24467,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26283,65 +24490,18 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S559
+	actionRow{ // S544
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
-			reduce(42),		/* {, reduce: Fn_Call */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S560
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -26352,18 +24512,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26377,7 +24535,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S561
+	actionRow{ // S545
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -26403,12 +24561,730 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(43),		/* ., reduce: Fn_Call */
 			reduce(43),		/* {, reduce: Fn_Call */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S546
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			reduce(52),		/* {, reduce: Statement */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S547
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			reduce(67),		/* {, reduce: Lambda_Def */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S548
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S549
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(48),		/* $, reduce: CodeBlock */
+			reduce(48),		/* var, reduce: CodeBlock */
+			reduce(48),		/* input, reduce: CodeBlock */
+			reduce(48),		/* true, reduce: CodeBlock */
+			reduce(48),		/* false, reduce: CodeBlock */
+			reduce(48),		/* (, reduce: CodeBlock */
+			nil,		/* ) */
+			reduce(48),		/* int, reduce: CodeBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(48),		/* [, reduce: CodeBlock */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(48),		/* fn_name, reduce: CodeBlock */
+			reduce(48),		/* cust_fn_name, reduce: CodeBlock */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(48),		/* function, reduce: CodeBlock */
+			nil,		/* : */
+			reduce(48),		/* return, reduce: CodeBlock */
+			nil,		/* ; */
+			reduce(48),		/* if, reduce: CodeBlock */
+			nil,		/* else */
+			reduce(48),		/* while, reduce: CodeBlock */
+			reduce(48),		/* foreach, reduce: CodeBlock */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S550
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(63),		/* $, reduce: ForEachLoop */
+			reduce(63),		/* var, reduce: ForEachLoop */
+			reduce(63),		/* input, reduce: ForEachLoop */
+			reduce(63),		/* true, reduce: ForEachLoop */
+			reduce(63),		/* false, reduce: ForEachLoop */
+			reduce(63),		/* (, reduce: ForEachLoop */
+			nil,		/* ) */
+			reduce(63),		/* int, reduce: ForEachLoop */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(63),		/* [, reduce: ForEachLoop */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(63),		/* fn_name, reduce: ForEachLoop */
+			reduce(63),		/* cust_fn_name, reduce: ForEachLoop */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			reduce(63),		/* function, reduce: ForEachLoop */
+			nil,		/* : */
+			reduce(63),		/* return, reduce: ForEachLoop */
+			nil,		/* ; */
+			reduce(63),		/* if, reduce: ForEachLoop */
+			nil,		/* else */
+			reduce(63),		/* while, reduce: ForEachLoop */
+			reduce(63),		/* foreach, reduce: ForEachLoop */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S551
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(44),		/* (, reduce: Lambda_Call */
+			reduce(44),		/* ), reduce: Lambda_Call */
+			nil,		/* int */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(44),		/* ,, reduce: Lambda_Call */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(44),		/* ., reduce: Lambda_Call */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S552
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(30),		/* (, reduce: Get_Index */
+			reduce(30),		/* ), reduce: Get_Index */
+			nil,		/* int */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
+			nil,		/* ] */
+			shift(615),		/* = */
+			reduce(30),		/* ,, reduce: Get_Index */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S553
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(616),		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S554
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(217),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S555
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(43),		/* (, reduce: Fn_Call */
+			reduce(43),		/* ), reduce: Fn_Call */
+			nil,		/* int */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(43),		/* ,, reduce: Fn_Call */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(43),		/* ., reduce: Fn_Call */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S556
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(52),		/* ), reduce: Statement */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(52),		/* ,, reduce: Statement */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S557
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(67),		/* ), reduce: Lambda_Def */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(67),		/* ,, reduce: Lambda_Def */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S558
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S559
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(44),		/* var */
+			shift(45),		/* input */
+			shift(47),		/* true */
+			shift(48),		/* false */
+			shift(50),		/* ( */
+			nil,		/* ) */
+			shift(56),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(63),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(67),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S560
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(46),		/* ), reduce: Method_Call */
+			nil,		/* int */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S561
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(621),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -26447,15 +25323,13 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			shift(622),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(51),		/* {, reduce: Statement */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -26481,7 +25355,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(53),		/* ), reduce: Statement */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -26497,12 +25371,10 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			reduce(66),		/* {, reduce: Lambda_Def */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -26523,35 +25395,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(44),		/* (, reduce: Lambda_Call */
 			nil,		/* ) */
-			shift(133),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
+			reduce(44),		/* ], reduce: Lambda_Call */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(44),		/* ., reduce: Lambda_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26569,14 +25439,14 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(47),		/* $, reduce: CodeBlock */
-			reduce(47),		/* var, reduce: CodeBlock */
-			reduce(47),		/* input, reduce: CodeBlock */
-			reduce(47),		/* true, reduce: CodeBlock */
-			reduce(47),		/* false, reduce: CodeBlock */
-			reduce(47),		/* (, reduce: CodeBlock */
+			reduce(32),		/* $, reduce: Assign */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(47),		/* int, reduce: CodeBlock */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -26587,25 +25457,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			reduce(47),		/* [, reduce: CodeBlock */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(47),		/* [], reduce: CodeBlock */
-			reduce(47),		/* fn_name, reduce: CodeBlock */
-			reduce(47),		/* cust_fn_name, reduce: CodeBlock */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(47),		/* function, reduce: CodeBlock */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(47),		/* return, reduce: CodeBlock */
-			nil,		/* ; */
-			reduce(47),		/* if, reduce: CodeBlock */
+			nil,		/* return */
+			reduce(32),		/* ;, reduce: Assign */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(47),		/* while, reduce: CodeBlock */
-			reduce(47),		/* foreach, reduce: CodeBlock */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -26616,43 +25484,41 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(62),		/* $, reduce: ForEachLoop */
-			reduce(62),		/* var, reduce: ForEachLoop */
-			reduce(62),		/* input, reduce: ForEachLoop */
-			reduce(62),		/* true, reduce: ForEachLoop */
-			reduce(62),		/* false, reduce: ForEachLoop */
-			reduce(62),		/* (, reduce: ForEachLoop */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(30),		/* (, reduce: Get_Index */
 			nil,		/* ) */
-			reduce(62),		/* int, reduce: ForEachLoop */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(62),		/* [, reduce: ForEachLoop */
-			nil,		/* ] */
-			nil,		/* = */
+			nil,		/* int */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
+			reduce(30),		/* ], reduce: Get_Index */
+			shift(623),		/* = */
 			nil,		/* , */
-			reduce(62),		/* [], reduce: ForEachLoop */
-			reduce(62),		/* fn_name, reduce: ForEachLoop */
-			reduce(62),		/* cust_fn_name, reduce: ForEachLoop */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
-			reduce(62),		/* function, reduce: ForEachLoop */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(62),		/* return, reduce: ForEachLoop */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(62),		/* if, reduce: ForEachLoop */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(62),		/* while, reduce: ForEachLoop */
-			reduce(62),		/* foreach, reduce: ForEachLoop */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -26664,35 +25530,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
-			reduce(44),		/* ), reduce: Lambda_Call */
-			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(624),		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(44),		/* ,, reduce: Lambda_Call */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26711,35 +25575,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			reduce(30),		/* ), reduce: Get_Index */
-			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
 			nil,		/* ] */
-			shift(631),		/* = */
-			reduce(30),		/* ,, reduce: Get_Index */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26758,35 +25620,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(43),		/* (, reduce: Fn_Call */
 			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
+			reduce(43),		/* ], reduce: Fn_Call */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(43),		/* ., reduce: Fn_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26810,27 +25670,25 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(42),		/* ), reduce: Fn_Call */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			reduce(52),		/* ], reduce: Statement */
 			nil,		/* = */
-			reduce(42),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -26852,13 +25710,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -26869,18 +25727,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			reduce(67),		/* ], reduce: Lambda_Def */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26899,35 +25755,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
-			reduce(43),		/* ), reduce: Fn_Call */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(43),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -26945,39 +25799,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(47),		/* $, reduce: Method_Call */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(51),		/* ), reduce: Statement */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(51),		/* ,, reduce: Statement */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(47),		/* ;, reduce: Method_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -26992,39 +25844,37 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(30),		/* $, reduce: Get_Index */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(66),		/* ), reduce: Lambda_Def */
+			reduce(30),		/* (, reduce: Get_Index */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(66),		/* ,, reduce: Lambda_Def */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(30),		/* ;, reduce: Get_Index */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -27040,13 +25890,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			shift(81),		/* var */
+			shift(82),		/* input */
+			shift(84),		/* true */
+			shift(85),		/* false */
+			shift(87),		/* ( */
 			nil,		/* ) */
-			shift(164),		/* int */
+			shift(93),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -27057,18 +25907,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(171),		/* [ */
+			shift(100),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			shift(106),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -27087,35 +25935,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(45),		/* var */
-			shift(46),		/* input */
-			shift(48),		/* true */
-			shift(49),		/* false */
-			shift(51),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(57),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(64),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			reduce(46),		/* ], reduce: Method_Call */
 			nil,		/* = */
-			nil,		/* , */
-			shift(67),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(46),		/* ,, reduce: Method_Call */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(46),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(69),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -27139,7 +25985,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(636),		/* ) */
+			shift(629),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -27154,11 +26000,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -27199,13 +26043,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(637),		/* ] */
+			shift(630),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -27233,7 +26075,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(52),		/* ), reduce: Statement */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -27246,13 +26088,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(53),		/* ], reduce: Statement */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(53),		/* ,, reduce: Statement */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -27279,29 +26119,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
-			reduce(44),		/* ], reduce: Lambda_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(49),		/* ,, reduce: Func_Param_Def */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
-			nil,		/* { */
+			nil,		/* . */
+			reduce(49),		/* {, reduce: Func_Param_Def */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -27321,7 +26159,7 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(32),		/* $, reduce: Assign */
+			nil,		/* $ */
 			nil,		/* var */
 			nil,		/* input */
 			nil,		/* true */
@@ -27343,17 +26181,15 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(31),		/* }, reduce: Assign */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(32),		/* ;, reduce: Assign */
+			reduce(31),		/* ;, reduce: Assign */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -27373,28 +26209,26 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			nil,		/* ) */
+			nil,		/* ( */
+			shift(631),		/* ) */
 			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			reduce(30),		/* ], reduce: Get_Index */
-			shift(638),		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -27412,758 +26246,6 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S583
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S584
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			reduce(42),		/* ], reduce: Fn_Call */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S585
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(223),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S586
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			reduce(43),		/* ], reduce: Fn_Call */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S587
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(51),		/* ], reduce: Statement */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S588
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(66),		/* ], reduce: Lambda_Def */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S589
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
-			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(223),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S590
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(43),		/* $, reduce: Fn_Call */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(43),		/* ;, reduce: Fn_Call */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S591
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(30),		/* $, reduce: Get_Index */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(30),		/* ;, reduce: Get_Index */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S592
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(83),		/* var */
-			shift(84),		/* input */
-			shift(86),		/* true */
-			shift(87),		/* false */
-			shift(89),		/* ( */
-			nil,		/* ) */
-			shift(95),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(102),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(106),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(108),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S593
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(643),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S594
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(644),		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S595
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(52),		/* ], reduce: Statement */
-			nil,		/* = */
-			reduce(52),		/* ,, reduce: Statement */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S596
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			reduce(48),		/* ,, reduce: Func_Param_Def */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(48),		/* {, reduce: Func_Param_Def */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S597
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(31),		/* }, reduce: Assign */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(31),		/* ;, reduce: Assign */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S598
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(645),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S599
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28189,10 +26271,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(7),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			reduce(7),		/* }, reduce: Callable_Object */
@@ -28210,7 +26290,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S600
+	actionRow{ // S584
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28233,13 +26313,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(646),		/* ] */
+			shift(632),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -28257,7 +26335,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S601
+	actionRow{ // S585
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28266,101 +26344,7 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(46),		/* *, reduce: Method_Call */
-			reduce(46),		/* /, reduce: Method_Call */
-			reduce(46),		/* +, reduce: Method_Call */
-			reduce(46),		/* -, reduce: Method_Call */
-			reduce(46),		/* >, reduce: Method_Call */
-			reduce(46),		/* <, reduce: Method_Call */
-			reduce(46),		/* ==, reduce: Method_Call */
-			reduce(46),		/* !=, reduce: Method_Call */
-			reduce(46),		/* &&, reduce: Method_Call */
-			reduce(46),		/* ||, reduce: Method_Call */
-			reduce(46),		/* [, reduce: Method_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(46),		/* ., reduce: Method_Call */
-			nil,		/* { */
-			reduce(46),		/* }, reduce: Method_Call */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(46),		/* ;, reduce: Method_Call */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S602
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			shift(647),		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			shift(648),		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S603
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(40),		/* (, reduce: Fn_Name */
+			shift(633),		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(45),		/* *, reduce: Method_Call */
@@ -28377,10 +26361,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			reduce(40),		/* (), reduce: Fn_Name */
 			reduce(45),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			reduce(45),		/* }, reduce: Method_Call */
@@ -28398,7 +26380,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S604
+	actionRow{ // S586
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28424,10 +26406,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(6),		/* ., reduce: Callable_Object */
 			nil,		/* { */
 			reduce(6),		/* }, reduce: Callable_Object */
@@ -28445,7 +26425,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S605
+	actionRow{ // S587
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28471,10 +26451,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(2),		/* ., reduce: Variable */
 			nil,		/* { */
 			reduce(2),		/* }, reduce: Variable */
@@ -28492,7 +26470,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S606
+	actionRow{ // S588
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28518,10 +26496,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(3),		/* ., reduce: Variable */
 			nil,		/* { */
 			reduce(3),		/* }, reduce: Variable */
@@ -28539,7 +26515,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S607
+	actionRow{ // S589
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28561,15 +26537,13 @@ var actionTab = actionTable{
 			reduce(16),		/* !=, reduce: Mult_Expr */
 			reduce(16),		/* &&, reduce: Mult_Expr */
 			reduce(16),		/* ||, reduce: Mult_Expr */
-			shift(649),		/* [ */
+			shift(634),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(534),		/* . */
+			shift(519),		/* . */
 			nil,		/* { */
 			reduce(16),		/* }, reduce: Mult_Expr */
 			nil,		/* function */
@@ -28586,7 +26560,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S608
+	actionRow{ // S590
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28608,15 +26582,13 @@ var actionTab = actionTable{
 			reduce(17),		/* !=, reduce: Mult_Expr */
 			reduce(17),		/* &&, reduce: Mult_Expr */
 			reduce(17),		/* ||, reduce: Mult_Expr */
-			shift(649),		/* [ */
+			shift(634),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(534),		/* . */
+			shift(519),		/* . */
 			nil,		/* { */
 			reduce(17),		/* }, reduce: Mult_Expr */
 			nil,		/* function */
@@ -28633,7 +26605,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S609
+	actionRow{ // S591
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28655,15 +26627,13 @@ var actionTab = actionTable{
 			reduce(18),		/* !=, reduce: Mult_Expr */
 			reduce(18),		/* &&, reduce: Mult_Expr */
 			reduce(18),		/* ||, reduce: Mult_Expr */
-			shift(649),		/* [ */
+			shift(634),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			shift(534),		/* . */
+			shift(519),		/* . */
 			nil,		/* { */
 			reduce(18),		/* }, reduce: Mult_Expr */
 			nil,		/* function */
@@ -28680,7 +26650,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S610
+	actionRow{ // S592
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28692,8 +26662,8 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(535),		/* * */
-			shift(536),		/* / */
+			shift(520),		/* * */
+			shift(521),		/* / */
 			reduce(19),		/* +, reduce: Add_Expr */
 			reduce(19),		/* -, reduce: Add_Expr */
 			reduce(19),		/* >, reduce: Add_Expr */
@@ -28706,10 +26676,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(19),		/* }, reduce: Add_Expr */
@@ -28727,7 +26695,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S611
+	actionRow{ // S593
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28739,8 +26707,8 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			shift(535),		/* * */
-			shift(536),		/* / */
+			shift(520),		/* * */
+			shift(521),		/* / */
 			reduce(20),		/* +, reduce: Add_Expr */
 			reduce(20),		/* -, reduce: Add_Expr */
 			reduce(20),		/* >, reduce: Add_Expr */
@@ -28753,10 +26721,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(20),		/* }, reduce: Add_Expr */
@@ -28774,7 +26740,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S612
+	actionRow{ // S594
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28788,8 +26754,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(537),		/* + */
-			shift(538),		/* - */
+			shift(522),		/* + */
+			shift(523),		/* - */
 			reduce(22),		/* >, reduce: Comp_Expr */
 			reduce(22),		/* <, reduce: Comp_Expr */
 			reduce(22),		/* ==, reduce: Comp_Expr */
@@ -28800,10 +26766,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(22),		/* }, reduce: Comp_Expr */
@@ -28821,7 +26785,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S613
+	actionRow{ // S595
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28835,8 +26799,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(537),		/* + */
-			shift(538),		/* - */
+			shift(522),		/* + */
+			shift(523),		/* - */
 			reduce(23),		/* >, reduce: Comp_Expr */
 			reduce(23),		/* <, reduce: Comp_Expr */
 			reduce(23),		/* ==, reduce: Comp_Expr */
@@ -28847,10 +26811,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(23),		/* }, reduce: Comp_Expr */
@@ -28868,7 +26830,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S614
+	actionRow{ // S596
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28882,8 +26844,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(537),		/* + */
-			shift(538),		/* - */
+			shift(522),		/* + */
+			shift(523),		/* - */
 			reduce(24),		/* >, reduce: Comp_Expr */
 			reduce(24),		/* <, reduce: Comp_Expr */
 			reduce(24),		/* ==, reduce: Comp_Expr */
@@ -28894,10 +26856,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(24),		/* }, reduce: Comp_Expr */
@@ -28915,7 +26875,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S615
+	actionRow{ // S597
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28929,8 +26889,8 @@ var actionTab = actionTable{
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
-			shift(537),		/* + */
-			shift(538),		/* - */
+			shift(522),		/* + */
+			shift(523),		/* - */
 			reduce(25),		/* >, reduce: Comp_Expr */
 			reduce(25),		/* <, reduce: Comp_Expr */
 			reduce(25),		/* ==, reduce: Comp_Expr */
@@ -28941,10 +26901,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(25),		/* }, reduce: Comp_Expr */
@@ -28962,7 +26920,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S616
+	actionRow{ // S598
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -28978,20 +26936,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(539),		/* > */
-			shift(540),		/* < */
-			shift(541),		/* == */
-			shift(542),		/* != */
+			shift(524),		/* > */
+			shift(525),		/* < */
+			shift(526),		/* == */
+			shift(527),		/* != */
 			reduce(27),		/* &&, reduce: Bool_Expr */
 			reduce(27),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(27),		/* }, reduce: Bool_Expr */
@@ -29009,7 +26965,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S617
+	actionRow{ // S599
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -29025,20 +26981,18 @@ var actionTab = actionTable{
 			nil,		/* / */
 			nil,		/* + */
 			nil,		/* - */
-			shift(539),		/* > */
-			shift(540),		/* < */
-			shift(541),		/* == */
-			shift(542),		/* != */
+			shift(524),		/* > */
+			shift(525),		/* < */
+			shift(526),		/* == */
+			shift(527),		/* != */
 			reduce(28),		/* &&, reduce: Bool_Expr */
 			reduce(28),		/* ||, reduce: Bool_Expr */
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			reduce(28),		/* }, reduce: Bool_Expr */
@@ -29056,7 +27010,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S618
+	actionRow{ // S600
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -29082,10 +27036,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(39),		/* ., reduce: ListDef */
 			nil,		/* { */
 			reduce(39),		/* }, reduce: ListDef */
@@ -29093,6 +27045,816 @@ var actionTab = actionTable{
 			nil,		/* : */
 			nil,		/* return */
 			reduce(39),		/* ;, reduce: ListDef */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S601
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(42),		/* (, reduce: Fn_Call */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(42),		/* *, reduce: Fn_Call */
+			reduce(42),		/* /, reduce: Fn_Call */
+			reduce(42),		/* +, reduce: Fn_Call */
+			reduce(42),		/* -, reduce: Fn_Call */
+			reduce(42),		/* >, reduce: Fn_Call */
+			reduce(42),		/* <, reduce: Fn_Call */
+			reduce(42),		/* ==, reduce: Fn_Call */
+			reduce(42),		/* !=, reduce: Fn_Call */
+			reduce(42),		/* &&, reduce: Fn_Call */
+			reduce(42),		/* ||, reduce: Fn_Call */
+			reduce(42),		/* [, reduce: Fn_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(42),		/* ., reduce: Fn_Call */
+			nil,		/* { */
+			reduce(42),		/* }, reduce: Fn_Call */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			reduce(42),		/* ;, reduce: Fn_Call */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S602
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(635),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S603
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(375),		/* var */
+			shift(376),		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S604
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(537),		/* function */
+			nil,		/* : */
+			shift(412),		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S605
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			reduce(61),		/* var, reduce: IfBlock */
+			reduce(61),		/* input, reduce: IfBlock */
+			reduce(61),		/* true, reduce: IfBlock */
+			reduce(61),		/* false, reduce: IfBlock */
+			reduce(61),		/* (, reduce: IfBlock */
+			nil,		/* ) */
+			reduce(61),		/* int, reduce: IfBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(61),		/* [, reduce: IfBlock */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(61),		/* fn_name, reduce: IfBlock */
+			reduce(61),		/* cust_fn_name, reduce: IfBlock */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(61),		/* }, reduce: IfBlock */
+			reduce(61),		/* function, reduce: IfBlock */
+			nil,		/* : */
+			reduce(61),		/* return, reduce: IfBlock */
+			nil,		/* ; */
+			reduce(61),		/* if, reduce: IfBlock */
+			shift(638),		/* else */
+			reduce(61),		/* while, reduce: IfBlock */
+			reduce(61),		/* foreach, reduce: IfBlock */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S606
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(410),		/* function */
+			nil,		/* : */
+			shift(412),		/* return */
+			nil,		/* ; */
+			shift(416),		/* if */
+			nil,		/* else */
+			shift(418),		/* while */
+			shift(420),		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S607
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			reduce(62),		/* var, reduce: WhileLoop */
+			reduce(62),		/* input, reduce: WhileLoop */
+			reduce(62),		/* true, reduce: WhileLoop */
+			reduce(62),		/* false, reduce: WhileLoop */
+			reduce(62),		/* (, reduce: WhileLoop */
+			nil,		/* ) */
+			reduce(62),		/* int, reduce: WhileLoop */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(62),		/* [, reduce: WhileLoop */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			reduce(62),		/* fn_name, reduce: WhileLoop */
+			reduce(62),		/* cust_fn_name, reduce: WhileLoop */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(62),		/* }, reduce: WhileLoop */
+			reduce(62),		/* function, reduce: WhileLoop */
+			nil,		/* : */
+			reduce(62),		/* return, reduce: WhileLoop */
+			nil,		/* ; */
+			reduce(62),		/* if, reduce: WhileLoop */
+			nil,		/* else */
+			reduce(62),		/* while, reduce: WhileLoop */
+			reduce(62),		/* foreach, reduce: WhileLoop */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S608
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
+			nil,		/* ) */
+			shift(398),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(405),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(410),		/* function */
+			nil,		/* : */
+			shift(412),		/* return */
+			nil,		/* ; */
+			shift(416),		/* if */
+			nil,		/* else */
+			shift(418),		/* while */
+			shift(420),		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S609
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S610
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(118),		/* var */
+			shift(119),		/* input */
+			shift(121),		/* true */
+			shift(122),		/* false */
+			shift(124),		/* ( */
+			nil,		/* ) */
+			shift(130),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(137),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(141),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S611
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(46),		/* ., reduce: Method_Call */
+			reduce(46),		/* {, reduce: Method_Call */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S612
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(643),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S613
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			shift(644),		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S614
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			reduce(53),		/* {, reduce: Statement */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S615
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			nil,		/* ) */
+			shift(160),		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			shift(167),		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			shift(172),		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S616
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(46),		/* ), reduce: Method_Call */
+			nil,		/* int */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			nil,		/* ] */
+			nil,		/* = */
+			reduce(46),		/* ,, reduce: Method_Call */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(46),		/* ., reduce: Method_Call */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S617
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(646),		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			nil,		/* ] */
+			nil,		/* = */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
+			nil,		/* in */
+			nil,		/* -> */
+			
+		},
+
+	},
+	actionRow{ // S618
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* int */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			shift(647),		/* ] */
+			nil,		/* = */
+			nil,		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			nil,		/* . */
+			nil,		/* { */
+			nil,		/* } */
+			nil,		/* function */
+			nil,		/* : */
+			nil,		/* return */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -29113,7 +27875,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(650),		/* ) */
+			reduce(53),		/* ), reduce: Statement */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -29128,11 +27890,9 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			reduce(53),		/* ,, reduce: Statement */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -29155,12 +27915,12 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(385),		/* var */
-			shift(386),		/* input */
+			nil,		/* var */
+			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			reduce(32),		/* ), reduce: Assign */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -29176,10 +27936,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -29202,37 +27960,35 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			reduce(47),		/* ), reduce: Method_Call */
+			nil,		/* int */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(552),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
@@ -29249,42 +28005,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(60),		/* var, reduce: IfBlock */
-			reduce(60),		/* input, reduce: IfBlock */
-			reduce(60),		/* true, reduce: IfBlock */
-			reduce(60),		/* false, reduce: IfBlock */
-			reduce(60),		/* (, reduce: IfBlock */
-			nil,		/* ) */
-			reduce(60),		/* int, reduce: IfBlock */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(60),		/* [, reduce: IfBlock */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(30),		/* (, reduce: Get_Index */
+			reduce(30),		/* ), reduce: Get_Index */
+			nil,		/* int */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(60),		/* [], reduce: IfBlock */
-			reduce(60),		/* fn_name, reduce: IfBlock */
-			reduce(60),		/* cust_fn_name, reduce: IfBlock */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
-			reduce(60),		/* }, reduce: IfBlock */
-			reduce(60),		/* function, reduce: IfBlock */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(60),		/* return, reduce: IfBlock */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(60),		/* if, reduce: IfBlock */
-			shift(653),		/* else */
-			reduce(60),		/* while, reduce: IfBlock */
-			reduce(60),		/* foreach, reduce: IfBlock */
+			nil,		/* if */
+			nil,		/* else */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -29296,13 +28050,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
 			nil,		/* ) */
-			shift(408),		/* int */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29313,25 +28067,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(421),		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
-			shift(427),		/* if */
+			nil,		/* if */
 			nil,		/* else */
-			shift(429),		/* while */
-			shift(431),		/* foreach */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -29343,42 +28095,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			reduce(61),		/* var, reduce: WhileLoop */
-			reduce(61),		/* input, reduce: WhileLoop */
-			reduce(61),		/* true, reduce: WhileLoop */
-			reduce(61),		/* false, reduce: WhileLoop */
-			reduce(61),		/* (, reduce: WhileLoop */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			reduce(61),		/* int, reduce: WhileLoop */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(61),		/* [, reduce: WhileLoop */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
+			reduce(46),		/* ], reduce: Method_Call */
 			nil,		/* = */
 			nil,		/* , */
-			reduce(61),		/* [], reduce: WhileLoop */
-			reduce(61),		/* fn_name, reduce: WhileLoop */
-			reduce(61),		/* cust_fn_name, reduce: WhileLoop */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(46),		/* ., reduce: Method_Call */
 			nil,		/* { */
-			reduce(61),		/* }, reduce: WhileLoop */
-			reduce(61),		/* function, reduce: WhileLoop */
+			nil,		/* } */
+			nil,		/* function */
 			nil,		/* : */
-			reduce(61),		/* return, reduce: WhileLoop */
+			nil,		/* return */
 			nil,		/* ; */
-			reduce(61),		/* if, reduce: WhileLoop */
+			nil,		/* if */
 			nil,		/* else */
-			reduce(61),		/* while, reduce: WhileLoop */
-			reduce(61),		/* foreach, reduce: WhileLoop */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -29390,13 +28140,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
+			shift(649),		/* ) */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29407,25 +28157,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(415),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			shift(301),		/* , */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(421),		/* function */
+			nil,		/* function */
 			nil,		/* : */
-			shift(423),		/* return */
+			nil,		/* return */
 			nil,		/* ; */
-			shift(427),		/* if */
+			nil,		/* if */
 			nil,		/* else */
-			shift(429),		/* while */
-			shift(431),		/* foreach */
+			nil,		/* while */
+			nil,		/* foreach */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -29437,13 +28185,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29454,18 +28202,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			shift(650),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -29484,13 +28230,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(121),		/* var */
-			shift(122),		/* input */
-			shift(124),		/* true */
-			shift(125),		/* false */
-			shift(127),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(133),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29501,18 +28247,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(140),		/* [ */
-			nil,		/* ] */
+			nil,		/* [ */
+			reduce(53),		/* ], reduce: Statement */
 			nil,		/* = */
 			nil,		/* , */
-			shift(143),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			shift(145),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -29536,7 +28280,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(658),		/* ) */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -29549,13 +28293,11 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			reduce(32),		/* ], reduce: Assign */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			reduce(32),		/* ,, reduce: Assign */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
@@ -29585,25 +28327,23 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(659),		/* ] */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
+			reduce(47),		/* ], reduce: Method_Call */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(47),		/* ,, reduce: Method_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
@@ -29629,29 +28369,27 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
+			reduce(30),		/* (, reduce: Get_Index */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
+			reduce(30),		/* ], reduce: Get_Index */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(30),		/* ,, reduce: Get_Index */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			reduce(52),		/* {, reduce: Statement */
+			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -29672,38 +28410,36 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(44),		/* (, reduce: Lambda_Call */
 			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
+			nil,		/* int */
+			reduce(44),		/* *, reduce: Lambda_Call */
+			reduce(44),		/* /, reduce: Lambda_Call */
+			reduce(44),		/* +, reduce: Lambda_Call */
+			reduce(44),		/* -, reduce: Lambda_Call */
+			reduce(44),		/* >, reduce: Lambda_Call */
+			reduce(44),		/* <, reduce: Lambda_Call */
+			reduce(44),		/* ==, reduce: Lambda_Call */
+			reduce(44),		/* !=, reduce: Lambda_Call */
+			reduce(44),		/* &&, reduce: Lambda_Call */
+			reduce(44),		/* ||, reduce: Lambda_Call */
+			reduce(44),		/* [, reduce: Lambda_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(44),		/* ., reduce: Lambda_Call */
 			nil,		/* { */
-			nil,		/* } */
-			shift(177),		/* function */
+			reduce(44),		/* }, reduce: Lambda_Call */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(44),		/* ;, reduce: Lambda_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -29723,34 +28459,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			shift(661),		/* ) */
+			reduce(30),		/* (, reduce: Get_Index */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			shift(651),		/* = */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(30),		/* }, reduce: Get_Index */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(30),		/* ;, reduce: Get_Index */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -29766,13 +28500,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
+			shift(148),		/* var */
+			shift(149),		/* input */
+			shift(151),		/* true */
+			shift(152),		/* false */
+			shift(154),		/* ( */
+			shift(652),		/* ) */
+			shift(160),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29783,18 +28517,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
-			shift(662),		/* ] */
+			shift(167),		/* [ */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(172),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -29813,13 +28545,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			reduce(52),		/* ), reduce: Statement */
-			nil,		/* int */
+			shift(194),		/* var */
+			shift(195),		/* input */
+			shift(197),		/* true */
+			shift(198),		/* false */
+			shift(200),		/* ( */
+			nil,		/* ) */
+			shift(206),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -29830,18 +28562,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(213),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(52),		/* ,, reduce: Statement */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
 			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(217),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -29864,34 +28594,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			nil,		/* ( */
-			reduce(32),		/* ), reduce: Assign */
+			reduce(43),		/* (, reduce: Fn_Call */
+			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(43),		/* *, reduce: Fn_Call */
+			reduce(43),		/* /, reduce: Fn_Call */
+			reduce(43),		/* +, reduce: Fn_Call */
+			reduce(43),		/* -, reduce: Fn_Call */
+			reduce(43),		/* >, reduce: Fn_Call */
+			reduce(43),		/* <, reduce: Fn_Call */
+			reduce(43),		/* ==, reduce: Fn_Call */
+			reduce(43),		/* !=, reduce: Fn_Call */
+			reduce(43),		/* &&, reduce: Fn_Call */
+			reduce(43),		/* ||, reduce: Fn_Call */
+			reduce(43),		/* [, reduce: Fn_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(43),		/* ., reduce: Fn_Call */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(43),		/* }, reduce: Fn_Call */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(43),		/* ;, reduce: Fn_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -29912,28 +28640,26 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(43),		/* ), reduce: Fn_Call */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(510),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
+			nil,		/* . */
+			shift(608),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -29958,34 +28684,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			reduce(30),		/* ), reduce: Get_Index */
+			nil,		/* ( */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(67),		/* }, reduce: Lambda_Def */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(67),		/* ;, reduce: Lambda_Def */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30001,13 +28725,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
+			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -30018,18 +28742,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			shift(218),		/* [ */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
 			nil,		/* . */
-			nil,		/* { */
+			shift(608),		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -30053,7 +28775,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			shift(664),		/* ) */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -30068,14 +28790,12 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			shift(657),		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -30113,16 +28833,14 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			shift(665),		/* ] */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			shift(658),		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -30160,15 +28878,13 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			reduce(52),		/* ], reduce: Statement */
+			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			shift(608),		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -30207,15 +28923,13 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			reduce(32),		/* ], reduce: Assign */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(32),		/* ,, reduce: Assign */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			nil,		/* { */
+			reduce(32),		/* {, reduce: Assign */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -30243,26 +28957,24 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			reduce(43),		/* ], reduce: Fn_Call */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(43),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
+			reduce(47),		/* ., reduce: Method_Call */
+			reduce(47),		/* {, reduce: Method_Call */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -30301,15 +29013,13 @@ var actionTab = actionTable{
 			reduce(30),		/* &&, reduce: Get_Index */
 			reduce(30),		/* ||, reduce: Get_Index */
 			reduce(30),		/* [, reduce: Get_Index */
-			reduce(30),		/* ], reduce: Get_Index */
+			nil,		/* ] */
 			nil,		/* = */
-			reduce(30),		/* ,, reduce: Get_Index */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(30),		/* ., reduce: Get_Index */
-			nil,		/* { */
+			reduce(30),		/* {, reduce: Get_Index */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -30334,34 +29044,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(44),		/* (, reduce: Lambda_Call */
-			nil,		/* ) */
+			nil,		/* ( */
+			reduce(32),		/* ), reduce: Assign */
 			nil,		/* int */
-			reduce(44),		/* *, reduce: Lambda_Call */
-			reduce(44),		/* /, reduce: Lambda_Call */
-			reduce(44),		/* +, reduce: Lambda_Call */
-			reduce(44),		/* -, reduce: Lambda_Call */
-			reduce(44),		/* >, reduce: Lambda_Call */
-			reduce(44),		/* <, reduce: Lambda_Call */
-			reduce(44),		/* ==, reduce: Lambda_Call */
-			reduce(44),		/* !=, reduce: Lambda_Call */
-			reduce(44),		/* &&, reduce: Lambda_Call */
-			reduce(44),		/* ||, reduce: Lambda_Call */
-			reduce(44),		/* [, reduce: Lambda_Call */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			reduce(32),		/* ,, reduce: Assign */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(44),		/* ., reduce: Lambda_Call */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(44),		/* }, reduce: Lambda_Call */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(44),		/* ;, reduce: Lambda_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30381,34 +29089,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			nil,		/* ) */
+			nil,		/* ( */
+			reduce(47),		/* ), reduce: Method_Call */
 			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
 			nil,		/* ] */
-			shift(666),		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			nil,		/* = */
+			reduce(47),		/* ,, reduce: Method_Call */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
-			reduce(30),		/* }, reduce: Get_Index */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(30),		/* ;, reduce: Get_Index */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30424,35 +29130,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(152),		/* var */
-			shift(153),		/* input */
-			shift(155),		/* true */
-			shift(156),		/* false */
-			shift(158),		/* ( */
-			nil,		/* ) */
-			shift(164),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(171),		/* [ */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			reduce(30),		/* (, reduce: Get_Index */
+			reduce(30),		/* ), reduce: Get_Index */
+			nil,		/* int */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			shift(175),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(30),		/* ,, reduce: Get_Index */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			nil,		/* } */
-			shift(177),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -30478,31 +29182,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(42),		/* *, reduce: Fn_Call */
-			reduce(42),		/* /, reduce: Fn_Call */
-			reduce(42),		/* +, reduce: Fn_Call */
-			reduce(42),		/* -, reduce: Fn_Call */
-			reduce(42),		/* >, reduce: Fn_Call */
-			reduce(42),		/* <, reduce: Fn_Call */
-			reduce(42),		/* ==, reduce: Fn_Call */
-			reduce(42),		/* !=, reduce: Fn_Call */
-			reduce(42),		/* &&, reduce: Fn_Call */
-			reduce(42),		/* ||, reduce: Fn_Call */
-			reduce(42),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			nil,		/* [ */
+			reduce(32),		/* ], reduce: Assign */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(42),		/* ., reduce: Fn_Call */
+			nil,		/* . */
 			nil,		/* { */
-			reduce(42),		/* }, reduce: Fn_Call */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(42),		/* ;, reduce: Fn_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30518,35 +29220,33 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			shift(199),		/* var */
-			shift(200),		/* input */
-			shift(202),		/* true */
-			shift(203),		/* false */
-			shift(205),		/* ( */
+			nil,		/* var */
+			nil,		/* input */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* ( */
 			nil,		/* ) */
-			shift(211),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(218),		/* [ */
-			nil,		/* ] */
+			nil,		/* int */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
+			reduce(47),		/* ], reduce: Method_Call */
 			nil,		/* = */
 			nil,		/* , */
-			shift(221),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			nil,		/* fn_name */
+			nil,		/* cust_fn_name */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
 			nil,		/* } */
-			shift(223),		/* function */
+			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -30569,34 +29269,32 @@ var actionTab = actionTable{
 			nil,		/* input */
 			nil,		/* true */
 			nil,		/* false */
-			reduce(43),		/* (, reduce: Fn_Call */
+			reduce(30),		/* (, reduce: Get_Index */
 			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
+			reduce(30),		/* *, reduce: Get_Index */
+			reduce(30),		/* /, reduce: Get_Index */
+			reduce(30),		/* +, reduce: Get_Index */
+			reduce(30),		/* -, reduce: Get_Index */
+			reduce(30),		/* >, reduce: Get_Index */
+			reduce(30),		/* <, reduce: Get_Index */
+			reduce(30),		/* ==, reduce: Get_Index */
+			reduce(30),		/* !=, reduce: Get_Index */
+			reduce(30),		/* &&, reduce: Get_Index */
+			reduce(30),		/* ||, reduce: Get_Index */
+			reduce(30),		/* [, reduce: Get_Index */
+			reduce(30),		/* ], reduce: Get_Index */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
+			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
-			reduce(43),		/* }, reduce: Fn_Call */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(43),		/* ;, reduce: Fn_Call */
+			nil,		/* ; */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30612,13 +29310,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			shift(386),		/* var */
+			shift(387),		/* input */
+			shift(389),		/* true */
+			shift(390),		/* false */
+			shift(392),		/* ( */
 			nil,		/* ) */
-			nil,		/* int */
+			shift(398),		/* int */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -30629,18 +29327,16 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			shift(405),		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			shift(525),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			nil,		/* , */
+			shift(27),		/* fn_name */
+			shift(28),		/* cust_fn_name */
 			nil,		/* . */
-			shift(625),		/* { */
+			nil,		/* { */
 			nil,		/* } */
-			nil,		/* function */
+			shift(537),		/* function */
 			nil,		/* : */
 			nil,		/* return */
 			nil,		/* ; */
@@ -30666,31 +29362,29 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
+			reduce(46),		/* *, reduce: Method_Call */
+			reduce(46),		/* /, reduce: Method_Call */
+			reduce(46),		/* +, reduce: Method_Call */
+			reduce(46),		/* -, reduce: Method_Call */
+			reduce(46),		/* >, reduce: Method_Call */
+			reduce(46),		/* <, reduce: Method_Call */
+			reduce(46),		/* ==, reduce: Method_Call */
+			reduce(46),		/* !=, reduce: Method_Call */
+			reduce(46),		/* &&, reduce: Method_Call */
+			reduce(46),		/* ||, reduce: Method_Call */
+			reduce(46),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
+			reduce(46),		/* ., reduce: Method_Call */
 			nil,		/* { */
-			reduce(66),		/* }, reduce: Lambda_Def */
+			reduce(46),		/* }, reduce: Method_Call */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			reduce(66),		/* ;, reduce: Lambda_Def */
+			reduce(46),		/* ;, reduce: Method_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -30711,7 +29405,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(661),		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -30726,13 +29420,11 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
+			shift(301),		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
-			shift(625),		/* { */
+			nil,		/* { */
 			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
@@ -30771,16 +29463,14 @@ var actionTab = actionTable{
 			nil,		/* && */
 			nil,		/* || */
 			nil,		/* [ */
-			nil,		/* ] */
+			shift(662),		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			shift(671),		/* } */
+			nil,		/* } */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
@@ -30800,13 +29490,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(51),		/* var, reduce: Cust_Fn_def */
+			reduce(51),		/* input, reduce: Cust_Fn_def */
+			reduce(51),		/* true, reduce: Cust_Fn_def */
+			reduce(51),		/* false, reduce: Cust_Fn_def */
+			reduce(51),		/* (, reduce: Cust_Fn_def */
 			nil,		/* ) */
-			nil,		/* int */
+			reduce(51),		/* int, reduce: Cust_Fn_def */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -30817,25 +29507,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			reduce(51),		/* [, reduce: Cust_Fn_def */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			reduce(51),		/* fn_name, reduce: Cust_Fn_def */
+			reduce(51),		/* cust_fn_name, reduce: Cust_Fn_def */
 			nil,		/* . */
 			nil,		/* { */
-			shift(672),		/* } */
-			nil,		/* function */
+			reduce(51),		/* }, reduce: Cust_Fn_def */
+			reduce(51),		/* function, reduce: Cust_Fn_def */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(51),		/* return, reduce: Cust_Fn_def */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(51),		/* if, reduce: Cust_Fn_def */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(51),		/* while, reduce: Cust_Fn_def */
+			reduce(51),		/* foreach, reduce: Cust_Fn_def */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -30847,13 +29535,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(60),		/* var, reduce: IfBlock */
+			reduce(60),		/* input, reduce: IfBlock */
+			reduce(60),		/* true, reduce: IfBlock */
+			reduce(60),		/* false, reduce: IfBlock */
+			reduce(60),		/* (, reduce: IfBlock */
 			nil,		/* ) */
-			nil,		/* int */
+			reduce(60),		/* int, reduce: IfBlock */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -30864,25 +29552,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			reduce(60),		/* [, reduce: IfBlock */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			reduce(60),		/* fn_name, reduce: IfBlock */
+			reduce(60),		/* cust_fn_name, reduce: IfBlock */
 			nil,		/* . */
-			shift(625),		/* { */
-			nil,		/* } */
-			nil,		/* function */
+			nil,		/* { */
+			reduce(60),		/* }, reduce: IfBlock */
+			reduce(60),		/* function, reduce: IfBlock */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(60),		/* return, reduce: IfBlock */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(60),		/* if, reduce: IfBlock */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(60),		/* while, reduce: IfBlock */
+			reduce(60),		/* foreach, reduce: IfBlock */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -30894,13 +29580,13 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(48),		/* var, reduce: CodeBlock */
+			reduce(48),		/* input, reduce: CodeBlock */
+			reduce(48),		/* true, reduce: CodeBlock */
+			reduce(48),		/* false, reduce: CodeBlock */
+			reduce(48),		/* (, reduce: CodeBlock */
 			nil,		/* ) */
-			nil,		/* int */
+			reduce(48),		/* int, reduce: CodeBlock */
 			nil,		/* * */
 			nil,		/* / */
 			nil,		/* + */
@@ -30911,25 +29597,23 @@ var actionTab = actionTable{
 			nil,		/* != */
 			nil,		/* && */
 			nil,		/* || */
-			nil,		/* [ */
+			reduce(48),		/* [, reduce: CodeBlock */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
+			reduce(48),		/* fn_name, reduce: CodeBlock */
+			reduce(48),		/* cust_fn_name, reduce: CodeBlock */
 			nil,		/* . */
-			reduce(32),		/* {, reduce: Assign */
-			nil,		/* } */
-			nil,		/* function */
+			nil,		/* { */
+			reduce(48),		/* }, reduce: CodeBlock */
+			reduce(48),		/* function, reduce: CodeBlock */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(48),		/* return, reduce: CodeBlock */
 			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(48),		/* if, reduce: CodeBlock */
+			reduce(48),		/* else, reduce: CodeBlock */
+			reduce(48),		/* while, reduce: CodeBlock */
+			reduce(48),		/* foreach, reduce: CodeBlock */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -30941,42 +29625,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
+			reduce(48),		/* var, reduce: CodeBlock */
+			reduce(48),		/* input, reduce: CodeBlock */
+			reduce(48),		/* true, reduce: CodeBlock */
+			reduce(48),		/* false, reduce: CodeBlock */
+			reduce(48),		/* (, reduce: CodeBlock */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
+			reduce(48),		/* int, reduce: CodeBlock */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(48),		/* [, reduce: CodeBlock */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			reduce(43),		/* {, reduce: Fn_Call */
-			nil,		/* } */
-			nil,		/* function */
+			reduce(48),		/* fn_name, reduce: CodeBlock */
+			reduce(48),		/* cust_fn_name, reduce: CodeBlock */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(48),		/* }, reduce: CodeBlock */
+			reduce(48),		/* function, reduce: CodeBlock */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(48),		/* return, reduce: CodeBlock */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(48),		/* if, reduce: CodeBlock */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(48),		/* while, reduce: CodeBlock */
+			reduce(48),		/* foreach, reduce: CodeBlock */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -30988,42 +29670,40 @@ var actionTab = actionTable{
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
+			reduce(63),		/* var, reduce: ForEachLoop */
+			reduce(63),		/* input, reduce: ForEachLoop */
+			reduce(63),		/* true, reduce: ForEachLoop */
+			reduce(63),		/* false, reduce: ForEachLoop */
+			reduce(63),		/* (, reduce: ForEachLoop */
 			nil,		/* ) */
-			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
+			reduce(63),		/* int, reduce: ForEachLoop */
+			nil,		/* * */
+			nil,		/* / */
+			nil,		/* + */
+			nil,		/* - */
+			nil,		/* > */
+			nil,		/* < */
+			nil,		/* == */
+			nil,		/* != */
+			nil,		/* && */
+			nil,		/* || */
+			reduce(63),		/* [, reduce: ForEachLoop */
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
-			reduce(30),		/* {, reduce: Get_Index */
-			nil,		/* } */
-			nil,		/* function */
+			reduce(63),		/* fn_name, reduce: ForEachLoop */
+			reduce(63),		/* cust_fn_name, reduce: ForEachLoop */
+			nil,		/* . */
+			nil,		/* { */
+			reduce(63),		/* }, reduce: ForEachLoop */
+			reduce(63),		/* function, reduce: ForEachLoop */
 			nil,		/* : */
-			nil,		/* return */
+			reduce(63),		/* return, reduce: ForEachLoop */
 			nil,		/* ; */
-			nil,		/* if */
+			reduce(63),		/* if, reduce: ForEachLoop */
 			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
+			reduce(63),		/* while, reduce: ForEachLoop */
+			reduce(63),		/* foreach, reduce: ForEachLoop */
 			nil,		/* in */
 			nil,		/* -> */
 			
@@ -31040,7 +29720,7 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(32),		/* ), reduce: Assign */
+			nil,		/* ) */
 			nil,		/* int */
 			nil,		/* * */
 			nil,		/* / */
@@ -31055,18 +29735,16 @@ var actionTab = actionTable{
 			nil,		/* [ */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(32),		/* ,, reduce: Assign */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			nil,		/* . */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(32),		/* }, reduce: Assign */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(32),		/* ;, reduce: Assign */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -31087,33 +29765,31 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			nil,		/* ( */
-			reduce(43),		/* ), reduce: Fn_Call */
+			nil,		/* ) */
 			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
+			reduce(47),		/* *, reduce: Method_Call */
+			reduce(47),		/* /, reduce: Method_Call */
+			reduce(47),		/* +, reduce: Method_Call */
+			reduce(47),		/* -, reduce: Method_Call */
+			reduce(47),		/* >, reduce: Method_Call */
+			reduce(47),		/* <, reduce: Method_Call */
+			reduce(47),		/* ==, reduce: Method_Call */
+			reduce(47),		/* !=, reduce: Method_Call */
+			reduce(47),		/* &&, reduce: Method_Call */
+			reduce(47),		/* ||, reduce: Method_Call */
+			reduce(47),		/* [, reduce: Method_Call */
 			nil,		/* ] */
 			nil,		/* = */
-			reduce(43),		/* ,, reduce: Fn_Call */
-			nil,		/* [] */
+			nil,		/* , */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
+			reduce(47),		/* ., reduce: Method_Call */
 			nil,		/* { */
-			nil,		/* } */
+			reduce(47),		/* }, reduce: Method_Call */
 			nil,		/* function */
 			nil,		/* : */
 			nil,		/* return */
-			nil,		/* ; */
+			reduce(47),		/* ;, reduce: Method_Call */
 			nil,		/* if */
 			nil,		/* else */
 			nil,		/* while */
@@ -31134,664 +29810,6 @@ var actionTab = actionTable{
 			nil,		/* true */
 			nil,		/* false */
 			reduce(30),		/* (, reduce: Get_Index */
-			reduce(30),		/* ), reduce: Get_Index */
-			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			nil,		/* ] */
-			nil,		/* = */
-			reduce(30),		/* ,, reduce: Get_Index */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S663
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			reduce(32),		/* ], reduce: Assign */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S664
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			reduce(43),		/* ], reduce: Fn_Call */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S665
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(30),		/* *, reduce: Get_Index */
-			reduce(30),		/* /, reduce: Get_Index */
-			reduce(30),		/* +, reduce: Get_Index */
-			reduce(30),		/* -, reduce: Get_Index */
-			reduce(30),		/* >, reduce: Get_Index */
-			reduce(30),		/* <, reduce: Get_Index */
-			reduce(30),		/* ==, reduce: Get_Index */
-			reduce(30),		/* !=, reduce: Get_Index */
-			reduce(30),		/* &&, reduce: Get_Index */
-			reduce(30),		/* ||, reduce: Get_Index */
-			reduce(30),		/* [, reduce: Get_Index */
-			reduce(30),		/* ], reduce: Get_Index */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(30),		/* ., reduce: Get_Index */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S666
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			shift(396),		/* var */
-			shift(397),		/* input */
-			shift(399),		/* true */
-			shift(400),		/* false */
-			shift(402),		/* ( */
-			nil,		/* ) */
-			shift(408),		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			shift(415),		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			shift(418),		/* [] */
-			shift(28),		/* fn_name */
-			shift(29),		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			shift(552),		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S667
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			shift(675),		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			shift(307),		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S668
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			shift(676),		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			nil,		/* } */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			nil,		/* ; */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S669
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(50),		/* var, reduce: Cust_Fn_def */
-			reduce(50),		/* input, reduce: Cust_Fn_def */
-			reduce(50),		/* true, reduce: Cust_Fn_def */
-			reduce(50),		/* false, reduce: Cust_Fn_def */
-			reduce(50),		/* (, reduce: Cust_Fn_def */
-			nil,		/* ) */
-			reduce(50),		/* int, reduce: Cust_Fn_def */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(50),		/* [, reduce: Cust_Fn_def */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(50),		/* [], reduce: Cust_Fn_def */
-			reduce(50),		/* fn_name, reduce: Cust_Fn_def */
-			reduce(50),		/* cust_fn_name, reduce: Cust_Fn_def */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(50),		/* }, reduce: Cust_Fn_def */
-			reduce(50),		/* function, reduce: Cust_Fn_def */
-			nil,		/* : */
-			reduce(50),		/* return, reduce: Cust_Fn_def */
-			nil,		/* ; */
-			reduce(50),		/* if, reduce: Cust_Fn_def */
-			nil,		/* else */
-			reduce(50),		/* while, reduce: Cust_Fn_def */
-			reduce(50),		/* foreach, reduce: Cust_Fn_def */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S670
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(59),		/* var, reduce: IfBlock */
-			reduce(59),		/* input, reduce: IfBlock */
-			reduce(59),		/* true, reduce: IfBlock */
-			reduce(59),		/* false, reduce: IfBlock */
-			reduce(59),		/* (, reduce: IfBlock */
-			nil,		/* ) */
-			reduce(59),		/* int, reduce: IfBlock */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(59),		/* [, reduce: IfBlock */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(59),		/* [], reduce: IfBlock */
-			reduce(59),		/* fn_name, reduce: IfBlock */
-			reduce(59),		/* cust_fn_name, reduce: IfBlock */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(59),		/* }, reduce: IfBlock */
-			reduce(59),		/* function, reduce: IfBlock */
-			nil,		/* : */
-			reduce(59),		/* return, reduce: IfBlock */
-			nil,		/* ; */
-			reduce(59),		/* if, reduce: IfBlock */
-			nil,		/* else */
-			reduce(59),		/* while, reduce: IfBlock */
-			reduce(59),		/* foreach, reduce: IfBlock */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S671
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(47),		/* var, reduce: CodeBlock */
-			reduce(47),		/* input, reduce: CodeBlock */
-			reduce(47),		/* true, reduce: CodeBlock */
-			reduce(47),		/* false, reduce: CodeBlock */
-			reduce(47),		/* (, reduce: CodeBlock */
-			nil,		/* ) */
-			reduce(47),		/* int, reduce: CodeBlock */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(47),		/* [, reduce: CodeBlock */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(47),		/* [], reduce: CodeBlock */
-			reduce(47),		/* fn_name, reduce: CodeBlock */
-			reduce(47),		/* cust_fn_name, reduce: CodeBlock */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(47),		/* }, reduce: CodeBlock */
-			reduce(47),		/* function, reduce: CodeBlock */
-			nil,		/* : */
-			reduce(47),		/* return, reduce: CodeBlock */
-			nil,		/* ; */
-			reduce(47),		/* if, reduce: CodeBlock */
-			reduce(47),		/* else, reduce: CodeBlock */
-			reduce(47),		/* while, reduce: CodeBlock */
-			reduce(47),		/* foreach, reduce: CodeBlock */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S672
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(47),		/* var, reduce: CodeBlock */
-			reduce(47),		/* input, reduce: CodeBlock */
-			reduce(47),		/* true, reduce: CodeBlock */
-			reduce(47),		/* false, reduce: CodeBlock */
-			reduce(47),		/* (, reduce: CodeBlock */
-			nil,		/* ) */
-			reduce(47),		/* int, reduce: CodeBlock */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(47),		/* [, reduce: CodeBlock */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(47),		/* [], reduce: CodeBlock */
-			reduce(47),		/* fn_name, reduce: CodeBlock */
-			reduce(47),		/* cust_fn_name, reduce: CodeBlock */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(47),		/* }, reduce: CodeBlock */
-			reduce(47),		/* function, reduce: CodeBlock */
-			nil,		/* : */
-			reduce(47),		/* return, reduce: CodeBlock */
-			nil,		/* ; */
-			reduce(47),		/* if, reduce: CodeBlock */
-			nil,		/* else */
-			reduce(47),		/* while, reduce: CodeBlock */
-			reduce(47),		/* foreach, reduce: CodeBlock */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S673
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			reduce(62),		/* var, reduce: ForEachLoop */
-			reduce(62),		/* input, reduce: ForEachLoop */
-			reduce(62),		/* true, reduce: ForEachLoop */
-			reduce(62),		/* false, reduce: ForEachLoop */
-			reduce(62),		/* (, reduce: ForEachLoop */
-			nil,		/* ) */
-			reduce(62),		/* int, reduce: ForEachLoop */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			reduce(62),		/* [, reduce: ForEachLoop */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			reduce(62),		/* [], reduce: ForEachLoop */
-			reduce(62),		/* fn_name, reduce: ForEachLoop */
-			reduce(62),		/* cust_fn_name, reduce: ForEachLoop */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(62),		/* }, reduce: ForEachLoop */
-			reduce(62),		/* function, reduce: ForEachLoop */
-			nil,		/* : */
-			reduce(62),		/* return, reduce: ForEachLoop */
-			nil,		/* ; */
-			reduce(62),		/* if, reduce: ForEachLoop */
-			nil,		/* else */
-			reduce(62),		/* while, reduce: ForEachLoop */
-			reduce(62),		/* foreach, reduce: ForEachLoop */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S674
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			nil,		/* * */
-			nil,		/* / */
-			nil,		/* + */
-			nil,		/* - */
-			nil,		/* > */
-			nil,		/* < */
-			nil,		/* == */
-			nil,		/* != */
-			nil,		/* && */
-			nil,		/* || */
-			nil,		/* [ */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			nil,		/* . */
-			nil,		/* { */
-			reduce(32),		/* }, reduce: Assign */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(32),		/* ;, reduce: Assign */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S675
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* int */
-			reduce(43),		/* *, reduce: Fn_Call */
-			reduce(43),		/* /, reduce: Fn_Call */
-			reduce(43),		/* +, reduce: Fn_Call */
-			reduce(43),		/* -, reduce: Fn_Call */
-			reduce(43),		/* >, reduce: Fn_Call */
-			reduce(43),		/* <, reduce: Fn_Call */
-			reduce(43),		/* ==, reduce: Fn_Call */
-			reduce(43),		/* !=, reduce: Fn_Call */
-			reduce(43),		/* &&, reduce: Fn_Call */
-			reduce(43),		/* ||, reduce: Fn_Call */
-			reduce(43),		/* [, reduce: Fn_Call */
-			nil,		/* ] */
-			nil,		/* = */
-			nil,		/* , */
-			nil,		/* [] */
-			nil,		/* fn_name */
-			nil,		/* cust_fn_name */
-			nil,		/* () */
-			reduce(43),		/* ., reduce: Fn_Call */
-			nil,		/* { */
-			reduce(43),		/* }, reduce: Fn_Call */
-			nil,		/* function */
-			nil,		/* : */
-			nil,		/* return */
-			reduce(43),		/* ;, reduce: Fn_Call */
-			nil,		/* if */
-			nil,		/* else */
-			nil,		/* while */
-			nil,		/* foreach */
-			nil,		/* in */
-			nil,		/* -> */
-			
-		},
-
-	},
-	actionRow{ // S676
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* var */
-			nil,		/* input */
-			nil,		/* true */
-			nil,		/* false */
-			reduce(30),		/* (, reduce: Get_Index */
 			nil,		/* ) */
 			nil,		/* int */
 			reduce(30),		/* *, reduce: Get_Index */
@@ -31808,10 +29826,8 @@ var actionTab = actionTable{
 			nil,		/* ] */
 			nil,		/* = */
 			nil,		/* , */
-			nil,		/* [] */
 			nil,		/* fn_name */
 			nil,		/* cust_fn_name */
-			nil,		/* () */
 			reduce(30),		/* ., reduce: Get_Index */
 			nil,		/* { */
 			reduce(30),		/* }, reduce: Get_Index */

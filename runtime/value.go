@@ -3,7 +3,6 @@ package runtime
 import (
 	"bytes"
 	"fmt"
-	"strconv"
 )
 
 type Callable interface {
@@ -21,7 +20,7 @@ const (
 	DRAWINGSF ValueType = "drawing surface"
 )
 
-func getType(v Value) ValueType {
+func GetType(v Value) ValueType {
 	switch v.(type) {
 	case Int:
 		return INT
@@ -72,7 +71,7 @@ func callBool(c Callable, ctx *Context) (Bool, error) {
 	return bv, nil
 }
 
-func AddToValues(valSlice, value Callable) Callable {
+func NewAddToValues(valSlice, value Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		sliceV, err := valSlice.Call(c)
 		if err != nil {
@@ -100,7 +99,7 @@ func NewValues(value Callable) Callable {
 	})
 }
 
-func compare(v1, v2 Value) bool {
+func Equals(v1, v2 Value) bool {
 	v1L, ok1 := v1.(*List)
 	v2L, ok2 := v2.(*List)
 	if ok1 != ok2 {
@@ -109,7 +108,7 @@ func compare(v1, v2 Value) bool {
 	if ok1 {
 		if len(v1L.content) == len(v2L.content) {
 			for i := 0; i < len(v1L.content); i++ {
-				if !compare(v1L.content[i], v2L.content[i]) {
+				if !Equals(v1L.content[i], v2L.content[i]) {
 					return false
 				}
 			}
@@ -117,7 +116,7 @@ func compare(v1, v2 Value) bool {
 		}
 		return false
 	}
-	if getType(v1) == getType(v2) {
+	if GetType(v1) == GetType(v2) {
 		return v1 == v2
 	}
 	return false
@@ -129,10 +128,10 @@ func ToString(v Value) string {
 		switch v.(type) {
 		case ValueType:
 			return string(v.(ValueType)) // drawing surface etc.
-		case int:
-			return strconv.Itoa(v.(int))
-		case bool:
-			if v.(bool) {
+		case Int:
+			return fmt.Sprintf("%v", v.(Int))
+		case Bool:
+			if v.(Bool) {
 				return "true"
 			} else {
 				return "false"

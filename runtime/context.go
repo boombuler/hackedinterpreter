@@ -1,11 +1,22 @@
 package runtime
 
+import (
+	"errors"
+	"time"
+)
+
+const NoTimeout time.Duration = 0
+const DefaultTimeout = 5 * time.Second
+
 type Context struct {
 	parentContext *Context
 	variables     map[string]Value
 	functions     [16]*Function
 
-	ui UIInterface
+	result  Value
+	err     error
+	timeout *time.Timer
+	UI      UIInterface
 }
 
 type UIInterface interface {
@@ -21,10 +32,13 @@ type UIInterface interface {
 	DrawText(x, y int, text string) error
 }
 
-func NewContext() *Context {
-	return &Context{
-		variables: make(map[string]Value),
+func NewContext(d time.Duration) *Context {
+	c := new(Context)
+	c.variables = make(map[string]Value)
+	if d > 0 {
+		c.timeout = time.NewTimer(d)
 	}
+	return c
 }
 
 func (c *Context) newChildContext() *Context {
@@ -34,8 +48,48 @@ func (c *Context) newChildContext() *Context {
 	}
 }
 
-func MakeGetVariable(varName []byte) Callable {
-	vn := string(varName)
+func (c *Context) SetInput(value Value) {
+	c.variables["input"] = value
+}
+
+func (c *Context) ui() UIInterface {
+	for c.parentContext != nil {
+		if c.UI != nil {
+			return c.UI
+		}
+		c = c.parentContext
+	}
+	return c.UI
+}
+
+func (c *Context) forceExit() bool {
+	if c.err != nil || c.result != nil {
+		return true
+	}
+	if c.parentContext != nil {
+		return c.parentContext.forceExit()
+	} else if c.timeout != nil {
+		select {
+		case <-c.timeout.C:
+			c.err = errors.New("timeout")
+			c.result = nil
+			return true
+		default:
+			return false
+		}
+	} else {
+		return false
+	}
+}
+
+func NewReturn(res Callable) Callable {
+	return callableFunc(func(c *Context) (Value, error) {
+		c.result, c.err = res.Call(c)
+		return c.result, c.err
+	})
+}
+
+func NewGetVariable(vn string) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		val, ok := c.variables[vn]
 		if ok {
@@ -45,8 +99,7 @@ func MakeGetVariable(varName []byte) Callable {
 	})
 }
 
-func MakeSetVariable(varName []byte, value Callable) Callable {
-	vn := string(varName)
+func NewSetVariable(vn string, value Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		val, err := value.Call(c)
 		if err != nil {

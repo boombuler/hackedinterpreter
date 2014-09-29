@@ -1,2 +1,3 @@
-var_a = input * 2;
-return var_a + 2
+var_a = input * 2; // Line Comment
+return var_a + /* Block
+Comment */ 2

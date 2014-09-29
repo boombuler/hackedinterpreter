@@ -1,30 +1,68 @@
 package main
 
 import (
-	"./lexer"
-	"./parser"
 	"./runtime"
+	"flag"
 	"fmt"
+	"os"
+	"path"
+	"time"
 )
 
+var timeOut = flag.Duration("timeout", runtime.DefaultTimeout, "defines the maximum runtime")
+var input = flag.String("input", "", "defines what should be used as Input value.")
+var game = flag.Bool("game", false, "run the code in freestyle mode. Input and timeout will be ignored!")
+
+func usageEx() {
+	prName := path.Base(os.Args[0])
+	fmt.Println("Usage of", prName, ":")
+	fmt.Println("   ", prName, "[flags]", "code.file")
+	fmt.Println()
+	fmt.Println("Flags:")
+	flag.PrintDefaults()
+}
+
 func main() {
-	lex := lexer.NewLexer([]byte("f1(2, 3)"))
-	p := parser.NewParser()
-	res, err := p.Parse(lex)
+	flag.Usage = usageEx
+
+	flag.Parse()
+	if flag.NArg() != 1 {
+		flag.Usage()
+		return
+	}
+	code, err := fromFile(flag.Arg(0))
+
 	if err != nil {
+		flag.Usage()
+
+		fmt.Println()
 		fmt.Println(err)
+		return
+	}
+
+	if *game {
+		RunGame(code)
 	} else {
-		callable, ok := res.(runtime.Callable)
-		if !ok {
-			fmt.Println("result is not callable!")
-		} else {
-			ctx := runtime.NewContext()
-			resVal, err := callable.Call(ctx)
+		ctx := runtime.NewContext(*timeOut)
+
+		if *input != "" {
+			inpCode, err := fromString(*input)
 			if err != nil {
-				fmt.Println("Runime error: ", err)
-			} else {
-				fmt.Println("result:", resVal)
+				fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
+				return
 			}
+			inpVal, err := exec(inpCode, 100*time.Millisecond)
+			if err != nil {
+				fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
+				return
+			}
+			ctx.SetInput(inpVal)
+		}
+		res, err := code.Call(ctx)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, err)
+		} else {
+			fmt.Fprintln(os.Stdout, runtime.ToString(res))
 		}
 	}
 }

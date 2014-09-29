@@ -18,10 +18,14 @@ function f1: var_a, var_b {
         }
     }
 }
+if var_a == 0 {
+    var_a = [1, 1]
+}
+if left() {
+    var_a[0] = var_a[0] - 1
+}
+if right() {
+    var_a[0] = var_a[0] + 1
+}
 
-
-
-
-
-
-f1(1, [1, 1])
+f1(1, var_a);

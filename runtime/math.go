@@ -4,7 +4,7 @@ import (
 	"errors"
 )
 
-func MakeMul(c1, c2 Callable) Callable {
+func NewMul(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -19,7 +19,7 @@ func MakeMul(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeDiv(c1, c2 Callable) Callable {
+func NewDiv(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -37,7 +37,7 @@ func MakeDiv(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeAdd(c1, c2 Callable) Callable {
+func NewAdd(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -52,7 +52,7 @@ func MakeAdd(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeSub(c1, c2 Callable) Callable {
+func NewSub(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -67,7 +67,7 @@ func MakeSub(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeOR(c1, c2 Callable) Callable {
+func NewOR(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		b1, err := callBool(c1, c)
 		if err != nil {
@@ -81,7 +81,7 @@ func MakeOR(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeAND(c1, c2 Callable) Callable {
+func NewAND(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		b1, err := callBool(c1, c)
 		if err != nil {
@@ -95,7 +95,7 @@ func MakeAND(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeEqual(c1, c2 Callable) Callable {
+func NewEqual(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		v1, err := c1.Call(c)
 		if err != nil {
@@ -106,11 +106,11 @@ func MakeEqual(c1, c2 Callable) Callable {
 			return Bool(false), err
 		}
 
-		return Bool(compare(v1, v2)), nil
+		return Bool(Equals(v1, v2)), nil
 	})
 }
 
-func MakeNotEqual(c1, c2 Callable) Callable {
+func NewNotEqual(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		v1, err := c1.Call(c)
 		if err != nil {
@@ -121,11 +121,11 @@ func MakeNotEqual(c1, c2 Callable) Callable {
 			return Bool(false), err
 		}
 
-		return Bool(!compare(v1, v2)), nil
+		return Bool(!Equals(v1, v2)), nil
 	})
 }
 
-func MakeLt(c1, c2 Callable) Callable {
+func NewLt(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -140,7 +140,7 @@ func MakeLt(c1, c2 Callable) Callable {
 	})
 }
 
-func MakeGt(c1, c2 Callable) Callable {
+func NewGt(c1, c2 Callable) Callable {
 	return callableFunc(func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {

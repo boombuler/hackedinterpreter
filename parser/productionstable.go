@@ -2,7 +2,6 @@
 package parser
 
 import _rt "../runtime"
-import "../token"
 
 type (
 	//TODO: change type and variable names to be consistent with other tables
@@ -81,13 +80,13 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Callable_Object : Variable	<< _rt.MakeGetVariable(X[0].(*token.Token).Lit), nil >>`,
+		String: `Callable_Object : Variable	<< _rt.NewGetVariable(str(X[0])), nil >>`,
 		Id: "Callable_Object",
 		NTType: 4,
 		Index: 6,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeGetVariable(X[0].(*token.Token).Lit), nil
+			return _rt.NewGetVariable(str(X[0])), nil
 		},
 	},
 	ProdTabEntry{
@@ -151,13 +150,13 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Object : int	<< _rt.NewConstInt(X[0].(*token.Token).Lit) >>`,
+		String: `Object : int	<< _rt.NewConstInt(str(X[0])) >>`,
 		Id: "Object",
 		NTType: 5,
 		Index: 13,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewConstInt(X[0].(*token.Token).Lit)
+			return _rt.NewConstInt(str(X[0]))
 		},
 	},
 	ProdTabEntry{
@@ -181,23 +180,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Mult_Expr : Mult_Expr "*" Object	<< _rt.MakeMul(c(X[0]), c(X[2])), nil >>`,
+		String: `Mult_Expr : Mult_Expr "*" Object	<< _rt.NewMul(c(X[0]), c(X[2])), nil >>`,
 		Id: "Mult_Expr",
 		NTType: 6,
 		Index: 16,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeMul(c(X[0]), c(X[2])), nil
+			return _rt.NewMul(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Mult_Expr : Mult_Expr "/" Object	<< _rt.MakeDiv(c(X[0]), c(X[2])), nil >>`,
+		String: `Mult_Expr : Mult_Expr "/" Object	<< _rt.NewDiv(c(X[0]), c(X[2])), nil >>`,
 		Id: "Mult_Expr",
 		NTType: 6,
 		Index: 17,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeDiv(c(X[0]), c(X[2])), nil
+			return _rt.NewDiv(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
@@ -211,23 +210,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Add_Expr : Add_Expr "+" Mult_Expr	<< _rt.MakeAdd(c(X[0]), c(X[2])), nil >>`,
+		String: `Add_Expr : Add_Expr "+" Mult_Expr	<< _rt.NewAdd(c(X[0]), c(X[2])), nil >>`,
 		Id: "Add_Expr",
 		NTType: 7,
 		Index: 19,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeAdd(c(X[0]), c(X[2])), nil
+			return _rt.NewAdd(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Add_Expr : Add_Expr "-" Mult_Expr	<< _rt.MakeSub(c(X[0]), c(X[2])), nil >>`,
+		String: `Add_Expr : Add_Expr "-" Mult_Expr	<< _rt.NewSub(c(X[0]), c(X[2])), nil >>`,
 		Id: "Add_Expr",
 		NTType: 7,
 		Index: 20,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeSub(c(X[0]), c(X[2])), nil
+			return _rt.NewSub(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
@@ -241,43 +240,43 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Comp_Expr : Comp_Expr ">" Add_Expr	<< _rt.MakeGt(c(X[0]), c(X[2])), nil >>`,
+		String: `Comp_Expr : Comp_Expr ">" Add_Expr	<< _rt.NewGt(c(X[0]), c(X[2])), nil >>`,
 		Id: "Comp_Expr",
 		NTType: 8,
 		Index: 22,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeGt(c(X[0]), c(X[2])), nil
+			return _rt.NewGt(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Comp_Expr : Comp_Expr "<" Add_Expr	<< _rt.MakeLt(c(X[0]), c(X[2])), nil >>`,
+		String: `Comp_Expr : Comp_Expr "<" Add_Expr	<< _rt.NewLt(c(X[0]), c(X[2])), nil >>`,
 		Id: "Comp_Expr",
 		NTType: 8,
 		Index: 23,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeLt(c(X[0]), c(X[2])), nil
+			return _rt.NewLt(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Comp_Expr : Comp_Expr "==" Add_Expr	<< _rt.MakeEqual(c(X[0]), c(X[2])), nil >>`,
+		String: `Comp_Expr : Comp_Expr "==" Add_Expr	<< _rt.NewEqual(c(X[0]), c(X[2])), nil >>`,
 		Id: "Comp_Expr",
 		NTType: 8,
 		Index: 24,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeEqual(c(X[0]), c(X[2])), nil
+			return _rt.NewEqual(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Comp_Expr : Comp_Expr "!=" Add_Expr	<< _rt.MakeNotEqual(c(X[0]), c(X[2])), nil >>`,
+		String: `Comp_Expr : Comp_Expr "!=" Add_Expr	<< _rt.NewNotEqual(c(X[0]), c(X[2])), nil >>`,
 		Id: "Comp_Expr",
 		NTType: 8,
 		Index: 25,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeNotEqual(c(X[0]), c(X[2])), nil
+			return _rt.NewNotEqual(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
@@ -291,23 +290,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Bool_Expr : Bool_Expr "&&" Comp_Expr	<< _rt.MakeAND(c(X[0]), c(X[2])), nil >>`,
+		String: `Bool_Expr : Bool_Expr "&&" Comp_Expr	<< _rt.NewAND(c(X[0]), c(X[2])), nil >>`,
 		Id: "Bool_Expr",
 		NTType: 9,
 		Index: 27,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeAND(c(X[0]), c(X[2])), nil
+			return _rt.NewAND(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Bool_Expr : Bool_Expr "||" Comp_Expr	<< _rt.MakeOR(c(X[0]), c(X[2])), nil >>`,
+		String: `Bool_Expr : Bool_Expr "||" Comp_Expr	<< _rt.NewOR(c(X[0]), c(X[2])), nil >>`,
 		Id: "Bool_Expr",
 		NTType: 9,
 		Index: 28,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeOR(c(X[0]), c(X[2])), nil
+			return _rt.NewOR(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
@@ -321,33 +320,33 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Get_Index : Object "[" Expression "]"	<< _rt.MakeGetListItem(c(X[0]), c(X[2])), nil >>`,
+		String: `Get_Index : Object "[" Expression "]"	<< _rt.NewGetListItem(c(X[0]), c(X[2])), nil >>`,
 		Id: "Get_Index",
 		NTType: 10,
 		Index: 30,
 		NumSymbols: 4,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeGetListItem(c(X[0]), c(X[2])), nil
+			return _rt.NewGetListItem(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Assign : Variable "=" Expression	<< _rt.MakeSetVariable(X[0].(*token.Token).Lit, c(X[2])), nil >>`,
+		String: `Assign : Variable "=" Expression	<< _rt.NewSetVariable(str(X[0]), c(X[2])), nil >>`,
 		Id: "Assign",
 		NTType: 11,
 		Index: 31,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeSetVariable(X[0].(*token.Token).Lit, c(X[2])), nil
+			return _rt.NewSetVariable(str(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Assign : Object "[" Expression "]" "=" Expression	<< _rt.MakeSetListItem(c(X[0]), c(X[2]), c(X[5])), nil >>`,
+		String: `Assign : Object "[" Expression "]" "=" Expression	<< _rt.NewSetListItem(c(X[0]), c(X[2]), c(X[5])), nil >>`,
 		Id: "Assign",
 		NTType: 11,
 		Index: 32,
 		NumSymbols: 6,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeSetListItem(c(X[0]), c(X[2]), c(X[5])), nil
+			return _rt.NewSetListItem(c(X[0]), c(X[2]), c(X[5])), nil
 		},
 	},
 	ProdTabEntry{
@@ -381,13 +380,13 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Values : Values "," Expression	<< _rt.AddToValues(c(X[0]), c(X[2])), nil >>`,
+		String: `Values : Values "," Expression	<< _rt.NewAddToValues(c(X[0]), c(X[2])), nil >>`,
 		Id: "Values",
 		NTType: 13,
 		Index: 36,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.AddToValues(c(X[0]), c(X[2])), nil
+			return _rt.NewAddToValues(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
@@ -401,23 +400,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `ListDef : "[]"	<< _rt.MakeEmptyList(), nil >>`,
+		String: `ListDef : "[" "]"	<< _rt.NewEmptyList(), nil >>`,
 		Id: "ListDef",
 		NTType: 14,
 		Index: 38,
-		NumSymbols: 1,
+		NumSymbols: 2,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeEmptyList(), nil
+			return _rt.NewEmptyList(), nil
 		},
 	},
 	ProdTabEntry{
-		String: `ListDef : "[" Values "]"	<< _rt.MakeListValues(c(X[1])), nil >>`,
+		String: `ListDef : "[" Values "]"	<< _rt.NewListValues(c(X[1])), nil >>`,
 		Id: "ListDef",
 		NTType: 14,
 		Index: 39,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeListValues(c(X[1])), nil
+			return _rt.NewListValues(c(X[1])), nil
 		},
 	},
 	ProdTabEntry{
@@ -441,120 +440,130 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Fn_Call : Fn_Name "()"	<< _rt.CallFunction(X[0].(*token.Token).Lit, nil) >>`,
+		String: `Fn_Call : Fn_Name "(" ")"	<< _rt.NewCallFunction(str(X[0]), nil) >>`,
 		Id: "Fn_Call",
 		NTType: 16,
 		Index: 42,
-		NumSymbols: 2,
+		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.CallFunction(X[0].(*token.Token).Lit, nil)
+			return _rt.NewCallFunction(str(X[0]), nil)
 		},
 	},
 	ProdTabEntry{
-		String: `Fn_Call : Fn_Name "(" Values ")"	<< _rt.CallFunction(X[0].(*token.Token).Lit, c(X[2])) >>`,
+		String: `Fn_Call : Fn_Name "(" Values ")"	<< _rt.NewCallFunction(str(X[0]), c(X[2])) >>`,
 		Id: "Fn_Call",
 		NTType: 16,
 		Index: 43,
 		NumSymbols: 4,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.CallFunction(X[0].(*token.Token).Lit, c(X[2]))
+			return _rt.NewCallFunction(str(X[0]), c(X[2]))
 		},
 	},
 	ProdTabEntry{
-		String: `Lambda_Call : Callable_Object "(" Values ")"	<< _rt.MakeCallLambda(c(X[0]), c(X[2])), nil >>`,
+		String: `Lambda_Call : Callable_Object "(" Values ")"	<< _rt.NewCallLambda(c(X[0]), c(X[2])), nil >>`,
 		Id: "Lambda_Call",
 		NTType: 17,
 		Index: 44,
 		NumSymbols: 4,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeCallLambda(c(X[0]), c(X[2])), nil
+			return _rt.NewCallLambda(c(X[0]), c(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Method_Call : Object "." fn_name	<<  >>`,
+		String: `Method_Call : Object "." fn_name	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil) >>`,
 		Id: "Method_Call",
 		NTType: 18,
 		Index: 45,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return X[0], nil
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil)
 		},
 	},
 	ProdTabEntry{
-		String: `Method_Call : Object "." Fn_Call	<<  >>`,
+		String: `Method_Call : Object "." fn_name "(" ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil) >>`,
 		Id: "Method_Call",
 		NTType: 18,
 		Index: 46,
-		NumSymbols: 3,
+		NumSymbols: 5,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return X[0], nil
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil)
+		},
+	},
+	ProdTabEntry{
+		String: `Method_Call : Object "." fn_name "(" Values ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4])) >>`,
+		Id: "Method_Call",
+		NTType: 18,
+		Index: 47,
+		NumSymbols: 6,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4]))
 		},
 	},
 	ProdTabEntry{
 		String: `CodeBlock : "{" Statements "}"	<< X[1], nil >>`,
 		Id: "CodeBlock",
 		NTType: 19,
-		Index: 47,
+		Index: 48,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[1], nil
 		},
 	},
 	ProdTabEntry{
-		String: `Func_Param_Def : Func_Param_Def "," Variable	<< _rt.AddToParamDef(X[0].([]string), X[2].(*token.Token).Lit), nil >>`,
-		Id: "Func_Param_Def",
-		NTType: 20,
-		Index: 48,
-		NumSymbols: 3,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.AddToParamDef(X[0].([]string), X[2].(*token.Token).Lit), nil
-		},
-	},
-	ProdTabEntry{
-		String: `Func_Param_Def : Variable	<< _rt.NewParamDef(X[0].(*token.Token).Lit), nil >>`,
+		String: `Func_Param_Def : Func_Param_Def "," Variable	<< _rt.NewAddToParamDef(X[0].([]string), str(X[2])), nil >>`,
 		Id: "Func_Param_Def",
 		NTType: 20,
 		Index: 49,
-		NumSymbols: 1,
+		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewParamDef(X[0].(*token.Token).Lit), nil
+			return _rt.NewAddToParamDef(X[0].([]string), str(X[2])), nil
 		},
 	},
 	ProdTabEntry{
-		String: `Cust_Fn_def : "function" cust_fn_name ":" Func_Param_Def CodeBlock	<< _rt.MakeCustFuncDev(X[1].(*token.Token).Lit, X[3].([]string), c(X[4])) >>`,
+		String: `Func_Param_Def : Variable	<< _rt.NewParamDef(str(X[0])), nil >>`,
+		Id: "Func_Param_Def",
+		NTType: 20,
+		Index: 50,
+		NumSymbols: 1,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewParamDef(str(X[0])), nil
+		},
+	},
+	ProdTabEntry{
+		String: `Cust_Fn_def : "function" cust_fn_name ":" Func_Param_Def CodeBlock	<< _rt.NewCustFuncDev(str(X[1]), X[3].([]string), c(X[4])) >>`,
 		Id: "Cust_Fn_def",
 		NTType: 21,
-		Index: 50,
+		Index: 51,
 		NumSymbols: 5,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeCustFuncDev(X[1].(*token.Token).Lit, X[3].([]string), c(X[4]))
+			return _rt.NewCustFuncDev(str(X[1]), X[3].([]string), c(X[4]))
 		},
 	},
 	ProdTabEntry{
 		String: `Statement : Expression	<< X[0], nil >>`,
 		Id: "Statement",
 		NTType: 22,
-		Index: 51,
+		Index: 52,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[0], nil
 		},
 	},
 	ProdTabEntry{
-		String: `Statement : "return" Expression	<<  >>`,
+		String: `Statement : "return" Expression	<< _rt.NewReturn(c(X[1])), nil >>`,
 		Id: "Statement",
 		NTType: 22,
-		Index: 52,
+		Index: 53,
 		NumSymbols: 2,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return X[0], nil
+			return _rt.NewReturn(c(X[1])), nil
 		},
 	},
 	ProdTabEntry{
 		String: `Single_Statement : Statement ";"	<< X[0], nil >>`,
 		Id: "Single_Statement",
 		NTType: 23,
-		Index: 53,
+		Index: 54,
 		NumSymbols: 2,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[0], nil
@@ -564,7 +573,7 @@ var productionsTable = ProdTab {
 		String: `Single_Statement : Block	<< X[0], nil >>`,
 		Id: "Single_Statement",
 		NTType: 23,
-		Index: 54,
+		Index: 55,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[0], nil
@@ -574,34 +583,24 @@ var productionsTable = ProdTab {
 		String: `Single_Statement : Cust_Fn_def	<< X[0], nil >>`,
 		Id: "Single_Statement",
 		NTType: 23,
-		Index: 55,
+		Index: 56,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[0], nil
 		},
 	},
 	ProdTabEntry{
-		String: `Statements : Single_Statement Statements	<< _rt.MakeStatements(c(X[0]), c(X[1])), nil >>`,
+		String: `Statements : Single_Statement Statements	<< _rt.NewStatements(c(X[0]), c(X[1])), nil >>`,
 		Id: "Statements",
 		NTType: 24,
-		Index: 56,
+		Index: 57,
 		NumSymbols: 2,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeStatements(c(X[0]), c(X[1])), nil
+			return _rt.NewStatements(c(X[0]), c(X[1])), nil
 		},
 	},
 	ProdTabEntry{
 		String: `Statements : Single_Statement	<< X[0], nil >>`,
-		Id: "Statements",
-		NTType: 24,
-		Index: 57,
-		NumSymbols: 1,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return X[0], nil
-		},
-	},
-	ProdTabEntry{
-		String: `Statements : Statement	<< X[0], nil >>`,
 		Id: "Statements",
 		NTType: 24,
 		Index: 58,
@@ -611,57 +610,57 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `IfBlock : "if" Expression CodeBlock "else" CodeBlock	<< _rt.MakeIfThenElse(c(X[1]), c(X[2]), c(X[4])), nil >>`,
-		Id: "IfBlock",
-		NTType: 25,
+		String: `Statements : Statement	<< X[0], nil >>`,
+		Id: "Statements",
+		NTType: 24,
 		Index: 59,
-		NumSymbols: 5,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeIfThenElse(c(X[1]), c(X[2]), c(X[4])), nil
-		},
-	},
-	ProdTabEntry{
-		String: `IfBlock : "if" Expression CodeBlock	<< _rt.MakeIfThenElse(c(X[1]), c(X[2]), nil), nil >>`,
-		Id: "IfBlock",
-		NTType: 25,
-		Index: 60,
-		NumSymbols: 3,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeIfThenElse(c(X[1]), c(X[2]), nil), nil
-		},
-	},
-	ProdTabEntry{
-		String: `WhileLoop : "while" Expression CodeBlock	<< _rt.MakeWhileLoop(c(X[1]), c(X[2])), nil >>`,
-		Id: "WhileLoop",
-		NTType: 26,
-		Index: 61,
-		NumSymbols: 3,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeWhileLoop(c(X[1]), c(X[2])), nil
-		},
-	},
-	ProdTabEntry{
-		String: `ForEachLoop : "foreach" Variable "in" Expression CodeBlock	<< _rt.MakeForEach(X[1].(*token.Token).Lit, c(X[3]), c(X[4])), nil >>`,
-		Id: "ForEachLoop",
-		NTType: 27,
-		Index: 62,
-		NumSymbols: 5,
-		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeForEach(X[1].(*token.Token).Lit, c(X[3]), c(X[4])), nil
-		},
-	},
-	ProdTabEntry{
-		String: `Block : IfBlock	<<  >>`,
-		Id: "Block",
-		NTType: 28,
-		Index: 63,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return X[0], nil
 		},
 	},
 	ProdTabEntry{
-		String: `Block : WhileLoop	<<  >>`,
+		String: `IfBlock : "if" Expression CodeBlock "else" CodeBlock	<< _rt.NewIfThenElse(c(X[1]), c(X[2]), c(X[4])), nil >>`,
+		Id: "IfBlock",
+		NTType: 25,
+		Index: 60,
+		NumSymbols: 5,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewIfThenElse(c(X[1]), c(X[2]), c(X[4])), nil
+		},
+	},
+	ProdTabEntry{
+		String: `IfBlock : "if" Expression CodeBlock	<< _rt.NewIfThenElse(c(X[1]), c(X[2]), nil), nil >>`,
+		Id: "IfBlock",
+		NTType: 25,
+		Index: 61,
+		NumSymbols: 3,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewIfThenElse(c(X[1]), c(X[2]), nil), nil
+		},
+	},
+	ProdTabEntry{
+		String: `WhileLoop : "while" Expression CodeBlock	<< _rt.NewWhileLoop(c(X[1]), c(X[2])), nil >>`,
+		Id: "WhileLoop",
+		NTType: 26,
+		Index: 62,
+		NumSymbols: 3,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewWhileLoop(c(X[1]), c(X[2])), nil
+		},
+	},
+	ProdTabEntry{
+		String: `ForEachLoop : "foreach" Variable "in" Expression CodeBlock	<< _rt.NewForEach(str(X[1]), c(X[3]), c(X[4])), nil >>`,
+		Id: "ForEachLoop",
+		NTType: 27,
+		Index: 63,
+		NumSymbols: 5,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return _rt.NewForEach(str(X[1]), c(X[3]), c(X[4])), nil
+		},
+	},
+	ProdTabEntry{
+		String: `Block : IfBlock	<< X[0], nil >>`,
 		Id: "Block",
 		NTType: 28,
 		Index: 64,
@@ -671,7 +670,7 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Block : ForEachLoop	<<  >>`,
+		String: `Block : WhileLoop	<< X[0], nil >>`,
 		Id: "Block",
 		NTType: 28,
 		Index: 65,
@@ -681,13 +680,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Lambda_Def : "function" Func_Param_Def "->" Statement	<< _rt.MakeLambda(X[1].([]string), c(X[3])), nil >>`,
+		String: `Block : ForEachLoop	<< X[0], nil >>`,
+		Id: "Block",
+		NTType: 28,
+		Index: 66,
+		NumSymbols: 1,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return X[0], nil
+		},
+	},
+	ProdTabEntry{
+		String: `Lambda_Def : "function" Func_Param_Def "->" Statement	<< _rt.NewLambdaDef(X[1].([]string), c(X[3])), nil >>`,
 		Id: "Lambda_Def",
 		NTType: 29,
-		Index: 66,
+		Index: 67,
 		NumSymbols: 4,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.MakeLambda(X[1].([]string), c(X[3])), nil
+			return _rt.NewLambdaDef(X[1].([]string), c(X[3])), nil
 		},
 	},
 	
