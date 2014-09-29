@@ -143,7 +143,7 @@ func NewGetListItem(list, index Callable) Callable {
 			return nil, err
 		}
 		if idx < 0 || idx >= lVal.Len() {
-			return nil, errors.New("Index out of range")
+			return nil, errors.New("Index out of range (" + ToString(idx) + ") -> " + ToString(lVal))
 		}
 		return lVal.content[idx], nil
 	})
