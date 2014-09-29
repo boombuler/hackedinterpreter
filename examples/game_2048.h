@@ -307,7 +307,7 @@ if var_b == 0 {
     var_a = [
         time() - 500, // Last Input
         0,            // Score
-        0             // State 0 = in game / 1 = Won / 2 = Lost
+        0            // State 0 = in game / 1 = Won / 2 = Lost
     ];
     // Add two random blocks
     f2(var_b);
@@ -328,6 +328,9 @@ if var_a[2] == 0 {
         f5(var_a)
     } else {
         f6(var_a)
+    }
+    if a_btn() || b_btn() {
+        var_b = 0; // restart game
     }
 }
 
