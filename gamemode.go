@@ -41,12 +41,10 @@ func (ui *UiTermBox) Height() (int, error) {
 	return h, nil
 }
 func (ui *UiTermBox) Draw(x, y int) error {
-	x, y = x-1, y-1
 	termbox.SetCell(x, y, ' ', termbox.ColorGreen, termbox.ColorGreen)
 	return nil
 }
 func (ui *UiTermBox) DrawText(x, y int, text string) error {
-	x, y = x-1, y-1
 	for _, r := range text {
 		termbox.SetCell(x, y, r, termbox.ColorGreen, termbox.ColorDefault)
 		x += 1
@@ -54,7 +52,7 @@ func (ui *UiTermBox) DrawText(x, y int, text string) error {
 	return nil
 }
 
-func gameLoop(code runtime.Callable, closeChan <-chan struct{}, input <-chan termbox.Event) {
+func gameLoop(code *runtime.Callable, closeChan <-chan struct{}, input <-chan termbox.Event) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
 	ui := new(UiTermBox)
 	ctx.UI = ui
@@ -99,7 +97,7 @@ func gameLoop(code runtime.Callable, closeChan <-chan struct{}, input <-chan ter
 	}()
 }
 
-func RunGame(code runtime.Callable) {
+func RunGame(code *runtime.Callable) {
 	err := termbox.Init()
 	if err != nil {
 		panic(err)

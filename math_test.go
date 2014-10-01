@@ -6,13 +6,13 @@ import (
 )
 
 func Test_Equals(t *testing.T) {
-	tests := map[string]runtime.Bool{
-		"var_a == var_b":                               runtime.Bool(true),
-		"1 == 2":                                       runtime.Bool(false),
-		"1 == [1]":                                     runtime.Bool(false),
-		"[1, 1] == [1]":                                runtime.Bool(false),
-		"var_a == [].length":                           runtime.Bool(true),
-		"var_a = [[1,1], [1,1]]; var_a[0] == var_a[1]": runtime.Bool(true),
+	tests := map[string]runtime.Value{
+		"var_a == var_b":                               true,
+		"1 == 2":                                       false,
+		"1 == [1]":                                     false,
+		"[1, 1] == [1]":                                false,
+		"var_a == [].length":                           true,
+		"var_a = [[1,1], [1,1]]; var_a[0] == var_a[1]": true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -27,8 +27,8 @@ func Test_Equals(t *testing.T) {
 
 func Test_OperatorPrecedence(t *testing.T) {
 	tests := map[string]runtime.Value{
-		"1 + 2 * 2": runtime.Int(5),
-		"1 + 2 > 2": runtime.Bool(true),
+		"1 + 2 * 2": 5,
+		"1 + 2 > 2": true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -43,12 +43,12 @@ func Test_OperatorPrecedence(t *testing.T) {
 
 func Test_AddSub(t *testing.T) {
 	tests := map[string]runtime.Value{
-		"var_a + var_b":             runtime.Int(0),
-		"var_a + 2":                 runtime.Int(2),
-		"var_a = [1]; 3 + var_a[0]": runtime.Int(4),
-		"var_a - 10":                runtime.Int(-10),
-		"4 - 2 + 2":                 runtime.Int(4),
-		"1 + 1 + 1 - 3":             runtime.Int(0),
+		"var_a + var_b":             0,
+		"var_a + 2":                 2,
+		"var_a = [1]; 3 + var_a[0]": 4,
+		"var_a - 10":                -10,
+		"4 - 2 + 2":                 4,
+		"1 + 1 + 1 - 3":             0,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)

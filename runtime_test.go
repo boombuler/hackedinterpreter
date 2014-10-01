@@ -11,7 +11,7 @@ func Test_VarIsZeroByDefault(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	if value != runtime.Int(0) {
+	if value != 0 {
 		t.Errorf("Failed got %v expected %v", value, 0)
 	}
 }
@@ -22,20 +22,16 @@ func Test_RunTimeout(t *testing.T) {
 
 	endlessLoop := "while true { var_a }"
 	timer := time.NewTimer(tWaitToFail)
-	hasResult := make(chan bool)
+	hasResult := make(chan error)
 	go func() {
 		_, err := execString(endlessLoop, tTimeOut)
-		hasResult <- err.Error() == "timeout"
+		hasResult <- err
 	}()
 
 	select {
 	case <-timer.C:
 		t.Error("Timeout did not happen!")
-	case res := <-hasResult:
-		if res {
-			t.Log("Timeout worked!")
-		} else {
-			t.Error("something went wrong in timeout test!")
-		}
+	case <-hasResult:
+		t.Log("Timeout worked!")
 	}
 }

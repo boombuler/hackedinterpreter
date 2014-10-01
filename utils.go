@@ -7,18 +7,19 @@ import (
 	"time"
 )
 
-func fromString(code string) (runtime.Callable, error) {
+func fromString(code string) (*runtime.Callable, error) {
 	lex := lexer.NewLexer([]byte(code))
 	p := parser.NewParser()
 	res, err := p.Parse(lex)
+
 	if err != nil {
 		return nil, err
 	} else {
-		return res.(runtime.Callable), nil
+		return res.(*runtime.Callable), nil
 	}
 }
 
-func fromFile(fileName string) (runtime.Callable, error) {
+func fromFile(fileName string) (*runtime.Callable, error) {
 	lex, err := lexer.NewLexerFile(fileName)
 	if err != nil {
 		return nil, err
@@ -28,7 +29,7 @@ func fromFile(fileName string) (runtime.Callable, error) {
 	if err != nil {
 		return nil, err
 	} else {
-		return res.(runtime.Callable), nil
+		return res.(*runtime.Callable), nil
 	}
 }
 
@@ -40,7 +41,7 @@ func execString(code string, timeOut time.Duration) (runtime.Value, error) {
 	return exec(call, timeOut)
 }
 
-func exec(c runtime.Callable, timeOut time.Duration) (runtime.Value, error) {
+func exec(c *runtime.Callable, timeOut time.Duration) (runtime.Value, error) {
 	ctx := runtime.NewContext(timeOut)
 	return c.Call(ctx)
 }

@@ -1,6 +1,7 @@
 package runtime
 
 import (
+	"../token"
 	"errors"
 	"fmt"
 	"math"
@@ -17,125 +18,117 @@ type buildInFnSig struct {
 
 var buildInFunctions map[string]buildInFnSig = map[string]buildInFnSig{
 	"abs": {[]ValueType{INT}, func(params []Value, c *Context) (Value, error) {
-		i := params[0].(Int)
+		i := params[0].(int)
 		if i < 0 {
-			return Int(-i), nil
+			return int(-i), nil
 		}
-		return Int(i), nil
+		return int(i), nil
 	}},
 	"mod": {[]ValueType{INT, INT}, func(params []Value, c *Context) (Value, error) {
-		return Int(params[0].(Int) % params[1].(Int)), nil
+		return params[0].(int) % params[1].(int), nil
 	}},
 	"min": {[]ValueType{INT, INT}, func(params []Value, c *Context) (Value, error) {
-		i1 := params[0].(Int)
-		i2 := params[1].(Int)
+		i1 := params[0].(int)
+		i2 := params[1].(int)
 		if i1 < i2 {
 			return i1, nil
 		}
 		return i2, nil
 	}},
 	"max": {[]ValueType{INT, INT}, func(params []Value, c *Context) (Value, error) {
-		i1 := params[0].(Int)
-		i2 := params[1].(Int)
+		i1 := params[0].(int)
+		i2 := params[1].(int)
 		if i1 > i2 {
 			return i1, nil
 		}
 		return i2, nil
 	}},
 	"pow": {[]ValueType{INT, INT}, func(params []Value, c *Context) (Value, error) {
-		i1 := params[0].(Int)
-		i2 := params[1].(Int)
+		i1 := params[0].(int)
+		i2 := params[1].(int)
 
-		return Int(int64(math.Pow(float64(i1), float64(i2)))), nil
+		return int(math.Pow(float64(i1), float64(i2))), nil
 	}},
 	"new_list": {[]ValueType{INT}, func(params []Value, c *Context) (Value, error) {
-		i1 := params[0].(Int)
+		i1 := params[0].(int)
 		if i1 < 0 {
 			return nil, errors.New("parameter as to be > 0")
 		}
-		return newList(int64(i1)), nil
+		return newList(i1), nil
 	}},
 	"draw": {[]ValueType{INT, INT}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			ui.Draw(int(params[0].(Int)), int(params[1].(Int)))
+			ui.Draw(params[0].(int), params[1].(int))
 			return DRAWINGSF, nil
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"draw_text": {[]ValueType{INT, INT, ANY}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			ui.DrawText(int(params[0].(Int)), int(params[1].(Int)), ToString(params[2]))
+			ui.DrawText(params[0].(int), params[1].(int), ToString(params[2]))
 			return DRAWINGSF, nil
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"width": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			w, err := ui.Width()
-			return Int(w), err
+			return ui.Width()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"height": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			h, err := ui.Height()
-			return Int(h), err
+			return ui.Height()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"left": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			l, err := ui.Left()
-			return Bool(l), err
+			return ui.Left()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"right": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			r, err := ui.Right()
-			return Bool(r), err
+			return ui.Right()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"up": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			u, err := ui.Up()
-			return Bool(u), err
+			return ui.Up()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"down": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			d, err := ui.Down()
-			return Bool(d), err
+			return ui.Down()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"a_btn": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			a, err := ui.BtnA()
-			return Bool(a), err
+			return ui.BtnA()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"b_btn": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			b, err := ui.BtnB()
-			return Bool(b), err
+			return ui.BtnB()
 		}
 		return nil, errors.New("UI functions not available")
 	}},
 	"random": {[]ValueType{INT}, func(params []Value, c *Context) (Value, error) {
-		n := params[0].(Int)
+		n := params[0].(int)
 		if n <= 0 {
 			return 0, errors.New("random parameter must be > 0")
 		}
 
-		return Int(rand.Int63n(int64(n))), nil
+		return rand.Intn(n), nil
 	}},
 	"time": {[]ValueType{}, func(params []Value, c *Context) (Value, error) {
 		d := time.Now().Sub(startTime)
-		return Int(int64(d.Seconds() * 1000)), nil
+		return int(d.Seconds() * 1000), nil
 	}},
 }
 
@@ -206,7 +199,7 @@ func callCustomFn(idx int, values []Value, c *Context) (Value, error) {
 	return c.functions[idx].Call(values, c)
 }
 
-func NewCallFunction(fn string, values Callable) (Callable, error) {
+func NewCallFunction(fn string, values *Callable, p *token.Pos) (*Callable, error) {
 	cf_idx := getCustFnIdx(fn)
 
 	var sig *buildInFnSig = nil
@@ -219,7 +212,7 @@ func NewCallFunction(fn string, values Callable) (Callable, error) {
 		sig = &psig
 	}
 
-	return callableFunc(func(c *Context) (Value, error) {
+	return newCallable(p, func(c *Context) (Value, error) {
 		var vals = []Value{}
 		if values != nil {
 			valsV, err := values.Call(c)
@@ -249,7 +242,7 @@ func NewCallFunction(fn string, values Callable) (Callable, error) {
 	}), nil
 }
 
-func NewCustFuncDev(name string, params []string, code Callable) (Callable, error) {
+func NewCustFuncDev(name string, params []string, code *Callable, p *token.Pos) (*Callable, error) {
 	idx := getCustFnIdx(name)
 
 	if idx < 0 {
@@ -260,7 +253,7 @@ func NewCustFuncDev(name string, params []string, code Callable) (Callable, erro
 		body:       code,
 	}
 
-	return callableFunc(func(c *Context) (Value, error) {
+	return newCallable(p, func(c *Context) (Value, error) {
 		c.functions[idx] = funcDef
 		return funcDef, nil
 	}), nil
@@ -268,7 +261,7 @@ func NewCustFuncDev(name string, params []string, code Callable) (Callable, erro
 
 type Function struct {
 	paramNames []string
-	body       Callable
+	body       *Callable
 }
 
 func NewAddToParamDef(params []string, value string) []string {
@@ -279,18 +272,18 @@ func NewParamDef(value string) []string {
 	return []string{value}
 }
 
-func NewLambdaDef(params []string, code Callable) Callable {
+func NewLambdaDef(params []string, code *Callable, p *token.Pos) *Callable {
 	lambda := &Function{
 		paramNames: params,
 		body:       code,
 	}
-	return callableFunc(func(c *Context) (Value, error) {
+	return newCallable(p, func(c *Context) (Value, error) {
 		return lambda, nil
 	})
 }
 
-func NewCallLambda(fn, values Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewCallLambda(fn, values *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		ff, err := fn.Call(c)
 		if err != nil {
 			return ff, err

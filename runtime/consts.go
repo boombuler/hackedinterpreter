@@ -4,34 +4,18 @@ import (
 	"strconv"
 )
 
-type callableFunc func(c *Context) (Value, error)
-
-func (cf callableFunc) Call(c *Context) (Value, error) {
-	if c.err != nil || c.result != nil {
-		return c.result, c.err
-	}
-	return cf(c)
+func NewConstBool(val bool) (*Callable, error) {
+	return newCallable(nil, func(c *Context) (Value, error) {
+		return val, nil
+	}), nil
 }
 
-type Bool bool
-
-type Int int64
-
-func (cb Int) Call(c *Context) (Value, error) {
-	if c.err != nil || c.result != nil {
-		return c.result, c.err
-	}
-	return cb, nil
-}
-
-func (cb Bool) Call(c *Context) (Value, error) {
-	if c.err != nil || c.result != nil {
-		return c.result, c.err
-	}
-	return cb, nil
-}
-
-func NewConstInt(text string) (Int, error) {
+func NewConstInt(text string) (*Callable, error) {
 	i, err := strconv.Atoi(text)
-	return Int(i), err
+	if err != nil {
+		return nil, err
+	}
+	return newCallable(nil, func(c *Context) (Value, error) {
+		return i, nil
+	}), nil
 }

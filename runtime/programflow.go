@@ -1,7 +1,11 @@
 package runtime
 
-func NewStatements(s1, s2 Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+import (
+	"../token"
+)
+
+func NewStatements(s1, s2 *Callable) *Callable {
+	return newCallable(nil, func(c *Context) (Value, error) {
 		if c.forceExit() {
 			return c.result, c.err
 		}
@@ -16,9 +20,9 @@ func NewStatements(s1, s2 Callable) Callable {
 	})
 }
 
-func NewWhileLoop(cond, code Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
-		var res Value = Int(0)
+func NewWhileLoop(cond, code *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
+		var res Value = int(0)
 		for {
 			if c.forceExit() {
 				return c.result, c.err
@@ -42,8 +46,8 @@ func NewWhileLoop(cond, code Callable) Callable {
 	})
 }
 
-func NewIfThenElse(cond, ifCode, elseCode Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		if c.forceExit() {
 			return c.result, c.err
 		}
@@ -59,17 +63,17 @@ func NewIfThenElse(cond, ifCode, elseCode Callable) Callable {
 		} else if elseCode != nil {
 			return elseCode.Call(c)
 		}
-		return Int(0), nil
+		return int(0), nil
 	})
 }
 
-func NewForEach(vn string, lst, code Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewForEach(vn string, lst, code *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		list, err := callList(lst, c)
 		if err != nil {
 			return list, err
 		}
-		var res Value = Int(0)
+		var res Value = int(0)
 		for _, val := range list.content {
 			if c.forceExit() {
 				return c.result, c.err

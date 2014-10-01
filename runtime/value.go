@@ -5,9 +5,6 @@ import (
 	"fmt"
 )
 
-type Callable interface {
-	Call(c *Context) (Value, error)
-}
 type Value interface{}
 type ValueType string
 
@@ -22,9 +19,9 @@ const (
 
 func GetType(v Value) ValueType {
 	switch v.(type) {
-	case Int:
+	case int:
 		return INT
-	case Bool:
+	case bool:
 		return BOOL
 	case *List:
 		return LIST
@@ -35,7 +32,7 @@ func GetType(v Value) ValueType {
 	}
 }
 
-func callList(c Callable, ctx *Context) (*List, error) {
+func callList(c *Callable, ctx *Context) (*List, error) {
 	val, err := c.Call(ctx)
 	if err != nil {
 		return nil, err
@@ -47,32 +44,32 @@ func callList(c Callable, ctx *Context) (*List, error) {
 	return list, nil
 }
 
-func callInt(c Callable, ctx *Context) (Int, error) {
+func callInt(c *Callable, ctx *Context) (int, error) {
 	val, err := c.Call(ctx)
 	if err != nil {
 		return 0, err
 	}
-	iv, ok := val.(Int)
+	iv, ok := val.(int)
 	if !ok {
 		return 0, fmt.Errorf("Integer expected got %v", val)
 	}
 	return iv, nil
 }
 
-func callBool(c Callable, ctx *Context) (Bool, error) {
+func callBool(c *Callable, ctx *Context) (bool, error) {
 	val, err := c.Call(ctx)
 	if err != nil {
 		return false, err
 	}
-	bv, ok := val.(Bool)
+	bv, ok := val.(bool)
 	if !ok {
 		return false, fmt.Errorf("Boolean expected got %v", val)
 	}
 	return bv, nil
 }
 
-func NewAddToValues(valSlice, value Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewAddToValues(valSlice, value *Callable) *Callable {
+	return newCallable(nil, func(c *Context) (Value, error) {
 		sliceV, err := valSlice.Call(c)
 		if err != nil {
 			return nil, err
@@ -88,8 +85,8 @@ func NewAddToValues(valSlice, value Callable) Callable {
 	})
 }
 
-func NewValues(value Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewValues(value *Callable) *Callable {
+	return newCallable(nil, func(c *Context) (Value, error) {
 		val, err := value.Call(c)
 		if err != nil {
 			return nil, err
@@ -128,10 +125,10 @@ func ToString(v Value) string {
 		switch v.(type) {
 		case ValueType:
 			return string(v.(ValueType)) // drawing surface etc.
-		case Int:
-			return fmt.Sprintf("%v", v.(Int))
-		case Bool:
-			if v.(Bool) {
+		case int:
+			return fmt.Sprintf("%v", v.(int))
+		case bool:
+			if v.(bool) {
 				return "true"
 			} else {
 				return "false"

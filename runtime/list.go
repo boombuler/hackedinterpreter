@@ -1,6 +1,7 @@
 package runtime
 
 import (
+	"../token"
 	"errors"
 	"fmt"
 	"sort"
@@ -10,10 +11,10 @@ type List struct {
 	content []Value
 }
 
-func newList(initLen int64) *List {
+func newList(initLen int) *List {
 	c := make([]Value, initLen)
-	for i := int64(0); i < initLen; i++ {
-		c[i] = Int(0)
+	for i := 0; i < initLen; i++ {
+		c[i] = 0
 	}
 	return &List{
 		content: c,
@@ -27,19 +28,19 @@ func (l *List) sort(less listSorterCompare) error {
 }
 
 func defaultSort(a, b Value) (bool, error) {
-	intA, ok := a.(Int)
+	intA, ok := a.(int)
 	if ok {
-		intB, ok := b.(Int)
+		intB, ok := b.(int)
 		if ok {
 			return intA < intB, nil
 		}
 		return false, fmt.Errorf("can not compare '%v' and '%v'", GetType(a), GetType(b))
 	}
-	boolA, ok := a.(Bool)
+	boolA, ok := a.(bool)
 	if ok {
-		_, ok := b.(Bool)
+		_, ok := b.(bool)
 		if ok {
-			return !bool(boolA), nil
+			return !boolA, nil
 		}
 		return false, fmt.Errorf("can not compare '%v' and '%v'", GetType(a), GetType(b))
 	}
@@ -74,8 +75,8 @@ func (l *List) Copy() *List {
 	}
 }
 
-func (l *List) Len() Int {
-	return Int(len(l.content))
+func (l *List) Len() int {
+	return len(l.content)
 }
 
 func (l *List) Push(v Value) {
@@ -110,20 +111,20 @@ func (l *List) Remove(idx int) error {
 	return nil
 }
 
-func NewEmptyList() Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewEmptyList(p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		return newList(0), nil
 	})
 }
 
-func NewListValues(values Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewListValues(values *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		valsV, err := values.Call(c)
 		if err != nil {
 			return nil, err
 		}
 		vals := valsV.([]Value)
-		lst := newList(int64(len(vals)))
+		lst := newList(len(vals))
 		for i, v := range vals {
 			lst.content[i] = v
 		}
@@ -132,8 +133,8 @@ func NewListValues(values Callable) Callable {
 	})
 }
 
-func NewGetListItem(list, index Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewGetListItem(list, index *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		lVal, err := callList(list, c)
 		if err != nil {
 			return nil, err
@@ -149,8 +150,8 @@ func NewGetListItem(list, index Callable) Callable {
 	})
 }
 
-func NewSetListItem(list, index, value Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewSetListItem(list, index, value *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		lVal, err := callList(list, c)
 		if err != nil {
 			return nil, err

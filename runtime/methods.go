@@ -1,6 +1,7 @@
 package runtime
 
 import (
+	"../token"
 	"errors"
 	"fmt"
 )
@@ -15,7 +16,7 @@ type methodSig struct {
 
 var methods map[string]methodSig = map[string]methodSig{
 	"is_list": {ANY, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
-		return Bool(GetType(sender) == LIST), nil
+		return GetType(sender) == LIST, nil
 	}},
 	"length": {LIST, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
 		return (sender.(*List)).Len(), nil
@@ -28,10 +29,10 @@ var methods map[string]methodSig = map[string]methodSig{
 		return (sender.(*List)).Pop()
 	}},
 	"insert": {LIST, []ValueType{INT, ANY}, func(sender Value, params []Value, c *Context) (Value, error) {
-		return sender, (sender.(*List)).Insert(int(params[0].(Int)), params[1])
+		return sender, (sender.(*List)).Insert(params[0].(int), params[1])
 	}},
 	"remove": {LIST, []ValueType{INT}, func(sender Value, params []Value, c *Context) (Value, error) {
-		return sender, (sender.(*List)).Remove(int(params[0].(Int)))
+		return sender, (sender.(*List)).Remove(params[0].(int))
 	}},
 	"sort": {LIST, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
 		list := sender.(*List)
@@ -45,11 +46,11 @@ var methods map[string]methodSig = map[string]methodSig{
 			if err != nil {
 				return false, err
 			}
-			bRes, ok := res.(Bool)
+			bRes, ok := res.(bool)
 			if !ok {
 				return false, errors.New("sort function parameter must return Boolean")
 			}
-			return bool(bRes), nil
+			return bRes, nil
 		})
 	}},
 	"map": {LIST, []ValueType{FUNC}, func(sender Value, params []Value, c *Context) (Value, error) {
@@ -77,13 +78,13 @@ var methods map[string]methodSig = map[string]methodSig{
 	}},
 }
 
-func NewMethodCall(sender Callable, methodName string, values Callable) (Callable, error) {
+func NewMethodCall(sender *Callable, methodName string, values *Callable, p *token.Pos) (*Callable, error) {
 	sig, ok := methods[methodName]
 	if !ok {
 		return nil, fmt.Errorf("Unknown method: %v", methodName)
 	}
 
-	return callableFunc(func(c *Context) (Value, error) {
+	return newCallable(p, func(c *Context) (Value, error) {
 		send, err := sender.Call(c)
 		if err != nil {
 			return send, err

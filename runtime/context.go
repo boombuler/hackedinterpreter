@@ -1,6 +1,7 @@
 package runtime
 
 import (
+	"../token"
 	"errors"
 	"time"
 )
@@ -82,25 +83,25 @@ func (c *Context) forceExit() bool {
 	}
 }
 
-func NewReturn(res Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewReturn(res *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		c.result, c.err = res.Call(c)
 		return c.result, c.err
 	})
 }
 
-func NewGetVariable(vn string) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewGetVariable(vn string, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		val, ok := c.variables[vn]
 		if ok {
 			return val, nil
 		}
-		return Int(0), nil
+		return int(0), nil
 	})
 }
 
-func NewSetVariable(vn string, value Callable) Callable {
-	return callableFunc(func(c *Context) (Value, error) {
+func NewSetVariable(vn string, value *Callable, p *token.Pos) *Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
 		val, err := value.Call(c)
 		if err != nil {
 			return nil, err
