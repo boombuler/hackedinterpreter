@@ -33,10 +33,7 @@ func main() {
 	code, err := fromFile(flag.Arg(0))
 
 	if err != nil {
-		flag.Usage()
-
-		fmt.Println()
-		fmt.Println(err)
+		fmt.Fprintln(os.Stderr, err)
 		return
 	}
 

@@ -17,7 +17,8 @@ cust_fn_name     : 'f' ('1' - '9')['0'-'6'];
 import _rt "../runtime"
 >>
 
-Program          : Statements;
+Program          : Statements
+                 | error;
 
 Variable         : var
                  | "input"

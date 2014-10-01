@@ -51,7 +51,7 @@ func (re *RuntimeError) Error() string {
 	if len(re.CallStack) > 0 {
 		fmt.Fprint(w, "stack trace:\n")
 		for _, p := range re.CallStack {
-			fmt.Fprintf(w, "  Line %d / Column %d", p.Line, p.Column)
+			fmt.Fprintf(w, "  Line %d / Column %d\n", p.Line, p.Column)
 		}
 	}
 	return w.String()
