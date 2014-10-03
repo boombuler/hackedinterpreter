@@ -12,6 +12,7 @@ import (
 var timeOut = flag.Duration("timeout", runtime.DefaultTimeout, "defines the maximum runtime")
 var input = flag.String("input", "", "defines what should be used as Input value.")
 var game = flag.Bool("game", false, "run the code in freestyle mode. Input and timeout will be ignored!")
+var debug = flag.Bool("debug", false, "run the code in debugger.")
 
 func usageEx() {
 	prName := path.Base(os.Args[0])
@@ -26,11 +27,16 @@ func main() {
 	flag.Usage = usageEx
 
 	flag.Parse()
+
 	if flag.NArg() != 1 {
 		flag.Usage()
 		return
 	}
-	code, err := fromFile(flag.Arg(0))
+	if *debug {
+		RunDebugger(flag.Arg(0))
+		return
+	}
+	code, _, err := fromFile(flag.Arg(0))
 
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)

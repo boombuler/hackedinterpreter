@@ -47,17 +47,18 @@ func fromString(code string) (*runtime.Callable, error) {
 	}
 }
 
-func fromFile(fileName string) (*runtime.Callable, error) {
-	lex, err := lexer.NewLexerFile(fileName)
+func fromFile(fileName string) (*runtime.Callable, *lexer.DebugLexer, error) {
+	lex, err := lexer.NewDebugLexerFile(fileName)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
+
 	p := parser.NewParser()
 	res, err := CheckParseError(p.Parse(lex))
 	if err != nil {
-		return nil, err
+		return nil, lex, err
 	} else {
-		return res, nil
+		return res, lex, nil
 	}
 }
 
