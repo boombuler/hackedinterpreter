@@ -78,7 +78,7 @@ var methods map[string]methodSig = map[string]methodSig{
 	}},
 }
 
-func NewMethodCall(sender *Callable, methodName string, values *Callable, p *token.Pos) (*Callable, error) {
+func NewMethodCall(sender *Callable, methodName string, values *Callable, p *token.Token) (*Callable, error) {
 	sig, ok := methods[methodName]
 	if !ok {
 		return nil, fmt.Errorf("Unknown method: %v", methodName)

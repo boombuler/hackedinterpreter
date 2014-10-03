@@ -111,13 +111,13 @@ func (l *List) Remove(idx int) error {
 	return nil
 }
 
-func NewEmptyList(p *token.Pos) *Callable {
+func NewEmptyList(p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		return newList(0), nil
 	})
 }
 
-func NewListValues(values *Callable, p *token.Pos) *Callable {
+func NewListValues(values *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		valsV, err := values.Call(c)
 		if err != nil {
@@ -133,7 +133,7 @@ func NewListValues(values *Callable, p *token.Pos) *Callable {
 	})
 }
 
-func NewGetListItem(list, index *Callable, p *token.Pos) *Callable {
+func NewGetListItem(list, index *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		lVal, err := callList(list, c)
 		if err != nil {
@@ -150,7 +150,7 @@ func NewGetListItem(list, index *Callable, p *token.Pos) *Callable {
 	})
 }
 
-func NewSetListItem(list, index, value *Callable, p *token.Pos) *Callable {
+func NewSetListItem(list, index, value *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		lVal, err := callList(list, c)
 		if err != nil {

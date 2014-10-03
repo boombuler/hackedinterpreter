@@ -199,7 +199,7 @@ func callCustomFn(idx int, values []Value, c *Context) (Value, error) {
 	return c.functions[idx].Call(values, c)
 }
 
-func NewCallFunction(fn string, values *Callable, p *token.Pos) (*Callable, error) {
+func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, error) {
 	cf_idx := getCustFnIdx(fn)
 
 	var sig *buildInFnSig = nil
@@ -242,7 +242,7 @@ func NewCallFunction(fn string, values *Callable, p *token.Pos) (*Callable, erro
 	}), nil
 }
 
-func NewCustFuncDev(name string, params []string, code *Callable, p *token.Pos) (*Callable, error) {
+func NewCustFuncDev(name string, params []string, code *Callable, p *token.Token) (*Callable, error) {
 	idx := getCustFnIdx(name)
 
 	if idx < 0 {
@@ -272,7 +272,7 @@ func NewParamDef(value string) []string {
 	return []string{value}
 }
 
-func NewLambdaDef(params []string, code *Callable, p *token.Pos) *Callable {
+func NewLambdaDef(params []string, code *Callable, p *token.Token) *Callable {
 	lambda := &Function{
 		paramNames: params,
 		body:       code,
@@ -282,7 +282,7 @@ func NewLambdaDef(params []string, code *Callable, p *token.Pos) *Callable {
 	})
 }
 
-func NewCallLambda(fn, values *Callable, p *token.Pos) *Callable {
+func NewCallLambda(fn, values *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		ff, err := fn.Call(c)
 		if err != nil {

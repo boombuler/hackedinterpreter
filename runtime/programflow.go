@@ -20,7 +20,7 @@ func NewStatements(s1, s2 *Callable) *Callable {
 	})
 }
 
-func NewWhileLoop(cond, code *Callable, p *token.Pos) *Callable {
+func NewWhileLoop(cond, code *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		var res Value = int(0)
 		for {
@@ -46,7 +46,7 @@ func NewWhileLoop(cond, code *Callable, p *token.Pos) *Callable {
 	})
 }
 
-func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Pos) *Callable {
+func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		if c.forceExit() {
 			return c.result, c.err
@@ -67,7 +67,7 @@ func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Pos) *Callable {
 	})
 }
 
-func NewForEach(vn string, lst, code *Callable, p *token.Pos) *Callable {
+func NewForEach(vn string, lst, code *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		list, err := callList(lst, c)
 		if err != nil {

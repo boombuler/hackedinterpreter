@@ -83,14 +83,14 @@ func (c *Context) forceExit() bool {
 	}
 }
 
-func NewReturn(res *Callable, p *token.Pos) *Callable {
+func NewReturn(res *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		c.result, c.err = res.Call(c)
 		return c.result, c.err
 	})
 }
 
-func NewGetVariable(vn string, p *token.Pos) *Callable {
+func NewGetVariable(vn string, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		val, ok := c.variables[vn]
 		if ok {
@@ -100,7 +100,7 @@ func NewGetVariable(vn string, p *token.Pos) *Callable {
 	})
 }
 
-func NewSetVariable(vn string, value *Callable, p *token.Pos) *Callable {
+func NewSetVariable(vn string, value *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		val, err := value.Call(c)
 		if err != nil {

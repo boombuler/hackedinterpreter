@@ -14,12 +14,12 @@ func c(at Attrib) *runtime.Callable {
 	return rt
 }
 
-func p(at Attrib) *token.Pos {
+func p(at Attrib) *token.Token {
 	tkn, ok := at.(*token.Token)
 	if !ok {
 		return nil
 	}
-	return &tkn.Pos
+	return tkn
 }
 
 func str(at Attrib) string {

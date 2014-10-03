@@ -7,12 +7,12 @@ import (
 )
 
 type Callable struct {
-	*token.Pos
+	*token.Token
 	fn func(c *Context) (Value, error)
 }
 
-func newCallable(pos *token.Pos, fn func(c *Context) (Value, error)) *Callable {
-	return &Callable{pos, fn}
+func newCallable(token *token.Token, fn func(c *Context) (Value, error)) *Callable {
+	return &Callable{token, fn}
 }
 
 func (cf *Callable) Call(c *Context) (Value, error) {
@@ -23,14 +23,14 @@ func (cf *Callable) Call(c *Context) (Value, error) {
 	if err != nil {
 		re, ok := err.(*RuntimeError)
 		if ok {
-			if cf.Pos != nil {
-				re.CallStack = append(re.CallStack, cf.Pos)
+			if cf.Token != nil {
+				re.CallStack = append(re.CallStack, &cf.Pos)
 			}
 			return nil, re
 		} else {
 			return nil, &RuntimeError{
 				Message:   err.Error(),
-				Position:  cf.Pos,
+				Position:  &cf.Pos,
 				CallStack: make([]*token.Pos, 0),
 			}
 		}
