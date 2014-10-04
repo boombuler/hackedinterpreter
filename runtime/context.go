@@ -14,10 +14,11 @@ type Context struct {
 	variables     map[string]Value
 	functions     [16]*Function
 
-	result  Value
-	err     error
-	timeout *time.Timer
-	UI      UIInterface
+	result   Value
+	err      error
+	timeout  *time.Timer
+	UI       UIInterface
+	executor executor
 }
 
 type UIInterface interface {
@@ -36,6 +37,7 @@ type UIInterface interface {
 func NewContext(d time.Duration) *Context {
 	c := new(Context)
 	c.variables = make(map[string]Value)
+	c.executor = simpleExecutor
 	if d > 0 {
 		c.timeout = time.NewTimer(d)
 	}
@@ -51,6 +53,14 @@ func (c *Context) newChildContext() *Context {
 
 func (c *Context) SetInput(value Value) {
 	c.variables["input"] = value
+}
+
+func (ctx *Context) exec(c *Callable) (Value, error) {
+	cc := ctx
+	for cc.parentContext != nil {
+		cc = cc.parentContext
+	}
+	return cc.executor(c, ctx)
 }
 
 func (c *Context) ui() UIInterface {

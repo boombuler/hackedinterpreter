@@ -19,7 +19,7 @@ func (cf *Callable) Call(c *Context) (Value, error) {
 	if c.err != nil || c.result != nil {
 		return c.result, c.err
 	}
-	val, err := cf.fn(c)
+	val, err := c.exec(cf)
 	if err != nil {
 		re, ok := err.(*RuntimeError)
 		if ok {
