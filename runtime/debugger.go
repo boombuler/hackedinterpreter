@@ -55,7 +55,13 @@ func (d *Debugger) ToggleCodeBreakPoint(t *token.Token) {
 	} else {
 		d.codeBPs[t] = true
 	}
+}
 
+func (d *Debugger) GetVars() map[string]Value {
+	if d.curCtx != nil {
+		return d.curCtx.variables
+	}
+	return map[string]Value{}
 }
 
 func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {

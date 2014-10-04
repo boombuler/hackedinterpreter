@@ -18,10 +18,7 @@ type dbgWorkspace struct {
 	maxLine      int
 }
 
-func (ws *dbgWorkspace) render() {
-	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
-	w, h := termbox.Size()
-
+func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 	lastLine := 0
 	lineTokenCnt := 0
 
@@ -47,10 +44,48 @@ func (ws *dbgWorkspace) render() {
 			if c <= ws.columnOffset || c > w+ws.columnOffset {
 				continue
 			}
-			termbox.SetCell(c-1, l-1, r, termbox.ColorWhite, bgColor)
+			termbox.SetCell(c-1+x, l-1+y, r, termbox.ColorWhite, bgColor)
 			c += 1
 		}
 	}
+}
+
+func textOut(s string, x, y, w int, fg, bg termbox.Attribute) {
+	w += x
+	for _, r := range s {
+		if x < w {
+			termbox.SetCell(x, y, r, fg, bg)
+			x += 1
+		}
+	}
+}
+
+func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
+	for xx := x; xx < x+w; xx++ {
+		for yy := y; yy < y+h; yy++ {
+			termbox.SetCell(xx, yy, ' ', termbox.ColorBlack, termbox.ColorWhite)
+		}
+	}
+	x += 1
+	w -= 1
+	for name, val := range ws.dbg.GetVars() {
+		valStr := runtime.ToString(val)
+
+		textOut(name+":", x, y, w, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
+		y += 1
+
+		textOut(valStr, x, y, w, termbox.ColorBlack, termbox.ColorWhite)
+		y += 2
+	}
+}
+
+func (ws *dbgWorkspace) render() {
+	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
+	w, h := termbox.Size()
+	varWndSize := w / 4
+	ws.renderCode(0, 0, w-varWndSize, h)
+	ws.renderVars(w-varWndSize, 0, varWndSize, h)
+
 	termbox.Flush()
 }
 
@@ -73,7 +108,6 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 			}
 		}
 	}
-
 }
 
 func startDebugCode(c *runtime.Callable) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
