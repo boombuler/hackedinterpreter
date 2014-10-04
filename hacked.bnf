@@ -24,8 +24,8 @@ Variable         : var
                  | "input"
                  ;
 
-Bool             : "true"                                               <<_rt.NewConstBool(true)>>
-                 | "false"                                              <<_rt.NewConstBool(false)>>
+Bool             : "true"                                               <<_rt.NewConstBool(true, p($0))>>
+                 | "false"                                              <<_rt.NewConstBool(false, p($0))>>
                  ;
 
 Callable_Object  : Variable                                             <<_rt.NewGetVariable(str($0), p($0)), nil>>
@@ -37,7 +37,7 @@ Callable_Object  : Variable                                             <<_rt.Ne
 
 Object           : Callable_Object                                      <<$0, nil>>
                  | Bool                                                 <<$0, nil>>
-                 | int                                                  <<_rt.NewConstInt(str($0))>>
+                 | int                                                  <<_rt.NewConstInt(str($0), p($0))>>
                  | ListDef                                              <<$0, nil>>
                  | Method_Call                                          <<$0, nil>>
                  ;
@@ -88,16 +88,16 @@ Fn_Name          : fn_name                                              <<$0, ni
                  | cust_fn_name                                         <<$0, nil>>
                  ;
 
-Fn_Call          : Fn_Name "(" ")"                                      <<_rt.NewCallFunction(str($0), nil, p($1))>>
-                 | Fn_Name "(" Values ")"                               <<_rt.NewCallFunction(str($0), c($2), p($1))>>
+Fn_Call          : Fn_Name "(" ")"                                      <<_rt.NewCallFunction(str($0), nil, p($0))>>
+                 | Fn_Name "(" Values ")"                               <<_rt.NewCallFunction(str($0), c($2), p($0))>>
                  ;
 
 Lambda_Call      : Callable_Object "(" Values ")"                       <<_rt.NewCallLambda(c($0), c($2), p($1)), nil>>
                  ;
 
-Method_Call      : Object "." fn_name                                   <<_rt.NewMethodCall(c($0), str($2), nil, p($1))>>
-                 | Object "." fn_name "(" ")"                           <<_rt.NewMethodCall(c($0), str($2), nil, p($1))>>
-                 | Object "." fn_name "(" Values ")"                    <<_rt.NewMethodCall(c($0), str($2), c($4), p($1))>>
+Method_Call      : Object "." fn_name                                   <<_rt.NewMethodCall(c($0), str($2), nil, p($2))>>
+                 | Object "." fn_name "(" ")"                           <<_rt.NewMethodCall(c($0), str($2), nil, p($2))>>
+                 | Object "." fn_name "(" Values ")"                    <<_rt.NewMethodCall(c($0), str($2), c($4), p($2))>>
                  ;
 
 CodeBlock        : "{" Statements "}"                                   <<$1, nil>>

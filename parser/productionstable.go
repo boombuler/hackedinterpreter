@@ -70,23 +70,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Bool : "true"	<< _rt.NewConstBool(true) >>`,
+		String: `Bool : "true"	<< _rt.NewConstBool(true, p(X[0])) >>`,
 		Id: "Bool",
 		NTType: 3,
 		Index: 5,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewConstBool(true)
+			return _rt.NewConstBool(true, p(X[0]))
 		},
 	},
 	ProdTabEntry{
-		String: `Bool : "false"	<< _rt.NewConstBool(false) >>`,
+		String: `Bool : "false"	<< _rt.NewConstBool(false, p(X[0])) >>`,
 		Id: "Bool",
 		NTType: 3,
 		Index: 6,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewConstBool(false)
+			return _rt.NewConstBool(false, p(X[0]))
 		},
 	},
 	ProdTabEntry{
@@ -160,13 +160,13 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Object : int	<< _rt.NewConstInt(str(X[0])) >>`,
+		String: `Object : int	<< _rt.NewConstInt(str(X[0]), p(X[0])) >>`,
 		Id: "Object",
 		NTType: 5,
 		Index: 14,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewConstInt(str(X[0]))
+			return _rt.NewConstInt(str(X[0]), p(X[0]))
 		},
 	},
 	ProdTabEntry{
@@ -450,23 +450,23 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Fn_Call : Fn_Name "(" ")"	<< _rt.NewCallFunction(str(X[0]), nil, p(X[1])) >>`,
+		String: `Fn_Call : Fn_Name "(" ")"	<< _rt.NewCallFunction(str(X[0]), nil, p(X[0])) >>`,
 		Id: "Fn_Call",
 		NTType: 16,
 		Index: 43,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewCallFunction(str(X[0]), nil, p(X[1]))
+			return _rt.NewCallFunction(str(X[0]), nil, p(X[0]))
 		},
 	},
 	ProdTabEntry{
-		String: `Fn_Call : Fn_Name "(" Values ")"	<< _rt.NewCallFunction(str(X[0]), c(X[2]), p(X[1])) >>`,
+		String: `Fn_Call : Fn_Name "(" Values ")"	<< _rt.NewCallFunction(str(X[0]), c(X[2]), p(X[0])) >>`,
 		Id: "Fn_Call",
 		NTType: 16,
 		Index: 44,
 		NumSymbols: 4,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewCallFunction(str(X[0]), c(X[2]), p(X[1]))
+			return _rt.NewCallFunction(str(X[0]), c(X[2]), p(X[0]))
 		},
 	},
 	ProdTabEntry{
@@ -480,33 +480,33 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
-		String: `Method_Call : Object "." fn_name	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[1])) >>`,
+		String: `Method_Call : Object "." fn_name	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[2])) >>`,
 		Id: "Method_Call",
 		NTType: 18,
 		Index: 46,
 		NumSymbols: 3,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[1]))
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[2]))
 		},
 	},
 	ProdTabEntry{
-		String: `Method_Call : Object "." fn_name "(" ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[1])) >>`,
+		String: `Method_Call : Object "." fn_name "(" ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[2])) >>`,
 		Id: "Method_Call",
 		NTType: 18,
 		Index: 47,
 		NumSymbols: 5,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[1]))
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), nil, p(X[2]))
 		},
 	},
 	ProdTabEntry{
-		String: `Method_Call : Object "." fn_name "(" Values ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4]), p(X[1])) >>`,
+		String: `Method_Call : Object "." fn_name "(" Values ")"	<< _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4]), p(X[2])) >>`,
 		Id: "Method_Call",
 		NTType: 18,
 		Index: 48,
 		NumSymbols: 6,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4]), p(X[1]))
+			return _rt.NewMethodCall(c(X[0]), str(X[2]), c(X[4]), p(X[2]))
 		},
 	},
 	ProdTabEntry{
