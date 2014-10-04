@@ -68,14 +68,23 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 	}
 	x += 1
 	w -= 1
-	for name, val := range ws.dbg.GetVars() {
+
+	vars := ws.dbg.GetVars()
+	varNames := []string{"input"}
+	for x := rune(97); x < rune(112); x++ {
+		varNames = append(varNames, "var_"+string(x))
+	}
+
+	for _, varN := range varNames {
+		val, ok := vars[varN]
+		if !ok {
+			val = 0
+		}
 		valStr := runtime.ToString(val)
 
-		textOut(name+":", x, y, w, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
+		textOut(varN+":", x, y, w, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
+		textOut(valStr, x+7, y, w-7, termbox.ColorBlack, termbox.ColorWhite)
 		y += 1
-
-		textOut(valStr, x, y, w, termbox.ColorBlack, termbox.ColorWhite)
-		y += 2
 	}
 }
 
