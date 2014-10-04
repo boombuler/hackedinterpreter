@@ -200,17 +200,13 @@ func callCustomFn(idx int, values []Value, c *Context) (Value, error) {
 }
 
 func NewCallFunction(fn string, values *Callable, p *token.Pos) (*Callable, error) {
-	cf_idx := getCustFnIdx(fn)
-
 	var sig *buildInFnSig = nil
 
-	if cf_idx < 0 {
-		psig, ok := buildInFunctions[fn]
-		if !ok {
-			return nil, errors.New("unknown function: " + fn)
-		}
-		sig = &psig
+	psig, ok := buildInFunctions[fn]
+	if !ok {
+		return nil, errors.New("unknown function: " + fn)
 	}
+	sig = &psig
 
 	return newCallable(p, func(c *Context) (Value, error) {
 		var vals = []Value{}
@@ -220,10 +216,6 @@ func NewCallFunction(fn string, values *Callable, p *token.Pos) (*Callable, erro
 				return nil, err
 			}
 			vals = valsV.([]Value)
-		}
-
-		if cf_idx >= 0 {
-			return callCustomFn(cf_idx, vals, c)
 		}
 
 		if len(vals) != len(sig.ParamTypes) {
@@ -280,6 +272,20 @@ func NewLambdaDef(params []string, code *Callable, p *token.Pos) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		return lambda, nil
 	})
+}
+
+func NewGetCustomFunction(cfName string, p *token.Pos) (*Callable, error) {
+	fn_idx := getCustFnIdx(cfName)
+	if fn_idx < 0 {
+		return nil, fmt.Errorf("Unknown custom function %v", cfName)
+	}
+	return newCallable(p, func(c *Context) (Value, error) {
+		custFn := c.functions[fn_idx]
+		if custFn == nil {
+			return nil, fmt.Errorf("custom function %v is not defined", cfName)
+		}
+		return custFn, nil
+	}), nil
 }
 
 func NewCallLambda(fn, values *Callable, p *token.Pos) *Callable {
