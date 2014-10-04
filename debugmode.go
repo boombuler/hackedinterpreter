@@ -15,6 +15,7 @@ type dbgWorkspace struct {
 	curBreakEv   *runtime.BreakEvent
 	columnOffset int
 	lineOffset   int
+	maxLine      int
 }
 
 func (ws *dbgWorkspace) render() {
@@ -56,9 +57,13 @@ func (ws *dbgWorkspace) render() {
 func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 	switch ev.Key {
 	case termbox.KeyArrowDown:
-		ws.lineOffset += 1
+		if ws.lineOffset < ws.maxLine-1 {
+			ws.lineOffset += 1
+		}
 	case termbox.KeyArrowUp:
-		ws.lineOffset -= 1
+		if ws.lineOffset > 0 {
+			ws.lineOffset -= 1
+		}
 	default:
 		switch ev.Ch {
 		case 's':
@@ -106,6 +111,13 @@ func RunDebugger(fileName string) {
 	}
 	defer termbox.Close()
 
+	maxLine := 0
+	for _, t := range lex.Tokens {
+		if t.Line > maxLine {
+			maxLine = t.Line
+		}
+	}
+
 	debugger, breakChan, valueChan, errorChan := startDebugCode(code)
 	shutdownChan := make(chan struct{})
 	eventChan := make(chan termbox.Event)
@@ -128,6 +140,7 @@ func RunDebugger(fileName string) {
 		dbg:          debugger,
 		columnOffset: 0,
 		lineOffset:   0,
+		maxLine:      maxLine,
 	}
 
 	for {
