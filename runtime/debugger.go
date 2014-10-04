@@ -59,15 +59,18 @@ func (d *Debugger) ToggleCodeBreakPoint(t *token.Token) {
 }
 
 func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {
-	d.curCtx = ctx
-	d.curCallable = c
-	// Check here for BreakPoint etc
-	if d.mode == Step || d.codeBPs[c.Token] {
-		// We reached a BP...
-		if d.breakEventChan != nil {
-			res := make(chan DebuggerExecutionMode)
-			d.breakEventChan <- &BreakEvent{res, c.Token}
-			d.mode = <-res
+	if c.Token != nil {
+		d.curCtx = ctx
+		d.curCallable = c
+
+		// Check here for BreakPoint etc
+		if d.mode == Step || d.codeBPs[c.Token] {
+			// We reached a BP...
+			if d.breakEventChan != nil {
+				res := make(chan DebuggerExecutionMode)
+				d.breakEventChan <- &BreakEvent{res, c.Token}
+				d.mode = <-res
+			}
 		}
 	}
 	return c.fn(ctx)
