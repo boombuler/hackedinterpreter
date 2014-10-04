@@ -33,6 +33,7 @@ Callable_Object  : Variable                                             <<_rt.Ne
                  | Get_Index                                            <<$0, nil>>
                  | Fn_Call                                              <<$0, nil>>
                  | Lambda_Call                                          <<$0, nil>>
+                 | cust_fn_name                                         <<_rt.NewGetCustomFunction(str($0), p($0))>>
                  ;
 
 Object           : Callable_Object                                      <<$0, nil>>
@@ -84,12 +85,8 @@ ListDef          : "[" "]"                                              <<_rt.Ne
                  | "[" Values "]"                                       <<_rt.NewListValues(c($1), p($0)), nil>>
                  ;
 
-Fn_Name          : fn_name                                              <<$0, nil>>
-                 | cust_fn_name                                         <<$0, nil>>
-                 ;
-
-Fn_Call          : Fn_Name "(" ")"                                      <<_rt.NewCallFunction(str($0), nil, p($0))>>
-                 | Fn_Name "(" Values ")"                               <<_rt.NewCallFunction(str($0), c($2), p($0))>>
+Fn_Call          : fn_name "(" ")"                                      <<_rt.NewCallFunction(str($0), nil, p($1))>>
+                 | fn_name "(" Values ")"                               <<_rt.NewCallFunction(str($0), c($2), p($1))>>
                  ;
 
 Lambda_Call      : Callable_Object "(" Values ")"                       <<_rt.NewCallLambda(c($0), c($2), p($1)), nil>>
