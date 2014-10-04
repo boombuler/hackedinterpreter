@@ -2,18 +2,23 @@ package main
 
 import (
 	"./lexer"
+	"./runtime"
 	"fmt"
 	"github.com/nsf/termbox-go"
 	"os"
 )
 
 type dbgWorkspace struct {
-	lexer        *lexer.DebugLexer
+	lexer *lexer.DebugLexer
+	dbg   *runtime.Debugger
+
+	curBreakEv   *runtime.BreakEvent
 	columnOffset int
 	lineOffset   int
 }
 
-func (ws *dbgWorkspace) drawCode() {
+func (ws *dbgWorkspace) render() {
+	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
 	w, h := termbox.Size()
 
 	lastLine := 0
@@ -28,6 +33,11 @@ func (ws *dbgWorkspace) drawCode() {
 			continue
 		}
 
+		bgColor := termbox.ColorBlack
+		if ws.curBreakEv != nil && ws.curBreakEv.Token == t {
+			bgColor = termbox.ColorRed
+		}
+
 		text := string(t.Lit)
 		c := t.Column - len(text) - lineTokenCnt - ws.columnOffset
 		l := t.Line - ws.lineOffset
@@ -36,11 +46,51 @@ func (ws *dbgWorkspace) drawCode() {
 			if c <= ws.columnOffset || c > w+ws.columnOffset {
 				continue
 			}
-			termbox.SetCell(c-1, l-1, r, termbox.ColorWhite, termbox.ColorBlack)
+			termbox.SetCell(c-1, l-1, r, termbox.ColorWhite, bgColor)
 			c += 1
 		}
 	}
 	termbox.Flush()
+}
+
+func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
+	switch ev.Key {
+	case termbox.KeyArrowDown:
+		ws.lineOffset += 1
+	case termbox.KeyArrowUp:
+		ws.lineOffset -= 1
+	default:
+		switch ev.Ch {
+		case 's':
+			if be := ws.curBreakEv; be != nil {
+				ws.curBreakEv = nil
+				be.Continue <- runtime.Step
+			}
+		}
+	}
+
+}
+
+func startDebugCode(c *runtime.Callable) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
+	ctx := runtime.NewContext(runtime.NoTimeout)
+	bpEv := make(chan *runtime.BreakEvent)
+	valRes := make(chan runtime.Value)
+	errRes := make(chan error)
+
+	dbg, _ := runtime.AttachDebugger(ctx, bpEv)
+
+	go func() {
+		defer close(bpEv)
+		defer close(valRes)
+		defer close(errRes)
+		val, err := c.Call(ctx)
+		if err != nil {
+			errRes <- err
+		}
+		valRes <- val
+	}()
+
+	return dbg, bpEv, valRes, errRes
 }
 
 func RunDebugger(fileName string) {
@@ -49,35 +99,55 @@ func RunDebugger(fileName string) {
 		fmt.Fprintln(os.Stderr, err)
 		return
 	}
-	_ = code
 	err = termbox.Init()
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		return
 	}
 	defer termbox.Close()
+
+	debugger, breakChan, valueChan, errorChan := startDebugCode(code)
+	shutdownChan := make(chan struct{})
+	eventChan := make(chan termbox.Event)
+	go func() {
+		defer close(shutdownChan)
+		defer close(eventChan)
+		for {
+			ev := termbox.PollEvent()
+			if ev.Type == termbox.EventKey && ev.Key == termbox.KeyEsc {
+				shutdownChan <- struct{}{}
+				return
+			} else {
+				eventChan <- ev
+			}
+		}
+	}()
+
 	ws := &dbgWorkspace{
 		lexer:        lex,
+		dbg:          debugger,
 		columnOffset: 0,
 		lineOffset:   0,
 	}
 
 	for {
-		termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
-		ws.drawCode()
+		ws.render()
 
-		switch ev := termbox.PollEvent(); ev.Type {
-		case termbox.EventKey:
-			switch ev.Key {
-			case termbox.KeyArrowDown:
-				ws.lineOffset += 1
-			case termbox.KeyArrowUp:
-				ws.lineOffset -= 1
-
-			case termbox.KeyEsc:
-				return
-			default:
+		select {
+		case val := <-valueChan:
+			fmt.Fprintln(os.Stdout, val)
+			return
+		case err := <-errorChan:
+			fmt.Fprintln(os.Stderr, err)
+			return
+		case <-shutdownChan:
+			return
+		case ev := <-eventChan:
+			if ev.Type == termbox.EventKey {
+				ws.handleKey(ev)
 			}
+		case be := <-breakChan:
+			ws.curBreakEv = be
 		}
 	}
 }

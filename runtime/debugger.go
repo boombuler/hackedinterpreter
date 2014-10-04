@@ -31,11 +31,11 @@ type Debugger struct {
 
 	mode DebuggerExecutionMode
 
-	breakEventChan chan<- BreakEvent
+	breakEventChan chan<- *BreakEvent
 	codeBPs        map[*token.Token]bool // change bool to something else if conditional BPs should be impl.
 }
 
-func AttachDebugger(c *Context, be chan<- BreakEvent) (*Debugger, error) {
+func AttachDebugger(c *Context, be chan<- *BreakEvent) (*Debugger, error) {
 	if c == nil || c.parentContext != nil {
 		return nil, errors.New("Debugger can only be attached to main context")
 	}
@@ -66,7 +66,7 @@ func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {
 		// We reached a BP...
 		if d.breakEventChan != nil {
 			res := make(chan DebuggerExecutionMode)
-			d.breakEventChan <- BreakEvent{res, c.Token}
+			d.breakEventChan <- &BreakEvent{res, c.Token}
 			d.mode = <-res
 		}
 	}
