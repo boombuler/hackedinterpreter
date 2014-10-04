@@ -13,7 +13,7 @@ func Test_LambdaSimple(t *testing.T) {
 		t.Error(err)
 	}
 	if value != 4 {
-		t.Errorf("Lambda 1 Failed got %v expected %v", value, 4)
+		t.Errorf("Lambda 1 failed got %v expected %v", value, 4)
 	}
 }
 
@@ -25,7 +25,19 @@ func Test_LambdaFromList(t *testing.T) {
 		t.Error(err)
 	}
 	if value != 7 {
-		t.Errorf("Lambda 2 Failed got %v expected %v", value, 7)
+		t.Errorf("Lambda 2 failed got %v expected %v", value, 7)
+	}
+}
+
+func Test_CustomFunctions(t *testing.T) {
+	testStr := "function f1: var_a { var_a * 2 } [2].map(f1)[0]"
+
+	value, err := execString(testStr, runtime.DefaultTimeout)
+	if err != nil {
+		t.Error(err)
+	}
+	if value != 4 {
+		t.Errorf("Custom Functions Test failed got %v expected %v", value, 7)
 	}
 }
 
