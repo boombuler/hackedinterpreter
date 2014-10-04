@@ -32,8 +32,23 @@ func main() {
 		flag.Usage()
 		return
 	}
+	var inpVal runtime.Value = nil
+	if *input != "" {
+		inpCode, err := fromString(*input)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
+			return
+		}
+		inpVal, err = exec(inpCode, 100*time.Millisecond)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
+			return
+		}
+
+	}
+
 	if *debug {
-		RunDebugger(flag.Arg(0))
+		RunDebugger(flag.Arg(0), inpVal)
 		return
 	}
 	code, _, err := fromFile(flag.Arg(0))
@@ -47,20 +62,7 @@ func main() {
 		RunGame(code)
 	} else {
 		ctx := runtime.NewContext(*timeOut)
-
-		if *input != "" {
-			inpCode, err := fromString(*input)
-			if err != nil {
-				fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
-				return
-			}
-			inpVal, err := exec(inpCode, 100*time.Millisecond)
-			if err != nil {
-				fmt.Fprintln(os.Stderr, "input value could not be parsed:", err)
-				return
-			}
-			ctx.SetInput(inpVal)
-		}
+		ctx.SetInput(inpVal)
 		res, err := code.Call(ctx)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)

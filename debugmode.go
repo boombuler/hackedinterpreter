@@ -110,8 +110,9 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 	}
 }
 
-func startDebugCode(c *runtime.Callable) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
+func startDebugCode(c *runtime.Callable, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
+	ctx.SetInput(input)
 	bpEv := make(chan *runtime.BreakEvent)
 	valRes := make(chan runtime.Value)
 	errRes := make(chan error)
@@ -132,7 +133,7 @@ func startDebugCode(c *runtime.Callable) (*runtime.Debugger, <-chan *runtime.Bre
 	return dbg, bpEv, valRes, errRes
 }
 
-func RunDebugger(fileName string) {
+func RunDebugger(fileName string, input runtime.Value) {
 	code, lex, err := fromFile(fileName)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
@@ -143,7 +144,14 @@ func RunDebugger(fileName string) {
 		fmt.Fprintln(os.Stderr, err)
 		return
 	}
-	defer termbox.Close()
+	termClosed := false
+	closeTerm := func() {
+		if !termClosed {
+			termbox.Close()
+			termClosed = true
+		}
+	}
+	defer closeTerm()
 
 	maxLine := 0
 	for _, t := range lex.Tokens {
@@ -152,7 +160,7 @@ func RunDebugger(fileName string) {
 		}
 	}
 
-	debugger, breakChan, valueChan, errorChan := startDebugCode(code)
+	debugger, breakChan, valueChan, errorChan := startDebugCode(code, input)
 	shutdownChan := make(chan struct{})
 	eventChan := make(chan termbox.Event)
 	go func() {
@@ -182,9 +190,11 @@ func RunDebugger(fileName string) {
 
 		select {
 		case val := <-valueChan:
+			closeTerm()
 			fmt.Fprintln(os.Stdout, val)
 			return
 		case err := <-errorChan:
+			closeTerm()
 			fmt.Fprintln(os.Stderr, err)
 			return
 		case <-shutdownChan:
