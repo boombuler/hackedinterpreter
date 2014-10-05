@@ -11,6 +11,7 @@ import (
 type dbgWorkspace struct {
 	lexer *lexer.DebugLexer
 	dbg   *runtime.Debugger
+	code  *runtime.Callable
 
 	commandEB    *EditBox
 	curBreakEv   *runtime.BreakEvent
@@ -33,8 +34,13 @@ func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 		}
 
 		bgColor := termbox.ColorBlack
-		if ws.curBreakEv != nil && ws.curBreakEv.Token == t {
+		fgColor := termbox.ColorWhite
+		if ws.dbg.IsCodeBreakPoint(t) {
 			bgColor = termbox.ColorRed
+		}
+
+		if ws.curBreakEv != nil && ws.curBreakEv.Token == t {
+			fgColor, bgColor = bgColor, fgColor
 		}
 
 		text := string(t.Lit)
@@ -45,7 +51,7 @@ func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 			if c <= ws.columnOffset || c > w+ws.columnOffset {
 				continue
 			}
-			termbox.SetCell(c-1+x, l-1+y, r, termbox.ColorWhite, bgColor)
+			termbox.SetCell(c-1+x, l-1+y, r, fgColor, bgColor)
 			c += 1
 		}
 	}
@@ -107,7 +113,11 @@ func (ws *dbgWorkspace) render() {
 
 func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 	if ws.commandEB != nil {
-		ws.commandEB.handleKey(ev)
+		if ws.commandEB.handleKey(ev) {
+			cmd := string(ws.commandEB.text)
+			ws.handleCommand(cmd)
+			ws.commandEB = nil
+		}
 	} else {
 		switch ev.Key {
 		case termbox.KeyArrowDown:
@@ -129,6 +139,12 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 				if be := ws.curBreakEv; be != nil {
 					ws.curBreakEv = nil
 					be.Continue <- runtime.Step
+				}
+
+			case 'c':
+				if be := ws.curBreakEv; be != nil {
+					ws.curBreakEv = nil
+					be.Continue <- runtime.Continue
 				}
 			}
 
@@ -206,6 +222,7 @@ func RunDebugger(fileName string, input runtime.Value) {
 	ws := &dbgWorkspace{
 		lexer:        lex,
 		dbg:          debugger,
+		code:         code,
 		columnOffset: 0,
 		lineOffset:   0,
 		maxLine:      maxLine,

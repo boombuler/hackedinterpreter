@@ -130,7 +130,7 @@ func NewListValues(values *Callable, p *token.Token) *Callable {
 		}
 
 		return lst, nil
-	})
+	}, values)
 }
 
 func NewGetListItem(list, index *Callable, p *token.Token) *Callable {
@@ -147,7 +147,7 @@ func NewGetListItem(list, index *Callable, p *token.Token) *Callable {
 			return nil, errors.New("Index out of range (" + ToString(idx) + ") -> " + ToString(lVal))
 		}
 		return lVal.content[idx], nil
-	})
+	}, index)
 }
 
 func NewSetListItem(list, index, value *Callable, p *token.Token) *Callable {
@@ -169,5 +169,5 @@ func NewSetListItem(list, index, value *Callable, p *token.Token) *Callable {
 		}
 		lVal.content[idx] = val
 		return val, nil
-	})
+	}, list, index, value)
 }

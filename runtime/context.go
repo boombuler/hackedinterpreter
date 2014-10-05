@@ -97,7 +97,7 @@ func NewReturn(res *Callable, p *token.Token) *Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		c.result, c.err = res.Call(c)
 		return c.result, c.err
-	})
+	}, res)
 }
 
 func NewGetVariable(vn string, p *token.Token) *Callable {
@@ -118,5 +118,5 @@ func NewSetVariable(vn string, value *Callable, p *token.Token) *Callable {
 		}
 		c.variables[vn] = val
 		return val, nil
-	})
+	}, value)
 }

@@ -76,7 +76,7 @@ type EditBox struct {
 	Foreground     termbox.Attribute
 }
 
-func (eb *EditBox) handleKey(ev termbox.Event) {
+func (eb *EditBox) handleKey(ev termbox.Event) bool {
 	switch ev.Key {
 	case termbox.KeyArrowLeft, termbox.KeyCtrlB:
 		eb.MoveCursorOneRuneBackward()
@@ -96,11 +96,14 @@ func (eb *EditBox) handleKey(ev termbox.Event) {
 		eb.MoveCursorToBeginningOfTheLine()
 	case termbox.KeyEnd, termbox.KeyCtrlE:
 		eb.MoveCursorToEndOfTheLine()
+	case termbox.KeyEnter:
+		return true
 	default:
 		if ev.Ch != 0 {
 			eb.InsertRune(ev.Ch)
 		}
 	}
+	return false
 }
 
 // Draws the EditBox in the given location, 'h' is not used at the moment

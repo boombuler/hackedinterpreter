@@ -8,11 +8,12 @@ import (
 
 type Callable struct {
 	*token.Token
-	fn func(c *Context) (Value, error)
+	fn       func(c *Context) (Value, error)
+	Children []*Callable
 }
 
-func newCallable(token *token.Token, fn func(c *Context) (Value, error)) *Callable {
-	return &Callable{token, fn}
+func newCallable(token *token.Token, fn func(c *Context) (Value, error), children ...*Callable) *Callable {
+	return &Callable{token, fn, children}
 }
 
 func (cf *Callable) Call(c *Context) (Value, error) {

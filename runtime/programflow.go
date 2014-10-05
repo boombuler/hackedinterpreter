@@ -17,7 +17,7 @@ func NewStatements(s1, s2 *Callable) *Callable {
 			return c.result, c.err
 		}
 		return s2.Call(c)
-	})
+	}, s1, s2)
 }
 
 func NewWhileLoop(cond, code *Callable, p *token.Token) *Callable {
@@ -43,7 +43,7 @@ func NewWhileLoop(cond, code *Callable, p *token.Token) *Callable {
 			}
 		}
 		return res, nil
-	})
+	}, cond, code)
 }
 
 func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Token) *Callable {
@@ -64,7 +64,7 @@ func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Token) *Callable {
 			return elseCode.Call(c)
 		}
 		return int(0), nil
-	})
+	}, cond, ifCode, elseCode)
 }
 
 func NewForEach(vn string, lst, code *Callable, p *token.Token) *Callable {
@@ -85,5 +85,5 @@ func NewForEach(vn string, lst, code *Callable, p *token.Token) *Callable {
 			}
 		}
 		return res, nil
-	})
+	}, lst, code)
 }

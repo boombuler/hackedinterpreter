@@ -43,6 +43,7 @@ func AttachDebugger(c *Context, be chan<- *BreakEvent) (*Debugger, error) {
 		mainCtx:        c,
 		breakEventChan: be,
 		mode:           Step,
+		codeBPs:        make(map[*token.Token]bool),
 	}
 	c.executor = d.exec
 	return d, nil
@@ -55,6 +56,11 @@ func (d *Debugger) ToggleCodeBreakPoint(t *token.Token) {
 	} else {
 		d.codeBPs[t] = true
 	}
+}
+
+func (d *Debugger) IsCodeBreakPoint(t *token.Token) bool {
+	_, ok := d.codeBPs[t]
+	return ok
 }
 
 func (d *Debugger) GetVars() map[string]Value {

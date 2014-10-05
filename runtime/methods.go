@@ -117,5 +117,5 @@ func NewMethodCall(sender *Callable, methodName string, values *Callable, p *tok
 
 		return sig.Func(send, vals, c)
 
-	}), nil
+	}, sender, values), nil
 }

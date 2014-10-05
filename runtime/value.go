@@ -82,7 +82,7 @@ func NewAddToValues(valSlice, value *Callable) *Callable {
 		}
 
 		return append(slice, val), nil
-	})
+	}, valSlice, value)
 }
 
 func NewValues(value *Callable) *Callable {
@@ -93,7 +93,7 @@ func NewValues(value *Callable) *Callable {
 		}
 
 		return []Value{val}, nil
-	})
+	}, value)
 }
 
 func Equals(v1, v2 Value) bool {

@@ -17,7 +17,7 @@ func NewMul(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return i1 * i2, nil
-	})
+	}, c1, c2)
 }
 
 func NewDiv(c1, c2 *Callable, p *token.Token) *Callable {
@@ -35,7 +35,7 @@ func NewDiv(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return i1 / i2, nil
-	})
+	}, c1, c2)
 }
 
 func NewAdd(c1, c2 *Callable, p *token.Token) *Callable {
@@ -50,7 +50,7 @@ func NewAdd(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return i1 + i2, nil
-	})
+	}, c1, c2)
 }
 
 func NewSub(c1, c2 *Callable, p *token.Token) *Callable {
@@ -65,7 +65,7 @@ func NewSub(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return i1 - i2, nil
-	})
+	}, c1, c2)
 }
 
 func NewOR(c1, c2 *Callable, p *token.Token) *Callable {
@@ -79,7 +79,7 @@ func NewOR(c1, c2 *Callable, p *token.Token) *Callable {
 			return nil, err
 		}
 		return b1 || b2, nil
-	})
+	}, c1, c2)
 }
 
 func NewAND(c1, c2 *Callable, p *token.Token) *Callable {
@@ -93,7 +93,7 @@ func NewAND(c1, c2 *Callable, p *token.Token) *Callable {
 			return nil, err
 		}
 		return b1 && b2, nil
-	})
+	}, c1, c2)
 }
 
 func NewEqual(c1, c2 *Callable, p *token.Token) *Callable {
@@ -108,7 +108,7 @@ func NewEqual(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return Equals(v1, v2), nil
-	})
+	}, c1, c2)
 }
 
 func NewNotEqual(c1, c2 *Callable, p *token.Token) *Callable {
@@ -123,7 +123,7 @@ func NewNotEqual(c1, c2 *Callable, p *token.Token) *Callable {
 		}
 
 		return !Equals(v1, v2), nil
-	})
+	}, c1, c2)
 }
 
 func NewLt(c1, c2 *Callable, p *token.Token) *Callable {

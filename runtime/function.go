@@ -231,7 +231,7 @@ func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, er
 		}
 
 		return sig.Func(vals, c)
-	}), nil
+	}, values), nil
 }
 
 func NewCustFuncDev(name string, params []string, code *Callable, p *token.Token) (*Callable, error) {
@@ -248,7 +248,7 @@ func NewCustFuncDev(name string, params []string, code *Callable, p *token.Token
 	return newCallable(p, func(c *Context) (Value, error) {
 		c.functions[idx] = funcDef
 		return funcDef, nil
-	}), nil
+	}, code), nil
 }
 
 type Function struct {
@@ -271,7 +271,7 @@ func NewLambdaDef(params []string, code *Callable, p *token.Token) *Callable {
 	}
 	return newCallable(p, func(c *Context) (Value, error) {
 		return lambda, nil
-	})
+	}, code)
 }
 
 func NewGetCustomFunction(cfName string, p *token.Token) (*Callable, error) {
@@ -314,5 +314,5 @@ func NewCallLambda(fn, values *Callable, p *token.Token) *Callable {
 			cc.variables[f.paramNames[i]] = val
 		}
 		return f.body.Call(cc)
-	})
+	}, values)
 }
