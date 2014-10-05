@@ -12,6 +12,7 @@ type dbgWorkspace struct {
 	lexer *lexer.DebugLexer
 	dbg   *runtime.Debugger
 
+	commandEB    *EditBox
 	curBreakEv   *runtime.BreakEvent
 	columnOffset int
 	lineOffset   int
@@ -92,29 +93,45 @@ func (ws *dbgWorkspace) render() {
 	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
 	w, h := termbox.Size()
 	varWndSize := w / 4
-	ws.renderCode(0, 0, w-varWndSize, h)
+
 	ws.renderVars(w-varWndSize, 0, varWndSize, h)
+	if ws.commandEB != nil {
+		h -= 1
+		ws.commandEB.Draw(0, h, w-varWndSize, 1)
+
+	}
+	ws.renderCode(0, 0, w-varWndSize, h)
 
 	termbox.Flush()
 }
 
 func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
-	switch ev.Key {
-	case termbox.KeyArrowDown:
-		if ws.lineOffset < ws.maxLine-1 {
-			ws.lineOffset += 1
-		}
-	case termbox.KeyArrowUp:
-		if ws.lineOffset > 0 {
-			ws.lineOffset -= 1
-		}
-	default:
-		switch ev.Ch {
-		case 's':
-			if be := ws.curBreakEv; be != nil {
-				ws.curBreakEv = nil
-				be.Continue <- runtime.Step
+	if ws.commandEB != nil {
+		ws.commandEB.handleKey(ev)
+	} else {
+		switch ev.Key {
+		case termbox.KeyArrowDown:
+			if ws.lineOffset < ws.maxLine-1 {
+				ws.lineOffset += 1
 			}
+		case termbox.KeyArrowUp:
+			if ws.lineOffset > 0 {
+				ws.lineOffset -= 1
+			}
+		case termbox.KeyEnter:
+			ws.commandEB = &EditBox{
+				Foreground: termbox.ColorWhite,
+				Background: termbox.ColorBlue,
+			}
+		default:
+			switch ev.Ch {
+			case 's':
+				if be := ws.curBreakEv; be != nil {
+					ws.curBreakEv = nil
+					be.Continue <- runtime.Step
+				}
+			}
+
 		}
 	}
 }
