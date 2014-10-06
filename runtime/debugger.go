@@ -81,6 +81,15 @@ func (d *Debugger) ToggleMemWriteBreakPoint(varName string) {
 	}
 }
 
+func (d *Debugger) IsMemBreakPoint(varName string) bool {
+	_, ok := d.memReadBPs[varName]
+	if ok {
+		return true
+	}
+	_, ok = d.memWriteBPs[varName]
+	return ok
+}
+
 func (d *Debugger) IsCodeBreakPoint(t *token.Token) bool {
 	_, ok := d.codeBPs[t]
 	return ok

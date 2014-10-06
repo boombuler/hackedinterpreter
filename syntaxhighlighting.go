@@ -7,7 +7,7 @@ import (
 
 const hlKeyword = termbox.AttrBold | termbox.ColorBlue
 const hlVariable = termbox.ColorCyan
-const hlConst = termbox.ColorMagenta
+const hlConst = termbox.ColorGreen
 
 var highlightMap map[string]termbox.Attribute = map[string]termbox.Attribute{
 	"function":     hlKeyword,
