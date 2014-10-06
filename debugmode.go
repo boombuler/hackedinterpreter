@@ -3,6 +3,7 @@ package main
 import (
 	"./lexer"
 	"./runtime"
+	"./termwnd"
 	"./token"
 	"fmt"
 	"github.com/nsf/termbox-go"
@@ -10,11 +11,13 @@ import (
 )
 
 type dbgWorkspace struct {
-	lexer *lexer.DebugLexer
-	dbg   *runtime.Debugger
-	code  *runtime.Callable
+	*termwnd.Window
+	lexer   *lexer.DebugLexer
+	dbg     *runtime.Debugger
+	code    *runtime.Callable
+	gameWnd *GameWindow
 
-	commandEB    *EditBox
+	commandEB    *termwnd.EditBox
 	curBreakEv   *runtime.BreakEvent
 	columnOffset int
 	lineOffset   int
@@ -35,7 +38,10 @@ func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 		}
 
 		if ws.curBreakEv != nil && ws.curBreakEv.Token == t {
+			fgAttrs := fgColor & (termbox.AttrBold | termbox.AttrReverse | termbox.AttrUnderline)
+			fgColor = fgColor ^ fgAttrs
 			fgColor, bgColor = bgColor, fgColor
+			fgColor = fgColor | fgAttrs
 		}
 
 		text := string(t.Lit)
@@ -50,15 +56,15 @@ func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 			}
 		}
 
-		textOut(text, c+x, l+y, w-c, fgColor, bgColor)
+		ws.textOut(text, c+x, l+y, w-c, fgColor, bgColor)
 	}
 }
 
-func textOut(s string, x, y, w int, fg, bg termbox.Attribute) {
+func (ws *dbgWorkspace) textOut(s string, x, y, w int, fg, bg termbox.Attribute) {
 	w += x
 	for _, r := range s {
 		if x < w {
-			termbox.SetCell(x, y, r, fg, bg)
+			ws.SetCell(x, y, r, fg, bg)
 			x += 1
 		}
 	}
@@ -67,7 +73,7 @@ func textOut(s string, x, y, w int, fg, bg termbox.Attribute) {
 func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 	for xx := x; xx < x+w; xx++ {
 		for yy := y; yy < y+h; yy++ {
-			termbox.SetCell(xx, yy, ' ', termbox.ColorBlack, termbox.ColorWhite)
+			ws.SetCell(xx, yy, ' ', termbox.ColorBlack, termbox.ColorWhite)
 		}
 	}
 	x += 1
@@ -91,9 +97,9 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 			bg = termbox.ColorRed
 		}
 
-		textOut(varN, x, y, w, termbox.ColorBlack|termbox.AttrBold, bg)
-		textOut(":", x+5, y, w-5, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
-		textOut(valStr, x+7, y, w-7, termbox.ColorBlack, termbox.ColorWhite)
+		ws.textOut(varN, x, y, w, termbox.ColorBlack|termbox.AttrBold, bg)
+		ws.textOut(":", x+5, y, w-5, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
+		ws.textOut(valStr, x+7, y, w-7, termbox.ColorBlack, termbox.ColorWhite)
 		y += 1
 	}
 }
@@ -103,7 +109,7 @@ func (ws *dbgWorkspace) renderLineNos(x, y, h int) int {
 	lineNo := ws.lineOffset + 1
 	format := fmt.Sprintf("%%%dd", lineNoLen)
 	for ; y < h; y++ {
-		textOut(fmt.Sprintf(format, lineNo), x, y, lineNoLen, termbox.ColorYellow, termbox.ColorBlack)
+		ws.textOut(fmt.Sprintf(format, lineNo), x, y, lineNoLen, termbox.ColorYellow, termbox.ColorBlack)
 		lineNo += 1
 		if lineNo > ws.maxLine {
 			break
@@ -127,8 +133,8 @@ func invalidateOffset(curVal, maxVal, space int) int {
 }
 
 func (ws *dbgWorkspace) render(scrollToToken *token.Token) {
-	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
-	w, h := termbox.Size()
+	ws.Clear()
+	w, h := ws.Width(), ws.Height()
 	varWndSize := w / 3
 
 	ws.renderVars(w-varWndSize, 0, varWndSize, h)
@@ -163,13 +169,17 @@ func (ws *dbgWorkspace) render(scrollToToken *token.Token) {
 	ws.columnOffset = invalidateOffset(ws.columnOffset, ws.maxCol, codeWidth)
 
 	ws.renderCode(lineNoWidth, 0, codeWidth, h)
-	termbox.Flush()
+	ws.Render()
 }
 
-func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
+func (ws *dbgWorkspace) Input(ev termbox.Event) {
+	if ev.Key == termbox.KeyEsc {
+		termwnd.Stop()
+	}
+
 	if ws.commandEB != nil {
-		if ws.commandEB.handleKey(ev) {
-			cmd := string(ws.commandEB.text)
+		if ws.commandEB.HandleKey(ev) {
+			cmd := string(ws.commandEB.Text)
 			ws.handleCommand(cmd)
 			ws.commandEB = nil
 		}
@@ -184,7 +194,8 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 		case termbox.KeyArrowLeft:
 			ws.columnOffset -= 1
 		case termbox.KeyEnter:
-			ws.commandEB = &EditBox{
+			ws.commandEB = &termwnd.EditBox{
+				Window:     ws.Window,
 				Foreground: termbox.ColorWhite,
 				Background: termbox.ColorBlue,
 			}
@@ -199,59 +210,45 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 			case 'c':
 				if be := ws.curBreakEv; be != nil {
 					ws.curBreakEv = nil
+					ws.gameWnd.Activate()
 					be.Continue <- runtime.Continue
 				}
 			}
-
 		}
 	}
+	ws.render(nil)
 }
 
-func startDebugCode(c *runtime.Callable, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
+func startDebugCode(c *runtime.Callable, isGame bool, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error, *GameWindow) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
 	if input != nil {
 		ctx.SetInput(input)
 	}
 	bpEv := make(chan *runtime.BreakEvent)
-	valRes := make(chan runtime.Value)
-	errRes := make(chan error)
 
 	dbg, _ := runtime.AttachDebugger(ctx, bpEv)
+	if isGame {
+		gw := NewGameWindow(c, ctx)
+		return dbg, bpEv, nil, nil, gw
+	} else {
+		valRes := make(chan runtime.Value)
+		errRes := make(chan error)
+		go func() {
+			defer close(bpEv)
+			defer close(valRes)
+			defer close(errRes)
+			val, err := c.Call(ctx)
+			if err != nil {
+				errRes <- err
+			}
+			valRes <- val
+		}()
 
-	go func() {
-		defer close(bpEv)
-		defer close(valRes)
-		defer close(errRes)
-		val, err := c.Call(ctx)
-		if err != nil {
-			errRes <- err
-		}
-		valRes <- val
-	}()
-
-	return dbg, bpEv, valRes, errRes
+		return dbg, bpEv, valRes, errRes, nil
+	}
 }
 
-func RunDebugger(fileName string, input runtime.Value) {
-	code, lex, err := fromFile(fileName)
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		return
-	}
-	err = termbox.Init()
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		return
-	}
-	termClosed := false
-	closeTerm := func() {
-		if !termClosed {
-			termbox.Close()
-			termClosed = true
-		}
-	}
-	defer closeTerm()
-
+func RunDebugger(code *runtime.Callable, lex *lexer.DebugLexer, isGame bool, input runtime.Value) {
 	maxLine := 0
 	maxCol := 0
 	for _, t := range lex.Tokens {
@@ -264,55 +261,39 @@ func RunDebugger(fileName string, input runtime.Value) {
 		}
 	}
 
-	debugger, breakChan, valueChan, errorChan := startDebugCode(code, input)
-	shutdownChan := make(chan struct{})
-	eventChan := make(chan termbox.Event)
-	go func() {
-		defer close(shutdownChan)
-		defer close(eventChan)
-		for {
-			ev := termbox.PollEvent()
-			if ev.Type == termbox.EventKey && ev.Key == termbox.KeyEsc {
-				shutdownChan <- struct{}{}
-				return
-			} else {
-				eventChan <- ev
-			}
-		}
-	}()
-
 	ws := &dbgWorkspace{
 		lexer:        lex,
-		dbg:          debugger,
 		code:         code,
 		columnOffset: 0,
 		lineOffset:   0,
 		maxLine:      maxLine,
 		maxCol:       maxCol,
 	}
+	ws.Window = termwnd.NewWindow(ws)
 
-	var stt *token.Token = nil
-	for {
-		ws.render(stt)
-		stt = nil
-		select {
-		case val := <-valueChan:
-			closeTerm()
-			fmt.Fprintln(os.Stdout, val)
-			return
-		case err := <-errorChan:
-			closeTerm()
-			fmt.Fprintln(os.Stderr, err)
-			return
-		case <-shutdownChan:
-			return
-		case ev := <-eventChan:
-			if ev.Type == termbox.EventKey {
-				ws.handleKey(ev)
+	debugger, breakChan, valueChan, errorChan, gameWnd := startDebugCode(code, isGame, input)
+	ws.dbg = debugger
+	ws.gameWnd = gameWnd
+
+	go func() {
+		var stt *token.Token = nil
+		for {
+			ws.render(stt)
+			stt = nil
+			select {
+			case val := <-valueChan:
+				termwnd.Stop()
+				fmt.Fprintln(os.Stdout, val)
+				return
+			case err := <-errorChan:
+				termwnd.Stop()
+				fmt.Fprintln(os.Stderr, err)
+				return
+			case be := <-breakChan:
+				ws.curBreakEv = be
+				stt = ws.curBreakEv.Token
+				ws.Activate()
 			}
-		case be := <-breakChan:
-			ws.curBreakEv = be
-			stt = ws.curBreakEv.Token
 		}
-	}
+	}()
 }

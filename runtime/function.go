@@ -189,16 +189,6 @@ func (f *Function) Call(values []Value, c *Context) (Value, error) {
 	return f.body.Call(cc)
 }
 
-func callCustomFn(idx int, values []Value, c *Context) (Value, error) {
-	for c.functions[idx] == nil {
-		c = c.parentContext
-		if c == nil {
-			return nil, fmt.Errorf("function f%v not defined", idx+1)
-		}
-	}
-	return c.functions[idx].Call(values, c)
-}
-
 func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, error) {
 	var sig *buildInFnSig = nil
 
@@ -281,6 +271,11 @@ func NewGetCustomFunction(cfName string, p *token.Token) (*Callable, error) {
 	}
 	return newCallable(p, func(c *Context) (Value, error) {
 		custFn := c.functions[fn_idx]
+		cc := c.parentContext
+		for custFn == nil && cc != nil {
+			custFn = cc.functions[fn_idx]
+			cc = cc.parentContext
+		}
 		if custFn == nil {
 			return nil, fmt.Errorf("custom function %v is not defined", cfName)
 		}

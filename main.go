@@ -2,6 +2,7 @@ package main
 
 import (
 	"./runtime"
+	"./termwnd"
 	"flag"
 	"fmt"
 	"os"
@@ -47,19 +48,21 @@ func main() {
 
 	}
 
-	if *debug {
-		RunDebugger(flag.Arg(0), inpVal)
-		return
-	}
-	code, _, err := fromFile(flag.Arg(0))
+	code, lex, err := fromFile(flag.Arg(0))
 
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		return
 	}
 
-	if *game {
+	if *debug {
+		termwnd.Start()
+		RunDebugger(code, lex, *game, inpVal)
+		termwnd.Wait()
+	} else if *game {
+		termwnd.Start()
 		RunGame(code)
+		termwnd.Wait()
 	} else {
 		ctx := runtime.NewContext(*timeOut)
 		ctx.SetInput(inpVal)

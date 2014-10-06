@@ -2,122 +2,106 @@ package main
 
 import (
 	"./runtime"
+	"./termwnd"
 	"github.com/nsf/termbox-go"
 )
 
-type UiTermBox struct {
-	up    bool
-	down  bool
-	left  bool
-	right bool
-	a     bool
-	b     bool
+type GameWindow struct {
+	*termwnd.Window
+	up    int
+	down  int
+	left  int
+	right int
+	a     int
+	b     int
 }
 
-func (ui *UiTermBox) BtnA() (bool, error) {
-	return ui.a, nil
+func (ui *GameWindow) BtnA() (bool, error) {
+	return ui.a > 0, nil
 }
-func (ui *UiTermBox) BtnB() (bool, error) {
-	return ui.b, nil
+func (ui *GameWindow) BtnB() (bool, error) {
+	return ui.b > 0, nil
 }
-func (ui *UiTermBox) Down() (bool, error) {
-	return ui.down, nil
+func (ui *GameWindow) Down() (bool, error) {
+	return ui.down > 0, nil
 }
-func (ui *UiTermBox) Up() (bool, error) {
-	return ui.up, nil
+func (ui *GameWindow) Up() (bool, error) {
+	return ui.up > 0, nil
 }
-func (ui *UiTermBox) Right() (bool, error) {
-	return ui.right, nil
+func (ui *GameWindow) Right() (bool, error) {
+	return ui.right > 0, nil
 }
-func (ui *UiTermBox) Left() (bool, error) {
-	return ui.left, nil
+func (ui *GameWindow) Left() (bool, error) {
+	return ui.left > 0, nil
 }
-func (ui *UiTermBox) Width() (int, error) {
-	w, _ := termbox.Size()
+func (ui *GameWindow) Width() (int, error) {
+	w := ui.Window.Width()
 	return w, nil
 }
-func (ui *UiTermBox) Height() (int, error) {
-	_, h := termbox.Size()
+func (ui *GameWindow) Height() (int, error) {
+	h := ui.Window.Height()
 	return h, nil
 }
-func (ui *UiTermBox) Draw(x, y int) error {
-	termbox.SetCell(x, y, ' ', termbox.ColorGreen, termbox.ColorGreen)
-	return nil
+func (ui *GameWindow) Draw(x, y int) error {
+	return ui.SetCell(x, y, ' ', termbox.ColorGreen, termbox.ColorGreen)
 }
-func (ui *UiTermBox) DrawText(x, y int, text string) error {
+func (ui *GameWindow) DrawText(x, y int, text string) error {
 	for _, r := range text {
-		termbox.SetCell(x, y, r, termbox.ColorGreen, termbox.ColorDefault)
+		err := ui.SetCell(x, y, r, termbox.ColorGreen, termbox.ColorDefault)
+		if err != nil {
+			return err
+		}
 		x += 1
 	}
 	return nil
 }
 
-func gameLoop(code *runtime.Callable, closeChan <-chan struct{}, input <-chan termbox.Event) {
-	ctx := runtime.NewContext(runtime.NoTimeout)
-	ui := new(UiTermBox)
+func (ui *GameWindow) Input(ev termbox.Event) {
+	if ev.Ch == 'a' {
+		ui.a += 1
+	} else if ev.Ch == 'b' {
+		ui.b += 1
+	} else {
+		switch ev.Key {
+		case termbox.KeyArrowDown:
+			ui.down += 1
+		case termbox.KeyArrowUp:
+			ui.up += 1
+		case termbox.KeyArrowRight:
+			ui.right += 1
+		case termbox.KeyArrowLeft:
+			ui.left += 1
+		case termbox.KeyEsc:
+			termwnd.Stop()
+		}
+	}
+}
+
+func NewGameWindow(code *runtime.Callable, ctx *runtime.Context) *GameWindow {
+	ui := new(GameWindow)
+	ui.Window = termwnd.NewWindow(ui)
 	ctx.UI = ui
 	go func() {
 		for {
-			select {
-			case <-closeChan:
-				return
-			case ev := <-input:
-				if ev.Ch == 'a' {
-					ui.a = true
-				} else if ev.Ch == 'b' {
-					ui.b = true
-				} else {
-					switch ev.Key {
-					case termbox.KeyArrowDown:
-						ui.down = true
-					case termbox.KeyArrowUp:
-						ui.up = true
-					case termbox.KeyArrowRight:
-						ui.right = true
-					case termbox.KeyArrowLeft:
-						ui.left = true
-					}
-				}
-			default:
-				termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
-				_, err := code.Call(ctx)
-				if err != nil {
-					termbox.Close()
-					panic(err.Error())
-				}
-				termbox.Flush()
-				ui.up = false
-				ui.down = false
-				ui.left = false
-				ui.right = false
-				ui.a = false
-				ui.b = false
+			u, d, l, r, a, b := ui.up, ui.down, ui.left, ui.right, ui.a, ui.b
+			ui.Clear()
+			_, err := code.Call(ctx)
+			if err != nil {
+				panic(err.Error())
 			}
+			ui.Render()
+			ui.up -= u
+			ui.down -= d
+			ui.left -= l
+			ui.right -= r
+			ui.a -= a
+			ui.b -= b
 		}
 	}()
+	return ui
 }
 
 func RunGame(code *runtime.Callable) {
-	err := termbox.Init()
-	if err != nil {
-		panic(err)
-	}
-	defer termbox.Close()
-	closeChan := make(chan struct{})
-	input := make(chan termbox.Event)
-	gameLoop(code, closeChan, input)
-	for {
-		switch ev := termbox.PollEvent(); ev.Type {
-		case termbox.EventKey:
-			switch ev.Key {
-			case termbox.KeyEsc:
-				closeChan <- struct{}{}
-				close(closeChan)
-				close(input)
-				return
-			default:
-				input <- ev
-			}
-		}
-	}
+	c := runtime.NewContext(runtime.NoTimeout)
+	NewGameWindow(code, c)
 }

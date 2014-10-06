@@ -1,4 +1,4 @@
-package main
+package termwnd
 
 import (
 	"github.com/nsf/termbox-go"
@@ -7,21 +7,6 @@ import (
 
 const preferred_horizontal_threshold = 5
 const tabstop_length = 4
-
-func tbprint(x, y int, fg, bg termbox.Attribute, msg string) {
-	for _, c := range msg {
-		termbox.SetCell(x, y, c, fg, bg)
-		x++
-	}
-}
-
-func fill(x, y, w, h int, cell termbox.Cell) {
-	for ly := 0; ly < h; ly++ {
-		for lx := 0; lx < w; lx++ {
-			termbox.SetCell(x+lx, y+ly, cell.Ch, cell.Fg, cell.Bg)
-		}
-	}
-}
 
 func rune_advance_len(r rune, pos int) int {
 	if r == '\t' {
@@ -67,7 +52,8 @@ func byte_slice_insert(text []byte, offset int, what []byte) []byte {
 }
 
 type EditBox struct {
-	text           []byte
+	Window         *Window
+	Text           []byte
 	line_voffset   int
 	cursor_boffset int // cursor offset in bytes
 	cursor_voffset int // visual cursor offset in termbox cells
@@ -76,7 +62,7 @@ type EditBox struct {
 	Foreground     termbox.Attribute
 }
 
-func (eb *EditBox) handleKey(ev termbox.Event) bool {
+func (eb *EditBox) HandleKey(ev termbox.Event) bool {
 	switch ev.Key {
 	case termbox.KeyArrowLeft, termbox.KeyCtrlB:
 		eb.MoveCursorOneRuneBackward()
@@ -110,9 +96,13 @@ func (eb *EditBox) handleKey(ev termbox.Event) bool {
 func (eb *EditBox) Draw(x, y, w, h int) {
 	eb.AdjustVOffset(w)
 
-	fill(x, y, w, h, termbox.Cell{Ch: ' ', Fg: eb.Foreground, Bg: eb.Background})
+	for ly := 0; ly < h; ly++ {
+		for lx := 0; lx < w; lx++ {
+			eb.Window.SetCell(x+lx, y+ly, ' ', eb.Foreground, eb.Background)
+		}
+	}
 
-	t := eb.text
+	t := eb.Text
 	lx := 0
 	tabstop := 0
 	for {
@@ -126,7 +116,7 @@ func (eb *EditBox) Draw(x, y, w, h int) {
 		}
 
 		if rx >= w {
-			termbox.SetCell(x+w-1, y, '→',
+			eb.Window.SetCell(x+w-1, y, '→',
 				eb.Foreground, eb.Background)
 			break
 		}
@@ -140,12 +130,12 @@ func (eb *EditBox) Draw(x, y, w, h int) {
 				}
 
 				if rx >= 0 {
-					termbox.SetCell(x+rx, y, ' ', eb.Foreground, eb.Background)
+					eb.Window.SetCell(x+rx, y, ' ', eb.Foreground, eb.Background)
 				}
 			}
 		} else {
 			if rx >= 0 {
-				termbox.SetCell(x+rx, y, r, eb.Foreground, eb.Background)
+				eb.Window.SetCell(x+rx, y, r, eb.Foreground, eb.Background)
 			}
 			lx += 1
 		}
@@ -154,7 +144,7 @@ func (eb *EditBox) Draw(x, y, w, h int) {
 	}
 
 	if eb.line_voffset != 0 {
-		termbox.SetCell(x, y, '←', eb.Foreground, eb.Background)
+		eb.Window.SetCell(x, y, '←', eb.Foreground, eb.Background)
 	}
 }
 
@@ -184,15 +174,15 @@ func (eb *EditBox) AdjustVOffset(width int) {
 
 func (eb *EditBox) MoveCursorTo(boffset int) {
 	eb.cursor_boffset = boffset
-	eb.cursor_voffset, eb.cursor_coffset = voffset_coffset(eb.text, boffset)
+	eb.cursor_voffset, eb.cursor_coffset = voffset_coffset(eb.Text, boffset)
 }
 
 func (eb *EditBox) RuneUnderCursor() (rune, int) {
-	return utf8.DecodeRune(eb.text[eb.cursor_boffset:])
+	return utf8.DecodeRune(eb.Text[eb.cursor_boffset:])
 }
 
 func (eb *EditBox) RuneBeforeCursor() (rune, int) {
-	return utf8.DecodeLastRune(eb.text[:eb.cursor_boffset])
+	return utf8.DecodeLastRune(eb.Text[:eb.cursor_boffset])
 }
 
 func (eb *EditBox) MoveCursorOneRuneBackward() {
@@ -204,7 +194,7 @@ func (eb *EditBox) MoveCursorOneRuneBackward() {
 }
 
 func (eb *EditBox) MoveCursorOneRuneForward() {
-	if eb.cursor_boffset == len(eb.text) {
+	if eb.cursor_boffset == len(eb.Text) {
 		return
 	}
 	_, size := eb.RuneUnderCursor()
@@ -216,7 +206,7 @@ func (eb *EditBox) MoveCursorToBeginningOfTheLine() {
 }
 
 func (eb *EditBox) MoveCursorToEndOfTheLine() {
-	eb.MoveCursorTo(len(eb.text))
+	eb.MoveCursorTo(len(eb.Text))
 }
 
 func (eb *EditBox) DeleteRuneBackward() {
@@ -226,25 +216,25 @@ func (eb *EditBox) DeleteRuneBackward() {
 
 	eb.MoveCursorOneRuneBackward()
 	_, size := eb.RuneUnderCursor()
-	eb.text = byte_slice_remove(eb.text, eb.cursor_boffset, eb.cursor_boffset+size)
+	eb.Text = byte_slice_remove(eb.Text, eb.cursor_boffset, eb.cursor_boffset+size)
 }
 
 func (eb *EditBox) DeleteRuneForward() {
-	if eb.cursor_boffset == len(eb.text) {
+	if eb.cursor_boffset == len(eb.Text) {
 		return
 	}
 	_, size := eb.RuneUnderCursor()
-	eb.text = byte_slice_remove(eb.text, eb.cursor_boffset, eb.cursor_boffset+size)
+	eb.Text = byte_slice_remove(eb.Text, eb.cursor_boffset, eb.cursor_boffset+size)
 }
 
 func (eb *EditBox) DeleteTheRestOfTheLine() {
-	eb.text = eb.text[:eb.cursor_boffset]
+	eb.Text = eb.Text[:eb.cursor_boffset]
 }
 
 func (eb *EditBox) InsertRune(r rune) {
 	var buf [utf8.UTFMax]byte
 	n := utf8.EncodeRune(buf[:], r)
-	eb.text = byte_slice_insert(eb.text, eb.cursor_boffset, buf[:n])
+	eb.Text = byte_slice_insert(eb.Text, eb.cursor_boffset, buf[:n])
 	eb.MoveCursorOneRuneForward()
 }
 
