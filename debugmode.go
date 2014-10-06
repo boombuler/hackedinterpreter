@@ -203,7 +203,9 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 
 func startDebugCode(c *runtime.Callable, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
-	ctx.SetInput(input)
+	if input != nil {
+		ctx.SetInput(input)
+	}
 	bpEv := make(chan *runtime.BreakEvent)
 	valRes := make(chan runtime.Value)
 	errRes := make(chan error)
