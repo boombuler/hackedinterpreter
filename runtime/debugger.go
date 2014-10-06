@@ -33,6 +33,8 @@ type Debugger struct {
 	mode DebuggerExecutionMode
 
 	breakEventChan chan<- *BreakEvent
+	memReadBPs     map[string]bool
+	memWriteBPs    map[string]bool
 	codeBPs        map[*token.Token]bool // change bool to something else if conditional BPs should be impl.
 }
 
@@ -45,6 +47,8 @@ func AttachDebugger(c *Context, be chan<- *BreakEvent) (*Debugger, error) {
 		breakEventChan: be,
 		mode:           Step,
 		codeBPs:        make(map[*token.Token]bool),
+		memReadBPs:     make(map[string]bool),
+		memWriteBPs:    make(map[string]bool),
 	}
 	c.executor = d.exec
 	return d, nil
@@ -56,6 +60,24 @@ func (d *Debugger) ToggleCodeBreakPoint(t *token.Token) {
 		delete(d.codeBPs, t)
 	} else {
 		d.codeBPs[t] = true
+	}
+}
+
+func (d *Debugger) ToggleMemReadBreakPoint(varName string) {
+	_, ok := d.memReadBPs[varName]
+	if ok {
+		delete(d.memReadBPs, varName)
+	} else {
+		d.memReadBPs[varName] = true
+	}
+}
+
+func (d *Debugger) ToggleMemWriteBreakPoint(varName string) {
+	_, ok := d.memWriteBPs[varName]
+	if ok {
+		delete(d.memWriteBPs, varName)
+	} else {
+		d.memWriteBPs[varName] = true
 	}
 }
 
@@ -82,6 +104,15 @@ func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {
 	if c.Token != nil && d.mode != eval {
 		d.curCtx = ctx
 		d.curCallable = c
+		// Memory Breakpoints
+		gvi, ok := c.info.(*getVarInfo)
+		if ok && d.memReadBPs[gvi.VarName] {
+			d.mode = Step
+		}
+		svi, ok := c.info.(*setVarInfo)
+		if ok && d.memWriteBPs[svi.VarName] {
+			d.mode = Step
+		}
 
 		// Check here for BreakPoint etc
 		if d.mode == Step || d.codeBPs[c.Token] {

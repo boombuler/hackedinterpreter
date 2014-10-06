@@ -68,7 +68,7 @@ func NewIfThenElse(cond, ifCode, elseCode *Callable, p *token.Token) *Callable {
 }
 
 func NewForEach(vn string, lst, code *Callable, p *token.Token) *Callable {
-	return newCallable(p, func(c *Context) (Value, error) {
+	callable := newCallable(p, func(c *Context) (Value, error) {
 		list, err := callList(lst, c)
 		if err != nil {
 			return list, err
@@ -86,4 +86,6 @@ func NewForEach(vn string, lst, code *Callable, p *token.Token) *Callable {
 		}
 		return res, nil
 	}, lst, code)
+	callable.info = &setVarInfo{vn}
+	return callable
 }

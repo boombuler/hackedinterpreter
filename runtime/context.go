@@ -100,18 +100,28 @@ func NewReturn(res *Callable, p *token.Token) *Callable {
 	}, res)
 }
 
+type getVarInfo struct {
+	VarName string
+}
+
 func NewGetVariable(vn string, p *token.Token) *Callable {
-	return newCallable(p, func(c *Context) (Value, error) {
+	callable := newCallable(p, func(c *Context) (Value, error) {
 		val, ok := c.variables[vn]
 		if ok {
 			return val, nil
 		}
 		return int(0), nil
 	})
+	callable.info = &getVarInfo{vn}
+	return callable
+}
+
+type setVarInfo struct {
+	VarName string
 }
 
 func NewSetVariable(vn string, value *Callable, p *token.Token) *Callable {
-	return newCallable(p, func(c *Context) (Value, error) {
+	callable := newCallable(p, func(c *Context) (Value, error) {
 		val, err := value.Call(c)
 		if err != nil {
 			return nil, err
@@ -119,4 +129,6 @@ func NewSetVariable(vn string, value *Callable, p *token.Token) *Callable {
 		c.variables[vn] = val
 		return val, nil
 	}, value)
+	callable.info = &setVarInfo{vn}
+	return callable
 }

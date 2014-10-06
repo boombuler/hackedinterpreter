@@ -10,10 +10,11 @@ type Callable struct {
 	*token.Token
 	fn       func(c *Context) (Value, error)
 	Children []*Callable
+	info     interface{}
 }
 
 func newCallable(token *token.Token, fn func(c *Context) (Value, error), children ...*Callable) *Callable {
-	return &Callable{token, fn, children}
+	return &Callable{token, fn, children, nil}
 }
 
 func (cf *Callable) Call(c *Context) (Value, error) {
