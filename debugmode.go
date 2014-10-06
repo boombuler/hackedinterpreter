@@ -3,6 +3,7 @@ package main
 import (
 	"./lexer"
 	"./runtime"
+	"./token"
 	"fmt"
 	"github.com/nsf/termbox-go"
 	"os"
@@ -119,7 +120,7 @@ func invalidateOffset(curVal, maxVal, space int) int {
 	return curVal
 }
 
-func (ws *dbgWorkspace) render() {
+func (ws *dbgWorkspace) render(scrollToToken *token.Token) {
 	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
 	w, h := termbox.Size()
 	varWndSize := w / 3
@@ -130,9 +131,29 @@ func (ws *dbgWorkspace) render() {
 		ws.commandEB.Draw(0, h, w-varWndSize, 1)
 
 	}
+
+	if scrollToToken != nil {
+		if scrollToToken.Line <= ws.lineOffset {
+			ws.lineOffset = scrollToToken.Line - 1
+		}
+		if scrollToToken.Line > ws.lineOffset+h {
+			ws.lineOffset = scrollToToken.Line - h
+		}
+	}
+
 	ws.lineOffset = invalidateOffset(ws.lineOffset, ws.maxLine, h)
 	lineNoWidth := ws.renderLineNos(0, 0, h) + 1
 	codeWidth := w - varWndSize - lineNoWidth
+
+	if scrollToToken != nil {
+		if scrollToToken.Column <= ws.columnOffset {
+			ws.columnOffset = scrollToToken.Column - 1
+		}
+		if scrollToToken.Column > ws.columnOffset+codeWidth {
+			ws.columnOffset = scrollToToken.Column - codeWidth
+		}
+	}
+
 	ws.columnOffset = invalidateOffset(ws.columnOffset, ws.maxCol, codeWidth)
 
 	ws.renderCode(lineNoWidth, 0, codeWidth, h)
@@ -262,9 +283,10 @@ func RunDebugger(fileName string, input runtime.Value) {
 		maxCol:       maxCol,
 	}
 
+	var stt *token.Token = nil
 	for {
-		ws.render()
-
+		ws.render(stt)
+		stt = nil
 		select {
 		case val := <-valueChan:
 			closeTerm()
@@ -282,6 +304,7 @@ func RunDebugger(fileName string, input runtime.Value) {
 			}
 		case be := <-breakChan:
 			ws.curBreakEv = be
+			stt = ws.curBreakEv.Token
 		}
 	}
 }
