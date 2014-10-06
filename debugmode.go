@@ -18,23 +18,17 @@ type dbgWorkspace struct {
 	columnOffset int
 	lineOffset   int
 	maxLine      int
+	maxCol       int
 }
 
 func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
-	lastLine := 0
-	lineTokenCnt := 0
-
 	for _, t := range ws.lexer.Tokens {
-		if lastLine != t.Line {
-			lineTokenCnt = 0
-			lastLine = t.Line
-		}
 		if t.Line <= ws.lineOffset || t.Line > h+ws.lineOffset {
 			continue
 		}
 
 		bgColor := termbox.ColorBlack
-		fgColor := termbox.ColorWhite
+		fgColor := getForeground(t)
 		if ws.dbg.IsCodeBreakPoint(t) {
 			bgColor = termbox.ColorRed
 		}
@@ -44,16 +38,18 @@ func (ws *dbgWorkspace) renderCode(x, y, w, h int) {
 		}
 
 		text := string(t.Lit)
-		c := t.Column - len(text) - lineTokenCnt - ws.columnOffset
-		l := t.Line - ws.lineOffset
-		lineTokenCnt += 1
-		for _, r := range text {
-			if c <= ws.columnOffset || c > w+ws.columnOffset {
+		c := t.Column - len(text) - ws.columnOffset
+		l := t.Line - ws.lineOffset - 1
+		if c < 0 {
+			if len(text) <= -c {
 				continue
+			} else {
+				text = text[-c:]
+				c = 0
 			}
-			termbox.SetCell(c-1+x, l-1+y, r, fgColor, bgColor)
-			c += 1
 		}
+
+		textOut(text, c+x, l+y, w-c, fgColor, bgColor)
 	}
 }
 
@@ -95,10 +91,38 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 	}
 }
 
+func (ws *dbgWorkspace) renderLineNos(x, y, h int) int {
+	lineNoLen := len(fmt.Sprintf("%d", ws.maxLine))
+	lineNo := ws.lineOffset + 1
+	format := fmt.Sprintf("%%%dd", lineNoLen)
+	for ; y < h; y++ {
+		textOut(fmt.Sprintf(format, lineNo), x, y, lineNoLen, termbox.ColorYellow, termbox.ColorBlack)
+		lineNo += 1
+		if lineNo > ws.maxLine {
+			break
+		}
+	}
+	return lineNoLen
+}
+
+func invalidateOffset(curVal, maxVal, space int) int {
+	if curVal < 0 {
+		return 0
+	}
+	maxOffset := maxVal - space
+	if curVal > maxOffset {
+		if maxOffset < 0 {
+			return 0
+		}
+		return maxOffset
+	}
+	return curVal
+}
+
 func (ws *dbgWorkspace) render() {
 	termbox.Clear(termbox.ColorDefault, termbox.ColorDefault)
 	w, h := termbox.Size()
-	varWndSize := w / 4
+	varWndSize := w / 3
 
 	ws.renderVars(w-varWndSize, 0, varWndSize, h)
 	if ws.commandEB != nil {
@@ -106,8 +130,12 @@ func (ws *dbgWorkspace) render() {
 		ws.commandEB.Draw(0, h, w-varWndSize, 1)
 
 	}
-	ws.renderCode(0, 0, w-varWndSize, h)
+	ws.lineOffset = invalidateOffset(ws.lineOffset, ws.maxLine, h)
+	lineNoWidth := ws.renderLineNos(0, 0, h) + 1
+	codeWidth := w - varWndSize - lineNoWidth
+	ws.columnOffset = invalidateOffset(ws.columnOffset, ws.maxCol, codeWidth)
 
+	ws.renderCode(lineNoWidth, 0, codeWidth, h)
 	termbox.Flush()
 }
 
@@ -121,13 +149,13 @@ func (ws *dbgWorkspace) handleKey(ev termbox.Event) {
 	} else {
 		switch ev.Key {
 		case termbox.KeyArrowDown:
-			if ws.lineOffset < ws.maxLine-1 {
-				ws.lineOffset += 1
-			}
+			ws.lineOffset += 1
 		case termbox.KeyArrowUp:
-			if ws.lineOffset > 0 {
-				ws.lineOffset -= 1
-			}
+			ws.lineOffset -= 1
+		case termbox.KeyArrowRight:
+			ws.columnOffset += 1
+		case termbox.KeyArrowLeft:
+			ws.columnOffset -= 1
 		case termbox.KeyEnter:
 			ws.commandEB = &EditBox{
 				Foreground: termbox.ColorWhite,
@@ -196,9 +224,14 @@ func RunDebugger(fileName string, input runtime.Value) {
 	defer closeTerm()
 
 	maxLine := 0
+	maxCol := 0
 	for _, t := range lex.Tokens {
 		if t.Line > maxLine {
 			maxLine = t.Line
+		}
+		mc := t.Column + len(t.Lit)
+		if mc > maxCol {
+			maxCol = mc
 		}
 	}
 
@@ -226,6 +259,7 @@ func RunDebugger(fileName string, input runtime.Value) {
 		columnOffset: 0,
 		lineOffset:   0,
 		maxLine:      maxLine,
+		maxCol:       maxCol,
 	}
 
 	for {

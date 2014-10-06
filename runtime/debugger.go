@@ -10,6 +10,7 @@ type DebuggerExecutionMode byte
 const (
 	Continue DebuggerExecutionMode = iota
 	Step
+	eval
 )
 
 type BreakEvent struct {
@@ -70,8 +71,15 @@ func (d *Debugger) GetVars() map[string]Value {
 	return map[string]Value{}
 }
 
+func (d *Debugger) Eval(c *Callable) {
+	orgMode := d.mode
+	d.mode = eval
+	defer func() { d.mode = orgMode }()
+	c.Call(d.curCtx)
+}
+
 func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {
-	if c.Token != nil {
+	if c.Token != nil && d.mode != eval {
 		d.curCtx = ctx
 		d.curCallable = c
 

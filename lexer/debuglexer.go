@@ -46,25 +46,12 @@ func (this *DebugLexer) Scan() (tok *token.Token) {
 	start, end := this.pos, 0
 	tok.Type = token.INVALID
 	state, rune1, size := 0, rune(-1), 0
-	lastLine := this.line
-	lastCol := this.column
 	for state != -1 {
 		if this.pos >= len(this.src) {
 			rune1 = -1
 		} else {
 			rune1, size = utf8.DecodeRune(this.src[this.pos:])
 			this.pos += size
-		}
-		switch rune1 {
-		case '\n':
-			this.line++
-			this.column = 1
-		case '\r':
-			this.column = 1
-		case '\t':
-			this.column += 4
-		default:
-			this.column++
 		}
 
 		// Production start
@@ -86,8 +73,17 @@ func (this *DebugLexer) Scan() (tok *token.Token) {
 					tok.Type = token.EOF
 				}
 			}
-			lastLine = this.line
-			lastCol = this.column
+			switch rune1 {
+			case '\n':
+				this.line++
+				this.column = 1
+			case '\r':
+				this.column = 1
+			case '\t':
+				this.column += 4
+			default:
+				this.column++
+			}
 		} else {
 			if tok.Type == token.INVALID {
 				end = this.pos
@@ -102,8 +98,8 @@ func (this *DebugLexer) Scan() (tok *token.Token) {
 	}
 
 	tok.Pos.Offset = start
-	tok.Pos.Column = lastCol
-	tok.Pos.Line = lastLine
+	tok.Pos.Column = this.column
+	tok.Pos.Line = this.line
 	this.Tokens = append(this.Tokens, tok)
 	return
 }

@@ -1,7 +1,4 @@
 * Debugging in Game Mode
 * Memory Breakpoints (break on read / write var_a)
-* UI
-  - Set Breakpoints
-  - Set Variable
-  - Syntax Highlighting
 * Documentation
+* Bring current position into view (after step / continue)
