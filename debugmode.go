@@ -210,7 +210,9 @@ func (ws *dbgWorkspace) Input(ev termbox.Event) {
 			case 'c':
 				if be := ws.curBreakEv; be != nil {
 					ws.curBreakEv = nil
-					ws.gameWnd.Activate()
+					if ws.gameWnd != nil {
+						ws.gameWnd.Activate()
+					}
 					be.Continue <- runtime.Continue
 				}
 			}
