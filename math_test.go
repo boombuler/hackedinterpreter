@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_Equals(t *testing.T) {
+func Test_Compare(t *testing.T) {
 	tests := map[string]runtime.Value{
 		"var_a == var_b":                               true,
 		"1 == 2":                                       false,
@@ -13,13 +13,15 @@ func Test_Equals(t *testing.T) {
 		"[1, 1] == [1]":                                false,
 		"var_a == [].length":                           true,
 		"var_a = [[1,1], [1,1]]; var_a[0] == var_a[1]": true,
+		"1 != 2": true,
+		"3 > 1":  true,
+		"3 < 7":  true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
 		if err != nil {
 			t.Error(err)
-		}
-		if value != val {
+		} else if value != val {
 			t.Errorf("Failed got %v expected %v\nTest:%v", value, val, code)
 		}
 	}
@@ -27,15 +29,15 @@ func Test_Equals(t *testing.T) {
 
 func Test_OperatorPrecedence(t *testing.T) {
 	tests := map[string]runtime.Value{
-		"1 + 2 * 2": 5,
-		"1 + 2 > 2": true,
+		"1 + 2 * 2":   5,
+		"(1 + 2) * 2": 6,
+		"1 + 2 > 2":   true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
 		if err != nil {
 			t.Error(err)
-		}
-		if value != val {
+		} else if value != val {
 			t.Errorf("Failed got %v expected %v\nTest:%v", value, val, code)
 		}
 	}
