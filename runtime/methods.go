@@ -15,9 +15,6 @@ type methodSig struct {
 }
 
 var methods map[string]methodSig = map[string]methodSig{
-	"is_list": {ANY, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
-		return GetType(sender) == LIST, nil
-	}},
 	"length": {LIST, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
 		return (sender.(*List)).Len(), nil
 	}},

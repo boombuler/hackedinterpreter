@@ -10,14 +10,14 @@ func Test_NegativeInt(t *testing.T) {
 		"var_a = -3":                    -3,
 		"var_a = 3; return -var_a":      -3,
 		"var_a = [3]; return -var_a[0]": -3,
-		"5*-3":         -15,
-		"-3*5":         -15,
-		"4-7":          -3,
-		"-(-3)":        3,
-		"-[3][0]":      -3,
-		"-abs(-3)":     -3,
-		"(-1).is_list": false,
-		"1--1":         2,
+		"5*-3":     -15,
+		"-3*5":     -15,
+		"4-7":      -3,
+		"-(-3)":    3,
+		"-[3][0]":  -3,
+		"-abs(-3)": -3,
+		"(-1)":     -1,
+		"1--1":     2,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -31,7 +31,7 @@ func Test_NegativeInt(t *testing.T) {
 
 func Test_NegativeIntFail(t *testing.T) {
 	tests := []string{
-		"-[1]", "1---1", "-true", "-1.is_list",
+		"-[1]", "1---1", "-true",
 	}
 	for _, code := range tests {
 		if val, err := execString(code, runtime.DefaultTimeout); err == nil {
@@ -48,7 +48,6 @@ func Test_NegativeBool(t *testing.T) {
 		"true == !false":                   true,
 		"!(1 < 2)":                         false,
 		"!(!true)":                         true,
-		"!1.is_list":                       true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)

@@ -130,6 +130,9 @@ var buildInFunctions map[string]buildInFnSig = map[string]buildInFnSig{
 		d := time.Now().Sub(startTime)
 		return int(d.Seconds() * 1000), nil
 	}},
+	"is_list": {[]ValueType{ANY}, func(params []Value, c *Context) (Value, error) {
+		return GetType(params[0]) == LIST, nil
+	}},
 }
 
 var startTime time.Time

@@ -49,7 +49,9 @@ func Test_BuildInFuncs(t *testing.T) {
 		"pow(2,3)":         8,
 		"new_list(2)[1]":   0,
 		"random(1) == 0":   true,
-		"time().is_list":   false,
+		"is_list(time())":  false,
+		"is_list(1)":       false,
+		"is_list([1])":     true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -64,8 +66,6 @@ func Test_BuildInFuncs(t *testing.T) {
 
 func Test_Methods(t *testing.T) {
 	tests := map[string]runtime.Value{
-		"1.is_list":                                                                               false,
-		"[1].is_list":                                                                             true,
 		"[1,2,3].length":                                                                          3,
 		"[].push(1) == [1]":                                                                       true,
 		"[1].pop":                                                                                 1,
