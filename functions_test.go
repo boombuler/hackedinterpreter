@@ -37,7 +37,7 @@ func Test_CustomFunctions(t *testing.T) {
 		t.Error(err)
 	}
 	if value != 4 {
-		t.Errorf("Custom Functions Test failed got %v expected %v", value, 7)
+		t.Errorf("Custom Functions Test failed got %v expected %v", value, 4)
 	}
 }
 
