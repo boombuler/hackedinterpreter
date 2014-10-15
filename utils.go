@@ -36,7 +36,7 @@ func CheckParseError(res interface{}, err error) (*runtime.Callable, error) {
 }
 
 func fromString(code string) (*runtime.Callable, error) {
-	lex := lexer.NewLexer([]byte(code))
+	lex := lexer.NewDebugLexer([]byte(code))
 	p := parser.NewParser()
 	res, err := CheckParseError(p.Parse(lex))
 

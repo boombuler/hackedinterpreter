@@ -17,6 +17,8 @@ type DebugLexer struct {
 }
 
 func NewDebugLexer(src []byte) *DebugLexer {
+	// Append a line break at the end to parse line comments at the end of the text.
+	src = append(src, 10)
 	lexer := &DebugLexer{
 		src:    src,
 		pos:    0,
