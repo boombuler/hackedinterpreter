@@ -43,9 +43,14 @@ Object           : Callable_Object                                      <<$0, ni
                  | Method_Call                                          <<$0, nil>>
                  ;
 
-Mult_Expr        : Mult_Expr "*" Object                                 <<_rt.NewMul(c($0), c($2), p($1)), nil>>
-                 | Mult_Expr "/" Object                                 <<_rt.NewDiv(c($0), c($2), p($1)), nil>>
-                 | Object                                               <<$0, nil>>
+Unary_Expr      : Object                                                <<$0, nil>>
+                | "-" Object                                            <<_rt.NewNegInt(c($1), p($0)), nil>>
+                | "!" Object                                            <<_rt.NewNegBool(c($1), p($0)), nil>>
+                ;
+
+Mult_Expr        : Mult_Expr "*" Unary_Expr                                 <<_rt.NewMul(c($0), c($2), p($1)), nil>>
+                 | Mult_Expr "/" Unary_Expr                                 <<_rt.NewDiv(c($0), c($2), p($1)), nil>>
+                 | Unary_Expr                                               <<$0, nil>>
                  ;
 
 Add_Expr         : Add_Expr "+" Mult_Expr                               <<_rt.NewAdd(c($0), c($2), p($1)), nil>>
