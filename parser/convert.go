@@ -6,8 +6,8 @@ import (
 	"../token"
 )
 
-func c(at Attrib) *runtime.Callable {
-	rt, ok := at.(*runtime.Callable)
+func c(at Attrib) runtime.Callable {
+	rt, ok := at.(runtime.Callable)
 	if !ok {
 		return nil
 	}
@@ -28,4 +28,12 @@ func str(at Attrib) string {
 		return ""
 	}
 	return string(tkn.Lit)
+}
+
+func assignable(at Attrib) runtime.Assignable {
+	ass, ok := at.(runtime.Assignable)
+	if !ok {
+		return nil
+	}
+	return ass
 }

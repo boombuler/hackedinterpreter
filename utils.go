@@ -11,11 +11,11 @@ import (
 	"time"
 )
 
-func CheckParseError(res interface{}, err error) (*runtime.Callable, error) {
+func CheckParseError(res interface{}, err error) (runtime.Callable, error) {
 	if err != nil {
 		return nil, err
 	}
-	if call, isCallable := res.(*runtime.Callable); isCallable {
+	if call, isCallable := res.(runtime.Callable); isCallable {
 		return call, nil
 	}
 
@@ -35,7 +35,7 @@ func CheckParseError(res interface{}, err error) (*runtime.Callable, error) {
 	panic(fmt.Sprintf("Unknown parse result: %v", res))
 }
 
-func fromString(code string) (*runtime.Callable, error) {
+func fromString(code string) (runtime.Callable, error) {
 	lex := lexer.NewDebugLexer([]byte(code))
 	p := parser.NewParser()
 	res, err := CheckParseError(p.Parse(lex))
@@ -47,7 +47,7 @@ func fromString(code string) (*runtime.Callable, error) {
 	}
 }
 
-func fromFile(fileName string) (*runtime.Callable, *lexer.DebugLexer, error) {
+func fromFile(fileName string) (runtime.Callable, *lexer.DebugLexer, error) {
 	lex, err := lexer.NewDebugLexerFile(fileName)
 	if err != nil {
 		return nil, nil, err
@@ -70,7 +70,7 @@ func execString(code string, timeOut time.Duration) (runtime.Value, error) {
 	return exec(call, timeOut)
 }
 
-func exec(c *runtime.Callable, timeOut time.Duration) (runtime.Value, error) {
+func exec(c runtime.Callable, timeOut time.Duration) (runtime.Value, error) {
 	ctx := runtime.NewContext(timeOut)
-	return c.Call(ctx)
+	return ctx.Call(c)
 }

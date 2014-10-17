@@ -111,15 +111,15 @@ func (l *List) Remove(idx int) error {
 	return nil
 }
 
-func NewEmptyList(p *token.Token) *Callable {
+func NewEmptyList(p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		return newList(0), nil
 	})
 }
 
-func NewListValues(values *Callable, p *token.Token) *Callable {
+func NewListValues(values Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		valsV, err := values.Call(c)
+		valsV, err := c.Call(values)
 		if err != nil {
 			return nil, err
 		}
@@ -131,43 +131,4 @@ func NewListValues(values *Callable, p *token.Token) *Callable {
 
 		return lst, nil
 	}, values)
-}
-
-func NewGetListItem(list, index *Callable, p *token.Token) *Callable {
-	return newCallable(p, func(c *Context) (Value, error) {
-		lVal, err := callList(list, c)
-		if err != nil {
-			return nil, err
-		}
-		idx, err := callInt(index, c)
-		if err != nil {
-			return nil, err
-		}
-		if idx < 0 || idx >= lVal.Len() {
-			return nil, errors.New("Index out of range (" + ToString(idx) + ") -> " + ToString(lVal))
-		}
-		return lVal.content[idx], nil
-	}, index)
-}
-
-func NewSetListItem(list, index, value *Callable, p *token.Token) *Callable {
-	return newCallable(p, func(c *Context) (Value, error) {
-		lVal, err := callList(list, c)
-		if err != nil {
-			return nil, err
-		}
-		idx, err := callInt(index, c)
-		if err != nil {
-			return nil, err
-		}
-		val, err := value.Call(c)
-		if err != nil {
-			return nil, err
-		}
-		if idx < 0 || idx >= lVal.Len() {
-			return nil, errors.New("Index out of range")
-		}
-		lVal.content[idx] = val
-		return val, nil
-	}, list, index, value)
 }

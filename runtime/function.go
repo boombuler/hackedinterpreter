@@ -189,10 +189,10 @@ func (f *Function) Call(values []Value, c *Context) (Value, error) {
 	for i, val := range values {
 		cc.variables[f.paramNames[i]] = val
 	}
-	return f.body.Call(cc)
+	return cc.Call(f.body)
 }
 
-func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, error) {
+func NewCallFunction(fn string, values Callable, p *token.Token) (Callable, error) {
 	var sig *buildInFnSig = nil
 
 	psig, ok := buildInFunctions[fn]
@@ -204,7 +204,7 @@ func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, er
 	return newCallable(p, func(c *Context) (Value, error) {
 		var vals = []Value{}
 		if values != nil {
-			valsV, err := values.Call(c)
+			valsV, err := c.Call(values)
 			if err != nil {
 				return nil, err
 			}
@@ -227,7 +227,7 @@ func NewCallFunction(fn string, values *Callable, p *token.Token) (*Callable, er
 	}, values), nil
 }
 
-func NewCustFuncDev(name string, params []string, code *Callable, p *token.Token) (*Callable, error) {
+func NewCustFuncDev(name string, params []string, code Callable, p *token.Token) (Callable, error) {
 	idx := getCustFnIdx(name)
 
 	if idx < 0 {
@@ -246,7 +246,7 @@ func NewCustFuncDev(name string, params []string, code *Callable, p *token.Token
 
 type Function struct {
 	paramNames []string
-	body       *Callable
+	body       Callable
 }
 
 func NewAddToParamDef(params []string, value string) []string {
@@ -257,7 +257,7 @@ func NewParamDef(value string) []string {
 	return []string{value}
 }
 
-func NewLambdaDef(params []string, code *Callable, p *token.Token) *Callable {
+func NewLambdaDef(params []string, code Callable, p *token.Token) Callable {
 	lambda := &Function{
 		paramNames: params,
 		body:       code,
@@ -267,7 +267,7 @@ func NewLambdaDef(params []string, code *Callable, p *token.Token) *Callable {
 	}, code)
 }
 
-func NewGetCustomFunction(cfName string, p *token.Token) (*Callable, error) {
+func NewGetCustomFunction(cfName string, p *token.Token) (Callable, error) {
 	fn_idx := getCustFnIdx(cfName)
 	if fn_idx < 0 {
 		return nil, fmt.Errorf("Unknown custom function %v", cfName)
@@ -286,9 +286,9 @@ func NewGetCustomFunction(cfName string, p *token.Token) (*Callable, error) {
 	}), nil
 }
 
-func NewCallLambda(fn, values *Callable, p *token.Token) *Callable {
+func NewCallLambda(fn, values Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		ff, err := fn.Call(c)
+		ff, err := c.Call(fn)
 		if err != nil {
 			return ff, err
 		}
@@ -297,7 +297,7 @@ func NewCallLambda(fn, values *Callable, p *token.Token) *Callable {
 			return ff, errors.New("Function expected!")
 		}
 
-		valsV, err := values.Call(c)
+		valsV, err := c.Call(values)
 		if err != nil {
 			return nil, err
 		}
@@ -311,6 +311,6 @@ func NewCallLambda(fn, values *Callable, p *token.Token) *Callable {
 		for i, val := range vals {
 			cc.variables[f.paramNames[i]] = val
 		}
-		return f.body.Call(cc)
+		return cc.Call(f.body)
 	}, values)
 }

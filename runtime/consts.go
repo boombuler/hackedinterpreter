@@ -5,13 +5,13 @@ import (
 	"strconv"
 )
 
-func NewConstBool(val bool, p *token.Token) (*Callable, error) {
+func NewConstBool(val bool, p *token.Token) (Callable, error) {
 	return newCallable(p, func(c *Context) (Value, error) {
 		return val, nil
 	}), nil
 }
 
-func NewConstInt(text string, p *token.Token) (*Callable, error) {
+func NewConstInt(text string, p *token.Token) (Callable, error) {
 	i, err := strconv.Atoi(text)
 	if err != nil {
 		return nil, err

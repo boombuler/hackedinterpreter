@@ -32,8 +32,8 @@ func GetType(v Value) ValueType {
 	}
 }
 
-func callList(c *Callable, ctx *Context) (*List, error) {
-	val, err := c.Call(ctx)
+func callList(c Callable, ctx *Context) (*List, error) {
+	val, err := ctx.Call(c)
 	if err != nil {
 		return nil, err
 	}
@@ -44,8 +44,8 @@ func callList(c *Callable, ctx *Context) (*List, error) {
 	return list, nil
 }
 
-func callInt(c *Callable, ctx *Context) (int, error) {
-	val, err := c.Call(ctx)
+func callInt(c Callable, ctx *Context) (int, error) {
+	val, err := ctx.Call(c)
 	if err != nil {
 		return 0, err
 	}
@@ -56,8 +56,8 @@ func callInt(c *Callable, ctx *Context) (int, error) {
 	return iv, nil
 }
 
-func callBool(c *Callable, ctx *Context) (bool, error) {
-	val, err := c.Call(ctx)
+func callBool(c Callable, ctx *Context) (bool, error) {
+	val, err := ctx.Call(c)
 	if err != nil {
 		return false, err
 	}
@@ -68,15 +68,15 @@ func callBool(c *Callable, ctx *Context) (bool, error) {
 	return bv, nil
 }
 
-func NewAddToValues(valSlice, value *Callable) *Callable {
+func NewAddToValues(valSlice, value Callable) Callable {
 	return newCallable(nil, func(c *Context) (Value, error) {
-		sliceV, err := valSlice.Call(c)
+		sliceV, err := c.Call(valSlice)
 		if err != nil {
 			return nil, err
 		}
 		slice := sliceV.([]Value)
 
-		val, err := value.Call(c)
+		val, err := c.Call(value)
 		if err != nil {
 			return nil, err
 		}
@@ -85,9 +85,9 @@ func NewAddToValues(valSlice, value *Callable) *Callable {
 	}, valSlice, value)
 }
 
-func NewValues(value *Callable) *Callable {
+func NewValues(value Callable) Callable {
 	return newCallable(nil, func(c *Context) (Value, error) {
-		val, err := value.Call(c)
+		val, err := c.Call(value)
 		if err != nil {
 			return nil, err
 		}

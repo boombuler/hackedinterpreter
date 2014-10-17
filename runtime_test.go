@@ -7,12 +7,17 @@ import (
 )
 
 func Test_VarIsZeroByDefault(t *testing.T) {
-	value, err := execString("var_a", runtime.DefaultTimeout)
-	if err != nil {
-		t.Error(err)
+	tests := map[string]runtime.Value{
+		"var_a": 0,
+		"input": 0,
 	}
-	if value != 0 {
-		t.Errorf("Failed got %v expected %v", value, 0)
+	for code, val := range tests {
+		value, err := execString(code, runtime.DefaultTimeout)
+		if err != nil {
+			t.Errorf("%v\nCode: %v", err.Error(), code)
+		} else if !runtime.Equals(value, val) {
+			t.Errorf("Failed got %v expected %v\nTest:%v", value, val, code)
+		}
 	}
 }
 

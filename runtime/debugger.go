@@ -18,17 +18,17 @@ type BreakEvent struct {
 	Token    *token.Token
 }
 
-type executor func(c *Callable, ctx *Context) (Value, error)
+type executor func(c Callable, ctx *Context) (Value, error)
 
 // A simple executor function which can be replaced by a Debugger Fn
-func simpleExecutor(c *Callable, ctx *Context) (Value, error) {
-	return c.fn(ctx)
+func simpleExecutor(c Callable, ctx *Context) (Value, error) {
+	return c.invoke(ctx)
 }
 
 type Debugger struct {
 	curCtx      *Context
 	mainCtx     *Context
-	curCallable *Callable
+	curCallable Callable
 
 	mode DebuggerExecutionMode
 
@@ -102,36 +102,37 @@ func (d *Debugger) GetVars() map[string]Value {
 	return map[string]Value{}
 }
 
-func (d *Debugger) Eval(c *Callable) {
+func (d *Debugger) Eval(c Callable) {
 	orgMode := d.mode
 	d.mode = eval
 	defer func() { d.mode = orgMode }()
-	c.Call(d.curCtx)
+	d.curCtx.Call(c)
 }
 
-func (d *Debugger) exec(c *Callable, ctx *Context) (Value, error) {
-	if c.Token != nil && d.mode != eval {
+func (d *Debugger) exec(c Callable, ctx *Context) (Value, error) {
+	meta := c.Meta()
+	if meta != nil && meta.Token != nil && d.mode != eval {
 		d.curCtx = ctx
 		d.curCallable = c
 		// Memory Breakpoints
-		gvi, ok := c.info.(*getVarInfo)
+		gvi, ok := meta.info.(*getVarInfo)
 		if ok && d.memReadBPs[gvi.VarName] {
 			d.mode = Step
 		}
-		svi, ok := c.info.(*setVarInfo)
+		svi, ok := meta.info.(*setVarInfo)
 		if ok && d.memWriteBPs[svi.VarName] {
 			d.mode = Step
 		}
 
 		// Check here for BreakPoint etc
-		if d.mode == Step || d.codeBPs[c.Token] {
+		if d.mode == Step || d.codeBPs[meta.Token] {
 			// We reached a BP...
 			if d.breakEventChan != nil {
 				res := make(chan DebuggerExecutionMode)
-				d.breakEventChan <- &BreakEvent{res, c.Token}
+				d.breakEventChan <- &BreakEvent{res, meta.Token}
 				d.mode = <-res
 			}
 		}
 	}
-	return c.fn(ctx)
+	return c.invoke(ctx)
 }

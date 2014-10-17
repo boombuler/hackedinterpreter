@@ -55,12 +55,34 @@ func (c *Context) SetInput(value Value) {
 	c.variables["input"] = value
 }
 
-func (ctx *Context) exec(c *Callable) (Value, error) {
+func (ctx *Context) Call(c Callable) (Value, error) {
+	if ctx.err != nil || ctx.result != nil {
+		return ctx.result, ctx.err
+	}
 	cc := ctx
 	for cc.parentContext != nil {
 		cc = cc.parentContext
 	}
-	return cc.executor(c, ctx)
+
+	val, err := cc.executor(c, ctx)
+
+	if err != nil {
+		re, ok := err.(*RuntimeError)
+		meta := c.Meta()
+		if ok {
+			if meta.Token != nil {
+				re.CallStack = append(re.CallStack, &meta.Pos)
+			}
+			return nil, re
+		} else {
+			return nil, &RuntimeError{
+				Message:   err.Error(),
+				Position:  &meta.Pos,
+				CallStack: make([]*token.Pos, 0),
+			}
+		}
+	}
+	return val, nil
 }
 
 func (c *Context) ui() UIInterface {
@@ -93,42 +115,9 @@ func (c *Context) forceExit() bool {
 	}
 }
 
-func NewReturn(res *Callable, p *token.Token) *Callable {
+func NewReturn(res Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		c.result, c.err = res.Call(c)
+		c.result, c.err = c.Call(res)
 		return c.result, c.err
 	}, res)
-}
-
-type getVarInfo struct {
-	VarName string
-}
-
-func NewGetVariable(vn string, p *token.Token) *Callable {
-	callable := newCallable(p, func(c *Context) (Value, error) {
-		val, ok := c.variables[vn]
-		if ok {
-			return val, nil
-		}
-		return int(0), nil
-	})
-	callable.info = &getVarInfo{vn}
-	return callable
-}
-
-type setVarInfo struct {
-	VarName string
-}
-
-func NewSetVariable(vn string, value *Callable, p *token.Token) *Callable {
-	callable := newCallable(p, func(c *Context) (Value, error) {
-		val, err := value.Call(c)
-		if err != nil {
-			return nil, err
-		}
-		c.variables[vn] = val
-		return val, nil
-	}, value)
-	callable.info = &setVarInfo{vn}
-	return callable
 }

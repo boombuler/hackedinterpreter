@@ -4,7 +4,7 @@ import (
 	"../token"
 )
 
-func NewNegInt(value *Callable, p *token.Token) *Callable {
+func NewNegInt(value Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		iv, err := callInt(value, c)
 		if err != nil {
@@ -15,7 +15,7 @@ func NewNegInt(value *Callable, p *token.Token) *Callable {
 	}, value)
 }
 
-func NewNegBool(value *Callable, p *token.Token) *Callable {
+func NewNegBool(value Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		bv, err := callBool(value, c)
 		if err != nil {
@@ -24,4 +24,24 @@ func NewNegBool(value *Callable, p *token.Token) *Callable {
 
 		return !bv, nil
 	}, value)
+}
+
+func NewIncAssignable(a Assignable, p *token.Token) Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
+		iv, err := callInt(a, c)
+		if err != nil {
+			return iv, err
+		}
+		return iv, a.Set(iv+1, c)
+	}, a)
+}
+
+func NewDecAssignable(a Assignable, p *token.Token) Callable {
+	return newCallable(p, func(c *Context) (Value, error) {
+		iv, err := callInt(a, c)
+		if err != nil {
+			return iv, err
+		}
+		return iv, a.Set(iv-1, c)
+	}, a)
 }

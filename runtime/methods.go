@@ -75,14 +75,14 @@ var methods map[string]methodSig = map[string]methodSig{
 	}},
 }
 
-func NewMethodCall(sender *Callable, methodName string, values *Callable, p *token.Token) (*Callable, error) {
+func NewMethodCall(sender Callable, methodName string, values Callable, p *token.Token) (Callable, error) {
 	sig, ok := methods[methodName]
 	if !ok {
 		return nil, fmt.Errorf("Unknown method: %v", methodName)
 	}
 
 	return newCallable(p, func(c *Context) (Value, error) {
-		send, err := sender.Call(c)
+		send, err := c.Call(sender)
 		if err != nil {
 			return send, err
 		}
@@ -93,7 +93,7 @@ func NewMethodCall(sender *Callable, methodName string, values *Callable, p *tok
 
 		var vals = []Value{}
 		if values != nil {
-			valsV, err := values.Call(c)
+			valsV, err := c.Call(values)
 			if err != nil {
 				return nil, err
 			}

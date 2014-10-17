@@ -6,38 +6,33 @@ import (
 	"fmt"
 )
 
-type Callable struct {
+type CallableMetadata struct {
 	*token.Token
-	fn       func(c *Context) (Value, error)
-	Children []*Callable
+	Children []Callable
 	info     interface{}
 }
 
-func newCallable(token *token.Token, fn func(c *Context) (Value, error), children ...*Callable) *Callable {
-	return &Callable{token, fn, children, nil}
+type Callable interface {
+	Meta() *CallableMetadata
+	invoke(c *Context) (Value, error)
 }
 
-func (cf *Callable) Call(c *Context) (Value, error) {
-	if c.err != nil || c.result != nil {
-		return c.result, c.err
-	}
-	val, err := c.exec(cf)
-	if err != nil {
-		re, ok := err.(*RuntimeError)
-		if ok {
-			if cf.Token != nil {
-				re.CallStack = append(re.CallStack, &cf.Pos)
-			}
-			return nil, re
-		} else {
-			return nil, &RuntimeError{
-				Message:   err.Error(),
-				Position:  &cf.Pos,
-				CallStack: make([]*token.Pos, 0),
-			}
-		}
-	}
-	return val, nil
+type callable struct {
+	meta *CallableMetadata
+	fn   func(c *Context) (Value, error)
+}
+
+func newCallable(token *token.Token, fn func(c *Context) (Value, error), children ...Callable) *callable {
+	meta := &CallableMetadata{token, children, nil}
+	return &callable{meta, fn}
+}
+
+func (cf *callable) Meta() *CallableMetadata {
+	return cf.meta
+}
+
+func (cf *callable) invoke(c *Context) (Value, error) {
+	return cf.fn(c)
 }
 
 type RuntimeError struct {

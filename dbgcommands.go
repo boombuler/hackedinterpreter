@@ -7,16 +7,18 @@ import (
 	"strconv"
 )
 
-func iterateExecutableTokens(c *runtime.Callable) <-chan *token.Token {
+func iterateExecutableTokens(c runtime.Callable) <-chan *token.Token {
 	result := make(chan *token.Token)
 	go func() {
-		var itChild func(cc *runtime.Callable)
-		itChild = func(cc *runtime.Callable) {
-			if cc.Children != nil {
-				for _, ccc := range cc.Children {
+		var itChild func(cc runtime.Callable)
+		itChild = func(cc runtime.Callable) {
+			meta := cc.Meta()
+			if meta != nil && meta.Children != nil {
+				for _, ccc := range meta.Children {
 					if ccc != nil {
-						if ccc.Token != nil {
-							result <- ccc.Token
+						ccm := ccc.Meta()
+						if ccm != nil && ccm.Token != nil {
+							result <- ccm.Token
 						}
 						itChild(ccc)
 					}

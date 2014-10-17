@@ -14,7 +14,7 @@ type dbgWorkspace struct {
 	*termwnd.Window
 	lexer   *lexer.DebugLexer
 	dbg     *runtime.Debugger
-	code    *runtime.Callable
+	code    runtime.Callable
 	gameWnd *GameWindow
 
 	commandEB    *termwnd.EditBox
@@ -221,7 +221,7 @@ func (ws *dbgWorkspace) Input(ev termbox.Event) {
 	ws.render(nil)
 }
 
-func startDebugCode(c *runtime.Callable, isGame bool, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error, *GameWindow) {
+func startDebugCode(c runtime.Callable, isGame bool, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error, *GameWindow) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
 	if input != nil {
 		ctx.SetInput(input)
@@ -239,7 +239,7 @@ func startDebugCode(c *runtime.Callable, isGame bool, input runtime.Value) (*run
 			defer close(bpEv)
 			defer close(valRes)
 			defer close(errRes)
-			val, err := c.Call(ctx)
+			val, err := ctx.Call(c)
 			if err != nil {
 				errRes <- err
 			}
@@ -250,7 +250,7 @@ func startDebugCode(c *runtime.Callable, isGame bool, input runtime.Value) (*run
 	}
 }
 
-func RunDebugger(code *runtime.Callable, lex *lexer.DebugLexer, isGame bool, input runtime.Value) {
+func RunDebugger(code runtime.Callable, lex *lexer.DebugLexer, isGame bool, input runtime.Value) {
 	maxLine := 0
 	maxCol := 0
 	for _, t := range lex.Tokens {

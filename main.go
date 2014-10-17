@@ -33,7 +33,7 @@ func main() {
 		flag.Usage()
 		return
 	}
-	var inpVal runtime.Value = nil
+	var inpVal runtime.Value = 0
 	if *input != "" {
 		inpCode, err := fromString(*input)
 		if err != nil {
@@ -66,7 +66,7 @@ func main() {
 	} else {
 		ctx := runtime.NewContext(*timeOut)
 		ctx.SetInput(inpVal)
-		res, err := code.Call(ctx)
+		res, err := ctx.Call(code)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)
 		} else {

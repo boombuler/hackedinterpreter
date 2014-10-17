@@ -77,7 +77,7 @@ func (ui *GameWindow) Input(ev termbox.Event) {
 	}
 }
 
-func NewGameWindow(code *runtime.Callable, ctx *runtime.Context) *GameWindow {
+func NewGameWindow(code runtime.Callable, ctx *runtime.Context) *GameWindow {
 	ui := new(GameWindow)
 	ui.Window = termwnd.NewWindow(ui)
 	ctx.UI = ui
@@ -85,7 +85,7 @@ func NewGameWindow(code *runtime.Callable, ctx *runtime.Context) *GameWindow {
 		for {
 			u, d, l, r, a, b := ui.up, ui.down, ui.left, ui.right, ui.a, ui.b
 			ui.Clear()
-			_, err := code.Call(ctx)
+			_, err := ctx.Call(code)
 			if err != nil {
 				panic(err.Error())
 			}
@@ -101,7 +101,7 @@ func NewGameWindow(code *runtime.Callable, ctx *runtime.Context) *GameWindow {
 	return ui
 }
 
-func RunGame(code *runtime.Callable) {
+func RunGame(code runtime.Callable) {
 	c := runtime.NewContext(runtime.NoTimeout)
 	NewGameWindow(code, c)
 }

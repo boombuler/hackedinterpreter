@@ -5,7 +5,7 @@ import (
 	"errors"
 )
 
-func NewMul(c1, c2 *Callable, p *token.Token) *Callable {
+func NewMul(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -20,7 +20,7 @@ func NewMul(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewDiv(c1, c2 *Callable, p *token.Token) *Callable {
+func NewDiv(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -38,7 +38,7 @@ func NewDiv(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewAdd(c1, c2 *Callable, p *token.Token) *Callable {
+func NewAdd(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -53,7 +53,7 @@ func NewAdd(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewSub(c1, c2 *Callable, p *token.Token) *Callable {
+func NewSub(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -68,7 +68,7 @@ func NewSub(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewOR(c1, c2 *Callable, p *token.Token) *Callable {
+func NewOR(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		b1, err := callBool(c1, c)
 		if err != nil {
@@ -82,7 +82,7 @@ func NewOR(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewAND(c1, c2 *Callable, p *token.Token) *Callable {
+func NewAND(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		b1, err := callBool(c1, c)
 		if err != nil {
@@ -96,13 +96,13 @@ func NewAND(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewEqual(c1, c2 *Callable, p *token.Token) *Callable {
+func NewEqual(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		v1, err := c1.Call(c)
+		v1, err := c.Call(c1)
 		if err != nil {
 			return nil, err
 		}
-		v2, err := c2.Call(c)
+		v2, err := c.Call(c2)
 		if err != nil {
 			return nil, err
 		}
@@ -111,13 +111,13 @@ func NewEqual(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewNotEqual(c1, c2 *Callable, p *token.Token) *Callable {
+func NewNotEqual(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		v1, err := c1.Call(c)
+		v1, err := c.Call(c1)
 		if err != nil {
 			return nil, err
 		}
-		v2, err := c2.Call(c)
+		v2, err := c.Call(c2)
 		if err != nil {
 			return nil, err
 		}
@@ -126,7 +126,7 @@ func NewNotEqual(c1, c2 *Callable, p *token.Token) *Callable {
 	}, c1, c2)
 }
 
-func NewLt(c1, c2 *Callable, p *token.Token) *Callable {
+func NewLt(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
@@ -141,7 +141,7 @@ func NewLt(c1, c2 *Callable, p *token.Token) *Callable {
 	})
 }
 
-func NewGt(c1, c2 *Callable, p *token.Token) *Callable {
+func NewGt(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
 		i1, err := callInt(c1, c)
 		if err != nil {
