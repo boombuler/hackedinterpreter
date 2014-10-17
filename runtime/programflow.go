@@ -68,7 +68,7 @@ func NewIfThenElse(cond, ifCode, elseCode Callable, p *token.Token) Callable {
 }
 
 func NewForEach(vn string, lst, code Callable, p *token.Token) Callable {
-	callable := newCallable(p, func(c *Context) (Value, error) {
+	return newCallable(p, func(c *Context) (Value, error) {
 		list, err := callList(lst, c)
 		if err != nil {
 			return list, err
@@ -86,6 +86,4 @@ func NewForEach(vn string, lst, code Callable, p *token.Token) Callable {
 		}
 		return res, nil
 	}, lst, code)
-	callable.meta.info = &setVarInfo{vn}
-	return callable
 }

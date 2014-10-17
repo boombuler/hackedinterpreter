@@ -9,7 +9,6 @@ import (
 type CallableMetadata struct {
 	*token.Token
 	Children []Callable
-	info     interface{}
 }
 
 type Callable interface {
@@ -23,7 +22,7 @@ type callable struct {
 }
 
 func newCallable(token *token.Token, fn func(c *Context) (Value, error), children ...Callable) *callable {
-	meta := &CallableMetadata{token, children, nil}
+	meta := &CallableMetadata{token, children}
 	return &callable{meta, fn}
 }
 

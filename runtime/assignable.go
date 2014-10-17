@@ -15,12 +15,6 @@ type variable struct {
 	p  *token.Token
 	vn string
 }
-type getVarInfo struct {
-	VarName string
-}
-type setVarInfo struct {
-	VarName string
-}
 
 func NewVariable(varName string, p *token.Token) Assignable {
 	get := newCallable(p, func(c *Context) (Value, error) {
@@ -30,8 +24,6 @@ func NewVariable(varName string, p *token.Token) Assignable {
 		}
 		return int(0), nil
 	})
-	get.meta.info = &getVarInfo{varName}
-
 	return &variable{get, p, varName}
 }
 

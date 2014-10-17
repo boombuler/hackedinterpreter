@@ -93,10 +93,6 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 		valStr := runtime.ToString(val)
 
 		bg := termbox.ColorWhite
-		if ws.dbg.IsMemBreakPoint(varN) {
-			bg = termbox.ColorRed
-		}
-
 		ws.textOut(varN, x, y, w, termbox.ColorBlack|termbox.AttrBold, bg)
 		ws.textOut(":", x+5, y, w-5, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
 		ws.textOut(valStr, x+7, y, w-7, termbox.ColorBlack, termbox.ColorWhite)
