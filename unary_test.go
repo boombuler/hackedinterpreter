@@ -18,7 +18,7 @@ func Test_NegativeInt(t *testing.T) {
 		"-abs(-3)": -3,
 		"(-1)":     -1,
 		"1-(-1)":   2,
-		"1--1":     2,
+		"1 - -1":   2,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -32,7 +32,7 @@ func Test_NegativeInt(t *testing.T) {
 
 func Test_NegativeIntFail(t *testing.T) {
 	tests := []string{
-		"-[1]", "1---1", "-true",
+		"-[1]", "1---1", "-true", "1--1",
 	}
 	for _, code := range tests {
 		if val, err := execString(code, runtime.DefaultTimeout); err == nil {
