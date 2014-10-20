@@ -41,18 +41,34 @@ type listItem struct {
 
 func NewListItem(lst, idx Callable, p *token.Token) Assignable {
 	get := newCallable(p, func(c *Context) (Value, error) {
-		lVal, err := callList(lst, c)
-		if err != nil {
-			return nil, err
-		}
 		idx, err := callInt(idx, c)
 		if err != nil {
 			return nil, err
 		}
-		if idx < 0 || idx >= lVal.Len() {
-			return nil, errors.New("Index out of range (" + ToString(idx) + ") -> " + ToString(lVal))
+		valList, err := c.Call(lst)
+		if err != nil {
+			return nil, err
 		}
-		return lVal.content[idx], nil
+		listType := GetType(valList)
+		if listType == LIST {
+			lVal := valList.(*List)
+			if err != nil {
+				return nil, err
+			}
+
+			if idx < 0 || idx >= lVal.Len() {
+				return nil, errors.New("Index out of range (" + ToString(idx, true) + ") -> " + ToString(lVal, true))
+			}
+			return lVal.content[idx], nil
+		} else if listType == STRING {
+			sVal := valList.(string)
+			if !strIndexInRange(sVal, idx) {
+				return nil, errors.New("Index out of range (" + ToString(idx, true) + ") -> " + ToString(sVal, true))
+			}
+			return strGetRuneByIdx(sVal, idx), nil
+		} else {
+			return nil, errors.New("Expected List or String")
+		}
 	}, lst, idx)
 	return &listItem{get, lst, idx, p}
 }

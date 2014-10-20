@@ -90,7 +90,7 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 		if !ok {
 			val = 0
 		}
-		valStr := runtime.ToString(val)
+		valStr := runtime.ToString(val, true)
 
 		bg := termbox.ColorWhite
 		ws.textOut(varN, x, y, w, termbox.ColorBlack|termbox.AttrBold, bg)

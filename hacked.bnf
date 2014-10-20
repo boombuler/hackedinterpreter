@@ -8,6 +8,8 @@ int              : {'0'-'9'} ;
 var              : 'v''a''r''_'('a' - 'o') ;
 fn_name          : 'a' - 'z' {_id_chars};
 cust_fn_name     : 'f' ('1' - '9')['0'-'6'];
+_quotedpair      : '\\' . ;
+string           : '"' {_quotedpair | .} '"';
 
 
 <<
@@ -37,6 +39,7 @@ Object           : Callable_Object                                       <<$0, n
                  | int                                                   <<_rt.NewConstInt(str($0), p($0))>>
                  | ListDef                                               <<$0, nil>>
                  | Method_Call                                           <<$0, nil>>
+                 | string                                                <<_rt.NewConstStr(str($0), p($0))>>
                  ;
 
 Assignable       : Variable                                              <<_rt.NewVariable(str($0), p($0)), nil>>
@@ -48,11 +51,11 @@ Post_Inc_Expr    : Assignable "++"                                       <<_rt.N
                  ;
 
 
-Unary_Expr      : Object                                                 <<$0, nil>>
-                | Post_Inc_Expr                                          <<$0, nil>>
-                | "-" Object                                             <<_rt.NewNegInt(c($1), p($0)), nil>>
-                | "!" Object                                             <<_rt.NewNegBool(c($1), p($0)), nil>>
-                ;
+Unary_Expr       : Object                                                <<$0, nil>>
+                 | Post_Inc_Expr                                         <<$0, nil>>
+                 | "-" Object                                            <<_rt.NewNegInt(c($1), p($0)), nil>>
+                 | "!" Object                                            <<_rt.NewNegBool(c($1), p($0)), nil>>
+                 ;
 
 Mult_Expr        : Mult_Expr "*" Unary_Expr                              <<_rt.NewMul(c($0), c($2), p($1)), nil>>
                  | Mult_Expr "/" Unary_Expr                              <<_rt.NewDiv(c($0), c($2), p($1)), nil>>
@@ -129,7 +132,7 @@ Statements       : Single_Statement Statements                           <<_rt.N
                  | Statement                                             <<$0, nil>>
                  ;
 
-If_Block          : "if" Expression Code_Block "else" Code_Block         <<_rt.NewIfThenElse(c($1), c($2), c($4), p($0)), nil>>
+If_Block         : "if" Expression Code_Block "else" Code_Block          <<_rt.NewIfThenElse(c($1), c($2), c($4), p($0)), nil>>
                  | "if" Expression Code_Block                            <<_rt.NewIfThenElse(c($1), c($2), nil, p($0)), nil>>
                  ;
 

@@ -19,13 +19,13 @@ var gotoTab = gotoTable{
 		10, // Callable_Object
 		17, // Object
 		11, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		28, // Comp_Expr
-		29, // Bool_Expr
-		30, // Assign
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		29, // Comp_Expr
+		30, // Bool_Expr
+		31, // Assign
 		13, // Expression
 		-1, // Values
 		19, // ListDef
@@ -34,15 +34,15 @@ var gotoTab = gotoTable{
 		20, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		33, // Cust_Fn_def
-		35, // Statement
-		37, // Single_Statement
+		34, // Cust_Fn_def
+		36, // Statement
+		38, // Single_Statement
 		2, // Statements
-		39, // If_Block
-		41, // While_Loop
-		43, // For_Each_Loop
-		38, // Block
-		31, // Lambda_Def
+		40, // If_Block
+		42, // While_Loop
+		44, // For_Each_Loop
+		39, // Block
+		32, // Lambda_Def
 		
 
 	},
@@ -446,24 +446,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		58, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		59, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -474,7 +474,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -770,42 +770,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		110, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		109, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S22
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -835,6 +799,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S22
+		
+		-1, // S'
+		-1, // Program
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		113, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		112, // Lambda_Def
 		
 
 	},
@@ -878,11 +878,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		113, // Variable
-		7, // Bool
-		10, // Callable_Object
-		117, // Object
-		116, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -892,10 +892,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -914,11 +914,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		113, // Variable
+		116, // Variable
 		7, // Bool
 		10, // Callable_Object
-		118, // Object
-		116, // Assignable
+		120, // Object
+		119, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -950,11 +950,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		116, // Variable
+		7, // Bool
+		10, // Callable_Object
+		121, // Object
+		119, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -964,10 +964,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -1238,7 +1238,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -1257,7 +1257,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		134, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -1274,7 +1274,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		133, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -1293,7 +1293,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		137, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -1310,78 +1310,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		4, // Variable
-		7, // Bool
-		10, // Callable_Object
-		17, // Object
-		11, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		28, // Comp_Expr
-		29, // Bool_Expr
-		30, // Assign
-		136, // Expression
-		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		31, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S37
-		
-		-1, // S'
-		-1, // Program
-		4, // Variable
-		7, // Bool
-		10, // Callable_Object
-		17, // Object
-		11, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		28, // Comp_Expr
-		29, // Bool_Expr
-		30, // Assign
-		13, // Expression
-		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		33, // Cust_Fn_def
-		35, // Statement
-		37, // Single_Statement
-		138, // Statements
-		39, // If_Block
-		41, // While_Loop
-		43, // For_Each_Loop
-		38, // Block
-		31, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S38
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -1411,6 +1339,78 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S37
+		
+		-1, // S'
+		-1, // Program
+		4, // Variable
+		7, // Bool
+		10, // Callable_Object
+		17, // Object
+		11, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		29, // Comp_Expr
+		30, // Bool_Expr
+		31, // Assign
+		139, // Expression
+		-1, // Values
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		32, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S38
+		
+		-1, // S'
+		-1, // Program
+		4, // Variable
+		7, // Bool
+		10, // Callable_Object
+		17, // Object
+		11, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		29, // Comp_Expr
+		30, // Bool_Expr
+		31, // Assign
+		13, // Expression
+		-1, // Values
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		34, // Cust_Fn_def
+		36, // Statement
+		38, // Single_Statement
+		141, // Statements
+		40, // If_Block
+		42, // While_Loop
+		44, // For_Each_Loop
+		39, // Block
+		32, // Lambda_Def
 		
 
 	},
@@ -1454,24 +1454,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		148, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -1482,7 +1482,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		166, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -1490,24 +1490,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		151, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -1518,7 +1518,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -1526,42 +1526,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		169, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		166, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S43
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -1594,11 +1558,47 @@ var gotoTab = gotoTable{
 		
 
 	},
+	gotoRow{ // S43
+		
+		-1, // S'
+		-1, // Program
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		173, // Expression
+		-1, // Values
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		170, // Lambda_Def
+		
+
+	},
 	gotoRow{ // S44
 		
 		-1, // S'
 		-1, // Program
-		170, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -1634,43 +1634,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		201, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		200, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S46
-		
-		-1, // S'
-		-1, // Program
-		-1, // Variable
+		174, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -1699,6 +1663,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S46
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		206, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -1742,42 +1742,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		4, // Variable
-		7, // Bool
-		10, // Callable_Object
-		17, // Object
-		11, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		28, // Comp_Expr
-		29, // Bool_Expr
-		30, // Assign
-		204, // Expression
-		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		31, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S49
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -1807,6 +1771,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S49
+		
+		-1, // S'
+		-1, // Program
+		4, // Variable
+		7, // Bool
+		10, // Callable_Object
+		17, // Object
+		11, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		29, // Comp_Expr
+		30, // Bool_Expr
+		31, // Assign
+		209, // Expression
+		-1, // Values
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		32, // Lambda_Def
 		
 
 	},
@@ -2066,42 +2066,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		209, // Expression
-		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		76, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S58
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -2131,6 +2095,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S58
+		
+		-1, // S'
+		-1, // Program
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		214, // Expression
+		-1, // Values
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		78, // Lambda_Def
 		
 
 	},
@@ -2390,24 +2390,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		214, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2418,7 +2418,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -2462,6 +2462,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		219, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		112, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S69
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -2480,42 +2516,6 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S69
-		
-		-1, // S'
-		-1, // Program
-		215, // Variable
-		52, // Bool
-		55, // Callable_Object
-		219, // Object
-		218, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2534,11 +2534,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		215, // Variable
-		52, // Bool
-		55, // Callable_Object
-		220, // Object
-		218, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -2548,10 +2548,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2570,11 +2570,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		220, // Variable
+		53, // Bool
+		56, // Callable_Object
+		224, // Object
+		223, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -2584,10 +2584,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2606,11 +2606,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		220, // Variable
+		53, // Bool
+		56, // Callable_Object
+		225, // Object
+		223, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -2620,10 +2620,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2822,7 +2822,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -2841,7 +2841,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		232, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -2858,42 +2858,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		242, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S80
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -2914,6 +2878,42 @@ var gotoTab = gotoTable{
 		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S80
+		
+		-1, // S'
+		-1, // Program
+		133, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		237, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -2930,24 +2930,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		247, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -2958,7 +2958,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -3218,24 +3218,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		268, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -3246,7 +3246,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -3290,24 +3290,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		274, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -3318,7 +3318,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -3542,24 +3542,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		272, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -3570,7 +3570,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -3650,6 +3650,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		278, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		112, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S102
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -3682,51 +3718,15 @@ var gotoTab = gotoTable{
 		
 
 	},
-	gotoRow{ // S102
-		
-		-1, // S'
-		-1, // Program
-		273, // Variable
-		84, // Bool
-		87, // Callable_Object
-		277, // Object
-		276, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
-		
-
-	},
 	gotoRow{ // S103
 		
 		-1, // S'
 		-1, // Program
-		273, // Variable
-		84, // Bool
-		87, // Callable_Object
-		278, // Object
-		276, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -3736,10 +3736,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -3794,11 +3794,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		279, // Variable
+		86, // Bool
+		89, // Callable_Object
+		283, // Object
+		282, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -3808,10 +3808,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -3830,11 +3830,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		279, // Variable
+		86, // Bool
+		89, // Callable_Object
+		284, // Object
+		282, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -3844,10 +3844,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4046,7 +4046,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -4065,7 +4065,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		292, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -4154,7 +4154,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		133, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -4173,7 +4173,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		298, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -4298,13 +4298,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
-		7, // Bool
-		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		299, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -4312,10 +4312,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4334,13 +4334,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
-		7, // Bool
-		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		300, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -4348,10 +4348,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4370,24 +4370,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
-		7, // Bool
-		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		301, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4406,14 +4406,14 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		302, // Mult_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		305, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
@@ -4442,15 +4442,15 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		303, // Add_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		306, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
@@ -4478,15 +4478,15 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		304, // Add_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		307, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
@@ -4514,15 +4514,15 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		305, // Add_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		308, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
@@ -4550,15 +4550,15 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		306, // Add_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		309, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
@@ -4586,16 +4586,16 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		307, // Comp_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		310, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
@@ -4622,16 +4622,16 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		294, // Variable
+		300, // Variable
 		7, // Bool
 		10, // Callable_Object
-		298, // Object
-		297, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		308, // Comp_Expr
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		311, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
@@ -4658,24 +4658,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		310, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		300, // Variable
+		7, // Bool
+		10, // Callable_Object
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		312, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4686,7 +4686,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -4694,24 +4694,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		300, // Variable
+		7, // Bool
+		10, // Callable_Object
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		313, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4730,24 +4730,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		300, // Variable
+		7, // Bool
+		10, // Callable_Object
+		304, // Object
+		303, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		314, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4766,24 +4766,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		316, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -4794,7 +4794,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -4946,7 +4946,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -4965,7 +4965,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		134, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -5054,7 +5054,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		133, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -5073,7 +5073,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		137, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -5306,24 +5306,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		318, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5334,7 +5334,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -5360,7 +5360,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		319, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -5414,24 +5414,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		324, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5442,7 +5442,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -5468,7 +5468,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		325, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -5630,24 +5630,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		324, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5658,7 +5658,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -5738,11 +5738,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		325, // Variable
-		142, // Bool
-		145, // Callable_Object
-		329, // Object
-		328, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -5752,10 +5752,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5774,24 +5774,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		325, // Variable
-		142, // Bool
-		145, // Callable_Object
-		330, // Object
-		328, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		330, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5802,7 +5802,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -5882,11 +5882,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		331, // Variable
+		145, // Bool
+		148, // Callable_Object
+		335, // Object
+		334, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -5896,10 +5896,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -5918,11 +5918,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		331, // Variable
+		145, // Bool
+		148, // Callable_Object
+		336, // Object
+		334, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -5932,10 +5932,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -6062,7 +6062,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -6081,7 +6081,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		342, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -6116,7 +6116,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		343, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -6206,7 +6206,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		133, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -6225,7 +6225,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		348, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -6260,7 +6260,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		349, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -6530,24 +6530,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		350, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -6558,7 +6558,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -6674,24 +6674,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		356, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -6702,7 +6702,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -6854,24 +6854,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		354, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -6882,7 +6882,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -6962,11 +6962,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		355, // Variable
-		176, // Bool
-		179, // Callable_Object
-		359, // Object
-		358, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -6976,10 +6976,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -6995,42 +6995,6 @@ var gotoTab = gotoTable{
 
 	},
 	gotoRow{ // S194
-		
-		-1, // S'
-		-1, // Program
-		355, // Variable
-		176, // Bool
-		179, // Callable_Object
-		360, // Object
-		358, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S195
 		
 		-1, // S'
 		-1, // Program
@@ -7063,6 +7027,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S195
+		
+		-1, // S'
+		-1, // Program
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		360, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		112, // Lambda_Def
 		
 
 	},
@@ -7142,11 +7142,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		361, // Variable
+		180, // Bool
+		183, // Callable_Object
+		365, // Object
+		364, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -7156,10 +7156,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -7178,11 +7178,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		361, // Variable
+		180, // Bool
+		183, // Callable_Object
+		366, // Object
+		364, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -7192,10 +7192,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -7322,7 +7322,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -7341,7 +7341,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		374, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -7394,24 +7394,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		375, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -7422,7 +7422,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -7502,26 +7502,26 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		376, // Expression
+		133, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		380, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -7530,7 +7530,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -7574,6 +7574,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		381, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S211
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -7603,42 +7639,6 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S211
-		
-		-1, // S'
-		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		378, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
 		
 
 	},
@@ -7682,24 +7682,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		382, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -7710,7 +7710,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -7790,24 +7790,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		384, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -7818,7 +7818,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -7970,13 +7970,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		387, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -7984,10 +7984,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8006,13 +8006,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		388, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -8020,10 +8020,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8042,24 +8042,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		389, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8078,24 +8078,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		390, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8114,24 +8114,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		391, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8150,24 +8150,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		392, // Add_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		393, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8186,24 +8186,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		393, // Add_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		394, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8222,24 +8222,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		394, // Add_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		395, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8258,24 +8258,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		395, // Comp_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		396, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8294,24 +8294,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		382, // Variable
-		52, // Bool
-		55, // Callable_Object
-		386, // Object
-		385, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		396, // Comp_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		397, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8330,24 +8330,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		398, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		398, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8358,7 +8358,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -8366,24 +8366,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		399, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8402,24 +8402,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		400, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8438,24 +8438,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		401, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8474,24 +8474,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		388, // Variable
+		53, // Bool
+		56, // Callable_Object
+		392, // Object
+		391, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		402, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8510,24 +8510,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		404, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8538,7 +8538,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -8690,24 +8690,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		404, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8718,7 +8718,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -8870,24 +8870,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		410, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -8898,7 +8898,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -9014,24 +9014,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		409, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9042,7 +9042,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -9122,11 +9122,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		410, // Variable
-		236, // Bool
-		239, // Callable_Object
-		414, // Object
-		413, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -9136,10 +9136,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9158,11 +9158,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		410, // Variable
-		236, // Bool
-		239, // Callable_Object
-		415, // Object
-		413, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -9172,10 +9172,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9230,24 +9230,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		415, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9258,7 +9258,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -9338,11 +9338,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		416, // Variable
+		241, // Bool
+		244, // Callable_Object
+		420, // Object
+		419, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -9352,10 +9352,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9374,11 +9374,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		416, // Variable
+		241, // Bool
+		244, // Callable_Object
+		421, // Object
+		419, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -9388,10 +9388,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9446,7 +9446,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -9465,7 +9465,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		427, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -9518,24 +9518,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		429, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9546,7 +9546,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -9626,42 +9626,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		430, // Expression
-		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		109, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S268
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -9682,6 +9646,42 @@ var gotoTab = gotoTable{
 		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S268
+		
+		-1, // S'
+		-1, // Program
+		133, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		433, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -9698,42 +9698,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		432, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S270
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -9763,6 +9727,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S270
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		435, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -9842,24 +9842,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		436, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9870,7 +9870,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -9914,24 +9914,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		438, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -9942,7 +9942,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -10058,13 +10058,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		441, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -10072,10 +10072,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10094,13 +10094,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		442, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -10108,10 +10108,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10130,24 +10130,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		443, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10166,24 +10166,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		444, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10202,24 +10202,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		445, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10238,24 +10238,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		446, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10274,24 +10274,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		447, // Add_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		447, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10310,24 +10310,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		448, // Add_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		448, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10346,24 +10346,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		449, // Comp_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		449, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10382,24 +10382,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		436, // Variable
-		84, // Bool
-		87, // Callable_Object
-		440, // Object
-		439, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		450, // Comp_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		450, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10418,24 +10418,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		451, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10454,24 +10454,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		451, // Expression
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		452, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10482,7 +10482,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -10490,24 +10490,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		453, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		453, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10518,7 +10518,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -10526,24 +10526,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		454, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10562,24 +10562,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		455, // Expression
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		455, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10590,7 +10590,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -10598,24 +10598,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		442, // Variable
+		86, // Bool
+		89, // Callable_Object
+		446, // Object
+		445, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		456, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10670,24 +10670,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		457, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10698,7 +10698,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -10706,24 +10706,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		459, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10734,7 +10734,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -10778,24 +10778,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		461, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -10806,7 +10806,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -11210,7 +11210,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		458, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -11229,7 +11229,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		461, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -11246,7 +11246,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		462, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -11282,60 +11282,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		4, // Variable
-		7, // Bool
-		10, // Callable_Object
-		17, // Object
-		11, // Assignable
-		22, // Post_Inc_Expr
-		23, // Unary_Expr
-		26, // Mult_Expr
-		27, // Add_Expr
-		28, // Comp_Expr
-		29, // Bool_Expr
-		30, // Assign
-		13, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		19, // ListDef
-		14, // Fn_Call
-		15, // Lambda_Call
-		20, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		463, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		31, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S314
-		
-		-1, // S'
-		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		464, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -11346,7 +11310,43 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S314
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
 		
 
 	},
@@ -11426,26 +11426,26 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		465, // Expression
+		464, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
-		-1, // Func_Param_Def
+		467, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -11454,7 +11454,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		166, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -11462,7 +11462,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		468, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -11498,6 +11498,78 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		4, // Variable
+		7, // Bool
+		10, // Callable_Object
+		17, // Object
+		11, // Assignable
+		23, // Post_Inc_Expr
+		24, // Unary_Expr
+		27, // Mult_Expr
+		28, // Add_Expr
+		29, // Comp_Expr
+		30, // Bool_Expr
+		31, // Assign
+		13, // Expression
+		-1, // Values
+		19, // ListDef
+		14, // Fn_Call
+		15, // Lambda_Call
+		20, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		469, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		32, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S320
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		470, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S321
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -11527,78 +11599,6 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S320
-		
-		-1, // S'
-		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
-		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		498, // Cust_Fn_def
-		500, // Statement
-		502, // Single_Statement
-		468, // Statements
-		504, // If_Block
-		506, // While_Loop
-		508, // For_Each_Loop
-		503, // Block
-		496, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S321
-		
-		-1, // S'
-		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		510, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
 		
 
 	},
@@ -11642,24 +11642,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		471, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -11670,7 +11670,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -11750,35 +11750,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
+		505, // Cust_Fn_def
+		507, // Statement
+		509, // Single_Statement
+		474, // Statements
+		511, // If_Block
+		513, // While_Loop
+		515, // For_Each_Loop
+		510, // Block
+		503, // Lambda_Def
 		
 
 	},
@@ -11786,24 +11786,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		517, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -11814,7 +11814,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -11930,13 +11930,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		519, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -11944,10 +11944,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -11966,13 +11966,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		520, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -11980,10 +11980,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12002,24 +12002,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		521, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12038,24 +12038,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		522, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12074,24 +12074,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		523, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12110,24 +12110,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		524, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12146,24 +12146,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		525, // Add_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		526, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12182,24 +12182,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		526, // Add_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		527, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12218,24 +12218,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		527, // Comp_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		528, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12254,24 +12254,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		514, // Variable
-		142, // Bool
-		145, // Callable_Object
-		518, // Object
-		517, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		528, // Comp_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		529, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12290,24 +12290,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		530, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		530, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12318,7 +12318,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -12326,24 +12326,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		531, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12362,24 +12362,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		532, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12398,132 +12398,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
-		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		498, // Cust_Fn_def
-		500, // Statement
-		502, // Single_Statement
-		532, // Statements
-		504, // If_Block
-		506, // While_Loop
-		508, // For_Each_Loop
-		503, // Block
-		496, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S345
-		
-		-1, // S'
-		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		533, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		166, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S346
-		
-		-1, // S'
-		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		534, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		200, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S347
-		
-		-1, // S'
-		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		533, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12535,6 +12427,114 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S345
+		
+		-1, // S'
+		-1, // Program
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		534, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S346
+		
+		-1, // S'
+		-1, // Program
+		521, // Variable
+		145, // Bool
+		148, // Callable_Object
+		525, // Object
+		524, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		535, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S347
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		537, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -12578,24 +12578,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		535, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12606,7 +12606,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -12614,35 +12614,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
+		505, // Cust_Fn_def
+		507, // Statement
+		509, // Single_Statement
+		539, // Statements
+		511, // If_Block
+		513, // While_Loop
+		515, // For_Each_Loop
+		510, // Block
+		503, // Lambda_Def
 		
 
 	},
@@ -12650,24 +12650,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		537, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		540, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12678,7 +12678,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -12686,24 +12686,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		541, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12714,7 +12714,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -12794,24 +12794,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		542, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12822,7 +12822,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -12866,24 +12866,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		544, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -12894,7 +12894,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -13010,13 +13010,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		546, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -13024,10 +13024,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13046,13 +13046,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		547, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -13060,10 +13060,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13082,24 +13082,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		548, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13118,24 +13118,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		549, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13154,24 +13154,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		550, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13190,24 +13190,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		551, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13226,24 +13226,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		552, // Add_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		553, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13262,24 +13262,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		553, // Add_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		554, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13298,24 +13298,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		554, // Comp_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		555, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13334,24 +13334,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		541, // Variable
-		176, // Bool
-		179, // Callable_Object
-		545, // Object
-		544, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		555, // Comp_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		556, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13370,24 +13370,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		557, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13406,24 +13406,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		556, // Expression
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		558, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13434,7 +13434,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -13442,24 +13442,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		558, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		559, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13470,7 +13470,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -13478,24 +13478,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		560, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13514,24 +13514,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		561, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13550,24 +13550,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		548, // Variable
+		180, // Bool
+		183, // Callable_Object
+		552, // Object
+		551, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		562, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13622,24 +13622,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		563, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13650,7 +13650,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -13658,24 +13658,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		565, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13686,7 +13686,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -13730,24 +13730,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		563, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13758,7 +13758,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -13946,24 +13946,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		570, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -13974,7 +13974,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -14378,60 +14378,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		566, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		567, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		76, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S400
-		
-		-1, // S'
-		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		569, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -14442,7 +14406,43 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S400
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
 		
 
 	},
@@ -14522,24 +14522,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		570, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -14550,7 +14550,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -14594,35 +14594,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		573, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		574, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -14630,24 +14630,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		572, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		576, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -14658,7 +14658,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -14738,24 +14738,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		577, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -14766,7 +14766,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -14846,24 +14846,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		579, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -14874,7 +14874,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -14990,13 +14990,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		581, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -15004,10 +15004,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15026,13 +15026,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		582, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -15040,10 +15040,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15062,24 +15062,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		583, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15098,24 +15098,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		584, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15134,24 +15134,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		585, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15170,24 +15170,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		586, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15206,24 +15206,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		587, // Add_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		588, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15242,24 +15242,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		588, // Add_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		589, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15278,24 +15278,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		589, // Comp_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		590, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15314,24 +15314,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		576, // Variable
-		236, // Bool
-		239, // Callable_Object
-		580, // Object
-		579, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		590, // Comp_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		591, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15350,24 +15350,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		592, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		592, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15378,7 +15378,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -15386,24 +15386,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		593, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15422,24 +15422,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		595, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		594, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15450,7 +15450,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -15458,24 +15458,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		595, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15494,24 +15494,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		596, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15530,24 +15530,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		583, // Variable
+		241, // Bool
+		244, // Callable_Object
+		587, // Object
+		586, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		597, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15566,24 +15566,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		599, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15594,7 +15594,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -15638,6 +15638,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		602, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S435
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -15667,42 +15703,6 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S435
-		
-		-1, // S'
-		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		599, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
 		
 
 	},
@@ -15890,24 +15890,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		606, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -15918,7 +15918,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -16358,35 +16358,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		602, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		603, // Statement
+		-1, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -16430,24 +16430,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		606, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -16458,7 +16458,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -16574,35 +16574,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		609, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		610, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -16628,7 +16628,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		608, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -16646,24 +16646,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		613, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -16674,7 +16674,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -16844,7 +16844,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		610, // Code_Block
+		615, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -17060,7 +17060,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		617, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -17186,24 +17186,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		616, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17214,7 +17214,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		76, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -17402,24 +17402,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		623, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17430,7 +17430,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -17510,24 +17510,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		90, // Expression
-		620, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17538,7 +17538,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		109, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -17618,11 +17618,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		621, // Variable
-		472, // Bool
-		475, // Callable_Object
-		625, // Object
-		624, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -17632,10 +17632,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17654,11 +17654,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		621, // Variable
-		472, // Bool
-		475, // Callable_Object
-		626, // Object
-		624, // Assignable
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -17668,10 +17668,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17762,24 +17762,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		92, // Expression
+		627, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17790,7 +17790,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		112, // Lambda_Def
 		
 
 	},
@@ -17870,11 +17870,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		628, // Variable
+		478, // Bool
+		481, // Callable_Object
+		632, // Object
+		631, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -17884,10 +17884,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17906,11 +17906,11 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
+		628, // Variable
+		478, // Bool
+		481, // Callable_Object
+		633, // Object
+		631, // Assignable
 		-1, // Post_Inc_Expr
 		-1, // Unary_Expr
 		-1, // Mult_Expr
@@ -17920,10 +17920,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -17978,7 +17978,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -17997,7 +17997,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		639, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -18050,24 +18050,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		641, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -18078,7 +18078,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		496, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -18086,35 +18086,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		498, // Cust_Fn_def
-		500, // Statement
-		502, // Single_Statement
-		643, // Statements
-		504, // If_Block
-		506, // While_Loop
-		508, // For_Each_Loop
-		503, // Block
-		496, // Lambda_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
 		
 
 	},
@@ -18194,42 +18194,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		644, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		166, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S506
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -18250,6 +18214,42 @@ var gotoTab = gotoTable{
 		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S506
+		
+		-1, // S'
+		-1, // Program
+		133, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		646, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -18266,42 +18266,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		645, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		166, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S508
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -18334,28 +18298,28 @@ var gotoTab = gotoTable{
 		
 
 	},
-	gotoRow{ // S509
+	gotoRow{ // S508
 		
 		-1, // S'
 		-1, // Program
-		646, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		648, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -18366,7 +18330,43 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		503, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S509
+		
+		-1, // S'
+		-1, // Program
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
+		-1, // Values
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		505, // Cust_Fn_def
+		507, // Statement
+		509, // Single_Statement
+		650, // Statements
+		511, // If_Block
+		513, // While_Loop
+		515, // For_Each_Loop
+		510, // Block
+		503, // Lambda_Def
 		
 
 	},
@@ -18446,24 +18446,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		651, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -18474,7 +18474,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -18482,42 +18482,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		649, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S514
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -18547,6 +18511,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S514
+		
+		-1, // S'
+		-1, // Program
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		652, // Expression
+		-1, // Values
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		170, // Lambda_Def
 		
 
 	},
@@ -18590,7 +18590,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		653, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -18734,24 +18734,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		656, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -18762,7 +18762,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -19130,35 +19130,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		652, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		653, // Statement
+		-1, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		166, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -19220,7 +19220,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		656, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -19382,35 +19382,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		659, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		660, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -19454,25 +19454,25 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		660, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		663, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -19482,7 +19482,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -19706,24 +19706,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		667, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -19734,7 +19734,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -20138,35 +20138,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		663, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		664, // Statement
+		-1, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -20246,24 +20246,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		667, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -20274,7 +20274,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -20318,24 +20318,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		669, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -20346,7 +20346,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -20390,35 +20390,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		670, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		671, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -20462,42 +20462,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		49, // Variable
-		52, // Bool
-		55, // Callable_Object
-		62, // Object
-		56, // Assignable
-		67, // Post_Inc_Expr
-		68, // Unary_Expr
-		71, // Mult_Expr
-		72, // Add_Expr
-		73, // Comp_Expr
-		74, // Bool_Expr
-		75, // Assign
-		670, // Expression
-		-1, // Values
-		64, // ListDef
-		59, // Fn_Call
-		60, // Lambda_Call
-		65, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		76, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S569
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -20527,6 +20491,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S569
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		674, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -20570,24 +20570,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		676, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -20598,7 +20598,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -20714,24 +20714,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		674, // Expression
+		50, // Variable
+		53, // Bool
+		56, // Callable_Object
+		63, // Object
+		57, // Assignable
+		69, // Post_Inc_Expr
+		70, // Unary_Expr
+		73, // Mult_Expr
+		74, // Add_Expr
+		75, // Comp_Expr
+		76, // Bool_Expr
+		77, // Assign
+		677, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		65, // ListDef
+		60, // Fn_Call
+		61, // Lambda_Call
+		66, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -20742,7 +20742,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		78, // Lambda_Def
 		
 
 	},
@@ -20966,24 +20966,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		681, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -20994,7 +20994,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -21362,35 +21362,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		677, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		678, // Statement
+		-1, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -21542,24 +21542,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		682, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -21570,7 +21570,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -21614,35 +21614,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
 		684, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		685, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -21758,42 +21758,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		81, // Variable
-		84, // Bool
-		87, // Callable_Object
-		94, // Object
-		88, // Assignable
-		100, // Post_Inc_Expr
-		101, // Unary_Expr
-		104, // Mult_Expr
-		105, // Add_Expr
-		106, // Comp_Expr
-		107, // Bool_Expr
-		108, // Assign
-		685, // Expression
-		-1, // Values
-		96, // ListDef
-		91, // Fn_Call
-		92, // Lambda_Call
-		97, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		109, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S605
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -21823,6 +21787,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S605
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		689, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -21866,24 +21866,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		687, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		691, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -21894,7 +21894,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -22010,6 +22010,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		83, // Variable
+		86, // Bool
+		89, // Callable_Object
+		96, // Object
+		90, // Assignable
+		103, // Post_Inc_Expr
+		104, // Unary_Expr
+		107, // Mult_Expr
+		108, // Add_Expr
+		109, // Comp_Expr
+		110, // Bool_Expr
+		111, // Assign
+		692, // Expression
+		-1, // Values
+		98, // ListDef
+		93, // Fn_Call
+		94, // Lambda_Call
+		99, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		112, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S612
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -22039,42 +22075,6 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S612
-		
-		-1, // S'
-		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		688, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		200, // Lambda_Def
 		
 
 	},
@@ -22118,7 +22118,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
+		694, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -22154,24 +22154,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		689, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22182,7 +22182,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		496, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -22226,24 +22226,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		691, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22254,7 +22254,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -22298,24 +22298,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		695, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22326,7 +22326,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -22406,24 +22406,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		696, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22434,7 +22434,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		503, // Lambda_Def
 		
 
 	},
@@ -22478,24 +22478,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		698, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22506,7 +22506,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -22586,13 +22586,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		700, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -22600,10 +22600,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22622,13 +22622,13 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		701, // Unary_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
 		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
@@ -22636,10 +22636,10 @@ var gotoTab = gotoTable{
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22658,24 +22658,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		702, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22694,24 +22694,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		703, // Mult_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
 		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22730,24 +22730,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		704, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22766,24 +22766,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		705, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22802,24 +22802,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		706, // Add_Expr
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22838,24 +22838,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		707, // Add_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		707, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22874,24 +22874,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		708, // Comp_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		708, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22910,24 +22910,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		695, // Variable
-		472, // Bool
-		475, // Callable_Object
-		699, // Object
-		698, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		709, // Comp_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		709, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22946,24 +22946,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		711, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		710, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -22974,7 +22974,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -22982,24 +22982,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		711, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23018,24 +23018,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		712, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23054,24 +23054,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		713, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23090,24 +23090,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		714, // Add_Expr
 		-1, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23126,26 +23126,26 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		130, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		715, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
-		639, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -23162,24 +23162,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
+		702, // Variable
+		478, // Bool
+		481, // Callable_Object
+		706, // Object
+		705, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		716, // Comp_Expr
 		-1, // Bool_Expr
 		-1, // Assign
 		-1, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23198,25 +23198,25 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
-		714, // Code_Block
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		718, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -23226,7 +23226,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -23252,7 +23252,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		716, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -23342,24 +23342,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		720, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23370,11 +23370,47 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
 	gotoRow{ // S649
+		
+		-1, // S'
+		-1, // Program
+		133, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		646, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S650
 		
 		-1, // S'
 		-1, // Program
@@ -23410,42 +23446,6 @@ var gotoTab = gotoTable{
 		
 
 	},
-	gotoRow{ // S650
-		
-		-1, // S'
-		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		722, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
-		
-
-	},
 	gotoRow{ // S651
 		
 		-1, // S'
@@ -23468,7 +23468,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		721, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -23504,7 +23504,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		723, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -23558,42 +23558,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		723, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		166, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S655
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -23623,6 +23587,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S655
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		727, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -23666,24 +23666,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		729, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23694,7 +23694,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -23738,24 +23738,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		725, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23766,7 +23766,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -23810,24 +23810,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		727, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		730, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -23838,7 +23838,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -23954,42 +23954,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		728, // Expression
-		-1, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		200, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S666
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -24019,6 +23983,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S666
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		732, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -24062,24 +24062,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		734, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -24090,7 +24090,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -24206,6 +24206,42 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		735, // Expression
+		-1, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S673
+		
+		-1, // S'
+		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -24235,42 +24271,6 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S673
-		
-		-1, // S'
-		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		732, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		200, // Lambda_Def
 		
 
 	},
@@ -24314,24 +24314,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		734, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -24342,7 +24342,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -24458,42 +24458,6 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		735, // Expression
-		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		260, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S680
-		
-		-1, // S'
-		-1, // Program
 		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
@@ -24523,6 +24487,42 @@ var gotoTab = gotoTable{
 		-1, // For_Each_Loop
 		-1, // Block
 		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S680
+		
+		-1, // S'
+		-1, // Program
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		739, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		205, // Lambda_Def
 		
 
 	},
@@ -24566,24 +24566,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		741, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -24594,7 +24594,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -24710,24 +24710,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		742, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -24738,7 +24738,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -24998,24 +24998,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		741, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -25026,7 +25026,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -25250,24 +25250,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		748, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -25278,7 +25278,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -25646,7 +25646,7 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		458, // Variable
+		-1, // Variable
 		-1, // Bool
 		-1, // Callable_Object
 		-1, // Object
@@ -25665,7 +25665,7 @@ var gotoTab = gotoTable{
 		-1, // Lambda_Call
 		-1, // Method_Call
 		-1, // Code_Block
-		744, // Func_Param_Def
+		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -25682,35 +25682,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		745, // Statement
+		-1, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		496, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -25754,35 +25754,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		498, // Cust_Fn_def
-		500, // Statement
-		502, // Single_Statement
-		747, // Statements
-		504, // If_Block
-		506, // While_Loop
-		508, // For_Each_Loop
-		503, // Block
-		496, // Lambda_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
 		
 
 	},
@@ -25826,60 +25826,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		469, // Variable
-		472, // Bool
-		475, // Callable_Object
-		482, // Object
-		476, // Assignable
-		487, // Post_Inc_Expr
-		488, // Unary_Expr
-		491, // Mult_Expr
-		492, // Add_Expr
-		493, // Comp_Expr
-		494, // Bool_Expr
-		495, // Assign
-		478, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		484, // ListDef
-		479, // Fn_Call
-		480, // Lambda_Call
-		485, // Method_Call
-		-1, // Code_Block
-		-1, // Func_Param_Def
-		498, // Cust_Fn_def
-		500, // Statement
-		502, // Single_Statement
-		748, // Statements
-		504, // If_Block
-		506, // While_Loop
-		508, // For_Each_Loop
-		503, // Block
-		496, // Lambda_Def
-		
-
-	},
-	gotoRow{ // S718
-		
-		-1, // S'
-		-1, // Program
-		139, // Variable
-		142, // Bool
-		145, // Callable_Object
-		152, // Object
-		146, // Assignable
-		157, // Post_Inc_Expr
-		158, // Unary_Expr
-		161, // Mult_Expr
-		162, // Add_Expr
-		163, // Comp_Expr
-		164, // Bool_Expr
-		165, // Assign
-		749, // Expression
-		-1, // Values
-		154, // ListDef
-		149, // Fn_Call
-		150, // Lambda_Call
-		155, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -25890,11 +25854,11 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		166, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
-	gotoRow{ // S719
+	gotoRow{ // S718
 		
 		-1, // S'
 		-1, // Program
@@ -25918,6 +25882,42 @@ var gotoTab = gotoTable{
 		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S719
+		
+		-1, // S'
+		-1, // Program
+		464, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		751, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
 		-1, // Single_Statement
@@ -25934,35 +25934,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
-		-1, // Statement
+		752, // Statement
 		-1, // Single_Statement
 		-1, // Statements
 		-1, // If_Block
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		503, // Lambda_Def
 		
 
 	},
@@ -26006,35 +26006,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
+		505, // Cust_Fn_def
+		507, // Statement
+		509, // Single_Statement
+		754, // Statements
+		511, // If_Block
+		513, // While_Loop
+		515, // For_Each_Loop
+		510, // Block
+		503, // Lambda_Def
 		
 
 	},
@@ -26078,35 +26078,35 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		475, // Variable
+		478, // Bool
+		481, // Callable_Object
+		488, // Object
+		482, // Assignable
+		494, // Post_Inc_Expr
+		495, // Unary_Expr
+		498, // Mult_Expr
+		499, // Add_Expr
+		500, // Comp_Expr
+		501, // Bool_Expr
+		502, // Assign
+		484, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		490, // ListDef
+		485, // Fn_Call
+		486, // Lambda_Call
+		491, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
-		-1, // Cust_Fn_def
-		-1, // Statement
-		-1, // Single_Statement
-		-1, // Statements
-		-1, // If_Block
-		-1, // While_Loop
-		-1, // For_Each_Loop
-		-1, // Block
-		-1, // Lambda_Def
+		505, // Cust_Fn_def
+		507, // Statement
+		509, // Single_Statement
+		755, // Statements
+		511, // If_Block
+		513, // While_Loop
+		515, // For_Each_Loop
+		510, // Block
+		503, // Lambda_Def
 		
 
 	},
@@ -26114,24 +26114,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		142, // Variable
+		145, // Bool
+		148, // Callable_Object
+		155, // Object
+		149, // Assignable
+		161, // Post_Inc_Expr
+		162, // Unary_Expr
+		165, // Mult_Expr
+		166, // Add_Expr
+		167, // Comp_Expr
+		168, // Bool_Expr
+		169, // Assign
+		756, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		157, // ListDef
+		152, // Fn_Call
+		153, // Lambda_Call
+		158, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -26142,7 +26142,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		170, // Lambda_Def
 		
 
 	},
@@ -26654,24 +26654,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		173, // Variable
-		176, // Bool
-		179, // Callable_Object
-		186, // Object
-		180, // Assignable
-		191, // Post_Inc_Expr
-		192, // Unary_Expr
-		195, // Mult_Expr
-		196, // Add_Expr
-		197, // Comp_Expr
-		198, // Bool_Expr
-		199, // Assign
-		182, // Expression
-		757, // Values
-		188, // ListDef
-		183, // Fn_Call
-		184, // Lambda_Call
-		189, // Method_Call
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -26682,7 +26682,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		200, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -26726,24 +26726,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		233, // Variable
-		236, // Bool
-		239, // Callable_Object
-		246, // Object
-		240, // Assignable
-		251, // Post_Inc_Expr
-		252, // Unary_Expr
-		255, // Mult_Expr
-		256, // Add_Expr
-		257, // Comp_Expr
-		258, // Bool_Expr
-		259, // Assign
-		759, // Expression
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
 		-1, // Values
-		248, // ListDef
-		243, // Fn_Call
-		244, // Lambda_Call
-		249, // Method_Call
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -26754,7 +26754,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		260, // Lambda_Def
+		-1, // Lambda_Def
 		
 
 	},
@@ -26816,7 +26816,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		760, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -26888,7 +26888,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		761, // Code_Block
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -26906,24 +26906,24 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
-		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
+		177, // Variable
+		180, // Bool
+		183, // Callable_Object
+		190, // Object
+		184, // Assignable
+		196, // Post_Inc_Expr
+		197, // Unary_Expr
+		200, // Mult_Expr
+		201, // Add_Expr
+		202, // Comp_Expr
+		203, // Bool_Expr
+		204, // Assign
+		186, // Expression
+		764, // Values
+		192, // ListDef
+		187, // Fn_Call
+		188, // Lambda_Call
+		193, // Method_Call
 		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
@@ -26934,7 +26934,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		205, // Lambda_Def
 		
 
 	},
@@ -26978,25 +26978,25 @@ var gotoTab = gotoTable{
 		
 		-1, // S'
 		-1, // Program
-		-1, // Variable
-		-1, // Bool
-		-1, // Callable_Object
-		-1, // Object
-		-1, // Assignable
-		-1, // Post_Inc_Expr
-		-1, // Unary_Expr
-		-1, // Mult_Expr
-		-1, // Add_Expr
-		-1, // Comp_Expr
-		-1, // Bool_Expr
-		-1, // Assign
-		-1, // Expression
+		238, // Variable
+		241, // Bool
+		244, // Callable_Object
+		251, // Object
+		245, // Assignable
+		257, // Post_Inc_Expr
+		258, // Unary_Expr
+		261, // Mult_Expr
+		262, // Add_Expr
+		263, // Comp_Expr
+		264, // Bool_Expr
+		265, // Assign
+		766, // Expression
 		-1, // Values
-		-1, // ListDef
-		-1, // Fn_Call
-		-1, // Lambda_Call
-		-1, // Method_Call
-		764, // Code_Block
+		253, // ListDef
+		248, // Fn_Call
+		249, // Lambda_Call
+		254, // Method_Call
+		-1, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -27006,7 +27006,7 @@ var gotoTab = gotoTable{
 		-1, // While_Loop
 		-1, // For_Each_Loop
 		-1, // Block
-		-1, // Lambda_Def
+		266, // Lambda_Def
 		
 
 	},
@@ -27068,7 +27068,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		767, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -27140,7 +27140,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		768, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -27248,7 +27248,7 @@ var gotoTab = gotoTable{
 		-1, // Fn_Call
 		-1, // Lambda_Call
 		-1, // Method_Call
-		-1, // Code_Block
+		771, // Code_Block
 		-1, // Func_Param_Def
 		-1, // Cust_Fn_def
 		-1, // Statement
@@ -27587,6 +27587,258 @@ var gotoTab = gotoTable{
 
 	},
 	gotoRow{ // S766
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S767
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S768
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S769
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S770
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S771
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S772
+		
+		-1, // S'
+		-1, // Program
+		-1, // Variable
+		-1, // Bool
+		-1, // Callable_Object
+		-1, // Object
+		-1, // Assignable
+		-1, // Post_Inc_Expr
+		-1, // Unary_Expr
+		-1, // Mult_Expr
+		-1, // Add_Expr
+		-1, // Comp_Expr
+		-1, // Bool_Expr
+		-1, // Assign
+		-1, // Expression
+		-1, // Values
+		-1, // ListDef
+		-1, // Fn_Call
+		-1, // Lambda_Call
+		-1, // Method_Call
+		-1, // Code_Block
+		-1, // Func_Param_Def
+		-1, // Cust_Fn_def
+		-1, // Statement
+		-1, // Single_Statement
+		-1, // Statements
+		-1, // If_Block
+		-1, // While_Loop
+		-1, // For_Each_Loop
+		-1, // Block
+		-1, // Lambda_Def
+		
+
+	},
+	gotoRow{ // S773
 		
 		-1, // S'
 		-1, // Program

@@ -40,16 +40,29 @@ func NewDiv(c1, c2 Callable, p *token.Token) Callable {
 
 func NewAdd(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		i1, err := callInt(c1, c)
+		v1, err := c.Call(c1)
 		if err != nil {
-			return nil, err
+			return v1, err
 		}
-		i2, err := callInt(c2, c)
-		if err != nil {
-			return nil, err
-		}
+		typ := GetType(v1)
+		if typ == STRING {
+			s1 := v1.(string)
+			s2, err := callString(c2, c)
+			if err != nil {
+				return nil, err
+			}
+			return s1 + s2, nil
+		} else if typ == INT {
+			i1 := v1.(int)
+			i2, err := callInt(c2, c)
+			if err != nil {
+				return nil, err
+			}
 
-		return i1 + i2, nil
+			return i1 + i2, nil
+		} else {
+			return nil, errors.New("Integer or String expected")
+		}
 	}, c1, c2)
 }
 
@@ -128,30 +141,56 @@ func NewNotEqual(c1, c2 Callable, p *token.Token) Callable {
 
 func NewLt(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		i1, err := callInt(c1, c)
+		v1, err := c.Call(c1)
 		if err != nil {
-			return nil, err
+			return v1, err
 		}
-		i2, err := callInt(c2, c)
-		if err != nil {
-			return nil, err
-		}
+		typ := GetType(v1)
+		if typ == STRING {
+			s1 := v1.(string)
+			s2, err := callString(c2, c)
+			if err != nil {
+				return s2, err
+			}
+			return s1 < s2, nil
+		} else if typ == INT {
+			i1 := v1.(int)
+			i2, err := callInt(c2, c)
+			if err != nil {
+				return nil, err
+			}
 
-		return i1 < i2, nil
+			return i1 < i2, nil
+		} else {
+			return nil, errors.New("Integer or String expected")
+		}
 	})
 }
 
 func NewGt(c1, c2 Callable, p *token.Token) Callable {
 	return newCallable(p, func(c *Context) (Value, error) {
-		i1, err := callInt(c1, c)
+		v1, err := c.Call(c1)
 		if err != nil {
-			return nil, err
+			return v1, err
 		}
-		i2, err := callInt(c2, c)
-		if err != nil {
-			return nil, err
-		}
+		typ := GetType(v1)
+		if typ == STRING {
+			s1 := v1.(string)
+			s2, err := callString(c2, c)
+			if err != nil {
+				return s2, err
+			}
+			return s1 > s2, nil
+		} else if typ == INT {
+			i1 := v1.(int)
+			i2, err := callInt(c2, c)
+			if err != nil {
+				return nil, err
+			}
 
-		return i1 > i2, nil
+			return i1 > i2, nil
+		} else {
+			return nil, errors.New("Integer or String expected")
+		}
 	})
 }

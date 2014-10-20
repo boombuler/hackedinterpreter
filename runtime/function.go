@@ -65,7 +65,7 @@ var buildInFunctions map[string]buildInFnSig = map[string]buildInFnSig{
 	}},
 	"draw_text": {[]ValueType{INT, INT, ANY}, func(params []Value, c *Context) (Value, error) {
 		if ui := c.ui(); ui != nil {
-			ui.DrawText(params[0].(int), params[1].(int), ToString(params[2]))
+			ui.DrawText(params[0].(int), params[1].(int), ToString(params[2], false))
 			return DRAWINGSF, nil
 		}
 		return nil, errors.New("UI functions not available")

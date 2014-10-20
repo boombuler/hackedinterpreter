@@ -3,6 +3,7 @@ package runtime
 import (
 	"bytes"
 	"fmt"
+	"strconv"
 )
 
 type Value interface{}
@@ -13,6 +14,7 @@ const (
 	BOOL      ValueType = "Boolean"
 	LIST      ValueType = "List"
 	FUNC      ValueType = "Function"
+	STRING    ValueType = "String"
 	ANY       ValueType = "Anything"
 	DRAWINGSF ValueType = "drawing surface"
 )
@@ -27,6 +29,8 @@ func GetType(v Value) ValueType {
 		return LIST
 	case *Function:
 		return FUNC
+	case string:
+		return STRING
 	default:
 		return ANY
 	}
@@ -66,6 +70,18 @@ func callBool(c Callable, ctx *Context) (bool, error) {
 		return false, fmt.Errorf("Boolean expected got %v", val)
 	}
 	return bv, nil
+}
+
+func callString(c Callable, ctx *Context) (string, error) {
+	val, err := ctx.Call(c)
+	if err != nil {
+		return "", err
+	}
+	sv, ok := val.(string)
+	if !ok {
+		return "", fmt.Errorf("String expected got %v", val)
+	}
+	return sv, nil
 }
 
 func NewAddToValues(valSlice, value Callable) Callable {
@@ -119,7 +135,7 @@ func Equals(v1, v2 Value) bool {
 	return false
 }
 
-func ToString(v Value) string {
+func ToString(v Value, quotStr bool) string {
 	var ToStringNested func(v Value, parentLists []*List) string
 	ToStringNested = func(v Value, parentLists []*List) string {
 		switch v.(type) {
@@ -133,6 +149,11 @@ func ToString(v Value) string {
 			} else {
 				return "false"
 			}
+		case string:
+			if quotStr {
+				return strconv.Quote(v.(string))
+			}
+			return v.(string)
 		case *List:
 			{
 				// check if list is in parentList

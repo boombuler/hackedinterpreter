@@ -70,7 +70,7 @@ func main() {
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)
 		} else {
-			fmt.Fprintln(os.Stdout, runtime.ToString(res))
+			fmt.Fprintln(os.Stdout, runtime.ToString(res, true))
 		}
 	}
 }
