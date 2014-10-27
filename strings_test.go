@@ -16,6 +16,8 @@ func Test_String(t *testing.T) {
 		`"ab" > "bc"`:            false,
 		`"a" + "b" > "aa"`:       true,
 		`is_list("foo")`:         false,
+		`"not " + true`:          "not true",
+		`0 + "1"`:                "01",
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)

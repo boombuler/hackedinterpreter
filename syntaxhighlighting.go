@@ -8,6 +8,7 @@ import (
 const hlKeyword = termbox.AttrBold | termbox.ColorMagenta
 const hlVariable = termbox.ColorCyan
 const hlConst = termbox.ColorGreen
+const hlString = termbox.ColorYellow
 
 var highlightMap map[string]termbox.Attribute = map[string]termbox.Attribute{
 	"function": hlKeyword,
@@ -26,6 +27,7 @@ var highlightMap map[string]termbox.Attribute = map[string]termbox.Attribute{
 	"true":         hlConst,
 	"false":        hlConst,
 	"int":          hlConst,
+	"string":       hlString,
 }
 
 func getForeground(t *token.Token) termbox.Attribute {

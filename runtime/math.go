@@ -3,6 +3,7 @@ package runtime
 import (
 	"../token"
 	"errors"
+	"fmt"
 )
 
 func NewMul(c1, c2 Callable, p *token.Token) Callable {
@@ -44,24 +45,19 @@ func NewAdd(c1, c2 Callable, p *token.Token) Callable {
 		if err != nil {
 			return v1, err
 		}
-		typ := GetType(v1)
-		if typ == STRING {
-			s1 := v1.(string)
-			s2, err := callString(c2, c)
-			if err != nil {
-				return nil, err
-			}
-			return s1 + s2, nil
-		} else if typ == INT {
-			i1 := v1.(int)
-			i2, err := callInt(c2, c)
-			if err != nil {
-				return nil, err
-			}
+		v2, err := c.Call(c2)
+		if err != nil {
+			return v1, err
+		}
+		t1 := GetType(v1)
+		t2 := GetType(v2)
 
-			return i1 + i2, nil
+		if t1 == STRING || t2 == STRING {
+			return ToString(v1, false) + ToString(v2, false), nil
+		} else if t1 == INT && t2 == INT {
+			return v1.(int) + v2.(int), nil
 		} else {
-			return nil, errors.New("Integer or String expected")
+			return nil, fmt.Errorf("Can not add %v and %v", t1, t2)
 		}
 	}, c1, c2)
 }

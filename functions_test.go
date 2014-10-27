@@ -29,6 +29,18 @@ func Test_LambdaFromList(t *testing.T) {
 	}
 }
 
+func Test_Fibunacci(t *testing.T) {
+	testStr := "function f1: var_a { if var_a < 3 { return 1 } f1(var_a-1) + f1(var_a-2) } f1(6)"
+
+	value, err := execString(testStr, runtime.DefaultTimeout)
+	if err != nil {
+		t.Error(err)
+	}
+	if value != 8 {
+		t.Errorf("Fibunacci Test failed got %v expected %v", value, 4)
+	}
+}
+
 func Test_CustomFunctions(t *testing.T) {
 	testStr := "function f1: var_a { var_a * 2 } [2].map(f1)[0]"
 
