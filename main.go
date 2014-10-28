@@ -65,7 +65,7 @@ func main() {
 		termwnd.Wait()
 	} else {
 		ctx := runtime.NewContext(*timeOut)
-		ctx.SetInput(inpVal)
+		ctx.SetVariable("input", inpVal)
 		res, err := ctx.Call(code)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)

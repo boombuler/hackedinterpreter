@@ -187,7 +187,7 @@ func (f *Function) Call(values []Value, c *Context) (Value, error) {
 		return nil, errors.New("parameter count missmatch")
 	}
 	for i, val := range values {
-		cc.variables[f.paramNames[i]] = val
+		cc.SetVariable(f.paramNames[i], val)
 	}
 	return cc.Call(f.body)
 }
@@ -309,7 +309,7 @@ func NewCallLambda(fn, values Callable, p *token.Token) Callable {
 
 		cc := c.newChildContext()
 		for i, val := range vals {
-			cc.variables[f.paramNames[i]] = val
+			cc.SetVariable(f.paramNames[i], val)
 		}
 		return cc.Call(f.body)
 	}, values)

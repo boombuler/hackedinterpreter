@@ -41,8 +41,10 @@ func (ws *dbgWorkspace) findTokenByLine(line int) (t *token.Token) {
 }
 
 var (
-	cmdCodeBp = regexp.MustCompile("(?:bpx\\W+)(\\d+)")
-	cmdEval   = regexp.MustCompile("(?:eval\\W+)(.*)")
+	cmdCodeBp     = regexp.MustCompile("(?:bpx\\W+)(\\d+)")
+	cmdEval       = regexp.MustCompile("(?:eval\\W+)(.*)")
+	cmdMemReadBp  = regexp.MustCompile("(?:bpr\\W+)(input|var_[a-o])")
+	cmdMemWriteBp = regexp.MustCompile("(?:bpw\\W+)(input|var_[a-o])")
 )
 
 func (ws *dbgWorkspace) handleCommand(cmd string) {
@@ -54,6 +56,16 @@ func (ws *dbgWorkspace) handleCommand(cmd string) {
 		if token != nil {
 			ws.dbg.ToggleCodeBreakPoint(token)
 		}
+		return
+	}
+	if cmdMemReadBp.Match(bcmd) {
+		vn := string(cmdMemReadBp.FindSubmatch(bcmd)[1])
+		ws.dbg.ToggleMemReadBreakPoint(vn)
+		return
+	}
+	if cmdMemWriteBp.Match(bcmd) {
+		vn := string(cmdMemWriteBp.FindSubmatch(bcmd)[1])
+		ws.dbg.ToggleMemWriteBreakPoint(vn)
 		return
 	}
 	if cmdEval.Match(bcmd) {

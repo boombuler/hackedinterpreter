@@ -20,6 +20,29 @@ type Context struct {
 	UI       UIInterface
 	executor executor
 }
+type executor interface {
+	exec(c Callable, ctx *Context) (Value, error)
+	getVar(vn string, ctx *Context) Value
+	setVar(vn string, value Value, ctx *Context)
+}
+
+type defaultExecutor struct{}
+
+func (se *defaultExecutor) exec(c Callable, ctx *Context) (Value, error) {
+	return c.invoke(ctx)
+}
+
+func (se *defaultExecutor) getVar(vn string, ctx *Context) Value {
+	v, ok := ctx.variables[vn]
+	if !ok {
+		v = 0
+	}
+	return v
+}
+
+func (se *defaultExecutor) setVar(vn string, value Value, ctx *Context) {
+	ctx.variables[vn] = value
+}
 
 type UIInterface interface {
 	BtnA() (bool, error)
@@ -37,7 +60,7 @@ type UIInterface interface {
 func NewContext(d time.Duration) *Context {
 	c := new(Context)
 	c.variables = make(map[string]Value)
-	c.executor = simpleExecutor
+	c.executor = new(defaultExecutor)
 	if d > 0 {
 		c.timeout = time.NewTimer(d)
 	}
@@ -51,8 +74,22 @@ func (c *Context) newChildContext() *Context {
 	}
 }
 
-func (c *Context) SetInput(value Value) {
-	c.variables["input"] = value
+func (c *Context) SetVariable(vn string, value Value) {
+	cc := c
+	for cc.parentContext != nil {
+		cc = cc.parentContext
+	}
+
+	cc.executor.setVar(vn, value, c)
+}
+
+func (c *Context) GetVariable(vn string) Value {
+	cc := c
+	for cc.parentContext != nil {
+		cc = cc.parentContext
+	}
+
+	return cc.executor.getVar(vn, c)
 }
 
 func (ctx *Context) Call(c Callable) (Value, error) {
@@ -64,7 +101,7 @@ func (ctx *Context) Call(c Callable) (Value, error) {
 		cc = cc.parentContext
 	}
 
-	val, err := cc.executor(c, ctx)
+	val, err := cc.executor.exec(c, ctx)
 
 	if err != nil {
 		re, ok := err.(*RuntimeError)

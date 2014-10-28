@@ -18,17 +18,13 @@ type variable struct {
 
 func NewVariable(varName string, p *token.Token) Assignable {
 	get := newCallable(p, func(c *Context) (Value, error) {
-		val, ok := c.variables[varName]
-		if ok {
-			return val, nil
-		}
-		return int(0), nil
+		return c.GetVariable(varName), nil
 	})
 	return &variable{get, p, varName}
 }
 
 func (v *variable) Set(value Value, c *Context) error {
-	c.variables[v.vn] = value
+	c.SetVariable(v.vn, value)
 	return nil
 }
 

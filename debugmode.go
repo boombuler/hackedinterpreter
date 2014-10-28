@@ -93,6 +93,11 @@ func (ws *dbgWorkspace) renderVars(x, y, w, h int) {
 		valStr := runtime.ToString(val, true)
 
 		bg := termbox.ColorWhite
+
+		if ws.dbg.IsMemBreakPoint(varN) {
+			bg = termbox.ColorRed
+		}
+
 		ws.textOut(varN, x, y, w, termbox.ColorBlack|termbox.AttrBold, bg)
 		ws.textOut(":", x+5, y, w-5, termbox.ColorBlack|termbox.AttrBold, termbox.ColorWhite)
 		ws.textOut(valStr, x+7, y, w-7, termbox.ColorBlack, termbox.ColorWhite)
@@ -220,7 +225,7 @@ func (ws *dbgWorkspace) Input(ev termbox.Event) {
 func startDebugCode(c runtime.Callable, isGame bool, input runtime.Value) (*runtime.Debugger, <-chan *runtime.BreakEvent, <-chan runtime.Value, <-chan error, *GameWindow) {
 	ctx := runtime.NewContext(runtime.NoTimeout)
 	if input != nil {
-		ctx.SetInput(input)
+		ctx.SetVariable("input", input)
 	}
 	bpEv := make(chan *runtime.BreakEvent)
 

@@ -78,7 +78,7 @@ func NewForEach(vn string, lst, code Callable, p *token.Token) Callable {
 			if c.forceExit() {
 				return c.result, c.err
 			}
-			c.variables[vn] = val
+			c.SetVariable(vn, val)
 			res, err = c.Call(code)
 			if err != nil {
 				return res, err
