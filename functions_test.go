@@ -53,6 +53,17 @@ func Test_CustomFunctions(t *testing.T) {
 	}
 }
 
+func Test_NestedFunctions(t *testing.T) {
+	testStr := "function f1: var_a { function f2: var_a { return var_a + 1 } return f2(var_a) + 1 } f1(1)"
+	value, err := execString(testStr, runtime.DefaultTimeout)
+	if err != nil {
+		t.Error(err)
+	}
+	if value != 3 {
+		t.Errorf("Nested Functions Test failed got %v expected %v", value, 3)
+	}
+}
+
 func Test_BuildInFuncs(t *testing.T) {
 	tests := map[string]runtime.Value{
 		"abs(0-3) == 3":    true,
@@ -61,9 +72,6 @@ func Test_BuildInFuncs(t *testing.T) {
 		"pow(2,3)":         8,
 		"new_list(2)[1]":   0,
 		"random(1) == 0":   true,
-		"is_list(time())":  false,
-		"is_list(1)":       false,
-		"is_list([1])":     true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)
@@ -88,6 +96,9 @@ func Test_Methods(t *testing.T) {
 		"[1].map(function var_a -> var_a * 2)[0]":                                                 2,
 		"var_a = [1]; var_b = var_a.copy; var_a.map(function var_a -> var_a * 2); var_a != var_b": true,
 		"new_list(2).fill(2) == [2, 2]":                                                           true,
+		"time().is_list()":                                                                        false,
+		"1.is_list()":                                                                             false,
+		"[1].is_list()":                                                                           true,
 	}
 	for code, val := range tests {
 		value, err := execString(code, runtime.DefaultTimeout)

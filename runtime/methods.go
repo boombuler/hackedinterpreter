@@ -15,7 +15,15 @@ type methodSig struct {
 }
 
 var methods map[string]methodSig = map[string]methodSig{
-	"length": {LIST, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
+	"length": {ANY, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
+		switch GetType(sender) {
+		case LIST:
+			return (sender.(*List)).Len(), nil
+		case STRING:
+			return strLength(sender.(string)), nil
+		default:
+			return nil, errors.New("string or list expected")
+		}
 		return (sender.(*List)).Len(), nil
 	}},
 	"push": {LIST, []ValueType{ANY}, func(sender Value, params []Value, c *Context) (Value, error) {
@@ -72,6 +80,9 @@ var methods map[string]methodSig = map[string]methodSig{
 			list.content[i] = params[0]
 		}
 		return list, nil
+	}},
+	"is_list": {ANY, []ValueType{}, func(sender Value, params []Value, c *Context) (Value, error) {
+		return GetType(sender) == LIST, nil
 	}},
 }
 
