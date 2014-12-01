@@ -244,7 +244,7 @@ function f4: var_a, var_b {
 function f5: var_a {
     var_c = (width() - 13) / 2;
 
-    draw_text(var_c, 11, var_a[1]);
+    draw_text(var_c, 20, var_a[1]);
 
     draw(var_c, 4);                                                       draw(var_c+4, 4);
     draw(var_c, 5);                                                       draw(var_c+4, 5);
