@@ -159,12 +159,12 @@ func (s *gameServer) gameHandler(ws *websocket.Conn) {
 						if h, err := strconv.Atoi(cc.Parameter); err == nil {
 							s.height = h
 						}
+					case "rendered":
+						break input
 					}
 				} else {
 					return
 				}
-			default:
-				break input
 			}
 		}
 

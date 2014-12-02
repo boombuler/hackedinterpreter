@@ -63,6 +63,7 @@
                       case "error": alert(cmd.p[0]); break;
                     }
                 }
+                ws.send(JSON.stringify({c:"rendered"}))
             };
             var setWidth = function(w) {
               ws.send(JSON.stringify({c:"setWidth", p:String(w)}))
@@ -76,6 +77,7 @@
               ready = true
               setWidth(20)
               setHeight(23)
+              ws.send(JSON.stringify({c:"rendered"}))
             };
             ws.onclose = function(e) {
               ready = false
