@@ -1,10 +1,12 @@
 package main
 
+//go:generate gocc -p=github.com/boombuler/hackedinterpreter hacked.bnf
+
 import (
-	"./runtime"
-	"./server"
 	"flag"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/server"
 	"os"
 	"path"
 )

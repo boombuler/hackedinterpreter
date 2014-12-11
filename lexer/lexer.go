@@ -4,11 +4,11 @@ package lexer
 import (
 	
 	// "fmt"
-	// "../util"
+	// "github.com/boombuler/hackedinterpreter/util"
 	
 	"io/ioutil"
 	"unicode/utf8"
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 const(

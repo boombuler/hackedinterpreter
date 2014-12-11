@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./runtime"
-	"./termwnd"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/termwnd"
 	"github.com/nsf/termbox-go"
 )
 

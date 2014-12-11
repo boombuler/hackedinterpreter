@@ -4,7 +4,7 @@ package errors
 import(
 	"bytes"
 	"fmt"
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type ErrorSymbol interface {

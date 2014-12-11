@@ -1,9 +1,9 @@
 package runtime
 
 import (
-	"../token"
 	"errors"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/token"
 	"math"
 	"math/rand"
 	"time"

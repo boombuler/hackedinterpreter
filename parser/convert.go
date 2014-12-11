@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"../runtime"
+	"github.com/boombuler/hackedinterpreter/runtime"
 
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 func c(at Attrib) runtime.Callable {

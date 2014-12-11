@@ -1,7 +1,7 @@
 package runtime
 
 import (
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 func NewNegInt(value Callable, p *token.Token) Callable {

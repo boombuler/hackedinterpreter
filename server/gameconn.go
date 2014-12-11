@@ -1,9 +1,9 @@
 package server
 
 import (
-	"../lexer"
-	"../runtime"
 	"code.google.com/p/go.net/websocket"
+	"github.com/boombuler/hackedinterpreter/lexer"
+	"github.com/boombuler/hackedinterpreter/runtime"
 	"net/http"
 	"strconv"
 )

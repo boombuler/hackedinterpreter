@@ -3,7 +3,7 @@ package lexer
 
 import(
 	"fmt"
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type ActionTable [NumStates] ActionRow

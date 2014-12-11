@@ -1,9 +1,9 @@
 package runtime
 
 import (
-	"../token"
 	"errors"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type methodFn func(sender Value, params []Value, c *Context) (Value, error)

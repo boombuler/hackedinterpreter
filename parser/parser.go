@@ -5,8 +5,8 @@ import(
 	"bytes"
 	"fmt"
 	"errors"
-	parseError "../errors"
-	"../token"
+	parseError "github.com/boombuler/hackedinterpreter/errors"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 const (

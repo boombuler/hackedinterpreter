@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 	"io/ioutil"
 	"unicode/utf8"
 )

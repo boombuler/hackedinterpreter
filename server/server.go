@@ -1,11 +1,11 @@
 package server
 
 import (
-	"../lexer"
-	"../runtime"
-	"../token"
 	"encoding/json"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/lexer"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/token"
 	"net"
 	"net/http"
 	"time"

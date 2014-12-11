@@ -1,8 +1,8 @@
 package runtime
 
 import (
-	"../token"
 	"errors"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type DebuggerExecutionMode byte

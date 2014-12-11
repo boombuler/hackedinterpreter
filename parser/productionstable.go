@@ -1,7 +1,7 @@
 
 package parser
 
-import _rt "../runtime"
+import _rt "github.com/boombuler/hackedinterpreter/runtime"
 
 type (
 	//TODO: change type and variable names to be consistent with other tables
