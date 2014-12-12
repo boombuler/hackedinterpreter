@@ -1,14 +1,13 @@
 package server
 
+//go:generate esc -o=content.go -pkg=server -prefix=content ./content/
+
 import (
-	"encoding/json"
 	"fmt"
-	"github.com/boombuler/hackedinterpreter/lexer"
 	"github.com/boombuler/hackedinterpreter/runtime"
 	"github.com/boombuler/hackedinterpreter/token"
 	"net"
 	"net/http"
-	"time"
 )
 
 type Server struct {
@@ -19,26 +18,26 @@ type Server struct {
 	Addr       string
 	stopServer func() error
 	closeChan  chan struct{}
+
+	modules []module
 }
 
-type TokenExport struct {
-	token.Pos
-	Text string `json:",omitempty"`
-	Type string
+type module interface {
+	RegisterHandlers(s *Server, m *http.ServeMux)
+	CodeLoaded()
 }
 
-func NewServer(code runtime.Callable, lex *lexer.DebugLexer, timeout time.Duration, debuggable bool) (*Server, error) {
-	return newServer(code, lex, debuggable, func(s *Server, m *http.ServeMux) {
-
-	})
-}
-
-func newServer(code runtime.Callable, lex *lexer.DebugLexer, debuggable bool, addHandlers func(s *Server, m *http.ServeMux)) (*Server, error) {
+func NewServer() (*Server, error) {
 	server := &Server{
-		code:      code,
-		ctx:       runtime.NewContext(runtime.NoTimeout),
-		tokens:    lex.Tokens,
+		code:      nil,
+		ctx:       nil,
+		tokens:    nil,
 		closeChan: make(chan struct{}),
+		modules: []module{
+			new(indexMod),
+			new(codeServer),
+			new(codeLoader),
+		},
 	}
 
 	go func() {
@@ -52,46 +51,24 @@ func newServer(code runtime.Callable, lex *lexer.DebugLexer, debuggable bool, ad
 
 	var addr net.Addr
 	addr, server.stopServer = serveHttp(func(m *http.ServeMux) {
-		if debuggable {
-			m.HandleFunc("/code", server.serveCode)
-		}
-
 		m.HandleFunc("/stop", func(resp http.ResponseWriter, req *http.Request) {
 			close(server.closeChan)
 		})
-		addHandlers(server, m)
+
+		for _, mod := range server.modules {
+			mod.RegisterHandlers(server, m)
+		}
+
+		m.Handle("/", http.FileServer(FS(false)))
 	})
 
-	server.Addr = fmt.Sprintf("http://localhost:%v/gamewnd.html", (addr.(*net.TCPAddr)).Port)
+	server.Addr = fmt.Sprintf("http://localhost:%v/index", (addr.(*net.TCPAddr)).Port)
 
 	return server, nil
 }
 
 func (s *Server) Wait() {
 	<-s.closeChan
-}
-
-func (s *Server) serveCode(resp http.ResponseWriter, req *http.Request) {
-	tex := make([]*TokenExport, 0, len(s.tokens))
-	for _, t := range s.tokens {
-		if len(t.Lit) == 0 {
-			continue
-		}
-		x := &TokenExport{
-			t.Pos,
-			string(t.Lit),
-			token.TokMap.Id(t.Type),
-		}
-
-		if x.Text == x.Type {
-			x.Text = ""
-		}
-		tex = append(tex, x)
-	}
-	err := json.NewEncoder(resp).Encode(tex)
-	if err != nil {
-		panic(err)
-	}
 }
 
 func serveHttp(regHandlers func(*http.ServeMux)) (net.Addr, func() error) {

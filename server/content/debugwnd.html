@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #box {
+                font-family: monospace;
+                font-size: 1.2em;
+                color: white;
+                display: flex;
+                position: relative;
+                overflow: scroll;
+                background: #181818;
+            }
+            #box > div {
+                display: inline-block;
+            }
+            #linenumbers {
+                float: left;
+            }
+
+            #linenumbers div {
+                height: 1.2em;
+                text-align: right;
+                color: gray;
+                cursor: pointer;
+            }
+            #linenumbers div.bpx {
+                background: red;
+                color: white;
+            }
+            #code {
+                position: absolute;
+                float: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #code > div {
+                height: 1.2em;
+                position: relative;
+            }
+            #code > div > span {
+                font-size: 1em;
+                position: relative;
+                white-space: nowrap;
+            }
+            .keyword {
+                color: #9d5050;
+                font-weight: bold;
+            }
+            .input {
+                color: #0285c2;
+            }
+            .var {
+                color: #4db7dc;
+            }
+            .function {
+                color: #984fb9;
+            }
+            .const {
+                color: #E6DB74;
+            }
+            .break {
+                background: white;
+            }
+
+         </style>
+
+<script type="text/javascript">
+    function getTokenClass(typ) {
+        var tokenTypeMap =  {
+            "var" : "var",
+            "input" : "input",
+            "true" : "const",
+            "false" : "const",
+            "cust_fn_name" : "function",
+            "int" : "const",
+            "string" : "const",
+            "fn_name" : "function",
+            "{" : "keyword",
+            "}" : "keyword",
+            "function" : "keyword",
+            ":" : "function",
+            "return" : "keyword",
+            "if" : "keyword",
+            "else" : "keyword",
+            "while" : "keyword",
+            "foreach" : "keyword",
+            "in" : "keyword",
+        };
+        return tokenTypeMap[typ];
+    }
+
+
+    function addCodeToBox(codeElements) {
+        var codeBox = document.querySelector("#code");
+        var maxCol = 0;
+        var maxLine = 0;
+        var divLine = null;
+        var curLine = 0;
+        var lEnd = 0;
+        for (var i = 0; i < codeElements.length; i++) {
+            var c = codeElements[i];
+            if (c.Type == "$") // EOF
+                continue;
+            while (c.Line > curLine) {
+                divLine = document.createElement('div');
+                codeBox.appendChild(divLine);
+                curLine++;
+                lEnd = 0;
+            }
+
+            var span = document.createElement('span');
+            var typ = getTokenClass(c.Type);
+            if (typeof(typ) === "string")
+                span.classList.add(typ);
+            var txt = c.Type;
+            if (c.Text !== undefined)
+                txt = c.Text;
+            span.innerText = txt;
+            span.setAttribute("data-offset", c.Offset)
+            var skipChars = (c.Column - txt.length - lEnd);
+            if (skipChars > 0)
+                span.style.marginLeft = skipChars +'ch';
+            lEnd = c.Column;
+            divLine.appendChild(span);
+            if (c.Line > maxLine)
+                maxLine = c.Line;
+            if (c.Column > maxCol)
+                maxCol = c.Column;
+        }
+
+        var linenumbers = document.querySelector('#linenumbers');
+        for (var i = 1; i <= maxLine; i++) {
+            var l = document.createElement('div');
+            l.innerText = i;
+            linenumbers.appendChild(l);
+        }
+        codeBox.style.paddingLeft = linenumbers.style.width = String(maxLine).length + 'ch';
+    }
+
+    function connectDebugger() {
+        var ws = new WebSocket("ws://"+document.location.host+"/dbg");
+        ws.onmessage = function(e) {
+            var command = JSON.parse(e.data);
+            if (command.c == "break") {
+                var offset = command.p[0];
+                var curBP = document.querySelector('span.break');
+                if (curBP) {
+                    curBP.classList.remove('break');
+                }
+                var span = document.querySelector('span[data-offset="'+offset+'"]')
+                span.classList.add('break');
+                span.scrollIntoViewIfNeeded();
+            } else if (command.c == "bpx") {// Code Breakpoint toggled
+                var lines = document.querySelectorAll('#linenumbers>div');
+                for (var i = 0; i < lines.length; i++) {
+                    var line = lines[i];
+                    if (line.innerText == String(command.p[0])) {
+                        if (command.p[1]) {
+                            line.classList.add('bpx');
+                        } else {
+                            line.classList.remove('bpx');
+                        }
+                    }
+                }
+            }
+        };
+
+        document.onkeydown = function (e) {
+            if (e.keyCode == 83) { // s
+                ws.send(JSON.stringify({c:"step"}));
+            } else if (e.keyCode == 67) { // c
+                ws.send(JSON.stringify({c:"continue"}));
+            }
+        }
+        var lines = document.querySelectorAll('#linenumbers>div');
+        for (var i = 0; i < lines.length; i++) {
+            lines[i].onclick = function(e) {
+                ws.send(JSON.stringify({c:"bpx", p: e.toElement.innerText}));
+            }
+        }
+    }
+
+
+    function onLoaded() {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if (req.readyState==4 && req.status==200) {
+                addCodeToBox(JSON.parse(req.responseText));
+                connectDebugger();
+            }
+        };
+        req.open("GET","/code", true);
+        req.send();
+    }
+</script>
+
+    </head>
+
+
+    <body onload="onLoaded();">
+        <div id="box">
+            <div id="linenumbers"></div>
+            <div id="code"></div>
+        </div>
+    </body>
+</html>

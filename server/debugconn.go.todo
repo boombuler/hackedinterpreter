@@ -1,0 +1,155 @@
+package server
+
+import (
+	"code.google.com/p/go.net/websocket"
+	"encoding/json"
+	"fmt"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/token"
+	"net/http"
+	"strconv"
+)
+
+type dbgWorkspace struct {
+	*Server
+	debugger          *runtime.Debugger
+	breakEvents       chan *runtime.BreakEvent
+	currentBreakEvent *runtime.BreakEvent
+}
+
+func iterateExecutableTokens(c runtime.Callable) <-chan *token.Token {
+	result := make(chan *token.Token)
+	go func() {
+		var itChild func(cc runtime.Callable)
+		itChild = func(cc runtime.Callable) {
+			meta := cc.Meta()
+			if meta != nil && meta.Children != nil {
+				for _, ccc := range meta.Children {
+					if ccc != nil {
+						ccm := ccc.Meta()
+						if ccm != nil && ccm.Token != nil {
+							result <- ccm.Token
+						}
+						itChild(ccc)
+					}
+				}
+			}
+		}
+		itChild(c)
+		close(result)
+	}()
+	return result
+}
+
+func (ws *dbgWorkspace) findTokenByLine(line int) (t *token.Token) {
+	for tkn := range iterateExecutableTokens(ws.code) {
+		if tkn.Line == line && t == nil {
+			t = tkn
+		}
+	}
+	return
+}
+
+func (d *dbgWorkspace) dbgHandler(ws *websocket.Conn) {
+	dcc := make(chan struct{})
+	clientCommands := make(chan *ClientGameCommand, 100)
+	go func() {
+		select {
+		case <-d.Server.closeChan:
+			close(dcc)
+		case <-dcc:
+			return
+		}
+	}()
+	go func() { // reader pipe
+		defer close(clientCommands)
+		for {
+			select {
+			case <-dcc:
+				return
+			default:
+				cc := new(ClientGameCommand)
+				e := websocket.JSON.Receive(ws, cc)
+				if e != nil {
+					close(dcc)
+				} else {
+					clientCommands <- cc
+				}
+			}
+		}
+	}()
+
+	for {
+		select {
+		case br, ok := <-d.breakEvents:
+			if !ok {
+				return
+			}
+			d.currentBreakEvent = br
+			websocket.JSON.Send(ws, &ServerCommand{"break", []interface{}{br.Token.Offset}})
+		case cc, ok := <-clientCommands:
+			if ok {
+				switch cc.Command {
+				case "step":
+					if d.currentBreakEvent != nil {
+						d.currentBreakEvent.Continue <- runtime.Step
+					}
+				case "continue":
+					if d.currentBreakEvent != nil {
+						d.currentBreakEvent.Continue <- runtime.Continue
+					}
+				case "bpx":
+					if line, err := strconv.Atoi(cc.Parameter); err == nil {
+						token := d.findTokenByLine(line)
+						if token != nil {
+							d.debugger.ToggleCodeBreakPoint(token)
+							bxa := d.debugger.IsCodeBreakPoint(token)
+							websocket.JSON.Send(ws, &ServerCommand{"bpx", []interface{}{line, bxa}})
+						}
+					}
+				}
+			} else {
+				return
+			}
+		}
+	}
+}
+
+func (s *Server) createDebugger(m *http.ServeMux) {
+	m.HandleFunc("/code", s.serveCode)
+	dbg := &dbgWorkspace{
+		Server:      s,
+		breakEvents: make(chan *runtime.BreakEvent),
+	}
+	m.Handle("/dbg", websocket.Handler(dbg.dbgHandler))
+	s.onNewCtx = append(s.onNewCtx, func(c *runtime.Context) {
+		var err error
+		dbg.debugger, err = runtime.AttachDebugger(c, dbg.breakEvents)
+		if err != nil {
+			fmt.Println(err)
+		}
+	})
+}
+
+func (s *Server) serveCode(resp http.ResponseWriter, req *http.Request) {
+	tex := make([]*TokenExport, 0, len(s.tokens))
+	for _, t := range s.tokens {
+		if len(t.Lit) == 0 {
+			continue
+		}
+		x := &TokenExport{
+			t.Pos,
+			string(t.Lit),
+			token.TokMap.Id(t.Type),
+		}
+
+		if x.Text == x.Type {
+			x.Text = ""
+		}
+		tex = append(tex, x)
+	}
+	err := json.NewEncoder(resp).Encode(tex)
+	if err != nil {
+		panic(err)
+	}
+}

@@ -8,6 +8,9 @@ import (
 	"github.com/boombuler/hackedinterpreter/lexer"
 	"github.com/boombuler/hackedinterpreter/parser"
 	"github.com/boombuler/hackedinterpreter/runtime"
+	ose "os/exec"
+	r "runtime"
+	"strings"
 	"time"
 )
 
@@ -73,4 +76,18 @@ func execString(code string, timeOut time.Duration) (runtime.Value, error) {
 func exec(c runtime.Callable, timeOut time.Duration) (runtime.Value, error) {
 	ctx := runtime.NewContext(timeOut)
 	return ctx.Call(c)
+}
+
+func openBrowser(url string) error {
+	var cmd *ose.Cmd
+	switch r.GOOS {
+	case "windows":
+		url = strings.NewReplacer("&", "^&").Replace(url)
+		cmd = ose.Command("cmd", "/C", "start", "", url)
+	case "darwin":
+		cmd = ose.Command("open", url)
+	default:
+		cmd = ose.Command("xdg-open", url)
+	}
+	return cmd.Start()
 }
