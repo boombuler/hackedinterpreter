@@ -13,7 +13,7 @@ string           : '"' {_quotedpair | .} '"';
 
 
 <<
-import _rt "../runtime"
+import _rt "github.com/boombuler/hackedinterpreter/runtime"
 >>
 
 Program          : Statements

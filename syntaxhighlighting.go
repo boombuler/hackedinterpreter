@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./token"
+	"github.com/boombuler/hackedinterpreter/token"
 	"github.com/nsf/termbox-go"
 )
 

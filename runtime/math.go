@@ -1,9 +1,9 @@
 package runtime
 
 import (
-	"../token"
 	"errors"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 func NewMul(c1, c2 Callable, p *token.Token) Callable {

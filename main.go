@@ -1,10 +1,10 @@
 package main
 
 import (
-	"./runtime"
-	"./termwnd"
 	"flag"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/termwnd"
 	"os"
 	"path"
 	"time"

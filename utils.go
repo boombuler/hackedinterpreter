@@ -1,13 +1,13 @@
 package main
 
 import (
-	pe "./errors"
-	"./lexer"
-	"./parser"
-	"./runtime"
 	"bytes"
 	"errors"
 	"fmt"
+	pe "github.com/boombuler/hackedinterpreter/errors"
+	"github.com/boombuler/hackedinterpreter/lexer"
+	"github.com/boombuler/hackedinterpreter/parser"
+	"github.com/boombuler/hackedinterpreter/runtime"
 	"time"
 )
 

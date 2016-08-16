@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./runtime"
-	"./token"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/token"
 	"regexp"
 	"strconv"
 )

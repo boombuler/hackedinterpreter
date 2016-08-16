@@ -1,10 +1,9 @@
-
 package errors
 
-import(
+import (
 	"bytes"
 	"fmt"
-	"../token"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type ErrorSymbol interface {

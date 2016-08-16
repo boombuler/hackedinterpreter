@@ -11,7 +11,7 @@ HackedInterpreter is a featurecomplete interpreter for the H language which is u
 
 ### Modifying the Syntax
 The syntax is declared in the `hacked.bnf` file and will be compiled by gocc.
-To update the sourcecode run `gocc -p=".." hacked.bnf` and rebuild with `go build`
+To update the sourcecode run `gocc -p="github.com/boombuler/hackedinterpreter" hacked.bnf` and rebuild with `go build`
 
 ## Executing Code
 Simply call the compiled binary with the code you want to execute.  By default all code execution will be terminated, if the program runs more than 5 seconds.

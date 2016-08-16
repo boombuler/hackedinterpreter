@@ -1,9 +1,9 @@
 package runtime
 
 import (
-	"../token"
 	"bytes"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/token"
 )
 
 type CallableMetadata struct {

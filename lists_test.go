@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./runtime"
+	"github.com/boombuler/hackedinterpreter/runtime"
 	"testing"
 )
 

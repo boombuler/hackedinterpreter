@@ -1,11 +1,11 @@
 package main
 
 import (
-	"./lexer"
-	"./runtime"
-	"./termwnd"
-	"./token"
 	"fmt"
+	"github.com/boombuler/hackedinterpreter/lexer"
+	"github.com/boombuler/hackedinterpreter/runtime"
+	"github.com/boombuler/hackedinterpreter/termwnd"
+	"github.com/boombuler/hackedinterpreter/token"
 	"github.com/nsf/termbox-go"
 	"os"
 )
